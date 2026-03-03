@@ -1,0 +1,910 @@
+{
+  "document_id": "보험업법(법률)(제20436호)(20250131)",
+  "product_name": "보험업법(법률)(제20436호)(20250131)",
+  "entities": [
+    {
+      "id": "Regulation#보험업법_art1",
+      "type": "Regulation",
+      "label": "보험업법 목적",
+      "properties": {
+        "article_number": "제2조",
+        "article_title": "정의",
+        "regulation_type": "정의규정"
+      },
+      "provenance": {
+        "source_section_id": "art1",
+        "source_text": "이 법은 보험업을 경영하는 자의 건전한 경영을 도모하고 보험계약자, 피보험자, 그 밖의 이해관계인의 권익을 보호함으로써 보험업의 건전한 육성과 국민경제의 균형 있는 발전에 기여함을 목적으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#생명보험상품",
+      "type": "Product_Category",
+      "label": "생명보험상품",
+      "properties": {
+        "category": "생명보험상품",
+        "definition": "위험보장을 목적으로 사람의 생존 또는 사망에 관하여 약정한 금전 및 그 밖의 급여를 지급할 것을 약속하고 대가를 수수하는 계약",
+        "categories": [
+          "생명보험",
+          "연금보험(퇴직보험을 포함한다)",
+          "그 밖에 대통령령으로 정하는 보험종목"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2",
+        "source_text": "생명보험상품: 위험보장을 목적으로 사람의 생존 또는 사망에 관하여 약정한 금전 및 그 밖의 급여를 지급할 것을 약속하고 대가를 수수하는 계약으로서 대통령령으로 정하는 계약",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#손해보험상품",
+      "type": "Product_Category",
+      "label": "손해보험상품",
+      "properties": {
+        "category": "손해보험상품",
+        "definition": "위험보장을 목적으로 우연한 사건으로 발생하는 손해에 관하여 금전 및 그 밖의 급여를 지급할 것을 약속하고 대가를 수수하는 계약",
+        "categories": [
+          "화재보험",
+          "해상보험(항공ㆍ운송보험을 포함한다)",
+          "자동차보험",
+          "보증보험",
+          "재보험(再保險)",
+          "그 밖에 대통령령으로 정하는 보험종목"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2",
+        "source_text": "손해보험상품: 위험보장을 목적으로 우연한 사건(다목에 따른 질병ㆍ상해 및 간병은 제외한다)으로 발생하는 손해(계약상 채무불이행 또는 법령상 의무불이행으로 발생하는 손해를 포함한다)에 관하여 금전 및 그 밖의 급여를 지급할 것을 약속하고 대가를 수수하는 계약으로서 대통령령으로 정하는 계약",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#제3보험상품",
+      "type": "Product_Category",
+      "label": "제3보험상품",
+      "properties": {
+        "category": "제3보험상품",
+        "definition": "위험보장을 목적으로 사람의 질병ㆍ상해 또는 이에 따른 간병에 관하여 금전 및 그 밖의 급여를 지급할 것을 약속하고 대가를 수수하는 계약",
+        "categories": [
+          "상해보험",
+          "질병보험",
+          "간병보험",
+          "그 밖에 대통령령으로 정하는 보험종목"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2",
+        "source_text": "제3보험상품: 위험보장을 목적으로 사람의 질병ㆍ상해 또는 이에 따른 간병에 관하여 금전 및 그 밖의 급여를 지급할 것을 약속하고 대가를 수수하는 계약으로서 대통령령으로 정하는 계약",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art2_보험상품제외",
+      "type": "Exclusion",
+      "label": "보험상품 정의에서 제외되는 계약",
+      "properties": {
+        "exclusion_type": "정의상 제외",
+        "excluded_items": "국민건강보험법에 따른 건강보험, 고용보험법에 따른 고용보험 등 대통령령으로 정하는 것"
+      },
+      "provenance": {
+        "source_section_id": "art2",
+        "source_text": "「국민건강보험법」에 따른 건강보험, 「고용보험법」에 따른 고용보험 등 보험계약자의 보호 필요성 및 금융거래 관행 등을 고려하여 대통령령으로 정하는 것은 제외한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업법_art2_전문보험계약자",
+      "type": "Eligibility",
+      "label": "전문보험계약자 자격요건",
+      "properties": {
+        "requirement_type": "전문보험계약자 자격",
+        "qualified_entities": [
+          "국가",
+          "한국은행",
+          "대통령령으로 정하는 금융기관",
+          "주권상장법인",
+          "그 밖에 대통령령으로 정하는 자"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2",
+        "source_text": "\"전문보험계약자\"란 보험계약에 관한 전문성, 자산규모 등에 비추어 보험계약의 내용을 이해하고 이행할 능력이 있는 자로서 다음 각 목의 어느 하나에 해당하는 자를 말한다. 가. 국가 나. 한국은행 다. 대통령령으로 정하는 금융기관 라. 주권상장법인 마. 그 밖에 대통령령으로 정하는 자",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#보험업법_art2_전문보험계약자예외",
+      "type": "Exception",
+      "label": "전문보험계약자의 일반보험계약자 대우 예외",
+      "properties": {
+        "exception_condition": "전문보험계약자가 일반보험계약자와 같은 대우를 받겠다는 의사를 서면으로 통지하고 보험회사가 동의한 경우"
+      },
+      "provenance": {
+        "source_section_id": "art2",
+        "source_text": "다만, 전문보험계약자 중 대통령령으로 정하는 자가 일반보험계약자와 같은 대우를 받겠다는 의사를 보험회사에 서면으로 통지하는 경우 보험회사는 정당한 사유가 없으면 이에 동의하여야 하며, 보험회사가 동의한 경우에는 해당 보험계약자는 일반보험계약자로 본다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art3_보험계약체결금지",
+      "type": "Exclusion",
+      "label": "비보험회사와의 보험계약 체결 금지",
+      "properties": {
+        "prohibition_type": "보험계약 체결 제한",
+        "prohibited_acts": "보험회사가 아닌 자와 보험계약 체결, 중개, 대리"
+      },
+      "provenance": {
+        "source_section_id": "art3",
+        "source_text": "누구든지 보험회사가 아닌 자와 보험계약을 체결하거나 중개 또는 대리하지 못한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업법_art3_대통령령예외",
+      "type": "Exception",
+      "label": "보험계약 체결 금지의 예외",
+      "properties": {
+        "exception_condition": "대통령령으로 정하는 경우"
+      },
+      "provenance": {
+        "source_section_id": "art3",
+        "source_text": "다만, 대통령령으로 정하는 경우에는 그러하지 아니하다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art4",
+      "type": "Regulation",
+      "label": "보험업의 허가",
+      "properties": {
+        "article_number": "제4조",
+        "article_title": "보험업의 허가",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art4",
+        "source_text": "보험업을 경영하려는 자는 다음 각 호에서 정하는 보험종목별로 금융위원회의 허가를 받아야 한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exception#보험업법_art4_exception",
+      "type": "Exception",
+      "label": "허가 예외 규정",
+      "properties": {
+        "exception_content": "제9조제2항제2호의 보험회사는 재보험에 대한 허가를 받은 것으로 보지 않음"
+      },
+      "provenance": {
+        "source_section_id": "art4.par2",
+        "source_text": "제1항에 따른 허가를 받은 자는 해당 보험종목의 재보험에 대한 허가를 받은 것으로 본다. 다만, 제9조제2항제2호의 보험회사는 그러하지 아니하다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#보험업법_art6_requirement",
+      "type": "Eligibility",
+      "label": "보험업 허가 요건",
+      "properties": {
+        "requirements": [
+          "자본금 또는 기금 보유",
+          "전문 인력과 물적 시설",
+          "타당하고 건전한 사업계획",
+          "대주주 적격성"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art6.par1",
+        "source_text": "보험업의 허가를 받으려는 자는 다음 각 호의 요건을 갖추어야 한다. 1. 제9조제1항 및 제2항에 따른 자본금 또는 기금을 보유할 것 2. 보험계약자를 보호할 수 있고 그 경영하려는 보험업을 수행하기 위하여 필요한 전문 인력과 전산설비 등 물적(物的) 시설을 충분히 갖추고 있을 것",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art8",
+      "type": "Regulation",
+      "label": "상호 또는 명칭",
+      "properties": {
+        "article_number": "제8조",
+        "article_title": "상호 또는 명칭",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art8",
+        "source_text": "보험회사는 그 상호 또는 명칭 중에 주로 경영하는 보험업의 종류를 표시하여야 한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art8_prohibition",
+      "type": "Exclusion",
+      "label": "보험회사 표시 금지",
+      "properties": {
+        "prohibition_content": "보험회사가 아닌 자는 보험회사임을 표시하는 글자를 포함해서는 안됨"
+      },
+      "provenance": {
+        "source_section_id": "art8.par2",
+        "source_text": "보험회사가 아닌 자는 그 상호 또는 명칭 중에 보험회사임을 표시하는 글자를 포함하여서는 아니 된다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art9",
+      "type": "Regulation",
+      "label": "자본금 또는 기금",
+      "properties": {
+        "article_number": "제9조",
+        "article_title": "자본금 또는 기금",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art9",
+        "source_text": "보험회사는 300억원 이상의 자본금 또는 기금을 납입함으로써 보험업을 시작할 수 있다. 다만, 보험회사가 제4조제1항에 따른 보험종목의 일부만을 취급하려는 경우에는 50억원 이상의 범위에서 대통령령으로 자본금 또는 기금의 액수를 다르게 정할 수 있다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art10_prohibition",
+      "type": "Exclusion",
+      "label": "보험업 겸영 제한",
+      "properties": {
+        "prohibition_content": "보험회사는 생명보험업과 손해보험업을 겸영하지 못함"
+      },
+      "provenance": {
+        "source_section_id": "art10",
+        "source_text": "보험회사는 생명보험업과 손해보험업을 겸영(兼營)하지 못한다. 다만, 다음 각 호의 어느 하나에 해당하는 보험종목은 그러하지 아니하다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exception#보험업법_art10_exception",
+      "type": "Exception",
+      "label": "겸영 예외 보험종목",
+      "properties": {
+        "exception_content": "생명보험의 재보험 및 제3보험의 재보험, 다른 법령에 따라 겸영할 수 있는 보험종목, 제3보험 부가보험은 겸영 가능"
+      },
+      "provenance": {
+        "source_section_id": "art10",
+        "source_text": "다만, 다음 각 호의 어느 하나에 해당하는 보험종목은 그러하지 아니하다. 1. 생명보험의 재보험 및 제3보험의 재보험 2. 다른 법령에 따라 겸영할 수 있는 보험종목으로서 대통령령으로 정하는 보험종목 3. 대통령령으로 정하는 기준에 따라 제3보험의 보험종목에 부가되는 보험",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art11",
+      "type": "Regulation",
+      "label": "보험회사의 겸영업무",
+      "properties": {
+        "article_number": "제11조",
+        "article_title": "보험회사의 겸영업무",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art11",
+        "source_text": "보험회사는 경영건전성을 해치거나 보험계약자 보호 및 건전한 거래질서를 해칠 우려가 없는 금융업무로서 다음 각 호에 규정된 업무를 할 수 있다. 이 경우 보험회사는 제1호 또는 제3호의 업무를 하려면 그 업무를 시작하려는 날의 7일 전까지 금융위원회에 신고하여야 한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art12_prohibition",
+      "type": "Exclusion",
+      "label": "국내사무소 금지행위",
+      "properties": {
+        "prohibition_content": "국내사무소는 보험업 경영, 보험계약 중개/대리, 법령 저촉 조사, 설치 목적 위반 행위 금지"
+      },
+      "provenance": {
+        "source_section_id": "art12.par3",
+        "source_text": "국내사무소는 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 1. 보험업을 경영하는 행위 2. 보험계약의 체결을 중개하거나 대리하는 행위 3. 국내 관련 법령에 저촉되는 방법에 의하여 보험시장의 조사 및 정보의 수집을 하는 행위 4. 그 밖에 국내사무소의 설치 목적에 위반되는 행위로서 대통령령으로 정하는 행위",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art18",
+      "type": "Regulation",
+      "label": "보험회사 자본감소 절차 규정",
+      "properties": {
+        "article_number": "제18조",
+        "article_title": "자본감소",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art18",
+        "source_text": "① 보험회사인 주식회사(이하 \"주식회사\"라 한다)가 자본감소를 결의한 경우에는 그 결의를 한 날부터 2주 이내에 결의의 요지와 재무상태표를 공고하여야 한다. ② 제1항에 따른 자본감소를 결의할 때 대통령령으로 정하는 자본감소를 하려면 미리 금융위원회의 승인을 받아야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art20",
+      "type": "Regulation",
+      "label": "주식회사의 상호회사로 조직변경",
+      "properties": {
+        "article_number": "제20조",
+        "article_title": "조직 변경",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art20",
+        "source_text": "① 주식회사는 그 조직을 변경하여 상호회사로 할 수 있다. ② 제1항에 따른 상호회사는 제9조에도 불구하고 기금의 총액을 300억원 미만으로 하거나 설정하지 아니할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art21",
+      "type": "Regulation",
+      "label": "조직변경 결의 요건",
+      "properties": {
+        "article_number": "제21조",
+        "article_title": "조직 변경 결의",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art21",
+        "source_text": "① 주식회사의 조직 변경은 주주총회의 결의를 거쳐야 한다. ② 제1항의 결의는 「상법」 제434조에 따른다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#보험업법_art32_protection",
+      "type": "Coverage",
+      "label": "보험계약자 우선취득권",
+      "properties": {
+        "coverage_scope": "피보험자를 위하여 적립한 금액",
+        "protection_basis": "주식회사의 자산에서 우선취득"
+      },
+      "provenance": {
+        "source_section_id": "art32",
+        "source_text": "① 보험계약자나 보험금을 취득할 자는 피보험자를 위하여 적립한 금액을 다른 법률에 특별한 규정이 없으면 주식회사의 자산에서 우선하여 취득한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#보험업법_art33_protection",
+      "type": "Coverage",
+      "label": "예탁자산 우선변제권",
+      "properties": {
+        "coverage_scope": "피보험자를 위하여 적립한 금액",
+        "protection_basis": "예탁자산에서 다른 채권자보다 우선변제"
+      },
+      "provenance": {
+        "source_section_id": "art33",
+        "source_text": "① 보险契약자나 보험금을 취득할 자는 피보험자를 위하여 적립한 금액을 주식회사가 이 법에 따른 금융위원회의 명령에 따라 예탁한 자산에서 다른 채권자보다 우선하여 변제를 받을 권리를 가진다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업법_art37_requirement",
+      "type": "Eligibility",
+      "label": "상호회사 설립 사원수 요건",
+      "properties": {
+        "requirement_type": "설립요건",
+        "minimum_members": "100명 이상"
+      },
+      "provenance": {
+        "source_section_id": "art37",
+        "source_text": "상호회사는 100명 이상의 사원으로써 설립한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art36_prohibition",
+      "type": "Exclusion",
+      "label": "상호회사 기금납입 제한",
+      "properties": {
+        "prohibited_action": "금전 이외의 자산으로 기금 납입",
+        "scope": "상호회사 기금"
+      },
+      "provenance": {
+        "source_section_id": "art36",
+        "source_text": "① 상호회사의 기금은 금전 이외의 자산으로 납입하지 못한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art46_prohibition",
+      "type": "Exclusion",
+      "label": "상호회사 사원 직접책임 금지",
+      "properties": {
+        "prohibited_action": "회사 채권자에 대한 직접적 의무",
+        "scope": "상호회사 사원"
+      },
+      "provenance": {
+        "source_section_id": "art46",
+        "source_text": "상호회사의 사원은 회사의 채권자에 대하여 직접적인 의무를 지지 아니한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art48_prohibition",
+      "type": "Exclusion",
+      "label": "보험료 납입 상계 금지",
+      "properties": {
+        "prohibited_action": "보험료 납입에 관한 상계",
+        "scope": "상호회사 사원"
+      },
+      "provenance": {
+        "source_section_id": "art48",
+        "source_text": "상호회사의 사원은 보험료의 납입에 관하여 상계(相計)로써 회사에 대항하지 못한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art61_prohibition",
+      "type": "Exclusion",
+      "label": "기금이자 지급 제한",
+      "properties": {
+        "prohibited_action": "손실 보전 전 기금이자 지급",
+        "scope": "상호회사"
+      },
+      "provenance": {
+        "source_section_id": "art61",
+        "source_text": "① 상호회사는 손실을 보전하기 전에는 기금이자를 지급하지 못한다. ② 상호회사는 설립비용과 사업비의 전액을 상각(償却)하고 제60조제1항에 따른 준비금을 공제하기 전에는 기금의 상각 또는 잉여금의 분배를 하지 못한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art75",
+      "type": "Regulation",
+      "label": "외국보험회사 국내자산 보유 의무",
+      "properties": {
+        "article_number": "제75조",
+        "article_title": "국내자산 보유의무",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art75",
+        "source_text": "① 외국보험회사국내지점은 대한민국에서 체결한 보험계약에 관하여 제120조에 따라 적립한 책임준비금 및 비상위험준비금에 상당하는 자산을 대한민국에서 보유하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art74",
+      "type": "Regulation",
+      "label": "외국보험회사 국내지점 허가취소 규정",
+      "properties": {
+        "article_number": "제74조",
+        "article_title": "외국보험회사국내지점의 허가취소 등",
+        "regulation_type": "벌칙"
+      },
+      "provenance": {
+        "source_section_id": "art74",
+        "source_text": "① 금융위원회는 외국보험회사의 본점이 다음 각 호의 어느 하나에 해당하게 되면 그 외국보험회사국내지점에 대하여 청문을 거쳐 보험업의 허가를 취소할 수 있다. 1. 합병, 영업양도 등으로 소멸한 경우 2. 위법행위, 불건전한 영업행위 등의 사유로 외국감독기관으로부터 제134조제2항에 따른 처분에 상당하는 조치를 받은 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art83",
+      "type": "Regulation",
+      "label": "모집할 수 있는 자 규정",
+      "properties": {
+        "article_number": "제83조",
+        "article_title": "모집할 수 있는 자",
+        "regulation_type": "자격규정"
+      },
+      "provenance": {
+        "source_section_id": "art83",
+        "source_text": "모집을 할 수 있는 자는 다음 각 호의 어느 하나에 해당하는 자이어야 한다. 1. 보험설계사 2. 보험대리점 3. 보험중개사 4. 보험회사의 임원(대표이사ㆍ사외이사ㆍ감사 및 감사위원은 제외한다. 이하 이 장에서 같다) 또는 직원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art83_임원제외",
+      "type": "Exclusion",
+      "label": "보험회사 임원 중 모집 제외 대상",
+      "properties": {
+        "excluded_positions": [
+          "대표이사",
+          "사외이사",
+          "감사",
+          "감사위원"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art83.par1.item4",
+        "source_text": "보험회사의 임원(대표이사ㆍ사외이사ㆍ감사 및 감사위원은 제외한다. 이하 이 장에서 같다) 또는 직원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업법_art83_금융기관제한",
+      "type": "Exclusion",
+      "label": "금융기관보험대리점 모집 제한",
+      "properties": {
+        "restriction_type": "소속 임직원 외 모집 금지"
+      },
+      "provenance": {
+        "source_section_id": "art83.par2",
+        "source_text": "제91조에 따른 금융기관보험대리점등은 대통령령으로 정하는 바에 따라 그 금융기관 소속 임직원이 아닌 자로 하여금 모집을 하게 하거나, 보험계약 체결과 관련한 상담 또는 소개를 하게 하고 상담 또는 소개의 대가를 지급하여서는 아니 된다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법_art84",
+      "type": "Regulation",
+      "label": "보험설계사 등록 의무",
+      "properties": {
+        "article_number": "제84조",
+        "article_title": "보험설계사의 등록",
+        "regulation_type": "등록의무"
+      },
+      "provenance": {
+        "source_section_id": "art84.par1",
+        "source_text": "보험회사ㆍ보험대리점 및 보험중개사(이하 이 절에서 \"보험회사등\" 이라 한다)는 소속 보험설계사가 되려는 자를 금융위원회에 등록하여야 한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업법_art84_결격사유",
+      "type": "Eligibility",
+      "label": "보험설계사 결격사유",
+      "properties": {
+        "disqualification_grounds": [
+          "피성년후견인 또는 피한정후견인",
+          "복권되지 않은 파산자",
+          "관련법 벌금형 2년 미경과자",
+          "관련법 집행유예 중인 자",
+          "등록취소 후 2년 미경과자",
+          "2회 이상 등록취소 시 3년 미경과자",
+          "과태료·과징금 미납부자 등",
+          "결격사유 해당 법정대리인 미성년자",
+          "결격사유 해당 임원 보유 법인",
+          "보험료 등 유용 후 3년 미경과자"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art84.par2",
+        "source_text": "다음 각 호의 어느 하나에 해당하는 자는 보험설계사가 되지 못한다. 1. 피성년후견인 또는 피한정후견인 2. 파산선고를 받은 자로서 복권되지 아니한 자 3. 이 법 또는 「금융소비자 보호에 관한 법률」에 따라 벌금 이상의 형을 선고받고 그 집행이 끝나거나 집행이 면제된 날부터 2년이 지나지 아니한 자...",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Product_Category#생명보험상품",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "제1조(목적) 이 법은 보험업을 경영하는 자의 건전한 경영을 도모하고 보험계약자, 피보험자, 그 밖의 이해관계인의 권익을 보호함으로써 보험업의 건전한 육성과 국민경제의 균형 있는 발전에 기여함을 목적으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Product_Category#손해보험상품",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "제1조(목적) 이 법은 보험업을 경영하는 자의 건전한 경영을 도모하고 보험계약자, 피보험자, 그 밖의 이해관계인의 권익을 보호함으로써 보험업의 건전한 육성과 국민경제의 균형 있는 발전에 기여함을 목적으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Product_Category#제3보험상품",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "제1조(목적) 이 법은 보험업을 경영하는 자의 건전한 경영을 도모하고 보험계약자, 피보험자, 그 밖의 이해관계인의 권익을 보호함으로써 보험업의 건전한 육성과 국민경제의 균형 있는 발전에 기여함을 목적으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Product_Category#생명보험상품",
+      "target_id": "Exclusion#보험업법_art2_보험상품제외",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "보험상품이란 위험보장을 목적으로 우연한 사건 발생에 관하여 금전 및 그 밖의 급여를 지급할 것을 약정하고 대가를 수수(授受)하는 계약(「국민건강보험법」에 따른 건강보험, 「고용보험법」에 따른 고용보험 등 보험계약자의 보호 필요성 및 금융거래 관행 등을 고려하여 대통령령으로 정하는 것은 제외한다)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Product_Category#손해보험상품",
+      "target_id": "Exclusion#보험업법_art2_보험상품제외",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "보험상품이란 위험보장을 목적으로 우연한 사건 발생에 관하여 금전 및 그 밖의 급여를 지급할 것을 약정하고 대가를 수수(授受)하는 계약(「국민건강보험법」에 따른 건강보험, 「고용보험법」에 따른 고용보험 등 보험계약자의 보호 필요성 및 금융거래 관행 등을 고려하여 대통령령으로 정하는 것은 제외한다)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Product_Category#제3보험상품",
+      "target_id": "Exclusion#보험업법_art2_보험상품제외",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "보험상품이란 위험보장을 목적으로 우연한 사건 발생에 관하여 금전 및 그 밖의 급여를 지급할 것을 약정하고 대가를 수수(授受)하는 계약(「국민건강보험법」에 따른 건강보험, 「고용보험법」에 따른 고용보험 등 보험계약자의 보호 필요성 및 금융거래 관행 등을 고려하여 대통령령으로 정하는 것은 제외한다)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Eligibility#보험업법_art2_전문보험계약자",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "전문보험계약자란 보험계약에 관한 전문성, 자산규모 등에 비추어 보험계약의 내용을 이해하고 이행할 능력이 있는 자로서 다음 각 목의 어느 하나에 해당하는 자를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업법_art2_전문보험계약자",
+      "target_id": "Exception#보험업법_art2_전문보험계약자예외",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "다만, 전문보험계약자 중 대통령령으로 정하는 자가 일반보험계약자와 같은 대우를 받겠다는 의사를 보험회사에 서면으로 통지하는 경우 보험회사는 정당한 사유가 없으면 이에 동의하여야 하며, 보험회사가 동의한 경우에는 해당 보험계약자는 일반보험계약자로 본다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Exclusion#보험업법_art3_보험계약체결금지",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "제3조(보험계약의 체결) 누구든지 보험회사가 아닌 자와 보험계약을 체결하거나 중개 또는 대리하지 못한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Exclusion#보험업법_art3_보험계약체결금지",
+      "target_id": "Exception#보험업법_art3_대통령령예외",
+      "type": "EXCEPTIONALLY_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "누구든지 보험회사가 아닌 자와 보험계약을 체결하거나 중개 또는 대리하지 못한다. 다만, 대통령령으로 정하는 경우에는 그러하지 아니하다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art4",
+      "target_id": "Exception#보험업법_art4_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보험업을 경영하려는 자는 다음 각 호에서 정하는 보험종목별로 금융위원회의 허가를 받아야 한다. 다만, 제9조제2항제2호의 보험회사는 그러하지 아니하다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art4",
+      "target_id": "Eligibility#보험업법_art6_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제6조(허가의 요건 등) 보험업의 허가를 받으려는 자는 다음 각 호의 요건을 갖추어야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art8",
+      "target_id": "Exclusion#보험업법_art8_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보험회사가 아닌 자는 그 상호 또는 명칭 중에 보험회사임을 표시하는 글자를 포함하여서는 아니 된다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art9",
+      "target_id": "Regulation#보험업법_art4",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보험회사는 300억원 이상의 자본금 또는 기금을 납입함으로써 보험업을 시작할 수 있다. 다만, 보험회사가 제4조제1항에 따른 보험종목의 일부만을 취급하려는 경우에는 50억원 이상의 범위에서 대통령령으로 자본금 또는 기금의 액수를 다르게 정할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Exclusion#보험업법_art10_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제10조(보험업 겸영의 제한) 보험회사는 생명보험업과 손해보험업을 겸영(兼營)하지 못한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Exclusion#보험업법_art10_prohibition",
+      "target_id": "Exception#보험업법_art10_exception",
+      "type": "EXCEPTIONALLY_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보험회사는 생명보험업과 손해보험업을 겸영(兼營)하지 못한다. 다만, 다음 각 호의 어느 하나에 해당하는 보험종목은 그러하지 아니하다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art11",
+      "target_id": "Regulation#보험업법_art1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보험회사는 경영건전성을 해치거나 보험계약자 보호 및 건전한 거래질서를 해칠 우려가 없는 금융업무로서 다음 각 호에 규정된 업무를 할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Exclusion#보험업법_art12_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제12조 국내사무소는 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art18",
+      "target_id": "Regulation#보험업법_art1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제18조(자본감소) 보험회사인 주식회사가 자본감소를 결의한 경우에는 그 결의를 한 날부터 2주 이내에 결의의 요지와 재무상태표를 공고하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art20",
+      "target_id": "Regulation#보험업법_art21",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제20조(조직 변경) 주식회사는 그 조직을 변경하여 상호회사로 할 수 있다. 제21조(조직 변경 결의) 주식회사의 조직 변경은 주주총회의 결의를 거쳐야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Coverage#보험업법_art32_protection",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제32조(보험계약자 등의 우선취득권) 보험계약자나 보험금을 취득할 자는 피보험자를 위하여 적립한 금액을 다른 법률에 특별한 규정이 없으면 주식회사의 자산에서 우선하여 취득한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Coverage#보험업법_art33_protection",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제33조(예탁자산에 대한 우선변제권) 보험계약자나 보험금을 취득할 자는 피보험자를 위하여 적립한 금액을 주식회사가 이 법에 따른 금융위원회의 명령에 따라 예탁한 자산에서 다른 채권자보다 우선하여 변제를 받을 권리를 가진다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Eligibility#보험업법_art37_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제37조(사원의 수) 상호회사는 100명 이상의 사원으로써 설립한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Exclusion#보험업법_art36_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제36조(기금의 납입) 상호회사의 기금은 금전 이외의 자산으로 납입하지 못한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Exclusion#보험업법_art46_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제46조(간접책임) 상호회사의 사원은 회사의 채권자에 대하여 직접적인 의무를 지지 아니한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Exclusion#보험업법_art48_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제48조(상계의 금지) 상호회사의 사원은 보험료의 납입에 관하여 상계(相計)로써 회사에 대항하지 못한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art1",
+      "target_id": "Exclusion#보험업법_art61_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제61조(기금이자 지급 등의 제한) 상호회사는 손실을 보전하기 전에는 기금이자를 지급하지 못한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art75",
+      "target_id": "Regulation#보험업법_art74",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제74조(외국보험회사국내지점의 허가취소 등)와 제75조(국내자산 보유의무)는 외국보험회사 국내지점 운영에 관련된 연속적인 규정",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art83",
+      "target_id": "Exclusion#보험업법_art83_임원제외",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "모집을 할 수 있는 자는 보험회사의 임원(대표이사ㆍ사외이사ㆍ감사 및 감사위원은 제외한다. 이하 이 장에서 같다) 또는 직원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art83",
+      "target_id": "Exclusion#보험업법_art83_금융기관제한",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제91조에 따른 금융기관보험대리점등은 대통령령으로 정하는 바에 따라 그 금융기관 소속 임직원이 아닌 자로 하여금 모집을 하게 하거나, 보험계약 체결과 관련한 상담 또는 소개를 하게 하고 상담 또는 소개의 대가를 지급하여서는 아니 된다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법_art84",
+      "target_id": "Eligibility#보험업법_art84_결격사유",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제84조(보험설계사의 등록) 다음 각 호의 어느 하나에 해당하는 자는 보험설계사가 되지 못한다.",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T14:38:30.777997+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 36,
+    "relation_count": 31,
+    "sections_processed": 4,
+    "api_calls": 5,
+    "total_input_tokens": 53128,
+    "total_output_tokens": 16317
+  }
+}

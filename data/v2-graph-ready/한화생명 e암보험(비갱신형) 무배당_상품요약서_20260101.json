@@ -1,0 +1,1477 @@
+{
+  "document_id": "한화생명 e암보험(비갱신형) 무배당_상품요약서_20260101",
+  "product_name": "한화생명 e암보험(비갱신형) 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_ecancer_nonrenewal",
+      "type": "Policy",
+      "label": "한화생명 e암보험(비갱신형) 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "암보험",
+        "contract_types": [
+          "표준체형",
+          "비흡연체형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e암보험(비갱신형) 무배당은 암진단자금을 보장하는 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#암",
+      "type": "Product_Category",
+      "label": "암보험",
+      "properties": {
+        "category": "암"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e암보험(비갱신형) 무배당은 암진단자금을 보장하는 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_ecancer_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당 구조",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e암보험(비갱신형) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_ecancer_reduced",
+      "type": "Surrender_Value",
+      "label": "해약환급금 미지급형",
+      "properties": {
+        "calculation_basis": "해약환급금 미지급형",
+        "key_milestones": "납입기간중 0%, 납입기간후 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_ecancer_surrender_formula",
+      "type": "Calculation",
+      "label": "해약환급금 계산식",
+      "properties": {
+        "formula_text": "순보험료식 책임준비금 - 해약공제금액",
+        "formula_type": "surrender_value",
+        "applies_to": "중도해지시",
+        "variables": [
+          "순보험료식 책임준비금",
+          "해약공제금액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ecancer_nonsmoker",
+      "type": "Eligibility",
+      "label": "비흡연체 가입자격",
+      "properties": {
+        "age_range": "만 19세 이상",
+        "health_requirements": "표준하체인수특약을 부가하지 않고도 해당계약의 '표준체형' 가입이 가능한 자",
+        "contract_types": [
+          "비흡연체형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "비흡연체란 아래의 요건을 모두 만족한 자로 합니다. ① '비흡연체형'의 가입시점에 만 19세 이상인 자 ② 표준하체인수특약을 부가하지 않고도 해당계약의 '표준체형' 가입이 가능한 자 ③ 청약일 또는 '비흡연체형'으로 변경신청일 기준으로 최근 1년간 어떠한 형태와 종류를 불문하고 담배를 피우거나 씹거나 또는 기타 이와 유사한 형태로 사용하지 않은 자",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_ecancer_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_ecancer_group_discount",
+      "type": "Calculation",
+      "label": "단체취급할인 계산",
+      "properties": {
+        "formula_text": "1.5% 할인",
+        "formula_type": "discount",
+        "applies_to": "단체취급특약 적용 계약",
+        "variables": [
+          "1.5%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ecancer_group",
+      "type": "Eligibility",
+      "label": "단체취급특약 가입자격",
+      "properties": {
+        "age_range": "제한없음",
+        "health_requirements": "대상단체 소속",
+        "contract_types": [
+          "단체취급"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 계약자 수 또는 단체의 대표자를 계약자로 하고 단체소속원을 피보험자로 하는 주계약의 피보험자 수가 5인 이상이어야 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_ecancer_K19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? A : 계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ecancer_age",
+      "type": "Eligibility",
+      "label": "가입나이 요건",
+      "properties": {
+        "age_range": "만19세~60세 (납입기간 및 보험기간별 차등)",
+        "health_requirements": "건강진단 시행 가능",
+        "contract_types": [
+          "표준체형",
+          "비흡연체형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "5년납: 만19세~60세, 10년납: 만19세~60세, 15년납: 28세~60세 등 보험기간 및 보험료 납입기간별로 차등 적용",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ecancer_coverage_limit",
+      "type": "Eligibility",
+      "label": "보험가입금액 한도",
+      "properties": {
+        "age_range": "해당없음",
+        "health_requirements": "해당없음",
+        "contract_types": [
+          "1,000만원~5,000만원 범위, 1,000만원 단위"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "보험가입금액 : 1,000만원 ~ 5,000만원(가입단위 : 1,000만원)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ecancer_health_exam",
+      "type": "Eligibility",
+      "label": "건강진단 요건",
+      "properties": {
+        "age_range": "해당없음",
+        "health_requirements": "피보험자의 기존 보험가입상황 및 나이, 계약전 알릴의무에 따라 건강진단 시행 가능",
+        "contract_types": [
+          "해당없음"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.바",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_e암보험_K1.6",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_e암보험_K1.2",
+      "type": "Rider",
+      "label": "장애인전용 세제전환특약",
+      "properties": {
+        "rider_code": "K1.2",
+        "rider_name": "장애인전용 세제전환특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_e암보험_K3.7",
+      "type": "Rider",
+      "label": "특정 신체부위·질병 보장제한부 인수특약",
+      "properties": {
+        "rider_code": "K3.7",
+        "rider_name": "특정 신체부위·질병 보장제한부 인수특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "특정 신체부위·질병 보장제한부 인수특약(K3.7)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_e암보험_K3.8",
+      "type": "Rider",
+      "label": "표준하체인수특약",
+      "properties": {
+        "rider_code": "K3.8",
+        "rider_name": "표준하체인수특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "표준하체인수특약(K3.8)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "type": "Coverage",
+      "label": "특정 고액치료비관련 암진단자금",
+      "properties": {
+        "benefit_name": "특정 고액치료비관련암 진단",
+        "trigger_condition": "특정 고액치료비관련암",
+        "payment_amount": "1,000만원",
+        "payment_frequency": "최초1회한",
+        "normalized_code": "specific_high_cost_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "특정 고액치료비관련 암진단자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '특정 고액치료비관련암'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원 | | 2년이상 | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_e암보험_암진단자금",
+      "type": "Coverage",
+      "label": "암진단자금",
+      "properties": {
+        "benefit_name": "암진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(직∙결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 갑상선암, 대장점막내암 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 500만원, 2년이상: 1,000만원",
+        "normalized_code": "cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "암진단자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '암(직∙결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 갑상선암, 대장점막내암 제외)'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원 | | 2년이상 | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "type": "Coverage",
+      "label": "중증 갑상선암진단자금",
+      "properties": {
+        "benefit_name": "중증 갑상선암 진단",
+        "trigger_condition": "중증 갑상선암",
+        "payment_amount": "800만원",
+        "payment_frequency": "최초1회한",
+        "normalized_code": "severe_thyroid_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "중증 갑상선암진단자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '중증 갑상선암'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 400만원 | | 2년이상 | 800만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "type": "Coverage",
+      "label": "소액질병진단자금(기타피부암)",
+      "properties": {
+        "benefit_name": "소액질병진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 '경계성종양'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 100만원, 2년이상: 200만원",
+        "normalized_code": "small_disease_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "소액질병진단자금 | 보험기간 중 피보험자가 보장개시일 이후에 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 100만원 | | 2년이상 | 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_고의자해",
+      "type": "Exclusion",
+      "label": "피보험자 고의 자해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_e암보험_심신상실예외",
+      "type": "Exception",
+      "label": "심신상실 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때에는 보험금을 지급하며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_보험수익자가해",
+      "type": "Exclusion",
+      "label": "보험수익자 고의 가해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_e암보험_일부수익자예외",
+      "type": "Exception",
+      "label": "일부 보험수익자 예외",
+      "properties": {
+        "exception_condition": "보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급",
+        "referenced_exclusion": "보험수익자 고의 가해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_계약자가해",
+      "type": "Exclusion",
+      "label": "계약자 고의 가해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_사기보험금",
+      "type": "Exclusion",
+      "label": "사기 보험금 목적",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_서류위조",
+      "type": "Exclusion",
+      "label": "서류 위조·변조",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_사기계약",
+      "type": "Exclusion",
+      "label": "사기에 의한 계약",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립된 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_계약무효_나이",
+      "type": "Exclusion",
+      "label": "계약무효(나이 착오)",
+      "properties": {
+        "exclusion_type": "무효",
+        "condition_text": "피보험자가 보험계약일(부활(효력회복)일)부터 암보장개시일의 전일 이전에 '암(직∙결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 갑상선암, 대장점막내암 제외)'으로 진단이 확정된 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e암보험_고지의무위반",
+      "type": "Exclusion",
+      "label": "고지의무 위반",
+      "properties": {
+        "exclusion_type": "고지의무위반",
+        "condition_text": "고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_e암보험_장해합산50%",
+      "type": "Calculation",
+      "label": "장해합산 50% 계산",
+      "properties": {
+        "formula_text": "동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상",
+        "formula_type": "benefit",
+        "applies_to": "보험료 납입면제 조건",
+        "variables": [
+          "장해지급률",
+          "50%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_e암보험_보장부분적용이율",
+      "type": "Calculation",
+      "label": "보장부분 적용이율 계산",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "보험료 할인율 적용",
+        "variables": [
+          "적용이율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "한화생명 e암보험(비갱신형) 무배당의 적용이율은 연복리 2.75% 입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_e암보험_적용해지율",
+      "type": "Calculation",
+      "label": "적용해지율 계산",
+      "properties": {
+        "formula_text": "납입기간 이내: 연 0.1%~11.27%, 납입기간 이후: 연 0.8%",
+        "formula_type": "surrender_value",
+        "applies_to": "보험료 납입기간 5년납 기준 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)",
+        "variables": [
+          "경과기간",
+          "납입기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.다",
+        "source_text": "보험료 납입기간 5년납 기준으로 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%~11.27%, 납입기간 이후에 대하여 경과기간별로 연 0.8%이며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_ecancer_general",
+      "type": "Surrender_Value",
+      "label": "e암보험 해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "순보험료식 책임준비금에서 해약공제금액을 공제한 금액",
+        "key_milestones": "보험료 납입기간 중: 0%, 납입완료 후: 표준형 해약환급금의 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 책임준비금에서 해약공제금액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_ecancer_surrender_after_payment",
+      "type": "Calculation",
+      "label": "납입완료 후 해약환급금 계산식",
+      "properties": {
+        "formula_text": "'표준형' 해약환급금의 50%",
+        "formula_type": "surrender_value",
+        "applies_to": "보험료 납입기간이 경과된 이후 계약 해지시",
+        "variables": [
+          "표준형 해약환급금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지될 경우에는 '표준형' 해약환급금의 50%에 해당하는 금액을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_ecancer_return_rate",
+      "type": "Calculation",
+      "label": "환급률 계산식",
+      "properties": {
+        "formula_text": "해약환급금 ÷ 그 시점까지 납입한 납입보험료",
+        "formula_type": "return_rate",
+        "applies_to": "경과기간별 환급률 산출",
+        "variables": [
+          "해약환급금",
+          "납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_ecancer_no_surrender_during_payment",
+      "type": "Exclusion",
+      "label": "납입기간 중 해약환급금 미지급",
+      "properties": {
+        "exclusion_type": "해약환급금 미지급",
+        "condition_text": "보험료 납입기간 중 해지될 경우 해약환급금을 지급하지 않음"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "이 상품은 보험료 납입기간 중 해지될 경우 해약환급금을 지급하지 않으며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_ecancer_no_surrender_whole_term",
+      "type": "Exclusion",
+      "label": "전기납 계약 해약환급금 미지급",
+      "properties": {
+        "exclusion_type": "해약환급금 미지급",
+        "condition_text": "보험료 납입기간과 보험기간이 동일한 계약(전기납)의 경우 보험기간 중 계약이 해지될 경우 해약환급금을 지급하지 않음"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "보험료 납입기간과 보험기간이 동일한 계약(전기납)의 경우에는 보험기간 중 계약이 해지될 경우 해약환급금을 지급하지 않습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_ecancer_price_index",
+      "type": "Calculation",
+      "label": "보험가격지수 계산공식",
+      "properties": {
+        "formula_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산정",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율을 '보험가격지수'라고 합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#insurance_product_disclosure_rule",
+      "type": "Regulation",
+      "label": "생명보험 상품공시 시행세칙",
+      "properties": {
+        "regulation_type": "의무",
+        "article_number": "생명보험 상품공시 시행세칙"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_ecancer_general_cancer",
+      "type": "Coverage",
+      "label": "일반암 진단급여",
+      "properties": {
+        "benefit_name": "일반암 진단",
+        "trigger_condition": "암(직∙결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 갑상선암, 대장점막내암 제외)",
+        "payment_amount": "1,000만원",
+        "payment_frequency": "최초1회한",
+        "normalized_code": "general_cancer_diagnosis_benefit",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "일반암 진단: 1,000만원(최초1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_ecancer_specific_minor_cancer",
+      "type": "Coverage",
+      "label": "특정 소액암 진단급여",
+      "properties": {
+        "benefit_name": "특정 소액암 진단",
+        "trigger_condition": "직∙결장암, 유방암, 여성생식기암, 전립선암, '초기 및 중증' 이외의 갑상선암",
+        "payment_amount": "600만원",
+        "payment_frequency": "최초1회한",
+        "normalized_code": "specific_small_cancer_diagnosis_benefit",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "특정 소액암 진단: 600만원(최초1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_ecancer_minor_disease",
+      "type": "Coverage",
+      "label": "소액질병 진단급여",
+      "properties": {
+        "benefit_name": "소액질병 진단",
+        "trigger_condition": "갑상선암, 기타피부암, 경계성종양, 제자리암, 대장점막내암",
+        "payment_amount": "200만원",
+        "payment_frequency": "각각 최초1회한",
+        "normalized_code": "small_disease_diagnosis_benefit",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "소액질병 진단: 200만원(각각 최초1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_ecancer_coverage_ratio",
+      "type": "Calculation",
+      "label": "보장범위지수 계산",
+      "properties": {
+        "formula_text": "해당상품의 위험보험료 ÷ 표준상품의 위험보험료총액",
+        "formula_type": "coverage_ratio",
+        "applies_to": "보험상품(보장성보험)의 보장수준 비교",
+        "variables": [
+          "해당상품의 위험보험료",
+          "표준상품의 위험보험료총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "해당상품의 위험보험료(보험금 지급을 위한 보험료)를 '표준상품의 위험보험료총액'으로 나눈 비율을 '보장범위지수'라고 합니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Product_Category#암",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e암보험(비갱신형) 무배당은 암진단자금을 보장하는 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Dividend_Method#hwl_ecancer_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 e암보험(비갱신형) 무배당은 무배당 상품으로서 배당을 하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Surrender_Value#hwl_ecancer_reduced",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Surrender_Value#hwl_ecancer_general",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 책임준비금에서 해약공제금액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Eligibility#hwl_ecancer_nonsmoker",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "비흡연체란 아래의 요건을 모두 만족한 자로 합니다. ① '비흡연체형'의 가입시점에 만 19세 이상인 자 ② 표준하체인수특약을 부가하지 않고도 해당계약의 '표준체형' 가입이 가능한 자",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Eligibility#hwl_ecancer_age",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "보험기간 및 보험료 납입기간별로 가입나이 만19세~60세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Eligibility#hwl_ecancer_coverage_limit",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "보험가입금액 : 1,000만원 ~ 5,000만원(가입단위 : 1,000만원)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Eligibility#hwl_ecancer_health_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Premium_Discount#hwl_ecancer_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Eligibility#hwl_ecancer_group",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급특약은 계약을 체결할 때 다음과 같은 조건을 만족하는 계약에 한하여 적용합니다. ① 주계약의 계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Rider#hwl_ecancer_K19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Rider#hwl_e암보험_K1.6",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 단체취급특약(K1.6)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Rider#hwl_e암보험_K1.2",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 장애인전용 세제전환특약(K1.2)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Rider#hwl_e암보험_K3.7",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 특정 신체부위·질병 보장제한부 인수특약(K3.7)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Rider#hwl_e암보험_K3.8",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 표준하체인수특약(K3.8)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '특정 고액치료비관련암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Coverage#hwl_e암보험_암진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암(직∙결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 갑상선암, 대장점막내암 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '중증 갑상선암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험기간 중 피보험자가 보장개시일 이후에 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Coverage#hwl_ecancer_general_cancer",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "일반암 진단: 1,000만원(최초1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Coverage#hwl_ecancer_specific_minor_cancer",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "특정 소액암 진단: 600만원(최초1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Coverage#hwl_ecancer_minor_disease",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "소액질병 진단: 200만원(각각 최초1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우 보험금을 지급하지 않으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우 보험금을 지급하지 않으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우 보험금을 지급하지 않으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우 보험금을 지급하지 않으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_e암보험_고의자해",
+      "target_id": "Exception#hwl_e암보험_심신상실예외",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때에는 보험금을 지급하며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_보험수익자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_보험수익자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_보험수익자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_보험수익자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_e암보험_보험수익자가해",
+      "target_id": "Exception#hwl_e암보험_일부수익자예외",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_계약자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_계약자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_계약자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_계약자가해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_사기보험금",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_사기보험금",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_사기보험금",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_사기보험금",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_서류위조",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_서류위조",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_서류위조",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_서류위조",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_사기계약",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_사기계약",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_사기계약",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_사기계약",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_계약무효_나이",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_계약무효_나이",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_계약무효_나이",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_계약무효_나이",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_특정고액치료비암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_고지의무위반",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_고지의무위반",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_중증갑상선암진단자금",
+      "target_id": "Exclusion#hwl_e암보험_고지의무위반",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e암보험_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_e암보험_고지의무위반",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_ecancer_reduced",
+      "target_id": "Exclusion#hwl_ecancer_no_surrender_during_payment",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_ecancer_reduced",
+      "target_id": "Exclusion#hwl_ecancer_no_surrender_whole_term",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "보험료 납입기간과 보험기간이 동일한 계약(전기납)의 경우에는 보험기간 중 계약이 해지될 경우 해약환급금을 지급하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Regulation#insurance_product_disclosure_rule",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_ecancer_group",
+      "target_id": "Calculation#hwl_ecancer_group_discount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_e암보험_장해합산50%",
+      "target_id": "Coverage#hwl_e암보험_암진단자금",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우에는 차회 이후 보험료 납입을 면제하여 드립니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_e암보험_보장부분적용이율",
+      "target_id": "Coverage#hwl_e암보험_암진단자금",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "한화생명 e암보험(비갱신형) 무배당의 적용이율은 연복리 2.75% 입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_e암보험_적용해지율",
+      "target_id": "Coverage#hwl_e암보험_암진단자금",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "보험료 납입기간 5년납 기준으로 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%~11.27%, 납입기간 이후에 대하여 경과기간별로 연 0.8%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_ecancer_general",
+      "target_id": "Calculation#hwl_ecancer_surrender_after_payment",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 책임준비금에서 해약공제금액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_ecancer_general",
+      "target_id": "Calculation#hwl_ecancer_return_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Calculation#hwl_ecancer_price_index",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율을 '보험가격지수'라고 합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ecancer_nonrenewal",
+      "target_id": "Calculation#hwl_ecancer_coverage_ratio",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "해당상품의 위험보험료(보험금 지급을 위한 보험료)를 '표준상품의 위험보험료총액'으로 나눈 비율을 '보장범위지수'라고 합니다.",
+        "confidence": 1.0
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T12:13:27.799377+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 45,
+    "relation_count": 67,
+    "sections_processed": 8,
+    "api_calls": 9,
+    "total_input_tokens": 51157,
+    "total_output_tokens": 27476
+  }
+}

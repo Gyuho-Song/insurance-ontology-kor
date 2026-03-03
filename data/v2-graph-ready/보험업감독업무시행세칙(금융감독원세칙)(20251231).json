@@ -1,0 +1,2478 @@
+{
+  "document_id": "보험업감독업무시행세칙(금융감독원세칙)(20251231)",
+  "product_name": "보험업감독업무시행세칙(금융감독원세칙)(20251231)",
+  "entities": [
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "Regulation",
+      "label": "보험업감독업무시행세칙의 목적",
+      "properties": {
+        "article_number": "제1-1조",
+        "article_title": "목적",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art1-1",
+        "source_text": "이 세칙은 「보험업법」(이하 \"법\"이라 한다)ㆍ 「보험업법 시행령」(이하 \"영\"이라 한다)ㆍ 「보험업법 시행규칙」(이하 \"규칙\"이라 한다)ㆍ「금융위원회의 설치 등에 관한 법률」ㆍ「금융위원회의 설치 등에 관한 법률 시행령」ㆍ「외국환거래법」ㆍ「외국환거래법시행령」ㆍ그 밖의 보험관련 법령(이하 \"보험관련 법령\"이라 한다) 및 「보험업감독규정」(이하 \"감독규정\"이라 한다)에 의하여 금융감독원장(이하 \"감독원장\"이라 한다)의 소관에 속하는 보험기관의 감독을 위하여 필요한 사항을 정함을 목적으로 한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art1-2",
+      "type": "Regulation",
+      "label": "협회의 정의",
+      "properties": {
+        "article_number": "제1-2조",
+        "article_title": "정의",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art1-2",
+        "source_text": "이 세칙에서 \"협회\"라 함은 법 제175조의 규정에 의하여 설립한 생명보험협회 및 대한손해보험협회를 말한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art1-3",
+      "type": "Regulation",
+      "label": "외국보험회사 국내사무소 설치 서류",
+      "properties": {
+        "article_number": "제1-3조",
+        "article_title": "외국보험회사 등의 국내사무소 설치 서류",
+        "regulation_type": "절차"
+      },
+      "provenance": {
+        "source_section_id": "art1-3",
+        "source_text": "감독규정 별표5-5에 따른 보고는 별지 제62호서식으로 한다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art2-1",
+      "type": "Regulation",
+      "label": "협회의 등록 및 신고업무 처리지침",
+      "properties": {
+        "article_number": "제2-1조",
+        "article_title": "협회의 등록 및 신고업무 처리지침",
+        "regulation_type": "업무처리권한"
+      },
+      "provenance": {
+        "source_section_id": "art2-1",
+        "source_text": "① 협회의 장은 보험대리점 관련 등록ㆍ신고 및 보험설계사의 시험ㆍ등록과 관련된 업무를 처리한다. ② 협회의 장은 제1항의 업무를 처리함에 있어 필요한 세부지침을 정할 수 있으며, 지침을 제정 또는 변경할 경우 감독원장에게 그 사실을 보고하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art2-2",
+      "type": "Regulation",
+      "label": "보험설계사의 보수교육 등",
+      "properties": {
+        "article_number": "제2-2조",
+        "article_title": "보험설계사의 보수교육 등",
+        "regulation_type": "교육의무"
+      },
+      "provenance": {
+        "source_section_id": "art2-2",
+        "source_text": "① 감독규정 제4-5조제1항 및 제2항에 의한 불완전판매비율, 불완전판매 보험계약 수는 다음 각 호와 같다. ② 협회, 보험회사는 보험대리점, 보험중개사가 소속 보험설계사의 불완전판매비율, 불완전판매 보험계약 수를 산출하는데 필요한 자료 요청에 적극 협조하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art2-8",
+      "type": "Regulation",
+      "label": "영업보증금의 평가 및 평가액의 결정 등",
+      "properties": {
+        "article_number": "제2-8조",
+        "article_title": "영업보증금의 평가 및 평가액의 결정 등",
+        "regulation_type": "평가기준"
+      },
+      "provenance": {
+        "source_section_id": "art2-8",
+        "source_text": "① 감독규정 제4-10조제2항제1호의 규정에 의한 채무증권의 평가는 한국거래소가 공시한 최근 월의 대용가격으로 한다. ② 감독규정 제4-10조제2항제2호 및 제3호의 규정에 의한 집합투자증권 및 수익증권의 평가는 당해 집합투자증권 및 수익증권의 발행기관이 평가하여 확인한 금액(잔고증명서)으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art2-9_requirement",
+      "type": "Eligibility",
+      "label": "보험대리점 지점설치 자격요건",
+      "properties": {
+        "qualification_type": "지점설치",
+        "requirements": [
+          "유자격자 배치",
+          "모집위탁 보험회사 경유 신고",
+          "협회 신고서 제출"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2-9.par1",
+        "source_text": "① 법인보험대리점이 감독규정 제4-11조의2제1항의 규정에 의하여 지점을 설치하고자 할 때에는 협회의 장이 정하는 신고서에 제2항의 규정에 의한 유자격자의 자격을 증명하는 서류를 첨부하여 모집을 위탁한 보험회사를 거쳐 협회의 장에게 신고하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art2-12",
+      "type": "Regulation",
+      "label": "보험중개사 등록 및 심사기준",
+      "properties": {
+        "article_number": "제2-12조",
+        "article_title": "등록 및 심사기준",
+        "regulation_type": "등록절차"
+      },
+      "provenance": {
+        "source_section_id": "art2-12",
+        "source_text": "① 보험중개사가 되고자 하는 자는 감독원장에게 등록하여야 한다. ③ 감독원장은 보험중개사의 등록신청을 받은 때에는 다음 각호의 사항을 심사하여 그 등록여부를 결정한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art2-12_prohibition",
+      "type": "Exclusion",
+      "label": "보험중개사 등록제한 사유",
+      "properties": {
+        "exclusion_type": "등록제한",
+        "excluded_items": [
+          "법 제89조제2항 등록제한 사유 해당자",
+          "영 제34조제2항 요건 미충족 법인",
+          "공정거래질서 저해 우려자"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2-12.par3",
+        "source_text": "1. 법 제89조제2항에서 정한 등록제한 사유에 해당되는지 여부 2. 법인으로서 보험중개사의 등록을 하고자 하는 자의 경우에는 영 제34조제2항에서 정한 요건을 갖추었는지 여부 3. 그 밖에 공정한 보험거래질서 및 건전한 모집질서를 저해할 우려가 있는지 여부",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art2-14",
+      "type": "Regulation",
+      "label": "영업보증금의 예탁",
+      "properties": {
+        "article_number": "제2-14조",
+        "article_title": "영업보증금의 예탁",
+        "regulation_type": "예탁의무"
+      },
+      "provenance": {
+        "source_section_id": "art2-14",
+        "source_text": "① 보험중개사로 등록을 한 자는 영 제37조제1항 및 규칙 제19조의 규정에 의한 영업보증금을 영업개시 7일전까지 금융감독원에 예탁하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#보험업감독업무시행세칙_art2-20_protection",
+      "type": "Coverage",
+      "label": "영업보증금에 의한 손해배상 보호",
+      "properties": {
+        "protection_scope": "보험중개사의 보험계약 체결 중개행위 관련 손해",
+        "coverage_type": "손해배상금 지급"
+      },
+      "provenance": {
+        "source_section_id": "art2-20",
+        "source_text": "영 제38조의 규정에 의하여 손해배상금의 지급을 신청하고자 하는 자는 별지 제12호서식의 손해배상지급신청서에 보험중개사의 보험계약 체결의 중개행위와 관련하여 손해를 입었음을 증명하는 서류를 첨부하여 감독원장에게 제출하여야 한다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art2-32",
+      "type": "Regulation",
+      "label": "보험중개사 신고사항",
+      "properties": {
+        "article_number": "제2-32조",
+        "article_title": "신고사항 등",
+        "regulation_type": "신고의무"
+      },
+      "provenance": {
+        "source_section_id": "art2-32",
+        "source_text": "① 보험중개사가 법 제93조제1항제1호, 제3호 내지 제7호의 규정에 해당되는 경우에는 지체없이 그 사실을 감독원장에게 신고하여야 한다. ② 보험중개사는 감독규정 제4-21조ㆍ제4-29조의 규정에 의한 신고사항이 발생하거나 신고사항의 변경사유가 발생된 때에는 그 사유가 발생한 날부터 7일내에 감독원장에게 신고하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art2-34조의2",
+      "type": "Regulation",
+      "label": "보험계약 중요사항의 설명의무",
+      "properties": {
+        "article_number": "제2-34조의2",
+        "article_title": "보험계약 중요사항의 설명의무 등",
+        "regulation_type": "설명의무"
+      },
+      "provenance": {
+        "source_section_id": "art2-34조의2",
+        "source_text": "① 감독규정 제4-35조의2제8항제4호다목에 따라 보험회사는 다음 각 호를 준수하여야 한다. 1. 보험회사는 감독규정 제4-35조의2제8항제3호에 따른 설명은 다음 각 목의 방법 중 하나로 하여야 하며, 「노인복지법」제26조에 따른 경로우대자와 체결하는 보험계약에 대하여는 가목 또는 다목에 따른 방법을 사용하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업감독업무시행세칙_art2-34조의2_exception",
+      "type": "Exception",
+      "label": "경로우대자 설명방법 예외",
+      "properties": {
+        "exception_type": "설명방법 예외",
+        "exception_conditions": "경로우대자가 협회가 정하는 바에 따라 배우자 또는 직계비속을 조력자로 정하는 경우"
+      },
+      "provenance": {
+        "source_section_id": "art2-34조의2.par1.num1",
+        "source_text": "다만, 경로우대자가 협회의 장이 정하는 바에 따라 배우자 또는 직계비속을 조력자로 정하는 경우 나목에 따른 방법을 사용할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#기타손해보험",
+      "type": "Product_Category",
+      "label": "기타손해보험계약",
+      "properties": {
+        "category_type": "손해보험",
+        "product_list": [
+          "자동차사고 관련 변호사선임비용, 처리지원금 보상보험",
+          "무보험차 상해, 다른자동차운전 및 차량손해 보장보험",
+          "벌금 보상보험",
+          "일상생활배상책임 보상보험",
+          "민사소송법률비용 및 의료사고법률비용 보상보험",
+          "홀인원비용 보상보험",
+          "가전제품수리비용 보상보험",
+          "반려동물 치료비 보상보험"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2-34조의3",
+        "source_text": "영 제42조의5제1항에서 \"실제 부담한 손해액만을 지급하는 것으로서 금융감독원장이 정하는 보험상품계약\"이란 개인이 가입한 다음 손해보험계약을 말한다. 1. 자동차사고와 관련된 변호사선임비용, 처리지원금을 보상하는 보험계약 2. 자동차보험 중 무보험차에 의한 상해, 다른 자동차 운전 및 다른 자동차 차량손해를 보장하는 보험계약",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art2-34조의3_prohibition",
+      "type": "Exclusion",
+      "label": "기타손해보험 적용제외",
+      "properties": {
+        "exclusion_type": "계약형태 제외",
+        "excluded_items": [
+          "단체계약",
+          "보험기간이 1개월 이하인 보험계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art2-34조의3",
+        "source_text": "다만, 단체계약 및 보험기간이 1개월 이하인 보험계약은 제외한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-1",
+      "type": "Regulation",
+      "label": "업무시설용 부동산의 범위",
+      "properties": {
+        "article_number": "제3-1조",
+        "article_title": "업무시설용 부동산의 범위",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art3-1",
+        "source_text": "감독규정 제5-1조제3호에서 \"그 밖에 감독원장이 필요하다고 인정하는 사업\"이라 함은 지역문화행사, 전국학생미술대회 협찬, 전시회 개최, 문화ㆍ예술관련 재단 설립 등을 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-3",
+      "type": "Regulation",
+      "label": "등록사항 변경신고",
+      "properties": {
+        "article_number": "제3-3조",
+        "article_title": "등록사항 변경신고",
+        "regulation_type": "절차"
+      },
+      "provenance": {
+        "source_section_id": "art3-3",
+        "source_text": "감독규정 제5-18조제1항의 규정에 의한 신고는 별지 제22호서식으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-4",
+      "type": "Regulation",
+      "label": "외화유동성비율 산정방법",
+      "properties": {
+        "article_number": "제3-4조",
+        "article_title": "외화유동성비율 등의 산정방법",
+        "regulation_type": "계산방법"
+      },
+      "provenance": {
+        "source_section_id": "art3-4",
+        "source_text": "감독규정 제5-19조제2항의 잔존 만기의 구분방법, 범위 및 비율의 산정방법은 별표 1과 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-5",
+      "type": "Regulation",
+      "label": "외화자산 및 부채의 범위",
+      "properties": {
+        "article_number": "제3-5조",
+        "article_title": "외화자산 및 부채의 범위",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art3-5",
+        "source_text": "감독규정 제5-20조제3항의 규정에 의한 현물외화자산 및 부채와 선물외화자산 및 부채의 범위는 다음 각 호와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독_art3-5_exception",
+      "type": "Exclusion",
+      "label": "환율변동 무관 자산 제외",
+      "properties": {
+        "exclusion_type": "자산범위 제외",
+        "scope": "외화표시자산"
+      },
+      "provenance": {
+        "source_section_id": "art3-5.par1",
+        "source_text": "다만, 외화표시자산 또는 부채중 해당 외국통화와 원화간 환율의 변동에 관계없이 원화환산금액이 정하여지는 외화자산 또는 부채는 제외한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업감독_art3-5_option_calculation",
+      "type": "Exception",
+      "label": "통화옵션 델타 사용 예외",
+      "properties": {
+        "exception_type": "계산방법 예외",
+        "condition": "환율위험 관리시 델타 사용"
+      },
+      "provenance": {
+        "source_section_id": "art3-5.par3",
+        "source_text": "제1호 및 제2호에도 불구하고 외국환업무취급기관이 통화옵션거래의 환율위험을 환율변동에 따른 옵션가치의 변화도(델타)를 사용하여 관리할 경우, 자체적으로 산출한 위험노출액(명목금액×델타)을 선물외화자산 또는 부채금액으로 계산할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-6",
+      "type": "Regulation",
+      "label": "외국환포지션한도 산정",
+      "properties": {
+        "article_number": "제3-6조",
+        "article_title": "외국환포지션한도의 산정 등",
+        "regulation_type": "계산방법"
+      },
+      "provenance": {
+        "source_section_id": "art3-6",
+        "source_text": "감독규정 제5-20조의 규정에 의한 외국환포지션 산정을 위하여 미달러화 이외 외국통화를 미달러화로 환산할 경우 당해 외국통화의 대미달러환율은 매영업일 외국환중개회사의 장이 산출ㆍ통보하는 환율을 적용한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-7",
+      "type": "Regulation",
+      "label": "별도한도 인정신청",
+      "properties": {
+        "article_number": "제3-7조",
+        "article_title": "별도한도의 인정신청",
+        "regulation_type": "절차"
+      },
+      "provenance": {
+        "source_section_id": "art3-7",
+        "source_text": "감독규정 제5-22조제2항의 규정에 의하여 외국환포지션 별도한도 인정신청을 하고자 하는 외국환업무취급기관은 다음 각 호에서 정한 기한내에 별지 제23호서식의 외국환포지션 별도한도 인정신청서를 감독원장에게 제출하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-8",
+      "type": "Regulation",
+      "label": "내부관리 기준",
+      "properties": {
+        "article_number": "제3-8조",
+        "article_title": "내부관리",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art3-8",
+        "source_text": "감독규정 제5-25조의 규정에 의하여 외국환업무취급기관으로 등록한 보험회사는 별표 2, 별표 2-1에서 정하는 예시기준을 참고로 하여 자체적인 위험관리기준을 설정ㆍ운용하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-9",
+      "type": "Regulation",
+      "label": "보고서식",
+      "properties": {
+        "article_number": "제3-9조",
+        "article_title": "보고서식",
+        "regulation_type": "보고의무"
+      },
+      "provenance": {
+        "source_section_id": "art3-9",
+        "source_text": "감독규정 제5-30조에 따른 보고는 별지 제24호서식의 외국환업무현황보고서로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-10",
+      "type": "Regulation",
+      "label": "자산운용 적정성 확인",
+      "properties": {
+        "article_number": "제3-10조",
+        "article_title": "자산운용의 적정여부 확인",
+        "regulation_type": "감독"
+      },
+      "provenance": {
+        "source_section_id": "art3-10",
+        "source_text": "감독원장은 매월 보험회사가 보험관련법령 및 감독규정 등에 의하여 그 자산을 적정하게 운용하고 있는지 여부에 대하여 확인한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-11",
+      "type": "Regulation",
+      "label": "임직원 대출금 산정기준",
+      "properties": {
+        "article_number": "제3-11조",
+        "article_title": "보험회사 임직원 등에 대한 대출금 산정기준",
+        "regulation_type": "계산방법"
+      },
+      "provenance": {
+        "source_section_id": "art3-11",
+        "source_text": "감독규정 제5-8조 제1항의 규정에서 정하는 대출금을 산정함에 있어서 다음 각호에서 정하는 대출금은 제외한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독_art3-11_employee_loan",
+      "type": "Exclusion",
+      "label": "임직원 대출금 제외사항",
+      "properties": {
+        "exclusion_type": "대출금 산정 제외",
+        "scope": "임직원 대출"
+      },
+      "provenance": {
+        "source_section_id": "art3-11.par1",
+        "source_text": "관계법령 또는 금융기관의 내규에서 정하는 바에 따라 일반고객과 동일한 조건으로 취급하는 다음 각목의 대출금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-15",
+      "type": "Regulation",
+      "label": "자산 무상양도 보고",
+      "properties": {
+        "article_number": "제3-15조",
+        "article_title": "자산의 무상양도등에 관한 보고등",
+        "regulation_type": "보고의무"
+      },
+      "provenance": {
+        "source_section_id": "art3-15",
+        "source_text": "감독규정제7-13조의2제2항에 따른 보고는 별지제63호의 서식으로 하며, 같은 항에 따른 후원금의 수입 및 사용내역 명세서는 자산의 무상양도등이 있는 년도의 다음해 3월말까지 제출한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art3-16",
+      "type": "Regulation",
+      "label": "금리인하 요구 공시",
+      "properties": {
+        "article_number": "제3-16조",
+        "article_title": "금리인하 요구의 공시",
+        "regulation_type": "공시의무"
+      },
+      "provenance": {
+        "source_section_id": "art3-16",
+        "source_text": "협회는 감독규정 제5-15조의3 제5항에 따라 보험회사별 다음 각호의 사항을 비교ㆍ공시하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-1",
+      "type": "Regulation",
+      "label": "재무제표의 서식 등",
+      "properties": {
+        "article_number": "제4-1조",
+        "article_title": "재무제표의 서식 등",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-1",
+        "source_text": "감독규정 제6-2조제3항의 규정에 의한 보험회사의 재무제표 작성시 부속명세서가 필요한 경우에는 그 부속명세서를 작성하여 재무제표에 첨부하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-1_quarterly",
+      "type": "Regulation",
+      "label": "분기별 임시결산 의무",
+      "properties": {
+        "article_number": "제4-1조제3항",
+        "article_title": "분기별 임시결산",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art4-1.par3",
+        "source_text": "감독규정 제6-7조제2항의 규정에 의하여 보험회사는 분기별로 임시결산을 실시하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-1_special",
+      "type": "Regulation",
+      "label": "변액보험 특별계정 폐지시 임시결산",
+      "properties": {
+        "article_number": "제4-1조제4항",
+        "article_title": "특별계정 폐지시 임시결산",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art4-1.par4",
+        "source_text": "보험회사는 변액보험(퇴직연금실적배당보험 포함) 특별계정이 폐지되는 경우 감독규정 제6-7조제2항의 규정에 의하여 해당 특별계정에 대한 임시결산을 실시하고 재무제표 및 그 부속명세서를 30일이내에 금융감독원에 제출하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-1-2",
+      "type": "Regulation",
+      "label": "기타포괄손익 공정가치측정금융자산평가손익 구분계상",
+      "properties": {
+        "article_number": "제4-1조의2",
+        "article_title": "기타포괄손익-공정가치측정금융자산평가손익 등 구분계상",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-1-2",
+        "source_text": "감독규정 제6-10조제4항에 의한 평가손익은 별표 16손익분석기준의 3. 상품별 손익 구분기준 중 투자손익 배분기준을 준용하여 자본계정운용손익의 평가손익, 계약자이익배당준비금에 해당하는 투자손익의 평가손익 및 배당ㆍ무배당보험의 평가손익으로 구분",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-1-4",
+      "type": "Regulation",
+      "label": "책임준비금 적정성 검증보고서 작성기준",
+      "properties": {
+        "article_number": "제4-1조의4",
+        "article_title": "책임준비금 적정성 검증보고서 작성기준",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-1-4",
+        "source_text": "감독규정 제6-11조의4의 규정에 의한 책임준비금 적정성 검증보고서에는 다음 각 호의 사항을 기재하여야 한다. 1. 검증절차 2. 검증대상 업무별 담당자, 결재자, 최종결재자 3. 책임준비금 적정성 검증 내용 및 결과",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독_art4-2_dividend",
+      "type": "Eligibility",
+      "label": "생명보험 계약자배당 대상계약 요건",
+      "properties": {
+        "requirement_type": "계약자배당",
+        "conditions": [
+          "1년이상 유지",
+          "당해 보험년도 보험료납입 완료",
+          "배당보험계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art4-2.par1",
+        "source_text": "1년이상 유지되고 당해 보험년도 보험료납입이 완료된 배당보험계약에 대하여 계약자배당을 실시한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-3",
+      "type": "Regulation",
+      "label": "생명보험의 잔여보장요소 적립",
+      "properties": {
+        "article_number": "제4-3조의2",
+        "article_title": "생명보험의 발생사고요소의 적립",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-3",
+        "source_text": "생명보험 및 생명보험 재보험의 잔여보장요소는 결산시점 현재 아직 발생하지 않은 보험사고 및 지급사유가 발생하지 않은 투자요소에 대한 부채로서 한국채택국제회계기준에 따른 금액을 적립하며 다음 각호의 합계로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-3-3",
+      "type": "Regulation",
+      "label": "생명보험의 계약자배당준비금 적립",
+      "properties": {
+        "article_number": "제4-3조의3",
+        "article_title": "생명보험의 계약자배당준비금 적립",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-3-3",
+        "source_text": "생명보험회사는 계약자배당의 종류별로 다음 산식에 의하여 계산한 금액을 사업연도말에 계약자배당준비금으로 적립하여야 한다. 계약자배당준비금 = 기발생 계약자배당준비금 + 차기 사업연도 계약자배당준비금",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-4",
+      "type": "Regulation",
+      "label": "평균공시이율 산출기준",
+      "properties": {
+        "article_number": "제4-4조",
+        "article_title": "평균공시이율",
+        "regulation_type": "계산기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-4",
+        "source_text": "감독규정 제1-2조제13호의 규정에 의한 평균공시이율은 다음 각호의 기준에 따라 매 사업년도말까지 산출하여 다음 사업년도에 적용한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-4-2",
+      "type": "Regulation",
+      "label": "보험상품자문위원회 설치",
+      "properties": {
+        "article_number": "제4-4조의2",
+        "article_title": "보험상품자문위원회",
+        "regulation_type": "조직"
+      },
+      "provenance": {
+        "source_section_id": "art4-4-2",
+        "source_text": "감독원장은 보험상품ㆍ계리ㆍ감리에 관한 사항을 심의하기 위하여 자문기구로서 보험상품자문위원회(이하 이 조에서 \"위원회\"라 한다)를 설치할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독_art4-4-2_committee",
+      "type": "Eligibility",
+      "label": "보험상품자문위원회 위원 자격요건",
+      "properties": {
+        "requirement_type": "위원자격",
+        "conditions": [
+          "보험회사, 보험관계단체 등에서 10년 이상 근무",
+          "금융관련 분야 석사학위 이상+연구기관/대학 5년 이상",
+          "보험계리사/변호사/공인회계사 자격+관련업무 5년 이상"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art4-4-2.par3",
+        "source_text": "위원은 다음 각호의 1에 해당하는 자중에서 위원장이 위촉하는 자로 한다. 1. 보험회사, 보험관계단체 등에서 10년 이상 근무한 경력이 있는자 2. 금융관련 분야의 석사학위 이상 소지자로서 연구기관 또는 대학에서 5년 이상 근무한 경력이 있는 자",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독_art4-7_retirement",
+      "type": "Eligibility",
+      "label": "퇴직보험계약 계약자배당 대상",
+      "properties": {
+        "requirement_type": "퇴직보험배당",
+        "conditions": [
+          "1년이상 유지",
+          "유효한 배당퇴직보험계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art4-7.par1",
+        "source_text": "1년이상 유지된 유효한 배당퇴직보험계약(종업원 퇴직적립보험을 포함한다. 이하같다)에 대하여 이자율차배당금 및 사업비차배당금을 지급한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업감독_art4-7_exception",
+      "type": "Exception",
+      "label": "종업원퇴직적립보험 중도해지시 배당금 지급 예외",
+      "properties": {
+        "exception_type": "배당금지급예외",
+        "conditions": [
+          "1997년 10월 1일 이후 판매",
+          "보험연도중 계약소멸",
+          "경과기간분 이자율차배당금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art4-7.par3",
+        "source_text": "1997년 10월 1일 이후에 판매된 종업원퇴직적립보험의 경우 보험연도중 계약이 소멸하더라도 당해 보험연도의 경과기간분에 해당하는 이자율차배당금을 지급할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-13",
+      "type": "Regulation",
+      "label": "특별계정 관련 재무제표 표시",
+      "properties": {
+        "article_number": "제4-13조",
+        "article_title": "특별계정 관련 재무제표의 표시",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-13",
+        "source_text": "감독규정 제6-23조제4항의 규정에 의하여 감독원장이 정하는 재무상태표와 포괄손익계산서는 다음 각호에 의한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#보험업감독_art4-14",
+      "type": "Calculation",
+      "label": "특별계정 기준가격 산정방법",
+      "properties": {
+        "calculation_type": "기준가격산정",
+        "formula": "좌당 기준가격 = 당일 특별계정의 순자산가치 ÷ 특별계정의 총 좌수"
+      },
+      "provenance": {
+        "source_section_id": "art4-14",
+        "source_text": "특별계정의 좌당 기준가격은 다음과 같이 산출하되, 1,000좌 단위로 원미만 셋째자리에서 사사오입하여 원미만 둘째자리까지 계산하며 최초판매개시일의 기준가격은 1,000좌당 1,000원으로 한다. 좌당 기준가격 = 당일 특별계정의 순자산가치 ÷ 특별계정의 총 좌수",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-15",
+      "type": "Regulation",
+      "label": "보증준비금 산출기준",
+      "properties": {
+        "article_number": "제4-15조",
+        "article_title": "보증준비금 산출",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-15",
+        "source_text": "감독규정 제6-11조의5 규정에 의하여 감독원장이 정하는 보증준비금 적립기준은 다음 각 항에 의한다. 보험회사는 결산일(분기별 임시결산을 포함한다) 현재 유지계약에 대하여 제1호에 따라 계산한 금액을 적립하며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#보험업감독_art4-15_hedge",
+      "type": "Exception",
+      "label": "위험회피 파생상품 사용시 보증준비금 적립 예외",
+      "properties": {
+        "exception_type": "보증준비금적립예외",
+        "conditions": [
+          "파생금융상품으로 위험회피",
+          "문서화 요구사항 충족",
+          "분기별 위험회피효과 평가"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art4-15.par2",
+        "source_text": "변액보험 등의 만기보험금, 사망보험금, 중도인출금, 해약환급금 등에 대한 최저보증이 부가된 보험계약의 보증위험을 회피할 목적으로 파생금융상품을 위험회피수단으로 최초 지정하는 시점에 위험회피 대상항목, 위험관리목적, 위험의 속성, 위험회피전략, 위험회피효과에 대한 주기적인 평가방법(최소한 분기) 등을 문서화하고",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Regulation#보험업감독_art4-16",
+      "type": "Regulation",
+      "label": "비상위험준비금 적립기준",
+      "properties": {
+        "article_number": "제4-16조",
+        "article_title": "비상위험준비금 적립기준 등",
+        "regulation_type": "회계기준"
+      },
+      "provenance": {
+        "source_section_id": "art4-16",
+        "source_text": "감독규정 제6-18조의2 제1호 및 제2호의 규정에 의한 보험종목별 비상위험준비금 적립기준 등은 별표 34과 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#보험업감독_art4-17",
+      "type": "Calculation",
+      "label": "평균해지율 산출방법",
+      "properties": {
+        "calculation_type": "평균해지율산출",
+        "calculation_period": "8월말 기준 최근 12개월",
+        "rounding": "소수점 셋째 자리에서 반올림"
+      },
+      "provenance": {
+        "source_section_id": "art4-17",
+        "source_text": "감독규정 제1-2조제28호의 규정에 의한 평균해지율은 보험요율 산출기관이 다음 각호의 기준에 따라 매 사업년도말까지 산출하여 다음 사업년도에 적용한다. 평균해지율은 감독규정 제7-75조의2 규정에 따라 보험료 또는 보험금 산출시 적용된 회사별 해지율의 평균으로 소수점 셋째 자리에서 반올림하여 산출한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#보험업감독_variable",
+      "type": "Product_Category",
+      "label": "변액보험",
+      "properties": {
+        "category_type": "투자연계보험",
+        "includes": "퇴직연금실적배당보험 포함"
+      },
+      "provenance": {
+        "source_section_id": "art4-1.par4",
+        "source_text": "변액보험(퇴직연금실적배당보험 포함) 특별계정이 폐지되는 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#보험업감독_retirement",
+      "type": "Product_Category",
+      "label": "퇴직보험",
+      "properties": {
+        "category_type": "퇴직관련보험",
+        "includes": [
+          "배당퇴직보험계약",
+          "종업원퇴직적립보험"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art4-7.par1",
+        "source_text": "유효한 배당퇴직보험계약(종업원 퇴직적립보험을 포함한다. 이하같다)에 대하여 이자율차배당금 및 사업비차배당금을 지급한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-1",
+      "type": "Regulation",
+      "label": "임원 및 준법감시인의 보고 삭제",
+      "properties": {
+        "article_number": "제5-1조",
+        "article_title": "임원 및 준법감시인의 보고",
+        "regulation_type": "삭제 조항"
+      },
+      "provenance": {
+        "source_section_id": "art5-1",
+        "source_text": "삭제 <2016. 7. 28.>",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-2",
+      "type": "Regulation",
+      "label": "최대주주 변경보고",
+      "properties": {
+        "article_number": "제5-2조",
+        "article_title": "최대주주 변경보고 등",
+        "regulation_type": "보고 의무"
+      },
+      "provenance": {
+        "source_section_id": "art5-2",
+        "source_text": "법 제130조제4호(최대주주 변경) 및 제5호(대주주 지분 변동)에 해당하는 사유로 인한 보고는 별지 제33호서식에 따른다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-3",
+      "type": "Regulation",
+      "label": "위험관리전담조직 설치대상",
+      "properties": {
+        "article_number": "제5-3조",
+        "article_title": "위험관리전담조직 설치대상",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art5-3",
+        "source_text": "감독규정 제7-6조제2항에서 \"감독원장이 정하는 보험회사\"라 함은 최근 사업연도 종료일 현재 자산총액이 3천억원 이상인 보험회사를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art5-3_requirement",
+      "type": "Eligibility",
+      "label": "위험관리전담조직 설치 자격요건",
+      "properties": {
+        "requirement_type": "자산규모 기준",
+        "threshold": "자산총액 3천억원 이상"
+      },
+      "provenance": {
+        "source_section_id": "art5-3",
+        "source_text": "최근 사업연도 종료일 현재 자산총액이 3천억원 이상인 보험회사를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-4",
+      "type": "Regulation",
+      "label": "자산부채의 평가대상",
+      "properties": {
+        "article_number": "제5-4조",
+        "article_title": "자산ㆍ부채의 평가대상",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art5-4",
+        "source_text": "감독규정 제7-41조제3호에서 \"감독원장이 정하는 평가부문\"이라 함은 감독규정 제7-14조제3항의 평가부문 중 자본적정성 또는 투자리스크 평가부문을 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-6",
+      "type": "Regulation",
+      "label": "경영실태평가",
+      "properties": {
+        "article_number": "제5-6조",
+        "article_title": "경영실태평가",
+        "regulation_type": "평가 기준"
+      },
+      "provenance": {
+        "source_section_id": "art5-6",
+        "source_text": "감독규정 제7-14조 제4항에서 정하는 평가부문별 및 계량평가항목별 배점은 별표 13 1.과 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#보험업감독업무시행세칙_art5-6_exception",
+      "type": "Exception",
+      "label": "경영실태평가 예외",
+      "properties": {
+        "exception_type": "해외법인 평가 특례"
+      },
+      "provenance": {
+        "source_section_id": "art5-6.par4",
+        "source_text": "다만, 해외현지법인 및 해외지점에 대해서는 별도의 계량평가항목만으로 평가할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-6-2",
+      "type": "Regulation",
+      "label": "자체 위험 및 지급여력 평가",
+      "properties": {
+        "article_number": "제5-6조의2",
+        "article_title": "자체 위험 및 지급여력 평가",
+        "regulation_type": "평가 체제"
+      },
+      "provenance": {
+        "source_section_id": "art5-6-2",
+        "source_text": "감독규정 제7-5조 제1항에 의한 자체 위험 및 지급여력 평가 체제는 다음 각 호의 사항을 포함한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-7-4",
+      "type": "Regulation",
+      "label": "신종자본증권 발행요건",
+      "properties": {
+        "article_number": "제5-7조의4",
+        "article_title": "신종자본증권 및 후순위채권 세부요건",
+        "regulation_type": "발행 제한"
+      },
+      "provenance": {
+        "source_section_id": "art5-7-4",
+        "source_text": "감독규정 제7-10조제2항에서 감독원장이 정하는 세부 발행요건이란 다음 각호를 감안할 때 지급여력비율이 악화될 우려가 있는 경우를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art5-7-4_prohibition",
+      "type": "Exclusion",
+      "label": "신종자본증권 발행 금지",
+      "properties": {
+        "exclusion_type": "지급여력비율 기준"
+      },
+      "provenance": {
+        "source_section_id": "art5-7-4.par3.item1",
+        "source_text": "지급여력비율이 50% 이하(신종자본증권에 의한 조달분은 제외한다)인 보험회사는 신종자본증권을 발행할 수 없다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#보험업감독업무시행세칙_art5-10_protection",
+      "type": "Coverage",
+      "label": "감독원 공시 범위",
+      "properties": {
+        "coverage_scope": "보험계약자 보호"
+      },
+      "provenance": {
+        "source_section_id": "art5-10",
+        "source_text": "감독원장은 분쟁처리결과 및 보험회사에 대한 경영실태평가 등을 포함한 보험회사의 경영실적 등을 일반에게 공시할 수 있다.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-11",
+      "type": "Regulation",
+      "label": "보험안내자료 기재사항",
+      "properties": {
+        "article_number": "제5-11조",
+        "article_title": "보험안내자료 등의 기재사항",
+        "regulation_type": "공시 의무"
+      },
+      "provenance": {
+        "source_section_id": "art5-11",
+        "source_text": "감독규정 제7-45조제4항에서 정한 보험안내자료 등의 기재사항은 다음 각호와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-12",
+      "type": "Regulation",
+      "label": "대출안내장",
+      "properties": {
+        "article_number": "제5-12조",
+        "article_title": "대출안내장",
+        "regulation_type": "공시 의무"
+      },
+      "provenance": {
+        "source_section_id": "art5-12",
+        "source_text": "대출안내장은 보험회사의 대출관련 규정의 내용과 부합되게 작성하여야 하며, 본사에서 이를 심사하여 관리번호를 부여받은 후 사용토록 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-14",
+      "type": "Regulation",
+      "label": "손익분석 기준",
+      "properties": {
+        "article_number": "제5-14조",
+        "article_title": "손익분석",
+        "regulation_type": "분석 기준"
+      },
+      "provenance": {
+        "source_section_id": "art5-14",
+        "source_text": "감독규정 제7-80조의 규정에 의한 손익분석기준은 별표 16과 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art5-14_requirement",
+      "type": "Eligibility",
+      "label": "투자년도별 투자재원 구성비 방식 적용 요건",
+      "properties": {
+        "requirement_type": "자산규모 및 구성 기준",
+        "threshold_conditions": [
+          "총자산 규모 2조원 이상",
+          "배당보험 책임준비금 점유율 10% 이상"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art5-14.par2.item1",
+        "source_text": "최근 3년간 회계연도말 기준으로 다음 각목의 조건에 모두 해당되는 보험회사의 경우 차기 회계연도부터 투자년도별 투자재원 구성비 방식을 적용하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-16",
+      "type": "Regulation",
+      "label": "보험상품 신고",
+      "properties": {
+        "article_number": "제5-16조",
+        "article_title": "보험상품 신고",
+        "regulation_type": "신고 의무"
+      },
+      "provenance": {
+        "source_section_id": "art5-16",
+        "source_text": "감독규정 제7-53조제1항의 규정에 의한 보험상품 신고서 서식은 별지 제34호와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#생명보험",
+      "type": "Product_Category",
+      "label": "생명보험 분류",
+      "properties": {
+        "category_type": "생명보험",
+        "subcategories": [
+          "보장성보험",
+          "생사혼합보험",
+          "연금보험",
+          "교육보험"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art5-16.par4.item1",
+        "source_text": "생명보험: 보장성보험(순수보장성 및 기타보장성), 보장성보험(종신보험), 생사혼합보험(만기7년이하), 생사혼합보험(만기7년초과), 연금보험, 교육보험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#손해보험",
+      "type": "Product_Category",
+      "label": "손해보험 분류",
+      "properties": {
+        "category_type": "손해보험",
+        "subcategories": [
+          "보장성보험",
+          "저축성보험",
+          "개인연금보험"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art5-16.par4.item2",
+        "source_text": "손해보험: 보장성보험(만기15년이하), 보장성보험(만기15년초과), 저축성보험(만기7년이하), 저축성보험(만기7년초과), 개인연금보험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-17-2",
+      "type": "Regulation",
+      "label": "재보험계약의 보험위험전가 평가",
+      "properties": {
+        "article_number": "제5-17조의2",
+        "article_title": "재보험계약의 보험위험전가 평가",
+        "regulation_type": "평가 기준"
+      },
+      "provenance": {
+        "source_section_id": "art5-17-2",
+        "source_text": "영 제63조제2항제1호 및 감독규정 제7-12조제1항제2호에 따른 재보험계약의 보험위험전가 평가는 별표35에 의한 부가급부금의 비율에 따라 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art5-17-2_prohibition",
+      "type": "Exclusion",
+      "label": "상당한 보험위험 전가가 없는 재보험계약",
+      "properties": {
+        "exclusion_type": "재보험계약 제한"
+      },
+      "provenance": {
+        "source_section_id": "art5-17-2.par2",
+        "source_text": "재보험자의 의무를 축소 또는 제거하거나, 재보험자에게 일방적으로 계약해지 또는 조건변경권 등을 부여하는 방법 등으로 재보험자에게 손실이 발생하지 않도록 재보험자의 책임을 제한하는 재보험계약",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-19",
+      "type": "Regulation",
+      "label": "보험상품심사기준",
+      "properties": {
+        "article_number": "제5-19조",
+        "article_title": "보험상품심사기준",
+        "regulation_type": "심사 기준"
+      },
+      "provenance": {
+        "source_section_id": "art5-19",
+        "source_text": "감독규정 제7-72조에 의하여 보험상품심사에 대한 세부적인 기준은 별표 18과 같다. 다만, 자동차보험의 심사에 대한 세부적인 기준은 별표 19와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art5-22",
+      "type": "Regulation",
+      "label": "연금보험 비교설명 준수사항",
+      "properties": {
+        "article_number": "제5-22조",
+        "article_title": "연금보험 비교ㆍ설명시 준수사항",
+        "regulation_type": "비교설명 기준"
+      },
+      "provenance": {
+        "source_section_id": "art5-22",
+        "source_text": "감독규정 제7-60조제3호의2에서 정하는 비교ㆍ설명에 관하여 필요한 사항은 다음 각 호와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art6-1",
+      "type": "Regulation",
+      "label": "수습기간 규정",
+      "properties": {
+        "article_number": "제6-1조",
+        "article_title": "수습기간",
+        "regulation_type": "업무규정"
+      },
+      "provenance": {
+        "source_section_id": "art6-1",
+        "source_text": "① 실무수습기간은 6개월로 하며, 실무수습(이하 이 절에서 \"수습\"이라 한다)의 개시는 매월 초일부터 시작한다. ② 수습기관의 장은 수습자에게 이론 및 실무를 통산하여 수습기간 동안 300시간 이상을 매월 균등하게 배분하여 수습시켜야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art6-1_requirement",
+      "type": "Eligibility",
+      "label": "실무수습 요건",
+      "properties": {
+        "requirement_type": "수습기간",
+        "duration": "6개월",
+        "hours": "300시간 이상"
+      },
+      "provenance": {
+        "source_section_id": "art6-1",
+        "source_text": "실무수습기간은 6개월로 하며, 수습기관의 장은 수습자에게 이론 및 실무를 통산하여 수습기간 동안 300시간 이상을 매월 균등하게 배분하여 수습시켜야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업감독업무시행세칙_art6-1_exception",
+      "type": "Exception",
+      "label": "수습연기 예외사유",
+      "properties": {
+        "exception_type": "수습연기",
+        "conditions": [
+          "군복무",
+          "재학",
+          "질병",
+          "기타 특별한 사유"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art6-1.par3",
+        "source_text": "수습자가 군복무, 재학, 질병 및 그 밖의 특별한 사유로 인하여 수습의 연기가 불가피할 때에는 수습기관의 장에게 별지 제37호서식의 수습연기신청서를 제출하여 수습의 연기를 신청할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art6-2",
+      "type": "Regulation",
+      "label": "수습신청 및 수습기관 지정",
+      "properties": {
+        "article_number": "제6-2조",
+        "article_title": "수습의 신청 및 수습기관 지정",
+        "regulation_type": "신청절차"
+      },
+      "provenance": {
+        "source_section_id": "art6-2",
+        "source_text": "① 보험계리사 또는 손해사정사 수습을 받고자 하는 자는 별지 제38호서식의 수습신청서를 수습받고자 하는 기관에 제출하여야 한다. ② 수습기관의 장은 제1항의 규정에 의하여 수습신청을 받은 때에는 5일내에 당해인에게 수습 동의여부를 통보하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art6-8_requirement",
+      "type": "Eligibility",
+      "label": "보험계리사 등록 요건",
+      "properties": {
+        "requirement_type": "경력증명",
+        "required_documents": [
+          "영업용 재산상황서류",
+          "대표자 및 소속계리사 이력서",
+          "정관",
+          "손해배상보장서류",
+          "교육수료증"
+        ],
+        "certification": "보험계리업무 경력확인서"
+      },
+      "provenance": {
+        "source_section_id": "art6-8.par1",
+        "source_text": "보험계리사로 등록하고자 하는 자는 규칙 제51조 별지 제15호서식의 보험계리사등록신청서에 다음 각호의 서류를 첨부하여 감독원장에게 제출하여야 한다. 1. 실무수습을 확인할 수 있는 서류 2. 이력서 4. 그 밖에 등록에 필요한 서류",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업감독업무시행세칙_art6-8_exception",
+      "type": "Exception",
+      "label": "외국 보험계리사 자격자 등록 예외",
+      "properties": {
+        "exception_type": "외국자격자",
+        "condition": "금융위원회가 인정하는 외국의 보험계리사 자격"
+      },
+      "provenance": {
+        "source_section_id": "art6-8.par1",
+        "source_text": "다만, 시행규칙 제47조제2항의 금융위원회가 인정하는 외국의 보험계리사 자격을 가진 자가 등록신청을 하는 경우에는 제1호 및 제2호의 서류 대신에 당해 외국의 보험계리사 자격을 증명하는 서류를 첨부하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art6-9",
+      "type": "Regulation",
+      "label": "선임계리사 검증의견서 작성기준",
+      "properties": {
+        "article_number": "제6-9조",
+        "article_title": "선임계리사 검증의견서 작성기준",
+        "regulation_type": "업무기준"
+      },
+      "provenance": {
+        "source_section_id": "art6-9",
+        "source_text": "감독규정 제9-9조의 규정에 의한 선임계리사 검증의견서에는 다음 각 호의 사항을 기재하여야 한다. 1. 검증절차 2. 검증대상 업무별 담당자, 결재자, 최종결재자, 법 제181조 제1항에 의한 확인보험계리사 또는 보험계리업자",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art6-10",
+      "type": "Regulation",
+      "label": "보험계리업 및 손해사정업 등록 의무",
+      "properties": {
+        "article_number": "제6-10조",
+        "article_title": "등록",
+        "regulation_type": "등록의무"
+      },
+      "provenance": {
+        "source_section_id": "art6-10.par1",
+        "source_text": "보험계리 또는 손해사정을 업으로 하고자 하는 자는 금융감독원에 등록하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art6-12",
+      "type": "Regulation",
+      "label": "손해사정업자 보조인 신고 의무",
+      "properties": {
+        "article_number": "제6-12조",
+        "article_title": "손해사정업 등록신청",
+        "regulation_type": "신고의무"
+      },
+      "provenance": {
+        "source_section_id": "art6-12.par2",
+        "source_text": "손해사정업자가 보조인을 활용하고자 할 때에는 등록전에 법 제178조의 규정에 따른 손해사정사 또는 손해사정업자를 회원으로 하여 설립된 단체에 보조인의 현황을 신고하여야 한다. 보조인의 변동상항이 발생하였을 경우에도 위와 같다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#보험업감독업무시행세칙_art6-15_protection",
+      "type": "Coverage",
+      "label": "손해배상보장예탁금 보호",
+      "properties": {
+        "coverage_type": "손해배상보장",
+        "coverage_method": "예탁금 또는 보증보험"
+      },
+      "provenance": {
+        "source_section_id": "art6-15.par3",
+        "source_text": "보험계리업 또는 손해사정업을 영위하고자 하는 자가 손해배상보장예탁금 또는 인허가보증보험증권으로 예탁하는 경우 감독원장은 별지 제21-2호서식의 손해배상보장 예탁증서를 교부하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art6-21_requirement",
+      "type": "Eligibility",
+      "label": "보조인 자격요건",
+      "properties": {
+        "requirement_type": "보조인자격",
+        "qualifications": [
+          "해당분야 손해사정사시험 1차 합격자",
+          "2년 이상 관련업무 경력자",
+          "연수과정 이수자",
+          "4년제 대학 보험관련학과 졸업자"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art6-21.par1",
+        "source_text": "감독원장이 정하는 기준에 해당하는 자라 함은 다음 각호의 1을 말한다. 1. 해당분야별 손해사정사시험의 제1차시험에 합격한 자 2. 규칙 제54조제1항의 기관에서 2년 이상 해당분야별 손해사정 관련 업무에 종사한 경력이 있는 자 3. 보험연수원, 손해보험협회, 법 제178조의 규정에 의한 손해사정사단체 및 보험요율산출기관에서 시행하는 해당분야별 손해사정에 관한 연수과정을 이수한 자",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art6-21_prohibition",
+      "type": "Exclusion",
+      "label": "보조인 활용 제한",
+      "properties": {
+        "exclusion_type": "인원제한",
+        "limitation": "고용손해사정사 1인당 2인 이내, 독립손해사정사 1인당 5인 이내"
+      },
+      "provenance": {
+        "source_section_id": "art6-21.par2",
+        "source_text": "손해사정업무에 종사하고 있는 고용손해사정사는 종별 구분에 따라 1인당 2인이내의 보조인을 활용할 수 있으며, 독립손해사정사는 종별 구분에 따라 1인당 5인이내의 보조인을 활용할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업감독업무시행세칙_art6-21_exception",
+      "type": "Exception",
+      "label": "전문자격증 보유자 보조인 제외",
+      "properties": {
+        "exception_type": "전문인업무",
+        "condition": "국가공인 전문자격증 보유자의 전문인 업무"
+      },
+      "provenance": {
+        "source_section_id": "art6-21.par3",
+        "source_text": "종별 손해사정업무 수행과 관련이 있는 국가공인 전문자격증을 보유하고 있는 자가 손해사정업무와 관련하여 제6-20조의 전문인 업무를 수행하는 경우에는 보조인으로 보지 않는다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art6-18",
+      "type": "Regulation",
+      "label": "손해사정서 기재사항",
+      "properties": {
+        "article_number": "제6-18조",
+        "article_title": "손해사정서 기재사항 등",
+        "regulation_type": "업무기준"
+      },
+      "provenance": {
+        "source_section_id": "art6-18",
+        "source_text": "감독규정 제9-18조제1항에서 \"감독원장이 정하는 사항\"이라 함은 다음 각호를 말한다. 1. 손해사정 수임일자, 수임내용 및 위임자 인적사항등 수임계약 내용 2. 손해사정 업무를 수행하는 손해사정사 및 보조인의 성명, 등록번호, 연락처 등 인적사항 3. 보험계약 사항 4. 사고 및 손해조사내용",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art6-19",
+      "type": "Regulation",
+      "label": "서류보존 의무",
+      "properties": {
+        "article_number": "제6-19조",
+        "article_title": "서류 등의 보존",
+        "regulation_type": "보존의무",
+        "retention_period": "5년"
+      },
+      "provenance": {
+        "source_section_id": "art6-19",
+        "source_text": "독립보험계리사 또는 독립손해사정사는 다음 각호의 서류 등을 5년간 보존하여야 한다. 1. 보험계리 또는 손해사정업무 수임대장 2. 손해사정서 사본(독립손해사정사에 한한다) 3. 수임계약서 4. 현금출납장부",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art7-1",
+      "type": "Regulation",
+      "label": "보험중개사 시험 실시업무",
+      "properties": {
+        "article_number": "제7-1조",
+        "article_title": "시험실시",
+        "regulation_type": "업무위탁"
+      },
+      "provenance": {
+        "source_section_id": "art7-1",
+        "source_text": "감독규정 제4-18조제8항에 따라 보험중개사 시험 실시에 관한 업무 중 다음 각호의 업무는 보험요율산출기관이 실시한다. 1. 시험응시원서의 교부 및 접수 2. 시험의 시행 및 그에 부수되는 업무",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art7-2",
+      "type": "Regulation",
+      "label": "응시원서 제출의무",
+      "properties": {
+        "article_number": "제7-2조",
+        "article_title": "응시원서",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art7-2",
+        "source_text": "시험에 응시하고자 하는 자는 감독원장이 공고한 응시원서 접수마감일까지 별지 제53호 또는 별지 제54호서식의 응시원서를 보험요율산출기관의 장에게 제출하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art7-4_손해사정사면제",
+      "type": "Eligibility",
+      "label": "손해사정사 1차시험 면제요건",
+      "properties": {
+        "requirement_type": "경력증명",
+        "certification": "손해사정업무 경력확인서"
+      },
+      "provenance": {
+        "source_section_id": "art7-4.par2",
+        "source_text": "규칙 제53조제2항의 규정에 의하여 손해사정사 시험의 제1차시험을 면제받고자 하는 자는 이를 증명할 수 있는 별지 제58호서식의 손해사정업무 경력확인서를 제2차시험 응시원서와 함께 제출하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art7-5",
+      "type": "Regulation",
+      "label": "시험수수료 규정",
+      "properties": {
+        "article_number": "제7-5조",
+        "article_title": "시험수수료",
+        "regulation_type": "수수료"
+      },
+      "provenance": {
+        "source_section_id": "art7-5",
+        "source_text": "보험계리사 및 손해사정사 시험의 제1차시험 수수료는 30,000원, 제2차시험 수수료는 50,000원으로 한다. 보험중개사 시험의 수수료는 60,000원으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art7-6",
+      "type": "Regulation",
+      "label": "시험관리위원회 설치",
+      "properties": {
+        "article_number": "제7-6조",
+        "article_title": "보험전문인시험관리위원회의 설치",
+        "regulation_type": "기구설치"
+      },
+      "provenance": {
+        "source_section_id": "art7-6",
+        "source_text": "감독원장은 보험중개사, 보험계리사 및 손해사정사 시험의 시행 및 관리업무를 담당하게 하기 위하여 보험전문인시험관리위원회를 둔다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업감독업무시행세칙_art7-9_위원결격",
+      "type": "Eligibility",
+      "label": "시험관리위원회 위원 결격사유",
+      "properties": {
+        "requirement_type": "결격사유",
+        "disqualifications": [
+          "대한민국 국민이 아닌 자",
+          "피성년후견인 또는 피한정후견인",
+          "파산자로서 복권되지 아니한 자",
+          "금고이상의 형의 선고를 받고 집행종료 후 2년 미경과자"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art7-9",
+        "source_text": "다음 각호의 1에 해당하는 자는 시험관리위원회의 위원이 되지 못한다. 1. 대한민국 국민이 아닌 자 2. 피성년후견인 또는 피한정후견인 3. 파산자로서 복권되지 아니한 자 4. 금고이상의 형의 선고를 받고 그 집행이 종료되거나 집행을 받지 아니하기로 확정된 후 2년이 경과되지 아니한 자",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art7-10_제척회피",
+      "type": "Exclusion",
+      "label": "위원 제척 및 회피 사유",
+      "properties": {
+        "exclusion_type": "이해관계 제척",
+        "scope": [
+          "본인과 직접적인 이해관계가 있는 사항",
+          "배우자, 4촌이내의 혈족, 2촌이내의 인척의 관계가 있는 자 또는 본인이 속한 법인과 이해관계가 있는 사항"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art7-10.par4",
+        "source_text": "위원은 다음 각호의 1에 해당하는 사항에 대한 심의에서 제척된다. 1. 본인과 직접적인 이해관계가 있는 사항 2. 배우자, 4촌이내의 혈족, 2촌이내의 인척의 관계가 있는 자 또는 본인이 속한 법인과 이해관계가 있는 사항",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art7-10_정보누설금지",
+      "type": "Exclusion",
+      "label": "심의정보 누설금지",
+      "properties": {
+        "exclusion_type": "정보보안",
+        "scope": "시험관리위원회 참석자"
+      },
+      "provenance": {
+        "source_section_id": "art7-10.par6",
+        "source_text": "시험관리위원회에 참석한 자는 심의와 관련하여 알게된 정보를 타인에게 누설하여서는 아니된다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업감독업무시행세칙_art7-12",
+      "type": "Regulation",
+      "label": "부정행위 조치 및 응시제한",
+      "properties": {
+        "article_number": "제7-12조",
+        "article_title": "부정행위 및 허위기재 등에 대한 조치",
+        "regulation_type": "벌칙"
+      },
+      "provenance": {
+        "source_section_id": "art7-12",
+        "source_text": "감독원장은 시험을 실시함에 있어 응시자가 부정한 행위를 하거나 감독원장이 정하는 준수사항을 위반한 경우에는 당해 응시자의 수험을 정지하거나 무효로 할 수 있다. 부정행위자는 그 행위가 있은 날부터 5년간 해당 시험에 응시할 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#보험업감독업무시행세칙_art7-12_응시제한",
+      "type": "Exclusion",
+      "label": "부정행위자 응시제한",
+      "properties": {
+        "exclusion_type": "응시자격제한",
+        "scope": "부정행위 및 허위서류 제출자",
+        "period": "5년"
+      },
+      "provenance": {
+        "source_section_id": "art7-12.par3",
+        "source_text": "제1항 및 제2항의 규정에 의한 부정행위자는 그 행위가 있은 날부터 5년간 해당 시험에 응시할 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#보험전문인자격",
+      "type": "Product_Category",
+      "label": "보험전문인 자격시험",
+      "properties": {
+        "category_type": "전문자격",
+        "subcategories": [
+          "보험중개사",
+          "보험계리사",
+          "손해사정사"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7장 보험전문인 시험 - 보험중개사, 보험계리사 및 손해사정사 시험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#감독업무시행세칙_art8-1",
+      "type": "Regulation",
+      "label": "세부절차 등 위임규정",
+      "properties": {
+        "article_number": "제8-1조",
+        "article_title": "세부절차 등",
+        "regulation_type": "위임"
+      },
+      "provenance": {
+        "source_section_id": "art8-1",
+        "source_text": "감독규정 또는 이 세칙의 시행을 위하여 필요한 세부적인 서식ㆍ절차 등에 관하여 이 세칙에서 정하지 아니한 사항에 대하여는 감독원장이 별도로 정하는 바에 의한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#감독업무시행세칙_부칙1",
+      "type": "Regulation",
+      "label": "세칙 시행일",
+      "properties": {
+        "article_number": "부칙 제1조",
+        "article_title": "시행일",
+        "regulation_type": "시행"
+      },
+      "provenance": {
+        "source_section_id": "부칙1",
+        "source_text": "이 세칙은 2025년 12월 31일부터 시행한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#감독업무시행세칙_부칙2",
+      "type": "Regulation",
+      "label": "업무보고서 적용례",
+      "properties": {
+        "article_number": "부칙 제2조",
+        "article_title": "업무보고서에 관한 적용례",
+        "regulation_type": "경과규정"
+      },
+      "provenance": {
+        "source_section_id": "부칙2",
+        "source_text": "[별지26]의 개정서식은 2025년 12월말 기준 업무보고서부터 적용한다. 다만, 공시기준이율 관련 자산듀레이션 산출(AI752, AH752) 개정서식은 2026년 9월말 업무보고서부터 적용한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#감독업무시행세칙_부칙2_exception",
+      "type": "Exception",
+      "label": "자산듀레이션 산출 서식 적용 예외",
+      "properties": {
+        "condition": "공시기준이율 관련 자산듀레이션 산출",
+        "exception_detail": "2026년 9월말 업무보고서부터 적용"
+      },
+      "provenance": {
+        "source_section_id": "부칙2",
+        "source_text": "다만, 공시기준이율 관련 자산듀레이션 산출(AI752, AH752) 개정서식은 2026년 9월말 업무보고서부터 적용한다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art1-2",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "제1-2조(정의) 이 세칙에서 \"협회\"라 함은 법 제175조의 규정에 의하여 설립한 생명보험협회 및 대한손해보험협회를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art1-3",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "제1-3조(외국보험회사 등의 국내사무소 설치 서류) 감독규정 별표5-5에 따른 보고는 별지 제62호서식으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art2-1",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-1조(협회의 등록 및 신고업무 처리지침) ① 협회의 장은 보험대리점 관련 등록ㆍ신고 및 보험설계사의 시험ㆍ등록과 관련된 업무를 처리한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art2-2",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-2조(보험설계사의 보수교육 등) ① 감독규정 제4-5조제1항 및 제2항에 의한 불완전판매비율, 불완전판매 보험계약 수는 다음 각 호와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art2-8",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-8조(영업보증금의 평가 및 평가액의 결정 등) ① 감독규정 제4-10조제2항제1호의 규정에 의한 채무증권의 평가는 한국거래소가 공시한 최근 월의 대용가격으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업감독업무시행세칙_art2-9_requirement",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-9조(지점의 설치) ② 보험대리점의 지점에는 모집하고자 하는 보험종목에 대한 유자격자(영 별표 3제1호다목의 요건을 충족하는 보험설계사를 말한다)를 두어야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art2-12",
+      "target_id": "Exclusion#보험업감독업무시행세칙_art2-12_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-12조(등록 및 심사기준) ③ 감독원장은 보험중개사의 등록신청을 받은 때에는 다음 각호의 사항을 심사하여 그 등록여부를 결정한다. 1. 법 제89조제2항에서 정한 등록제한 사유에 해당되는지 여부",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art2-14",
+      "target_id": "Coverage#보험업감독업무시행세칙_art2-20_protection",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-14조(영업보증금의 예탁) ① 보험중개사로 등록을 한 자는 영 제37조제1항 및 규칙 제19조의 규정에 의한 영업보증금을 영업개시 7일전까지 금융감독원에 예탁하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art2-32",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-32조(신고사항 등) ① 보험중개사가 법 제93조제1항제1호, 제3호 내지 제7호의 규정에 해당되는 경우에는 지체없이 그 사실을 감독원장에게 신고하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art2-34조의2",
+      "target_id": "Exception#보험업감독업무시행세칙_art2-34조의2_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-34조의2(보험계약 중요사항의 설명의무 등) ① 감독규정 제4-35조의2제8항제4호다목에 따라 보험회사는 다음 각 호를 준수하여야 한다. 1. 「노인복지법」제26조에 따른 경로우대자와 체결하는 보험계약에 대하여는 가목 또는 다목에 따른 방법을 사용하여야 한다. 다만, 경로우대자가 협회의 장이 정하는 바에 따라 배우자 또는 직계비속을 조력자로 정하는 경우 나목에 따른 방법을 사용할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Product_Category#기타손해보험",
+      "target_id": "Exclusion#보험업감독업무시행세칙_art2-34조의3_prohibition",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제2-34조의3(기타손해보험계약) 영 제42조의5제1항에서 \"실제 부담한 손해액만을 지급하는 것으로서 금융감독원장이 정하는 보험상품계약\"이란 개인이 가입한 다음 손해보험계약을 말한다. 다만, 단체계약 및 보험기간이 1개월 이하인 보험계약은 제외한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-1",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-1조(업무시설용 부동산의 범위) ② 감독규정 제5-1조제3호에서 \"그 밖에 감독원장이 필요하다고 인정하는 사업\"이라 함은 지역문화행사, 전국학생미술대회 협찬, 전시회 개최, 문화ㆍ예술관련 재단 설립 등을 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-3",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-3조(등록사항 변경신고) 감독규정 제5-18조제1항의 규정에 의한 신고는 별지 제22호서식으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-4",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-4조(외화유동성비율 등의 산정방법) 감독규정 제5-19조제2항의 잔존 만기의 구분방법, 범위 및 비율의 산정방법은 별표 1과 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-5",
+      "target_id": "Exclusion#보험업감독_art3-5_exception",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-5조(외화자산 및 부채의 범위) 1. 현물외화자산 및 부채의 범위는 별지 제24호서식「외국환업무현황보고서」상 외화자금상황의 재무상태표난내 계정 외화자산과 부채로 한다. 다만, 외화표시자산 또는 부채중 해당 외국통화와 원화간 환율의 변동에 관계없이 원화환산금액이 정하여지는 외화자산 또는 부채는 제외한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-5",
+      "target_id": "Exception#보험업감독_art3-5_option_calculation",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-5조(외화자산 및 부채의 범위) 3. 제1호 및 제2호에도 불구하고 외국환업무취급기관이 통화옵션거래의 환율위험을 환율변동에 따른 옵션가치의 변화도(델타)를 사용하여 관리할 경우, 자체적으로 산출한 위험노출액(명목금액×델타)을 선물외화자산 또는 부채금액으로 계산할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-6",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-6조(외국환포지션한도의 산정 등) ① 감독규정 제5-20조의 규정에 의한 외국환포지션 산정을 위하여 미달러화 이외 외국통화를 미달러화로 환산할 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-7",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-7조(별도한도의 인정신청) ① 감독규정 제5-22조제2항의 규정에 의하여 외국환포지션 별도한도 인정신청을 하고자 하는 외국환업무취급기관",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-8",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-8조(내부관리) 감독규정 제5-25조의 규정에 의하여 외국환업무취급기관으로 등록한 보험회사는 별표 2, 별표 2-1에서 정하는 예시기준을 참고로 하여",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-9",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-9조(보고서식) ① 감독규정 제5-30조에 따른 보고는 별지 제24호서식의 외국환업무현황보고서로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-10",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-10조(자산운용의 적정여부 확인) ① 감독원장은 매월 보험회사가 보험관련법령 및 감독규정 등에 의하여 그 자산을 적정하게 운용하고 있는지 여부에 대하여 확인한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-11",
+      "target_id": "Exclusion#보험업감독_art3-11_employee_loan",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-11조(보험회사 임직원 등에 대한 대출금 산정기준) ① 감독규정 제5-8조 제1항의 규정에서 정하는 대출금을 산정함에 있어서 다음 각호에서 정하는 대출금은 제외한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-15",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-15조(자산의 무상양도등에 관한 보고등) 감독규정제7-13조의2제2항에 따른 보고는 별지제63호의 서식으로 하며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art3-16",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "제3-16조(금리인하 요구의 공시) ① 협회는 감독규정 제5-15조의3 제5항에 따라 보험회사별 다음 각호의 사항을 비교ㆍ공시하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-1",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-1조(재무제표의 서식 등) ① 감독규정 제6-2조제3항의 규정에 의한 보험회사의 재무제표 작성시 부속명세서가 필요한 경우에는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-1_quarterly",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "③ 감독규정 제6-7조제2항의 규정에 의하여 보험회사는 분기별로 임시결산을 실시하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-1_special",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "④ 보험회사는 변액보험(퇴직연금실적배당보험 포함) 특별계정이 폐지되는 경우 감독규정 제6-7조제2항의 규정에 의하여 해당 특별계정에 대한 임시결산을 실시하고",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-1-2",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-1조의2(기타포괄손익-공정가치측정금융자산평가손익 등 구분계상) ① 감독규정 제6-10조제4항에 의한 평가손익은",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-1-4",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-1조의4(책임준비금 적정성 검증보고서 작성기준) ① 감독규정 제6-11조의4의 규정에 의한 책임준비금 적정성 검증보고서에는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업감독_art4-2_dividend",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-2조(생명보험의 계약자배당 대상계약 및 배당금액산출) ① 1년이상 유지되고 당해 보험년도 보험료납입이 완료된 배당보험계약에 대하여 계약자배당을 실시한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-3",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-3조(생명보험의 잔여보장요소의 적립) ① 생명보험 및 생명보험 재보험의 잔여보장요소는 결산시점 현재 아직 발생하지 않은 보험사고",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-3-3",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-3조의3(생명보험의 계약자배당준비금 적립) ① 생명보험회사는 계약자배당의 종류별로 다음 산식에 의하여 계산한 금액을 사업연도말에 계약자배당준비금으로 적립하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-4",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-4조(평균공시이율) 감독규정 제1-2조제13호의 규정에 의한 평균공시이율은 다음 각호의 기준에 따라",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-4-2",
+      "target_id": "Eligibility#보험업감독_art4-4-2_committee",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-4조의2(보험상품자문위원회) ③ 위원장은 금융감독원의 보험감독업무를 관장하는 임원으로 하며, 위원은 다음 각호의 1에 해당하는 자중에서 위원장이 위촉하는 자로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업감독_art4-7_retirement",
+      "target_id": "Exception#보험업감독_art4-7_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-7조(퇴직보험계약의 계약자배당 대상계약 및 배당금액 산출) ③ 1997년 10월 1일 이후에 판매된 종업원퇴직적립보험의 경우 보험연도중 계약이 소멸하더라도 당해 보험연도의 경과기간분에 해당하는 이자율차배당금을 지급할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-13",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-13조(특별계정 관련 재무제표의 표시) 감독규정 제6-23조제4항의 규정에 의하여 감독원장이 정하는 재무상태표와 포괄손익계산서는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Calculation#보험업감독_art4-14",
+      "target_id": "Regulation#보험업감독_art4-13",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-14조(특별계정의 기준가격 산정) 감독규정 제5-6조제1항제3호의 규정에 의해 설정된 특별계정의 좌수 및 기준가격은 다음 각호와 같이 산출한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-15",
+      "target_id": "Exception#보험업감독_art4-15_hedge",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-15조(보증준비금 산출) ② 제1항의 규정에도 불구하고 변액보험 등의 만기보험금, 사망보험금, 중도인출금, 해약환급금 등에 대한 최저보증이 부가된 보험계약의 보증위험을 회피할 목적으로 파생금융상품을 위험회피수단으로 최초 지정하는 시점에",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독_art4-16",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-16조(비상위험준비금 적립기준 등) 감독규정 제6-18조의2 제1호 및 제2호의 규정에 의한 보험종목별 비상위험준비금 적립기준 등은",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Calculation#보험업감독_art4-17",
+      "target_id": "Regulation#보험업감독_art4-1",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "제4-17조(평균해지율) 감독규정 제1-2조제28호의 규정에 의한 평균해지율은 보험요율 산출기관이 다음 각호의 기준에 따라 매 사업년도말까지 산출하여",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-1",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-1조(임원 및 준법감시인의 보고) 삭제",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-2",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-2조(최대주주 변경보고 등) ① 법 제130조제4호(최대주주 변경) 및 제5호(대주주 지분 변동)에 해당하는 사유로 인한 보고는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-3",
+      "target_id": "Eligibility#보험업감독업무시행세칙_art5-3_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-3조(위험관리전담조직 설치대상) 감독규정 제7-6조제2항에서 \"감독원장이 정하는 보험회사\"라 함은 최근 사업연도 종료일 현재 자산총액이 3천억원 이상인 보험회사를 말한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-4",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-4조(자산ㆍ부채의 평가대상) 감독규정 제7-41조제3호에서 \"감독원장이 정하는 평가부문\"이라 함은",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-6",
+      "target_id": "Exception#보험업감독업무시행세칙_art5-6_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-6조(경영실태평가) ⑥ 감독원장은 경영실태평가 종료후 그 내용을 보험회사에 설명하고 의견 제출 기회를 부여하여야 한다. 다만, 제4항 단서 또는 감독규정 제7-14조 제5항의 규정에 의하여 계량항목만으로 평가한 경우에는 그러하지 아니하다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-6-2",
+      "target_id": "Regulation#보험업감독업무시행세칙_art5-6",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-6조의2(자체 위험 및 지급여력 평가) ① 감독규정 제7-5조 제1항에 의한 자체 위험 및 지급여력 평가 체제는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-7-4",
+      "target_id": "Exclusion#보험업감독업무시행세칙_art5-7-4_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-7조의4(신종자본증권 및 후순위채권 세부요건) ③ 감독규정 제7-11조의2제5항에서 감독원장이 정하는 세부 사항은 다음 각 호와 같다. 1. 지급여력비율이 50% 이하(신종자본증권에 의한 조달분은 제외한다)인 보험회사는 신종자본증권을 발행할 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-11",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-11조(보험안내자료 등의 기재사항) ① 감독규정 제7-45조제4항에서 정한 보험안내자료 등의 기재사항은",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-12",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-12조(대출안내장) ① 대출안내장은 보험회사의 대출관련 규정의 내용과 부합되게 작성하여야 하며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-14",
+      "target_id": "Eligibility#보험업감독업무시행세칙_art5-14_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-14조(손익분석) ② 감독규정 제7-80조 제3항의 감독원장이 정하는 기준은 다음 각호와 같다. 1. 최근 3년간 회계연도말 기준으로 다음 각목의 조건에 모두 해당되는 보험회사의 경우 차기 회계연도부터 투자년도별 투자재원 구성비 방식을 적용하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-16",
+      "target_id": "Product_Category#생명보험",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-16조(보험상품 신고) ④ 감독규정 제7-65조제3항제3호의 \"감독원장이 정하는 보험상품\"이라 함은 생명보험과 손해보험별로 다음 각호에서 분류한 보험상품을 말한다. 1. 생명보험: 보장성보험(순수보장성 및 기타보장성), 보장성보험(종신보험), 생사혼합보험(만기7년이하), 생사혼합보험(만기7년초과), 연금보험, 교육보험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-16",
+      "target_id": "Product_Category#손해보험",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-16조(보험상품 신고) ④ 감독규정 제7-65조제3항제3호의 \"감독원장이 정하는 보험상품\"이라 함은 생명보험과 손해보험별로 다음 각호에서 분류한 보험상품을 말한다. 2. 손해보험: 보장성보험(만기15년이하), 보장성보험(만기15년초과), 저축성보험(만기7년이하), 저축성보험(만기7년초과), 개인연금보험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-17-2",
+      "target_id": "Exclusion#보험업감독업무시행세칙_art5-17-2_prohibition",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-17조의2(재보험계약의 보험위험전가 평가) ② 감독규정 제7-12조제1항제2호에 따른 상당한 보험위험 전가가 없는 재보험계약은 다음 각호와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-19",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-19조(보험상품심사기준) 감독규정 제7-72조에 의하여 보험상품심사에 대한 세부적인 기준은 별표 18과 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art5-22",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제5-22조(연금보험 비교ㆍ설명시 준수사항) 감독규정 제7-60조제3호의2에서 정하는 비교ㆍ설명에 관하여 필요한 사항은",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-1",
+      "target_id": "Eligibility#보험업감독업무시행세칙_art6-1_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-1조(수습기간) ① 실무수습기간은 6개월로 하며, 실무수습(이하 이 절에서 \"수습\"이라 한다)의 개시는 매월 초일부터 시작한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-1",
+      "target_id": "Exception#보험업감독업무시행세칙_art6-1_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-1조(수습기간) ③ 수습자가 군복무, 재학, 질병 및 그 밖의 특별한 사유로 인하여 수습의 연기가 불가피할 때에는 수습기관의 장에게 별지 제37호서식의 수습연기신청서를 제출하여 수습의 연기를 신청할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-2",
+      "target_id": "Regulation#보험업감독업무시행세칙_art6-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-2조(수습의 신청 및 수습기관 지정) ① 보험계리사 또는 손해사정사 수습을 받고자 하는 자는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업감독업무시행세칙_art6-8_requirement",
+      "target_id": "Exception#보험업감독업무시행세칙_art6-8_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-8조(등록신청) 다만, 시행규칙 제47조제2항의 금융위원회가 인정하는 외국의 보험계리사 자격을 가진 자가 등록신청을 하는 경우에는 제1호 및 제2호의 서류 대신에 당해 외국의 보험계리사 자격을 증명하는 서류를 첨부하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-9",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-9조(선임계리사 검증의견서 작성기준) ① 감독규정 제9-9조의 규정에 의한 선임계리사 검증의견서에는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-10",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-10조(등록) ① 보험계리 또는 손해사정을 업으로 하고자 하는 자는 금융감독원에 등록하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-12",
+      "target_id": "Regulation#보험업감독업무시행세칙_art6-10",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-12조(손해사정업 등록신청) ② 손해사정업자가 보조인을 활용하고자 할 때에는 등록전에",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#보험업감독업무시행세칙_art6-15_protection",
+      "target_id": "Regulation#보험업감독업무시행세칙_art6-10",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-15조(손해배상의 보장) ③ 보험계리업 또는 손해사정업을 영위하고자 하는 자가 손해배상보장예탁금 또는 인허가보증보험증권으로 예탁하는 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업감독업무시행세칙_art6-21_requirement",
+      "target_id": "Exclusion#보험업감독업무시행세칙_art6-21_prohibition",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-21조(보조인의 자격 등) ② 손해사정업무에 종사하고 있는 고용손해사정사는 종별 구분에 따라 1인당 2인이내의 보조인을 활용할 수 있으며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업감독업무시행세칙_art6-21_requirement",
+      "target_id": "Exception#보험업감독업무시행세칙_art6-21_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-21조(보조인의 자격 등) ③ 종별 손해사정업무 수행과 관련이 있는 국가공인 전문자격증을 보유하고 있는 자가 손해사정업무와 관련하여 제6-20조의 전문인 업무를 수행하는 경우에는 보조인으로 보지 않는다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-18",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-18조(손해사정서 기재사항 등) ① 감독규정 제9-18조제1항에서 \"감독원장이 정하는 사항\"이라 함은",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art6-19",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch6",
+        "source_text": "제6-19조(서류 등의 보존) 독립보험계리사 또는 독립손해사정사는 다음 각호의 서류 등을 5년간 보존하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art7-1",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-1조(시험실시) 감독규정 제4-18조제8항에 따라 보험중개사 시험 실시에 관한 업무 중",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art7-2",
+      "target_id": "Regulation#보험업감독업무시행세칙_art7-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-2조(응시원서) 시험에 응시하고자 하는 자는 감독원장이 공고한 응시원서 접수마감일까지",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Eligibility#보험업감독업무시행세칙_art7-4_손해사정사면제",
+      "target_id": "Regulation#보험업감독업무시행세칙_art7-1",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-4조(경력확인서) ② 규칙 제53조제2항의 규정에 의하여 손해사정사 시험의 제1차시험을 면제받고자 하는 자는",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art7-5",
+      "target_id": "Regulation#보험업감독업무시행세칙_art7-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-5조(시험수수료) ① 보험계리사 및 손해사정사 시험의 제1차시험 수수료는 30,000원, 제2차시험 수수료는 50,000원으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art7-6",
+      "target_id": "Eligibility#보험업감독업무시행세칙_art7-9_위원결격",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-6조(보험전문인시험관리위원회의 설치) 감독원장은 보험중개사, 보험계리사 및 손해사정사 시험의 시행 및 관리업무를 담당하게 하기 위하여 보험전문인시험관리위원회(이하 \"시험관리위원회\"라 한다)를 둔다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#보험업감독업무시행세칙_art7-10_제척회피",
+      "target_id": "Regulation#보험업감독업무시행세칙_art7-6",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-10조(시험관리위원회의 운영) ④ 위원은 다음 각호의 1에 해당하는 사항에 대한 심의에서 제척된다. 1. 본인과 직접적인 이해관계가 있는 사항",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#보험업감독업무시행세칙_art7-10_정보누설금지",
+      "target_id": "Regulation#보험업감독업무시행세칙_art7-6",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-10조(시험관리위원회의 운영) ⑥ 시험관리위원회에 참석한 자는 심의와 관련하여 알게된 정보를 타인에게 누설하여서는 아니된다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업감독업무시행세칙_art7-12",
+      "target_id": "Exclusion#보험업감독업무시행세칙_art7-12_응시제한",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch7",
+        "source_text": "제7-12조(부정행위 및 허위기재 등에 대한 조치) ③ 제1항 및 제2항의 규정에 의한 부정행위자는 그 행위가 있은 날부터 5년간 해당 시험에 응시할 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#감독업무시행세칙_art8-1",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch8",
+        "source_text": "제8-1조(세부절차 등) 감독규정 또는 이 세칙의 시행을 위하여 필요한 세부적인 서식ㆍ절차 등에 관하여 이 세칙에서 정하지 아니한 사항에 대하여는 감독원장이 별도로 정하는 바에 의한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#감독업무시행세칙_부칙1",
+      "target_id": "Regulation#보험업감독업무시행세칙_art1-1",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch8",
+        "source_text": "제1조(시행일) 이 세칙은 2025년 12월 31일부터 시행한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#감독업무시행세칙_부칙2",
+      "target_id": "Exception#감독업무시행세칙_부칙2_exception",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch8",
+        "source_text": "제2조(업무보고서에 관한 적용례) [별지26]의 개정서식은 2025년 12월말 기준 업무보고서부터 적용한다. 다만, 공시기준이율 관련 자산듀레이션 산출(AI752, AH752) 개정서식은 2026년 9월말 업무보고서부터 적용한다.",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T14:45:44.273669+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 104,
+    "relation_count": 78,
+    "sections_processed": 8,
+    "api_calls": 9,
+    "total_input_tokens": 108300,
+    "total_output_tokens": 44088
+  }
+}

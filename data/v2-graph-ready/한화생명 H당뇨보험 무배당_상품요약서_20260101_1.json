@@ -1,0 +1,1329 @@
+{
+  "document_id": "한화생명 H당뇨보험 무배당_상품요약서_20260101_1",
+  "product_name": "한화생명 H당뇨보험 무배당_상품요약서_20260101",
+  "entities": [
+    {
+      "id": "Policy#hwl_h당뇨보험",
+      "type": "Policy",
+      "label": "한화생명 H당뇨보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "당뇨보험",
+        "contract_types": [
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H당뇨보험 무배당은 당뇨병의 진단부터 치료, 입원, 수술 그리고 합병증까지 체계적으로 보장합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#당뇨보장",
+      "type": "Product_Category",
+      "label": "당뇨보장",
+      "properties": {
+        "category": "건강"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H당뇨보험 무배당은 당뇨병의 진단부터 치료, 입원, 수술 그리고 합병증까지 체계적으로 보장합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_h당뇨보험_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H당뇨보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_h당뇨보험_미지급형",
+      "type": "Surrender_Value",
+      "label": "해약환급금 미지급형",
+      "properties": {
+        "calculation_basis": "납입기간중 0%, 납입기간후 50%",
+        "key_milestones": [
+          "납입기간중: 0%",
+          "납입기간후: 50%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약 및 일부특약의 경우 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않는 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_h당뇨보험_보험료납입면제",
+      "type": "Coverage",
+      "label": "보험료 납입면제",
+      "properties": {
+        "benefit_name": "보험료 납입면제",
+        "trigger_condition": "보험료 납입기간 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우",
+        "payment_amount": "차회 이후의 주계약 및 특약의 보험료 납입을 면제",
+        "rider_code": null,
+        "normalized_code": "premium_waiver",
+        "category": "PREMIUM_WAIVER"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우 차회 이후의 주계약 및 특약의 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_h당뇨보험_단체취급",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_h당뇨보험_보험료선납",
+      "type": "Premium_Discount",
+      "label": "보험료 선납할인",
+      "properties": {
+        "discount_type": "보험료 선납할인",
+        "discount_rate_text": "평균공시이율로 할인"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_h당뇨보험_선납할인",
+      "type": "Calculation",
+      "label": "보험료 선납할인 계산",
+      "properties": {
+        "formula_text": "평균공시이율(계약 체결 시점의 평균공시이율)로 할인",
+        "formula_type": "premium",
+        "applies_to": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우",
+        "variables": [
+          "평균공시이율",
+          "선납보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_h당뇨보험_갱신보험료",
+      "type": "Calculation",
+      "label": "갱신보험료 계산",
+      "properties": {
+        "formula_text": "갱신일 현재 피보험자의 나이에 의하여 계산하고, 적용기초율(적용이율, 적용위험률, 계약체결비용, 계약관리비용)은 갱신시점의 적용기초율을 적용",
+        "formula_type": "premium",
+        "applies_to": "갱신계약",
+        "variables": [
+          "피보험자 나이",
+          "적용기초율",
+          "적용이율",
+          "적용위험률",
+          "계약체결비용",
+          "계약관리비용"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "갱신계약의 보험료는 갱신일 현재 피보험자의 나이에 의하여 계산하고, 적용기초율(적용이율, 적용위험률, 계약체결비용, 계약관리비용)은 갱신시점의 적용기초율을 적용합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h당뇨보험_K1.9",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h당뇨보험_단체취급요건",
+      "type": "Eligibility",
+      "label": "단체취급 가입요건",
+      "properties": {
+        "age_range": null,
+        "health_requirements": null,
+        "contract_types": "주계약의 보험계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속되어야 하며, 동일 단체에 소속한 주계약의 보험계약자 수 또는 피보험자 수가 5인 이상이어야 함"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "1. 주계약의 보험계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다. 2. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 보험계약자 수 또는 단체의 대표자를 보험계약자로 하고 단체소속원을 피보험자로 하는 주계약의 피보험자 수가 5인 이상이어야 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h당뇨보험_보험기간",
+      "type": "Eligibility",
+      "label": "보험기간 요건",
+      "properties": {
+        "contract_types": [
+          "90세만기",
+          "100세만기"
+        ],
+        "health_requirements": "건강진단 시행 가능"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "▪ 주계약 : 90세만기, 100세만기",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h당뇨보험_가입나이",
+      "type": "Eligibility",
+      "label": "가입나이 요건",
+      "properties": {
+        "age_range": "20세~80세",
+        "contract_types": [
+          "90세만기",
+          "100세만기"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "가입최저나이: 20세 가입최고나이: 보험종목, 성별, 보험기간 및 보험료 납입기간별로 아래와 같음",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h당뇨보험_가입한도",
+      "type": "Eligibility",
+      "label": "가입한도 요건",
+      "properties": {
+        "contract_types": [
+          "주계약: 300만원~1,500만원"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "주계약 300만원 ~ 1,500만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h당뇨보험_건강진단",
+      "type": "Eligibility",
+      "label": "건강진단 요건",
+      "properties": {
+        "health_requirements": "기존 보험가입상황 및 나이, 계약전 알릴의무에 따라 건강진단 시행 가능"
+      },
+      "provenance": {
+        "source_section_id": "sec2.바",
+        "source_text": "피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_h당뇨보험_만성당뇨합병증",
+      "type": "Rider",
+      "label": "만성당뇨병합병증 및 후유증 보장특약",
+      "properties": {
+        "rider_name": "만성당뇨병합병증 및 후유증 보장특약 무배당",
+        "rider_type": "의무부가특약",
+        "rider_code": "의무부가"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "만성당뇨병합병증 및 후유증 보장특약(무)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_h당뇨보험_당뇨병진단",
+      "type": "Rider",
+      "label": "당뇨병진단특약",
+      "properties": {
+        "rider_name": "당뇨병진단특약(무)",
+        "rider_type": "비갱신형"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "당뇨병진단특약(무)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_h당뇨보험_당뇨병주요치료",
+      "type": "Rider",
+      "label": "당뇨병주요치료보장특약",
+      "properties": {
+        "rider_name": "당뇨병주요치료보장특약(무)",
+        "rider_type": "비갱신형"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "당뇨병주요치료보장특약(무)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_h당뇨보험_고지혈증보장D",
+      "type": "Rider",
+      "label": "고지혈증보장D특약",
+      "properties": {
+        "rider_name": "고혈압보장특약(진단및약물치료)(갱신형)(T1.2) 무배당",
+        "rider_type": "선택특약",
+        "rider_code": "T1.2"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "고지혈증보장D특약(진단및약물치료)(갱신형)(무)(일반가입형Ⅱ) : 5년, 10년만기 자동갱신(최대 100세)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_diabetes_TA2_1_stent",
+      "type": "Rider",
+      "label": "급여 2대주요기관질병 스텐트삽입술 보장특약",
+      "properties": {
+        "rider_code": "TA2.1",
+        "rider_name": "급여 2대주요기관질병 스텐트삽입술 및 풍선혈관성형술 보장D특약(연1회)(갱신형)(TA2.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "급여 2대주요기관질병 스텐트삽입술 및 풍선혈관성형술 보장D특약(연1회)(갱신형)(TA2.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_diabetes_KA2_1_stage",
+      "type": "Rider",
+      "label": "당뇨병 및 3대질환 Stage진단특약",
+      "properties": {
+        "rider_code": "KA2.1",
+        "rider_name": "당뇨병 및 3대질환 Stage진단특약(KA2.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "당뇨병 및 3대질환 Stage진단특약(KA2.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_diabetes_K1_6_group",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약(K1.6)",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_death_diabetes",
+      "type": "Coverage",
+      "label": "당뇨병질환 사망보험금",
+      "properties": {
+        "benefit_name": "당뇨병질환 사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 당뇨병질환으로 진단이 확정되고, 보험기간 중 그 당뇨병질환을 직접적인 원인으로 사망한 경우",
+        "payment_amount": "1년미만: 100만원, 1년이상: 200만원",
+        "rider_code": "주계약",
+        "normalized_code": "diabetes_death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "당뇨병질환 사망보험금 | 보험기간 중 피보험자가 당뇨병질환으로 진단이 확정되고, 보험기간 중 그 당뇨병질환을 직접적인 원인으로 사망한 경우 | 1년미만 100만원 | 1년이상 200만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_death_general",
+      "type": "Coverage",
+      "label": "사망보험금",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "100만원",
+        "rider_code": "주계약",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "사망보험금 | 보험기간 중 피보험자가 사망한 경우 | - | 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_chronic_complication",
+      "type": "Coverage",
+      "label": "만성당뇨병합병증 진단자금",
+      "properties": {
+        "benefit_name": "만성당뇨병합병증 진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 '만성당뇨병합병증'으로 진단이 확정되었을 경우 (최초 1회한)",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "의무부가특약",
+        "normalized_code": "chronic_diabetes_complication_diagnosis",
+        "category": "DIABETES"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.만성당뇨병합병증특약",
+        "source_text": "만성당뇨병합병증 진단자금 | 피보험자가 보험기간 중 '만성당뇨병합병증'으로 진단이 확정되었을 경우 (최초 1회한) | 1년미만 50만원 | 1년이상 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_blindness",
+      "type": "Coverage",
+      "label": "질병 실명 진단자금",
+      "properties": {
+        "benefit_name": "질병 실명 진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 '질병으로 인한 실명'으로 진단이 확정되었을 경우 (최초 1회한)(최초 진단 확정일로부터 매년 진단 확정일마다 10년간(최대 10회) 확정지급)",
+        "payment_amount": "1년미만: 매년 50만원, 1년이상: 매년 100만원",
+        "rider_code": "의무부가특약",
+        "normalized_code": "disease_blindness_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.만성당뇨병합병증특약",
+        "source_text": "질병 실명 진단자금 | 피보험자가 보험기간 중 '질병으로 인한 실명'으로 진단이 확정되었을 경우 (최초 1회한)(최초 진단 확정일로부터 매년 진단 확정일마다 10년간(최대 10회) 확정지급) | 1년미만 매년 50만원 | 1년이상 매년 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_amputation",
+      "type": "Coverage",
+      "label": "질병 발목이상 하지절단자금",
+      "properties": {
+        "benefit_name": "질병 발목이상 하지절단자금",
+        "trigger_condition": "피보험자가 보험기간 중 '질병으로 인한 발목이상 하지절단'으로 진단이 확정되었을 경우 (최초 1회한) (최초 진단 확정일로부터 매년 진단 확정일마다 10년간(최대 10회) 확정지급)",
+        "payment_amount": "1년미만: 매년 50만원, 1년이상: 매년 100만원",
+        "rider_code": "의무부가특약",
+        "normalized_code": "disease_lower_limb_amputation",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.만성당뇨병합병증특약",
+        "source_text": "질병 발목이상 하지절단자금 | 피보험자가 보험기간 중 '질병으로 인한 발목이상 하지절단'으로 진단이 확정되었을 경우 (최초 1회한) (최초 진단 확정일로부터 매년 진단 확정일마다 10년간(최대 10회) 확정지급) | 1년미만 매년 50만원 | 1년이상 매년 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_dialysis_blood",
+      "type": "Coverage",
+      "label": "급여 혈액 및 복막투석 치료자금",
+      "properties": {
+        "benefit_name": "급여 투석 치료자금 - 급여 혈액 및 복막투석 치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 혈액 및 복막투석 치료'를 받은 경우 (연간 1회한)",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "의무부가특약",
+        "normalized_code": "covered_hemodialysis_peritoneal_dialysis",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.만성당뇨병합병증특약",
+        "source_text": "급여 투석 치료자금 - 급여 혈액 및 복막투석 치료자금 | 피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 혈액 및 복막투석 치료'를 받은 경우 (연간 1회한) | 1년미만 50만원 | 1년이상 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_dialysis_crrt",
+      "type": "Coverage",
+      "label": "급여 CRRT 투석 치료자금",
+      "properties": {
+        "benefit_name": "급여 투석 치료자금 - 급여 CRRT 투석 치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 CRRT 투석 치료'를 받은 경우 (연간 1회한)",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "의무부가특약",
+        "normalized_code": "covered_crrt_dialysis_treatment",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.만성당뇨병합병증특약",
+        "source_text": "급여 투석 치료자금 - 급여 CRRT 투석 치료자금 | 피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 CRRT 투석 치료'를 받은 경우 (연간 1회한) | 1년미만 50만원 | 1년이상 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_hyperlipidemia_drug",
+      "type": "Coverage",
+      "label": "고지혈증 약물치료자금",
+      "properties": {
+        "benefit_name": "고지혈증 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '고지혈증'으로 진단이 확정되었을 경우 (최초 1회한)",
+        "payment_amount": "1년미만: 25만원, 1년이상: 50만원",
+        "rider_code": "T1.2",
+        "normalized_code": "hyperlipidemia_drug_treatment",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.고지혈증보장특약",
+        "source_text": "고지혈증 약물치료자금 | 보험기간 중 피보험자가 '고지혈증'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 180일 이상의 기간 동안 '고지혈증 약물치료'를 받았을 경우 (최초 1회한) | 1년미만 50만원 | 1년이상 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_hypertension_drug",
+      "type": "Coverage",
+      "label": "고혈압(원발성) 약물치료자금",
+      "properties": {
+        "benefit_name": "고혈압(원발성) 약물치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 '고혈압(원발성)'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 180일 이상의 기간 동안 '고혈압(원발성) 약물치료'를 받았을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 10만원, 1년이상: 100만원",
+        "rider_code": "T1.2",
+        "normalized_code": "primary_hypertension_drug_treatment",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.고혈압보장특약",
+        "source_text": "고혈압(원발성) 약물치료자금 | 보험기간 중 피보험자가 '고혈압(원발성)'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 180일 이상의 기간 동안 '고혈압(원발성) 약물치료'를 받았을 경우(최초 1회한) | 1년미만 10만원 | 1년이상 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_hypertension_diagnosis",
+      "type": "Coverage",
+      "label": "고혈압질환 진단자금",
+      "properties": {
+        "benefit_name": "고혈압질환 진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 '고혈압질환'으로 진단이 확정되었을 경우 (최초 1회한)",
+        "payment_amount": "1년미만: 5만원, 1년이상: 50만원",
+        "rider_code": "T1.2",
+        "normalized_code": "hypertension_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.고혈압보장특약",
+        "source_text": "고혈압질환 진단자금 | 피보험자가 보험기간 중 '고혈압질환'으로 진단이 확정되었을 경우 (최초 1회한) | 1년미만 5만원 | 1년이상 50만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_diabetes_stent_surgery",
+      "type": "Coverage",
+      "label": "급여 스텐트삽입술 및 풍선혈관성형수술자금",
+      "properties": {
+        "benefit_name": "급여 스텐트삽입술 및 풍선혈관성형수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '2대주요기관질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '급여 스텐트삽입술' 또는 '급여 풍선혈관성형술'을 받았을 경우 (연간 1회한)",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "covered_stent_angioplasty_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.급여2대주요기관질병특약",
+        "source_text": "급여 스텐트삽입술 및 풍선혈관성형수술자금 | 보험기간 중 피보험자가 '2대주요기관질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '급여 스텐트삽입술' 또는 '급여 풍선혈관성형술'을 받았을 경우 (연간 1회한) | 1년미만 50만원 | 1년이상 100만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#hwl_diabetes_intentional_self_harm",
+      "type": "Exclusion",
+      "label": "고의적 자해 면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exception#hwl_diabetes_mental_incapacity",
+      "type": "Exception",
+      "label": "심신상실 면책 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생하거나 보험료 납입면제 사유가 발생한 경우",
+        "referenced_exclusion": "고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생하거나 보험료 납입면제 사유가 발생한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exception#hwl_diabetes_suicide_after_2years",
+      "type": "Exception",
+      "label": "2년 경과 후 자살 면책 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#hwl_diabetes_beneficiary_intentional_harm",
+      "type": "Exclusion",
+      "label": "보험수익자 고의 해해 면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#hwl_diabetes_contractor_intentional_harm",
+      "type": "Exclusion",
+      "label": "계약자 고의 해해 면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#hwl_diabetes_fraud_claim",
+      "type": "Exclusion",
+      "label": "사기 목적 보험금 청구 면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Exclusion#hwl_diabetes_document_forgery",
+      "type": "Exclusion",
+      "label": "서류 위조·변조 면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Calculation#hwl_hdiabetes_interest",
+      "type": "Calculation",
+      "label": "보장부분 적용이율",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "주계약 및 특약 보험료 산출",
+        "variables": [
+          "적용이율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.나",
+        "source_text": "한화생명 H당뇨보험 무배당 주계약 및 특약에 사용한 적용이율은 연복리 2.75%입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_hdiabetes_cancellation_rate",
+      "type": "Calculation",
+      "label": "적용해지율 계산",
+      "properties": {
+        "formula_text": "납입기간 이내: 경과기간별로 연 0.1%~12.85%, 납입기간 이후: 경과기간별로 연 0.8%",
+        "formula_type": "premium",
+        "applies_to": "보험료 납입기간 20년납 기준 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)",
+        "variables": [
+          "경과기간",
+          "납입기간",
+          "해지율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.라",
+        "source_text": "보험료 납입기간 20년납 기준으로 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%~12.85%, 납입기간 이후에 대하여 경과기간별로 연 0.8%이며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_hdiabetes_nodividend",
+      "type": "Dividend_Method",
+      "label": "H당뇨보험 무배당 구조",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 H당뇨보험 무배당은 무배당 상품으로서 배당을 하지 않습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_hdiabetes_calculation",
+      "type": "Surrender_Value",
+      "label": "해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "계약자적립액에서 해약공제액을 공제한 금액",
+        "key_milestones": "납입기간중 0%, 납입기간후 표준형의 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_hdiabetes_surrender_base",
+      "type": "Calculation",
+      "label": "해약환급금 계산식",
+      "properties": {
+        "formula_text": "계약자적립액 - 해약공제액",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 산출시",
+        "variables": [
+          "계약자적립액",
+          "해약공제액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_hdiabetes_surrender_period",
+      "type": "Calculation",
+      "label": "납입기간별 해약환급금 계산",
+      "properties": {
+        "formula_text": "납입기간중: 0%, 납입기간후: 표준형 해약환급금 × 50%",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 미지급형 상품",
+        "variables": [
+          "표준형 해약환급금",
+          "납입기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "본 상품은 '해약환급금 미지급형(납입기간중0%, 납입기간후50%)'으로 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지될 경우에는 해당계약의 '표준형'의 해약환급금의 50%에 해당하는 금액을 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_hdiabetes_return_rate",
+      "type": "Calculation",
+      "label": "환급률 계산식",
+      "properties": {
+        "formula_text": "해약환급금 ÷ 그 시점까지 납입한 보험료",
+        "formula_type": "surrender_value",
+        "applies_to": "경과기간별 환급률 산출",
+        "variables": [
+          "해약환급금",
+          "납입한 보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 보험료로 나눈 비율입니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#pure_protection",
+      "type": "Product_Category",
+      "label": "순수보장성 상품",
+      "properties": {
+        "category": "보장"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "이 상품은 순수보장성으로 만기시 지급받는 금액(만기보험금)이 없습니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_hdiabetes_price_index",
+      "type": "Calculation",
+      "label": "보험가격지수 계산 공식",
+      "properties": {
+        "formula_text": "보험료총액 ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산정",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Product_Category#당뇨보장",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H당뇨보험 무배당은 당뇨병의 진단부터 치료, 입원, 수술 그리고 합병증까지 체계적으로 보장합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Dividend_Method#hwl_h당뇨보험_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 H당뇨보험 무배당은 무배당 상품으로서 배당을 하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Surrender_Value#hwl_h당뇨보험_미지급형",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약 및 일부특약의 경우 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않는 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_h당뇨보험_보험료납입면제",
+      "type": "WAIVES_PREMIUM",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우 차회 이후의 주계약 및 특약의 보험료 납입을 면제하여 드립니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Premium_Discount#hwl_h당뇨보험_단체취급",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Premium_Discount#hwl_h당뇨보험_보험료선납",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_h당뇨보험_K1.9",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요?",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_h당뇨보험_만성당뇨합병증",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "의무부가특약 + 만성당뇨병합병증 및 후유증 보장특약 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_h당뇨보험_당뇨병진단",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "선택특약 + 당뇨병진단특약(KA2.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_h당뇨보험_당뇨병주요치료",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "선택특약 + 당뇨병주요치료보장특약(KA2.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_h당뇨보험_고지혈증보장D",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "선택특약 + 고지혈증보장D특약(진단및약물치료)(갱신형)(T1.2) 무배당[일반가입형Ⅱ]",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_diabetes_TA2_1_stent",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "선택특약 + 급여 2대주요기관질병 스텐트삽입술 및 풍선혈관성형술 보장D특약(연1회)(갱신형)(TA2.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_diabetes_KA2_1_stage",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "선택특약 + 당뇨병 및 3대질환 Stage진단특약(KA2.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Rider#hwl_diabetes_K1_6_group",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 단체취급특약(K1.6)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Eligibility#hwl_h당뇨보험_단체취급요건",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급특약은 계약을 체결할 때 다음과 같은 조건을 만족하는 계약에 한하여 적용합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Eligibility#hwl_h당뇨보험_보험기간",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "주계약 : 90세만기, 100세만기",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Eligibility#hwl_h당뇨보험_가입나이",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "가입최저나이: 20세 가입최고나이: 보험종목, 성별, 보험기간 및 보험료 납입기간별로 아래와 같음",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Eligibility#hwl_h당뇨보험_가입한도",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "주계약 300만원 ~ 1,500만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Eligibility#hwl_h당뇨보험_건강진단",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "한화생명 H당뇨보험 무배당의 경우 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_death_diabetes",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "당뇨병질환 사망보험금: 보험기간 중 피보험자가 당뇨병질환으로 진단이 확정되고, 보험기간 중 그 당뇨병질환을 직접적인 원인으로 사망한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_death_general",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "사망보험금: 보험기간 중 피보험자가 사망한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_chronic_complication",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "만성당뇨병합병증 진단자금: 피보험자가 보험기간 중 '만성당뇨병합병증'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_blindness",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "질병 실명 진단자금: 피보험자가 보험기간 중 '질병으로 인한 실명'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_amputation",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "질병 발목이상 하지절단자금: 피보험자가 보험기간 중 '질병으로 인한 발목이상 하지절단'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_dialysis_blood",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 혈액 및 복막투석 치료자금: 피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 혈액 및 복막투석 치료'를 받은 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_dialysis_crrt",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 CRRT 투석 치료자금: 피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 CRRT 투석 치료'를 받은 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_hyperlipidemia_drug",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "고지혈증 약물치료자금: 보험기간 중 피보험자가 '고지혈증'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 180일 이상의 기간 동안 '고지혈증 약물치료'를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_hypertension_drug",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "고혈압(원발성) 약물치료자금: 보험기간 중 피보험자가 '고혈압(원발성)'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 180일 이상의 기간 동안 '고혈압(원발성) 약물치료'를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_hypertension_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "고혈압질환 진단자금: 피보험자가 보험기간 중 '고혈압질환'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Coverage#hwl_diabetes_stent_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 스텐트삽입술 및 풍선혈관성형수술자금: 보험기간 중 피보험자가 '2대주요기관질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '급여 스텐트삽입술' 또는 '급여 풍선혈관성형술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_diabetes_death_diabetes",
+      "target_id": "Exclusion#hwl_diabetes_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_diabetes_death_general",
+      "target_id": "Exclusion#hwl_diabetes_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_diabetes_intentional_self_harm",
+      "target_id": "Exception#hwl_diabetes_mental_incapacity",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생하거나 보험료 납입면제 사유가 발생한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_diabetes_intentional_self_harm",
+      "target_id": "Exception#hwl_diabetes_suicide_after_2years",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_diabetes_death_diabetes",
+      "target_id": "Exclusion#hwl_diabetes_beneficiary_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_diabetes_death_general",
+      "target_id": "Exclusion#hwl_diabetes_beneficiary_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_diabetes_death_diabetes",
+      "target_id": "Exclusion#hwl_diabetes_contractor_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_diabetes_death_general",
+      "target_id": "Exclusion#hwl_diabetes_contractor_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Exclusion#hwl_diabetes_fraud_claim",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Exclusion#hwl_diabetes_document_forgery",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_h당뇨보험_보험료선납",
+      "target_id": "Calculation#hwl_h당뇨보험_선납할인",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_hdiabetes_interest",
+      "target_id": "Calculation#hwl_h당뇨보험_갱신보험료",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "갱신계약의 보험료는 갱신일 현재 피보험자의 나이에 의하여 계산하고, 적용기초율(적용이율, 적용위험률, 계약체결비용, 계약관리비용)은 갱신시점의 적용기초율을 적용합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_h당뇨보험_미지급형",
+      "target_id": "Calculation#hwl_hdiabetes_surrender_base",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_hdiabetes_surrender_base",
+      "target_id": "Calculation#hwl_hdiabetes_surrender_period",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "본 상품은 해약환급금 미지급형(납입기간중0%, 납입기간후50%)으로 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지될 경우에는 해당계약의 '표준형'의 해약환급금의 50%에 해당하는 금액을 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_hdiabetes_surrender_period",
+      "target_id": "Calculation#hwl_hdiabetes_return_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 보험료로 나눈 비율입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Product_Category#pure_protection",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 상품은 순수보장성으로 만기시 지급받는 금액(만기보험금)이 없습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h당뇨보험",
+      "target_id": "Calculation#hwl_hdiabetes_price_index",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율을 '보험가격지수'라고 합니다.",
+        "confidence": 1.0
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T12:51:54.171131+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 49,
+    "relation_count": 47,
+    "sections_processed": 7,
+    "api_calls": 8,
+    "total_input_tokens": 81923,
+    "total_output_tokens": 23256
+  }
+}

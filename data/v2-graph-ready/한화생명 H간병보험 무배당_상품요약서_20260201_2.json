@@ -1,0 +1,2140 @@
+{
+  "document_id": "한화생명 H간병보험 무배당_상품요약서_20260201_2",
+  "product_name": "한화생명 H간병보험 무배당_상품요약서_20260201",
+  "entities": [
+    {
+      "id": "Policy#hwl_hcareins_nodividend",
+      "type": "Policy",
+      "label": "한화생명 H간병보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "간병보험",
+        "contract_types": [
+          "일반가입형",
+          "간편가입형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H간병보험 무배당은 치매 및 장기요양에 대한 진단, 의료비, 간병 등을 보장하는 보장성상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#care",
+      "type": "Product_Category",
+      "label": "간병보험",
+      "properties": {
+        "category": "간병"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H간병보험 무배당은 치매 및 장기요양에 대한 진단, 의료비, 간병 등을 보장하는 보장성상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_hcareins_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H간병보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_hcareins_mizigup",
+      "type": "Surrender_Value",
+      "label": "해약환급금 미지급형",
+      "properties": {
+        "calculation_basis": "해약환급금 미지급형",
+        "key_milestones": "납입기간중 0%, 납입기간후 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않는 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_hcareins_surrender",
+      "type": "Calculation",
+      "label": "해약환급금 계산",
+      "properties": {
+        "formula_text": "납입기간 중: 0%, 납입기간 후: 표준형 해약환급금 × 50%",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 미지급형",
+        "variables": [
+          "표준형 해약환급금",
+          "지급률"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_hcareins_longcare15_visit",
+      "type": "Rider",
+      "label": "장기요양(1-5등급)방문요양 지원금특약(월1회)(무)",
+      "properties": {
+        "rider_code": "미명시",
+        "rider_name": "장기요양(1-인지지원등급)주야간보호 지원금특약(월1회)(무)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "장기요양(1-5등급)방문요양 지원금특약(월1회)(무) 및 장기요양(1-5등급)가족인요양보호사 방문요양특약(월1회)(무)의 경우 보험료 납입기간 중 장기요양보장개시일 이후 '1-5등급 장기요양상태'로 판정받은 경우에는 해당 특약에 대한 차회 이후의 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_hcareins_dementia_cdr1_5yr",
+      "type": "Rider",
+      "label": "치매(CDR1점이상)간병자금특약(매월,최대5년)(무)",
+      "properties": {
+        "rider_code": "K5.1",
+        "rider_name": "치매(CDR1점이상)보장특약",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "치매(CDR1점이상)간병자금특약(매월,최대5년)(무)의 경우 보험료 납입기간 중 치매보장개시일 이후 최초로 '경도이상 치매상태'로 진단 확정되었을 경우에는 해당 특약에 대한 차회 이후의 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_hcareins_designated_claim_k19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약(K1.9)",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_hcareins_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_hcareins_prepaid_discount",
+      "type": "Calculation",
+      "label": "보험료 선납 할인",
+      "properties": {
+        "formula_text": "평균공시이율(계약 체결 시점의 평균공시이율)로 할인",
+        "formula_type": "discount",
+        "applies_to": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우",
+        "variables": [
+          "평균공시이율",
+          "선납기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_hcareins_group_condition",
+      "type": "Eligibility",
+      "label": "단체취급특약 가입조건",
+      "properties": {
+        "age_range": "미명시",
+        "health_requirements": "미명시",
+        "contract_types": [
+          "대상단체 소속",
+          "5인 이상 단체"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 보험계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 보험계약자 수 또는 단체의 대표자를 보험계약자로 하고 단체소속원을 피보험자로 하는 주계약의 피보험자 수가 5인 이상이어야 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_hcaring_age_general",
+      "type": "Eligibility",
+      "label": "일반가입형 가입연령 자격요건",
+      "properties": {
+        "age_range": "남녀 만15세~80세 (납입기간별 상한 연령 상이)",
+        "health_requirements": "무진단으로 가입 가능하나, 기존 보험상품 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단 시행 가능",
+        "contract_types": [
+          "간편가입형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "[일반가입형] 남자/여자 5년납: 만15세~80세, 10년납: 만15세~79세/80세, 15년납: 만15세~74세/80세, 20년납: 만15세~69세/79세, 30년납: 만15세~59세/69세",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_hcaring_coverage_limits",
+      "type": "Eligibility",
+      "label": "가입한도 자격요건",
+      "properties": {
+        "age_range": "해당없음",
+        "health_requirements": "해당없음",
+        "contract_types": [
+          "일반가입형",
+          "간편가입형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "주계약 일반가입형: 50만원 ~ 500만원, 간편가입형: 50만원 ~ 500만원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_TA1.4",
+      "type": "Rider",
+      "label": "3대질병 간병인지원금특약(1-180일)(요양병원)(갱신형)",
+      "properties": {
+        "rider_code": "TA1.4",
+        "rider_name": "3대질병 간병인지원금특약(1-180일)(요양병원)(갱신형)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "3대질병 간병인지원금특약(1-180일)(요양병원)(갱신형)(TA1.4) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_TA2.2",
+      "type": "Rider",
+      "label": "간병인지원금특약(1-180일)(상급종합병원)(갱신형)",
+      "properties": {
+        "rider_code": "KA3.1",
+        "rider_name": "간병인지원금특약(181-365일)(요양병원)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "간병인지원금특약(1-180일)(상급종합병원)(갱신형)(TA2.2) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_KA2.1",
+      "type": "Rider",
+      "label": "간병인지원금특약(특정 경증상병 제외)(1-180일)(요양병원)",
+      "properties": {
+        "rider_code": "KA2.1",
+        "rider_name": "간병인지원금특약(특정 경증상병 제외)(1-180일)(요양병원)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "간병인지원금특약(특정 경증상병 제외)(1-180일)(요양병원)(KA2.1) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_KA4.1",
+      "type": "Rider",
+      "label": "간호·간병서비스지원금특약(1-180일)",
+      "properties": {
+        "rider_code": "KA4.1",
+        "rider_name": "간호·간병서비스지원금특약(1-180일)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "간호·간병서비스지원금특약(1-180일)(KA4.1) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_T2.3",
+      "type": "Rider",
+      "label": "급여 치매 CT, MRI, PET 검사비용지원특약(연1회)(갱신형)",
+      "properties": {
+        "rider_code": "T2.3",
+        "rider_name": "급여 치매 CT, MRI, PET 검사비용지원특약(연1회)(갱신형)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 치매 CT, MRI, PET 검사비용지원특약(연1회)(갱신형)(T2.3) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_K3.1",
+      "type": "Rider",
+      "label": "급여 치매치료제처방보장특약(연1회)",
+      "properties": {
+        "rider_code": "K3.1",
+        "rider_name": "급여 치매치료제처방보장특약(연1회)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 치매치료제처방보장특약(연1회)(K3.1) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_K1.6",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h간병보험_K1.2",
+      "type": "Rider",
+      "label": "장애인전용 세제전환특약",
+      "properties": {
+        "rider_code": "K1.2",
+        "rider_name": "장애인전용 세제전환특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_주계약_일반가입_사망보험금",
+      "type": "Coverage",
+      "label": "사망보험금 (일반가입형)",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망하였을 경우 (경과기간 1년이상)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.주계약",
+        "source_text": "급부명칭: 사망보험금, 지급사유: 보험기간 중 피보험자가 사망하였을 경우, 지급금액: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA14_요양병원_암간병인지원급여금",
+      "type": "Coverage",
+      "label": "요양병원 암 간병인지원급여금",
+      "properties": {
+        "benefit_name": "요양병원 제외 간병인사용 치매 입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 치매보장개시일 이후 치매로 진단이 확정되고, 그 치매의 치료를 직접적인 목적으로 요양병원을 제외한 병원급 또는 의원급 의료기관에 1일 이상 입원하며 '간병인'을 사용하여 실질적으로 유상의 간병서비스를 이용한 경우",
+        "payment_amount": "1일당 8천원 (간병인 사용 1회 입원당 365일 한도)",
+        "rider_code": "T1.4",
+        "normalized_code": "nursing_hospital_cancer_caregiver_support",
+        "category": "CANCER_HOSPITAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.3대질병간병인지원금특약_TA14_요양병원",
+        "source_text": "급부명칭: 요양병원 암 간병인지원급여금, 지급사유: 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고 그 '암'의 직접적인 치료를 목적으로 요양병원에 1일 이상 입원하며 '간병인'을 사용하여 실질적으로 유상의 간병서비스를 이용한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA21_상급종합병원간병인지원급여금",
+      "type": "Coverage",
+      "label": "상급종합병원 간병인 지원급여금",
+      "properties": {
+        "benefit_name": "상급종합병원 치매통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 치매보장개시일 이후에 치매로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 상급종합병원에서 통원하여 치료를 받았을 경우(1일 1회한, 연간30회한)",
+        "payment_amount": "1회당 5만원",
+        "rider_code": "T2.3",
+        "normalized_code": "tertiary_hospital_caregiver_support",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.간병인지원금특약_상급종합병원_TA21",
+        "source_text": "급부명칭: 상급종합병원 간병인 지원급여금, 지급사유: 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 상급종합병원에 1일 이상 입원하며 '간병인'을 사용하여 실질적으로 유상의 간병서비스를 이용한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간병_KA41_요양병원_지급예시",
+      "type": "Calculation",
+      "label": "요양병원 간병인지원급여금 계산예시",
+      "properties": {
+        "formula_text": "2017년 5월 1일까지는 1만 5천원, 2017년 5월 2일부터는 3만원을 기준으로 계산하여 '요양병원 간병인지원급여금'을 지급합니다",
+        "formula_type": "benefit",
+        "applies_to": "계약일부터 간병인을 사용한 입원일까지의 경과기간에 따라",
+        "variables": [
+          "계약일",
+          "입원일",
+          "특약가입금액",
+          "경과기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.간병인지원금특약_요양병원_KA41",
+        "source_text": "계약일 : 2016년 5월 2일, 입원일 : 2017년 4월 20일부터 2017년 5월 10일, 특약가입금액이 3만원이고, 재해 이외의 원인으로 입원하여 간병인을 사용한 경우 ⇒ 2017년 5월 1일까지는 1만 5천원, 2017년 5월 2일부터는 3만원을 기준으로 계산하여 '요양병원 간병인지원급여금'을 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_간병_KA21_보험금감액",
+      "type": "Calculation",
+      "label": "KA2.1 보험금 감액 계산",
+      "properties": {
+        "formula_text": "계약일부터 1년 이후 보험금 지급사유 발생시 지급하는 '요양병원 간병인지원급여금'의 50%를 지급합니다. 다만, 질병의 치료를 직접적인 목적으로 한 '요양병원 간병인지원급여금'의 간병인 사용시작일이 계약일로부터 1년 미만에 발생하였다 하더라도 간병인 사용일이 계약일로부터 1년 이후까지 계속되었을 경우, 1년 미만 기간의 '요양병원 간병인지원급여금'은 50%를 지급하며, 1년 이후 기간의 '요양병원 간병인지원급여금'은 100%를 지급합니다",
+        "formula_type": "benefit",
+        "applies_to": "계약일부터 1년 미만에 재해 이외의 원인으로 보험금 지급사유가 발생한 경우",
+        "variables": [
+          "계약일",
+          "보험금 지급사유 발생시점",
+          "간병인 사용시작일",
+          "간병인 사용기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.간병인지원금특약_181-365일_요양병원_KA21",
+        "source_text": "계약일부터 1년 미만에 재해 이외의 원인으로 약관 제2-3조(보험금의 지급사유)에서 정한 보험금 지급사유가 발생한 경우 계약일부터 1년 이후 보험금 지급사유 발생시 지급하는 '요양병원 간병인지원급여금'의 50%를 지급합니다. 다만, 질병의 치료를 직접적인 목적으로 한 '요양병원 간병인지원급여금'의 간병인 사용시작일이 계약일로부터 1년 미만에 발생하였다 하더라도 간병인 사용일이 계약일로부터 1년 이후까지 계속되었을 경우, 1년 미만 기간의 '요양병원 간병인지원급여금'은 50%를 지급하며, 1년 이후 기간의 '요양병원 간병인지원급여금'은 100%를 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA23_중증무릎관절연골손상진단자금",
+      "type": "Coverage",
+      "label": "중증무릎관절연골손상 진단자금",
+      "properties": {
+        "benefit_name": "중증무릎관절연골손상 진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 '중증무릎관절연골손상'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 125만원 (단, 재해로 인한 진단시 250만원), 1년이상: 250만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "severe_knee_cartilage_damage_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.관절질환치료특약_TA23",
+        "source_text": "급부명칭: 중증무릎관절연골손상 진단자금, 지급사유: 피보험자가 보험기간 중 '중증무릎관절연골손상'으로 진단이 확정되었을 경우(최초 1회한), 경과기간: 1년미만, 지급금액: 125만원 ※ 단, 재해로 인한 진단시 250만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA23_관절염카티스템수술자금",
+      "type": "Coverage",
+      "label": "관절염 카티스템 수술자금",
+      "properties": {
+        "benefit_name": "관절염 카티스템 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '관절염Ⅱ'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '카티스템 수술'을 받았을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 250만원, 1년이상: 500만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "arthritis_cartistem_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.관절질환치료특약_TA23",
+        "source_text": "급부명칭: 관절염 카티스템 수술자금, 지급사유: 피보험자가 보험기간 중 '관절염Ⅱ'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '카티스템 수술'을 받았을 경우(최초 1회한)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA23_특정류마티스관절염진단자금",
+      "type": "Coverage",
+      "label": "특정류마티스관절염 진단자금",
+      "properties": {
+        "benefit_name": "특정류마티스관절염 진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 '특정 류마티스 관절염'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 500만원, 1년이상: 1,000만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "specific_rheumatoid_arthritis_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.관절질환치료특약_TA23",
+        "source_text": "급부명칭: 특정류마티스관절염 진단자금, 지급사유: 피보험자가 보험기간 중 '특정 류마티스 관절염'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_T23_급여치매CT검사비용",
+      "type": "Coverage",
+      "label": "급여 치매 CT, MRI, PET 검사비용",
+      "properties": {
+        "benefit_name": "급여 치매 CT, MRI, PET 검사비용",
+        "trigger_condition": "피보험자가 보험기간 중 의사에 의하여 '치매'의 진단 및 치료를 위한 필요소견을 토대로 '급여 CT, MRI, PET 검사'를 받았을 경우(연간 1회한)",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "T2.3",
+        "normalized_code": "covered_dementia_ct_mri_pet_exam",
+        "category": "EXAM_TEST"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.급여치매CT검사비용지원특약_T23",
+        "source_text": "급부명칭: 급여 치매 CT, MRI, PET 검사비용, 지급사유: 피보험자가 보험기간 중 의사에 의하여 '치매'의 진단 및 치료를 위한 필요소견을 토대로 '급여 CT, MRI, PET 검사'를 받았을 경우(연간 1회한), 지급금액: 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_K31_급여치매치료제처방비",
+      "type": "Coverage",
+      "label": "급여 치매치료제처방비",
+      "properties": {
+        "benefit_name": "급여 치매치료제처방비",
+        "trigger_condition": "피보험자가 보험기간 중 '급여 특정 치매치료제'를 처방 받은 경우(연간 1회한)",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "K3.1",
+        "normalized_code": "covered_dementia_medication_prescription",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.급여치매치료제처방보장특약_K31",
+        "source_text": "급부명칭: 급여 치매치료제처방비, 지급사유: 피보험자가 보험기간 중 '급여 특정 치매치료제'를 처방 받은 경우(연간 1회한), 지급금액: 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA23_신장질환관혈수술자금",
+      "type": "Coverage",
+      "label": "신장질환 관혈수술자금",
+      "properties": {
+        "benefit_name": "신장질환 비관혈수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '신장질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '비관혈수술'을 받았을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 250만원, 1년이상: 500만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "kidney_disease_open_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.신장질환치료특약_TA23",
+        "source_text": "급부명칭: 신장질환 관혈수술자금, 지급사유: 피보험자가 보험기간 중 '신장질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '관혈수술'을 받았을 경우(연간 1회한)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA23_급여혈액복막투석치료자금",
+      "type": "Coverage",
+      "label": "급여 혈액 및 복막 투석 치료자금",
+      "properties": {
+        "benefit_name": "급여 혈액 및 복막 투석 치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 혈액 및 복막투석 치료'를 받은 경우(연간 1회한)",
+        "payment_amount": "300만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "covered_hemodialysis_peritoneal_dialysis",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.신장질환치료특약_TA23",
+        "source_text": "급부명칭: 급여 혈액 및 복막 투석 치료자금, 지급사유: 피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 혈액 및 복막투석 치료'를 받은 경우(연간 1회한), 지급금액: 300만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA23_급여CRRT투석치료자금",
+      "type": "Coverage",
+      "label": "급여 CRRT 투석 치료자금",
+      "properties": {
+        "benefit_name": "급여 CRRT 투석 치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 CRRT투석 치료'를 받은 경우(연간 1회한)",
+        "payment_amount": "1,000만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "covered_crrt_dialysis_treatment",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.신장질환치료특약_TA23",
+        "source_text": "급부명칭: 급여 CRRT 투석 치료자금, 지급사유: 피보험자가 보험기간 중 의사의 치료를 위한 필요소견을 토대로 '급여 CRRT투석 치료'를 받은 경우(연간 1회한), 지급금액: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA22_의료최고도입원환자요양병원입원급여금",
+      "type": "Coverage",
+      "label": "의료최고도 입원환자 요양병원 입원급여금",
+      "properties": {
+        "benefit_name": "의료최고도 입원환자 요양병원 입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 요양병원에 의료최고도 입원환자로 1일 이상 입원하였을 경우(1회 입원당 지급일수 180일 한도)",
+        "payment_amount": "1년 미만: 입원1일당 15,000원 (단, 재해로 인한 입원시 입원1일당 3만원), 1년 이상: 입원1일당 3만원",
+        "rider_code": "TA2.2",
+        "normalized_code": "medical_high_dependency_nursing_hospital_admission",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.요양병원집중케어입원특약_TA22",
+        "source_text": "급부명칭: 의료최고도 입원환자 요양병원 입원급여금, 지급사유: 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 요양병원에 의료최고도 입원환자로 1일 이상 입원하였을 경우(1회 입원당 지급일수 180일 한도)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간병_TA22_입원급여금합산",
+      "type": "Calculation",
+      "label": "요양병원집중케어 입원급여금 합산 지급",
+      "properties": {
+        "formula_text": "약관 제2-3조(보험금의 지급사유) 제1호의 지급사유가 발생한 경우에는 의료최고도 입원환자 요양병원 입원급여금과 요양병원 입원급여금을 더하여 지급합니다. 다만, 요양병원 입원급여금의 1회 입원당 최고한도를 초과하는 경우 요양병원 입원급여금을 제외한 의료최고도 입원환자 요양병원 입원급여금만 지급합니다",
+        "formula_type": "benefit",
+        "applies_to": "의료최고도 입원환자 요양병원 입원급여금 지급사유 발생시",
+        "variables": [
+          "의료최고도 입원환자 요양병원 입원급여금",
+          "요양병원 입원급여금",
+          "1회 입원당 최고한도"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.요양병원집중케어입원특약_TA22",
+        "source_text": "약관 제2-3조(보험금의 지급사유) 제1호의 지급사유가 발생한 경우에는 의료최고도 입원환자 요양병원 입원급여금과 요양병원 입원급여금을 더하여 지급합니다. 다만, 요양병원 입원급여금의 1회 입원당 최고한도를 초과하는 경우 요양병원 입원급여금을 제외한 의료최고도 입원환자 요양병원 입원급여금만 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA14_욕창진단자금",
+      "type": "Coverage",
+      "label": "욕창 진단자금",
+      "properties": {
+        "benefit_name": "욕창 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '욕창'으로 진단 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 15만원, 1년이상: 30만원",
+        "rider_code": "TA1.4",
+        "normalized_code": "pressure_ulcer_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.욕창진단특약_TA14",
+        "source_text": "급부명칭: 욕창 진단자금, 지급사유: 보험기간 중 피보험자가 '욕창'으로 진단 확정되었을 경우(최초 1회한), 경과기간: 1년미만, 지급금액: 15만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA14_중등증이상욕창진단자금",
+      "type": "Coverage",
+      "label": "중등증이상 욕창 진단자금",
+      "properties": {
+        "benefit_name": "중등도이상 치매진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 치매보장개시일 이후에 '중등도이상 치매상태'로 진단 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "rider_code": "K4.1",
+        "normalized_code": "moderate_severe_pressure_ulcer_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.욕창진단특약_TA14",
+        "source_text": "급부명칭: 중등증이상 욕창 진단자금, 지급사유: 보험기간 중 피보험자가 '중등증이상 욕창'으로 진단 확정되었을 경우(최초 1회한)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_TA31_응급환자응급실내원진료비",
+      "type": "Coverage",
+      "label": "응급환자 응급실내원 진료비",
+      "properties": {
+        "benefit_name": "응급환자 응급실내원 진료비",
+        "trigger_condition": "피보험자가 보험기간 중 '응급환자 응급실 내원 진료비 대상자'에 해당하였을 경우",
+        "payment_amount": "(내원 1회당) 2만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "emergency_room_visit",
+        "category": "OUTPATIENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.응급환자응급실내원특약_TA31",
+        "source_text": "급부명칭: 응급환자 응급실내원 진료비, 지급사유: 피보험자가 보험기간 중 '응급환자 응급실 내원 진료비 대상자'에 해당하였을 경우, 지급금액: (내원 1회당) 2만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_KA31_장기요양1-2등급상급침실이용추가비용지원금",
+      "type": "Coverage",
+      "label": "1~2등급 장기요양상태 상급침실이용 추가비용 지원금",
+      "properties": {
+        "benefit_name": "1~2등급 장기요양상태 식사재료비 지원금",
+        "trigger_condition": "피보험자가 보험기간 중 '1~2등급 장기요양상태'로 판정받고 보험기간 중 '장기요양기관'을 이용하여 '식사재료비'를 부담하였을 경우",
+        "payment_amount": "이용 1회당 10만원 (단, 판정후 보험월 기준 월 1회에 한함)",
+        "rider_code": "KA3.1",
+        "normalized_code": "grade1_2_long_term_care_premium_room_support",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.장기요양1-2등급상급침실이용추가비용지원금특약_KA31",
+        "source_text": "급부명칭: 1~2등급 장기요양상태 상급침실이용 추가비용 지원금, 지급사유: 피보험자가 보험기간 중 '1~2등급 장기요양상태'로 판정받고 보험기간 중 '장기요양기관'을 이용하여 '상급침실이용 추가비용'를 부담하였을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_KA21_가족인요양보호사방문요양지원금",
+      "type": "Coverage",
+      "label": "가족인 요양보호사 방문요양지원금",
+      "properties": {
+        "benefit_name": "가족인 요양보호사 방문요양지원금",
+        "trigger_condition": "피보험자가 보험기간 중 '장기요양보장개시일' 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '가족인 요양보호사'를 통해 방문요양을 이용하였을 경우",
+        "payment_amount": "이용 1회당 10만원 (단, 판정후 보험월 기준 월 1회에 한함)",
+        "rider_code": "KA2.1",
+        "normalized_code": "family_care_worker_support",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.장기요양1-5등급가족인요양보호사방문요양특약_KA21",
+        "source_text": "급부명칭: 가족인 요양보호사 방문요양지원금, 지급사유: 피보험자가 보험기간 중 '장기요양보장개시일' 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '가족인 요양보호사'를 통해 방문요양을 이용하였을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_KA31_장기요양1-5등급방문요양지원금",
+      "type": "Coverage",
+      "label": "1~5등급 장기요양상태 방문요양 지원금",
+      "properties": {
+        "benefit_name": "1~5등급 장기요양상태 재가급여금",
+        "trigger_condition": "피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '재가급여'를 이용하였을 경우",
+        "payment_amount": "이용 1회당 10만원 (단, 월간 1회에 한함)",
+        "rider_code": "KA3.1",
+        "normalized_code": "grade1_5_long_term_care_home_visit_support",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.장기요양1-5등급방문요양지원금특약_KA31",
+        "source_text": "급부명칭: 1~5등급 장기요양상태 방문요양 지원금, 지급사유: 피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '방문요양'을 이용하였을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_간병_KA41_간호간병통합서비스지원급여금",
+      "type": "Coverage",
+      "label": "간호·간병통합 서비스지원급여금",
+      "properties": {
+        "benefit_name": "간호·간병통합 서비스지원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일 이상 입원하며, '간호·간병통합서비스'를 사용한 경우",
+        "payment_amount": "1년미만: 간호·간병통합 서비스 사용 1일당 1만원 (단, 재해로 인한 입원시 입원 1일당 2만원), 1년이상: 간호·간병통합 서비스 사용 1일당 2만원",
+        "rider_code": "KA4.1",
+        "normalized_code": "integrated_nursing_care_service_support",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.간호간병서비스지원금특약_KA41",
+        "source_text": "급부명칭: 간호·간병통합 서비스지원급여금, 지급사유: 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일 이상 입원하며, '간호·간병통합서비스'를 사용한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_간병_간호간병통합서비스제외",
+      "type": "Exclusion",
+      "label": "간호·간병통합서비스 제공시 지급제한",
+      "properties": {
+        "exclusion_type": "서비스 중복",
+        "condition_text": "「의료법」 제4조의2(간호∙간병통합서비스의 제공 등)에서 정하는 간호∙간병통합서비스를 제공받는 경우에는 약관 제2-3조(보험금의 지급사유)에서 정한 보험금은 지급하지 않습니다"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나",
+        "source_text": "「의료법」 제4조의2(간호∙간병통합서비스의 제공 등)에서 정하는 간호∙간병통합서비스를 제공받는 경우에는 약관 제2-3조(보험금의 지급사유)에서 정한 보험금은 지급하지 않습니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_간병_암보장개시일전_암판정",
+      "type": "Exclusion",
+      "label": "암보장개시일 전 암 판정시 특약무효",
+      "properties": {
+        "exclusion_type": "기존질병",
+        "condition_text": "피보험자가 '암보장개시일'의 전일 이전에 '암'으로 판정받았을 경우에는 특약을 무효로 하며 계약자에게 이미 납입한 이 특약의 보험료를 돌려드립니다"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.3대질병간병인지원금특약",
+        "source_text": "피보험자가 '암보장개시일'의 전일 이전에 '암'으로 판정받았을 경우에는 특약을 무효로 하며 계약자에게 이미 납입한 이 특약의 보험료를 돌려드립니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간병_장해지급률합산_50퍼센트",
+      "type": "Calculation",
+      "label": "장해지급률 50% 이상 장해상태 판정",
+      "properties": {
+        "formula_text": "장해분류표 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태",
+        "formula_type": "disability",
+        "applies_to": "보험료 납입면제 사유 발생시",
+        "variables": [
+          "장해지급률",
+          "신체부위별 장해",
+          "동일 재해"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나",
+        "source_text": "피보험자가 보험료 납입기간 중 장해분류표 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_간병_사망보험금_납입보험료비교",
+      "type": "Calculation",
+      "label": "사망보험금과 납입보험료 비교지급",
+      "properties": {
+        "formula_text": "사망보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 사망보험금으로 지급합니다",
+        "formula_type": "benefit",
+        "applies_to": "사망보험금 지급시",
+        "variables": [
+          "사망보험금",
+          "이미 납입한 보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.주계약",
+        "source_text": "사망보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 사망보험금으로 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_longterm_care_cognitive_support_benefit_ka31",
+      "type": "Coverage",
+      "label": "장기요양상태 판정자금",
+      "properties": {
+        "benefit_name": "장기요양상태 복지용구 지원금",
+        "trigger_condition": "피보험자가 보험기간 중 장기요양보장개시일 이후에 '장기요양상태'로 판정받고 보험기간 중 '복지용구'를 이용하였을 경우",
+        "payment_amount": "이용 1회당 10만원 (단, 판정후 보험월 기준 월 1회에 한함)",
+        "rider_code": "KA3.1",
+        "normalized_code": "long_term_care_assessment",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 장기요양(1-인지지원등급)보장특약(KA3.1) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 장기요양상태 판정자금 | 피보험자가 보험기간 중 장기요양보장개시일 이후에 '장기요양상태'로 판정받은 경우(최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_longterm_care_daynight_care_benefit_ka31",
+      "type": "Coverage",
+      "label": "장기요양상태 주∙야간보호 지원금",
+      "properties": {
+        "benefit_name": "장기요양상태 주∙야간보호 지원금",
+        "trigger_condition": "피보험자가 보험기간 중 장기요양보장개시일 이후에 '장기요양상태'로 판정받고 보험기간 중 '주∙야간보호'를 이용하였을 경우",
+        "payment_amount": "이용 1회당 10만원 (단, 판정후 보험월 기준 월 1회에 한함)",
+        "rider_code": "KA3.1",
+        "normalized_code": "long_term_care_day_night_protection_support",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 장기요양(1-인지지원등급)주야간보호 지원금특약(월1회)(KA3.1) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 장기요양상태 주∙야간보호 지원금 | 피보험자가 보험기간 중 장기요양보장개시일 이후에 '장기요양상태'로 판정받고 보험기간 중 '주∙야간보호'를 이용하였을 경우 | 이용 1회당 10만원 (단, 판정후 보험월 기준 월 1회에 한함)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_dementia_specialized_facility_benefit_ka21",
+      "type": "Coverage",
+      "label": "치매전담형 시설급여금",
+      "properties": {
+        "benefit_name": "치매전담형 시설급여금",
+        "trigger_condition": "피보험자가 보험기간 중 장기요양기관 이용대상자 보장개시일 이후에 '특정 치매전담형 장기요양기관 이용대상자'에 해당되어 보험기간 중 '치매전담형 시설급여'를 이용하였을 경우(연간 1회한)",
+        "payment_amount": "이용 1회당 100만원",
+        "rider_code": "KA2.1",
+        "normalized_code": "dementia_facility_benefit",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 장기요양(2-5등급)치매전담형 시설급여특약(연1회)(KA2.1) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 치매전담형 시설급여금 | 피보험자가 보험기간 중 장기요양기관 이용대상자 보장개시일 이후에 '특정 치매전담형 장기요양기관 이용대상자'에 해당되어 보험기간 중 '치매전담형 시설급여'를 이용하였을 경우(연간 1회한) | 이용 1회당 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_femoral_fracture_diagnosis_ta23",
+      "type": "Coverage",
+      "label": "대퇴골 재해골절 진단자금",
+      "properties": {
+        "benefit_name": "늑골 재해골절 진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 보험기간 중 '늑골 재해골절'로 진단이 확정되었을 경우(연간 3회한)",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "femur_accidental_fracture_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 재해골절치료특약(맞춤가입)(갱신형)(TA2.3) 무배당[맞춤고지형] (1) 대퇴골 재해골절 진단자금 | 급부명칭 | 지급사유 | 지급금액 | 대퇴골 재해골절 진단자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 보험기간 중 '대퇴골 재해골절'로 진단이 확정되었을 경우 (최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_5major_fracture_diagnosis_ta23",
+      "type": "Coverage",
+      "label": "5대(머리,척추) 재해골절 진단자금",
+      "properties": {
+        "benefit_name": "5대(머리,척추) 재해골절 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '5대(머리,척추) 재해골절'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 100만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "major_head_spine_fracture_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "재해골절치료특약(맞춤가입)(갱신형)(TA2.3) (2) 12대 재해골절 진단자금 | 급부명칭 | 지급사유 | 지급금액 | 5대(머리,척추) 재해골절 진단자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 보험기간 중 '5대(머리,척추) 재해골절'로 진단이 확정되었을 경우 | 1회당 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_6major_fracture_surgery_ta23",
+      "type": "Coverage",
+      "label": "6대(팔,다리) 재해골절 수술자금",
+      "properties": {
+        "benefit_name": "6대(팔,다리) 재해골절 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '6대(팔,다리) 재해골절'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "major_limb_fracture_surgery",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "재해골절치료특약(맞춤가입)(갱신형)(TA2.3) (3) 12대 재해골절 수술자금 | 급부명칭 | 지급사유 | 지급금액 | 6대(팔,다리) 재해골절 수술자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '6대(팔,다리) 재해골절'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_rib_fracture_surgery_ta23",
+      "type": "Coverage",
+      "label": "늑골 재해골절 수술자금",
+      "properties": {
+        "benefit_name": "늑골 재해골절 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '늑골 재해골절'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "rib_fracture_surgery",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "재해골절치료특약(맞춤가입)(갱신형)(TA2.3) (3) 12대 재해골절 수술자금 | 급부명칭 | 지급사유 | 지급금액 | 늑골 재해골절 수술자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '늑골 재해골절'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_general_hospital_admission_ta14",
+      "type": "Coverage",
+      "label": "종합병원 입원급여금",
+      "properties": {
+        "benefit_name": "종합병원 치매통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 치매보장개시일 이후에 치매로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 종합병원에서 통원하여 치료를 받았을 경우(1일 1회한, 연간30회한)",
+        "payment_amount": "1회당 3만원",
+        "rider_code": "T2.3",
+        "normalized_code": "general_hospital_admission_benefit",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 종합병원입원특약(1-120일)(갱신형)(TA1.4) 무배당 | 급부명칭 | 지급사유 | 경과기간 | 지급금액 | 종합병원 입원급여금 | 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 보험기간 중 그 치료를 직접적인 목적으로 1일 이상 종합병원에 입원하였을 경우 | 1년 미만 | 입원1일당 5,000원 ※ 단, 재해로 인한 입원시 입원1일당 1만원 | 1년 이상 | 입원1일당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_severe_dementia_benefit1_k51",
+      "type": "Coverage",
+      "label": "중증치매 산정특례대상Ⅰ 보장보험금",
+      "properties": {
+        "benefit_name": "중증치매 산정특례대상Ⅱ 보장보험금",
+        "trigger_condition": "피보험자가 보험기간 중 '중증치매 산정특례Ⅱ 대상질환'으로 진단 확정되고, 그 '중증치매 산정특례Ⅱ 대상질환'을 직접적인 원인으로 '중증치매 산정특례대상Ⅱ'으로 '산정특례 신규등록'된 경우(최초 1회한)",
+        "payment_amount": "체증형: 체증전 보험기간 100만원, 체증후 보험기간 200만원 / 기본형: 100만원",
+        "rider_code": "K5.1",
+        "normalized_code": "severe_dementia_special_calculation_target",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 중증치매 산정특례보장특약(최초1회)(K5.1) 무배당 [체증형] (1) 중증치매 산정특례대상Ⅰ 보장보험금 | 급부명칭 | 지급사유 | 지급금액 | 중증치매 산정특례대상Ⅰ 보장보험금 | 피보험자가 보험기간 중 '중증치매 산정특례Ⅰ 대상질환'으로 진단 확정되고, 그 '중증치매 산정특례Ⅰ 대상질환'을 직접적인 원인으로 '중증치매 산정특례대상Ⅰ'으로 '산정특례 신규등록'된 경우(최초 1회한) | 체증전 보험기간 100만원 체증후 보험기간 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_icu_admission_ta22",
+      "type": "Coverage",
+      "label": "중환자실 입원급여금",
+      "properties": {
+        "benefit_name": "중환자실 입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 보험기간 중 그 치료를 직접적인 목적으로 1일 이상 중환자실에 입원하였을 경우",
+        "payment_amount": "1년 미만: 입원1일당 5,000원(재해시 1만원), 1년 이상: 입원1일당 1만원",
+        "rider_code": "TA2.2",
+        "normalized_code": "icu_admission_benefit",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 중환자실입원특약(1-120일)(갱신형)(TA2.2) 무배당 | 급부명칭 | 지급사유 | 경과기간 | 지급금액 | 중환자실 입원급여금 | 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 보험기간 중 그 치료를 직접적인 목적으로 1일 이상 중환자실에 입원하였을 경우 | 1년 미만 | 입원1일당 5,000원 ※ 단, 재해로 인한 입원시 입원1일당 1만원 | 1년 이상 | 입원1일당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_spine_musculoskeletal_ct_mri_ta14",
+      "type": "Coverage",
+      "label": "급여 척추 및 근골격계 CT, MRI 검사자금",
+      "properties": {
+        "benefit_name": "급여 척추 및 근골격계 CT, MRI 검사자금",
+        "trigger_condition": "피보험자가 의사에 의하여 보험기간 중 재해 및 재해 이외의 원인으로 '척추 및 근골격계, 특정 골절'의 진단 및 치료를 위한 필요소견을 토대로 '급여 CT, MRI 검사'를 받았을 경우(연간 1회한)",
+        "payment_amount": "1년미만: 1회당 5만원, 1년이상: 1회당 10만원",
+        "rider_code": "TA1.4",
+        "normalized_code": "covered_spine_musculoskeletal_ct_mri_exam",
+        "category": "EXAM_TEST"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 척추 및 근골격계치료특약(갱신형)(TA1.4) 무배당 | 급부명칭 | 지급사유 | 경과기간 | 지급금액 | 급여 척추 및 근골격계 CT, MRI 검사자금 | 피보험자가 의사에 의하여 보험기간 중 재해 및 재해 이외의 원인으로 '척추 및 근골격계, 특정 골절'의 진단 및 치료를 위한 필요소견을 토대로 '급여 CT, MRI 검사'를 받았을 경우(연간 1회한) | 1년미만 | 1회당 5만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_spine_general_hospital_surgery_ta14",
+      "type": "Coverage",
+      "label": "척추 및 근골격계 종합병원 수술급여금",
+      "properties": {
+        "benefit_name": "척추 및 근골격계 상급종합병원 입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 재해 및 재해 이외의 원인으로 인하여 '척추 및 근골격계, 특정 골절'로 진단받고 그 치료를 직접적인 목적으로 1일 이상 상급종합병원에 입원하였을 경우(1회 입원당 지급일수 30일 한도)",
+        "payment_amount": "1년미만: 입원 1일당 2만원, 1년이상: 입원 1일당 4만원",
+        "rider_code": "TA1.4",
+        "normalized_code": "spine_musculoskeletal_general_hospital_surgery",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 척추 및 근골격계치료특약(갱신형)(TA1.4) 무배당 | 급부명칭 | 지급사유 | 경과기간 | 지급금액 | 척추 및 근골격계 종합병원 수술급여금 | 보험기간 중 피보험자가 재해 및 재해 이외의 원인으로 인하여 '척추 및 근골격계, 특정 골절'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 종합병원에서 수술을 받았을 경우(연간 1회를 한도로 함) | 1년미만 | 1회당 5만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_first_day_admission_ta23",
+      "type": "Coverage",
+      "label": "입원급여금",
+      "properties": {
+        "benefit_name": "치매 입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 치매보장개시일 이후 치매로 진단이 확정되고, 그 치매의 치료를 직접적인 목적으로 1일 이상 입원하였을 경우",
+        "payment_amount": "1일당 5천원 (1회 입원당 365일 한도)",
+        "rider_code": "T1.4",
+        "normalized_code": "hospitalization_benefit",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 첫날부터입원특약(1-180일)(맞춤가입)(갱신형)(TA2.3) 무배당[맞춤고지형] | 급부명칭 | 지급사유 | 경과기간 | 지급금액 | 입원급여금 | 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우 (1회 입원당 지급일수 180일한도) | 1년 미만 | 입원 1일당 1만원 ※ 단, 재해로 인한 입원시 입원 1일당 2만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_dementia_cdr_scale_test_k21",
+      "type": "Coverage",
+      "label": "급여 치매 CDR척도검사 지원비",
+      "properties": {
+        "benefit_name": "급여 치매 CDR척도검사 지원비",
+        "trigger_condition": "피보험자가 보험기간 중 치매보장개시일 이후에 '치매'의 진단 및 치료를 위한 필요소견을 토대로 '급여 치매 CDR척도검사'에 해당하는 의료행위를 받은 경우(연간 1회한)",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "K2.1",
+        "normalized_code": "covered_dementia_cdr_scale_exam_support",
+        "category": "EXAM_TEST"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 치매 CDR척도검사지원비특약(급여, 연1회)(K2.1) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 급여 치매 CDR척도검사 지원비 | 피보험자가 보험기간 중 치매보장개시일 이후에 '치매'의 진단 및 치료를 위한 필요소견을 토대로 '급여 치매 CDR척도검사'에 해당하는 의료행위를 받은 경우(연간 1회한) | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_mild_dementia_care_k41",
+      "type": "Coverage",
+      "label": "경도이상 치매간병자금",
+      "properties": {
+        "benefit_name": "중등도이상 치매간병자금",
+        "trigger_condition": "보험기간 중 피보험자가 치매보장개시일 이후에 '중등도이상 치매상태'로 진단 확정되고 '매년 중등도이상 치매상태 진단 확정일'에 생존한 경우",
+        "payment_amount": "진단 확정일을 포함하여 '매월 중등도이상 치매상태 진단 확정일'에 50만원 (매년 생존시 12개월 확정지급)",
+        "rider_code": "K4.1",
+        "normalized_code": "mild_dementia_care",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 치매(CDR1점이상)간병자금특약(매월,최대5년)(K4.1) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 경도이상 치매간병자금 | 보험기간 중 피보험자가 치매보장개시일 이후에 '경도이상 치매상태'로 진단 확정되고 '매년 경도이상 치매상태 진단 확정일'에 생존한 경우 | 진단 확정일을 포함하여 '매월 경도이상 치매상태 진단 확정일'에 10만원 ('매년 경도이상 치매상태 진단 확정일'에 생존시 해당연도에 대하여 12개월 확정지급, 단 5년(60회)을 최고한도로 지급)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_severe_dementia_care_k41",
+      "type": "Coverage",
+      "label": "중증 치매간병자금",
+      "properties": {
+        "benefit_name": "중증 치매진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 '중증 치매상태'로 진단 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "rider_code": "K4.1",
+        "normalized_code": "severe_dementia_care",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 치매(CDR3점이상)간병자금특약(매월,최대종신)(K4.1) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 중증 치매간병자금 | 보험기간 중 피보험자가 '중증 치매상태'로 진단 확정되고 '매년 중증 치매상태 진단 확정일'에 생존한 경우 | 진단 확정일을 포함하여 '매월 중증 치매상태 진단 확정일'에 50만원 ('매년 중증 치매상태 진단 확정일'에 생존시 해당연도에 대하여 12개월 확정지급)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_dementia_outpatient_hospital_t23",
+      "type": "Coverage",
+      "label": "치매통원자금",
+      "properties": {
+        "benefit_name": "치매통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 치매보장개시일 이후에 치매로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 병원 또는 의원(한방병원 또는 한의원을 포함)에서 통원하여 치료를 받았을 경우(1일 1회한, 연간30회한)",
+        "payment_amount": "1회당 1만원",
+        "rider_code": "T2.3",
+        "normalized_code": "dementia_outpatient",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 치매직접치료통원특약Ⅱ(연30회)(갱신형)(T2.3) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 치매통원자금 | 보험기간 중 피보험자가 치매보장개시일 이후에 치매로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 병원 또는 의원(한방병원 또는 한의원을 포함)에서 통원하여 치료를 받았을 경우(1일 1회한, 연간30회한) | 1회당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_targeted_dementia_drug_1_k21",
+      "type": "Coverage",
+      "label": "표적치매 약물허가 치료자금",
+      "properties": {
+        "benefit_name": "표적치매 약물허가 치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 치매보장개시일 이후에 최경도치매상태 또는 경증알츠하이머치매상태로 진단 확정 되고 아밀로이드베타 적응증 상태에 해당되어, 보험기간 중 그 직접적인 치료를 목적으로 아밀로이드베타 표적약물허가치료제의 투약 또는 투여를 받은 경우(1회당 지급하며, 36회를 한도로 함)",
+        "payment_amount": "10만원",
+        "rider_code": "T1.1",
+        "normalized_code": "targeted_dementia_drug_treatment",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 표적치매약물허가치료비특약(최경도치매·경증알츠하이머치매)(K2.1) 무배당 | 급부명칭 | 지급사유 | 지급금액 | 표적치매 약물허가 치료자금 | 피보험자가 보험기간 중 치매보장개시일 이후에 최경도치매상태 또는 경증알츠하이머치매상태로 진단 확정 되고 아밀로이드베타 적응증 상태에 해당되어, 보험기간 중 그 직접적인 치료를 목적으로 아밀로이드베타 표적약물허가치료제의 투약 또는 투여를 7회이상 받은 경우(최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_longterm_care_intentional_harm",
+      "type": "Exclusion",
+      "label": "고의 자해로 인한 면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "다. 일반적인 보험금 지급제한 사유 ■ 보험당사자간에 의한 보험사고 발생시 지급제한 ① 피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_longterm_care_mental_disability",
+      "type": "Exception",
+      "label": "심신상실 등으로 인한 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "referenced_exclusion": "Exclusion#hwl_longterm_care_intentional_harm"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "다만, 다음 중 어느 하나에 해당하여 보험금 지급사유가 발생한 때에는 보험금을 지급하며 보험료 납입면제 사유가 발생한 때에는 납입을 면제하여 드립니다. 가. 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생하거나 보험료 납입면제 사유가 발생한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_longterm_care_suicide_after_2years",
+      "type": "Exception",
+      "label": "2년 후 자살에 대한 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일(부활계약의 경우는 부활청약일)부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "Exclusion#hwl_longterm_care_intentional_harm"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "나. 계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_longterm_care_beneficiary_harm",
+      "type": "Exclusion",
+      "label": "보험수익자의 고의 가해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "② 보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_longterm_care_fraud_claim",
+      "type": "Exclusion",
+      "label": "보험금 사기청구",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우 또는 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 중대사유로 인한 해지 ① 보험계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우 ② 보험계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_longterm_care_contract_fraud",
+      "type": "Exclusion",
+      "label": "계약체결 시 사기",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립된 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "■ 사기 등에 의한 보험계약 체결 ① 보험계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우에는 보장개시일부터 5년 이내(사기사실을 안 날부터는 1개월 이내)에 계약을 취소할 수 있습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_longterm_care_waiting_period_calc",
+      "type": "Calculation",
+      "label": "장기요양보장개시일 계산",
+      "properties": {
+        "formula_text": "계약일(계약을 부활(효력회복)하는 경우 부활(효력회복)일)로부터 그날을 포함하여 90일이 지난 날의 다음 날",
+        "formula_type": "waiting_period",
+        "applies_to": "장기요양 특약들",
+        "variables": [
+          "계약일",
+          "부활(효력회복)일",
+          "90일"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "'장기요양보장개시일'은 계약일(계약을 부활(효력회복)하는 경우 부활(효력회복)일)로부터 그날을 포함하여 90일이 지난 날의 다음 날을 말합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_dementia_waiting_period_calc",
+      "type": "Calculation",
+      "label": "치매보장개시일 계산",
+      "properties": {
+        "formula_text": "계약일(계약을 부활(효력회복)하는 경우 부활(효력회복)일)부터 그날을 포함하여 1년이 지난 날의 다음 날",
+        "formula_type": "waiting_period",
+        "applies_to": "치매 관련 특약들",
+        "variables": [
+          "계약일",
+          "부활(효력회복)일",
+          "1년"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "'치매보장개시일'은 계약일(계약을 부활(효력회복)하는 경우 부활(효력회복)일)부터 그 날을 포함하여 1년이 지난 날의 다음 날을 말합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_dementia_care_benefit_calc",
+      "type": "Calculation",
+      "label": "치매간병자금 연간 지급 계산",
+      "properties": {
+        "formula_text": "'매년 치매상태 진단 확정일'에 생존시 해당연도에 대하여 12개월 확정지급",
+        "formula_type": "benefit",
+        "applies_to": "치매간병자금 특약들",
+        "variables": [
+          "매년 진단 확정일",
+          "생존 여부",
+          "12개월"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "'매년 중등도이상 치매상태 진단 확정일'에 생존시 해당연도에 대하여 12개월 확정지급",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_benefit_period_calc",
+      "type": "Calculation",
+      "label": "체증전/체증후 보험기간 계산",
+      "properties": {
+        "formula_text": "'체증전 보험기간' = '보험료 납입기간'이 경과하여 최초로 도래하는 계약해당일 전일까지의 기간, '체증후 보험기간' = '보험료 납입기간'이 경과하여 최초로 도래하는 계약해당일 이후의 기간",
+        "formula_type": "benefit",
+        "applies_to": "체증형 특약들",
+        "variables": [
+          "보험료 납입기간",
+          "계약해당일"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "'체증전 보험기간'이라 함은 '보험료 납입기간'이 경과하여 최초로 도래하는 계약해당일 전일까지의 기간을 말하며, '체증후 보험기간'이라 함은 '보험료 납입기간'이 경과하여 최초로 도래하는 계약해당일 이후의 기간을 말합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_admission_benefit_calc_by_period",
+      "type": "Calculation",
+      "label": "경과기간별 입원급여금 계산",
+      "properties": {
+        "formula_text": "1년 미만: 입원1일당 5,000원(재해시 1만원), 1년 이상: 입원1일당 1만원",
+        "formula_type": "benefit",
+        "applies_to": "입원특약들",
+        "variables": [
+          "경과기간",
+          "입원일수",
+          "재해 여부"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "지급금액의 경과기간은 보험계약일부터 입원일까지의 경과기간입니다. | 경과기간 | 지급금액 | 1년 미만 | 입원1일당 5,000원 ※ 단, 재해로 인한 입원시 입원1일당 1만원 | 1년 이상 | 입원1일당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_h간병보험_contract_invalid_consent",
+      "type": "Exclusion",
+      "label": "계약무효_동의미취득",
+      "properties": {
+        "exclusion_type": "계약무효",
+        "condition_text": "타인의 사망을 보험금 지급사유로 하는 계약에서 계약을 체결할 때까지 피보험자의 서면에 의한 동의를 얻지 않은 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "타인의 사망을 보험금 지급사유로 하는 계약에서 계약을 체결할 때까지 피보험자의 서면(「전자서명법」 제2조 제2호에 따른 전자서명이 있는 경우로서 상법 시행령 제44조의2에 정하는 바에 따라 본인 확인 및 위조·변조 방지에 대한 신뢰성을 갖춘 전자문서를 포함)에 의한 동의를 얻지 않은 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_h간병보험_group_contract",
+      "type": "Exception",
+      "label": "단체계약예외",
+      "properties": {
+        "exception_condition": "단체가 규약에 따라 구성원의 전부 또는 일부를 피보험자로 하는 계약을 체결하는 경우",
+        "referenced_exclusion": "계약무효_동의미취득"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "다만, 단체가 규약에 따라 구성원의 전부 또는 일부를 피보험자로 하는 계약을 체결하는 경우에는 이를 적용하지 않습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_h간병보험_contract_invalid_minor",
+      "type": "Exclusion",
+      "label": "계약무효_미성년자사망",
+      "properties": {
+        "exclusion_type": "계약무효",
+        "condition_text": "만 15세 미만자, 심신상실자 또는 심신박약자를 피보험자로 하여 사망을 보험금 지급사유로 한 계약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "만 15세 미만자, 심신상실자(心神喪失者) 또는 심신박약자(心神薄弱者)를 피보험자로 하여 사망을 보험금 지급사유로 한 계약의 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_h간병보험_mental_capacity",
+      "type": "Exception",
+      "label": "의사능력보유예외",
+      "properties": {
+        "exception_condition": "심신박약자가 계약을 체결하거나 소속 단체의 규약에 따라 단체보험의 피보험자가 될 때에 의사능력이 있는 경우",
+        "referenced_exclusion": "계약무효_미성년자사망"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "다만, 심신박약자(心神薄弱者)가 계약을 체결하거나 소속 단체의 규약에 따라 단체보험의 피보험자가 될 때에 의사능력이 있는 경우에는 계약이 유효합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_h간병보험_contract_invalid_age",
+      "type": "Exclusion",
+      "label": "계약무효_연령미달초과",
+      "properties": {
+        "exclusion_type": "계약무효",
+        "condition_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_h간병보험_age_correction",
+      "type": "Exception",
+      "label": "연령도달시유효예외",
+      "properties": {
+        "exception_condition": "회사가 나이의 착오를 발견하였을 때 이미 계약나이에 도달한 경우",
+        "referenced_exclusion": "계약무효_연령미달초과"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "다만, 회사가 나이의 착오를 발견하였을 때 이미 계약나이에 도달한 경우에는 유효한 계약으로 보나, ②의 만15세 미만자에 관한 예외가 인정되는 것은 아닙니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_h간병보험_disclosure_violation",
+      "type": "Exclusion",
+      "label": "고지의무위반",
+      "properties": {
+        "exclusion_type": "고지의무위반",
+        "condition_text": "고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 보험계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_h간병보험_interest_rate",
+      "type": "Calculation",
+      "label": "적용이율_연복리2.75%",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "한화생명 H간병보험 무배당의 주계약 및 특약",
+        "variables": [
+          "이율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "한화생명 H간병보험 무배당의 주계약 및 특약에 사용한 적용이율은 연복리 2.75% 입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_h간병보험_calculation_basis",
+      "type": "Surrender_Value",
+      "label": "해약환급금산출기준",
+      "properties": {
+        "calculation_basis": "순보험료식 계약자적립액에서 해약공제액을 공제",
+        "key_milestones": "납입기간 중 0%, 납입완료 후 50%(해약환급금미지급형)"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_h간병보험_lapse_rate_range",
+      "type": "Calculation",
+      "label": "적용해지율범위",
+      "properties": {
+        "formula_text": "납입기간 이내: 연 0.1%~14.13%, 납입기간 이후: 연 0.8%~3.25%",
+        "formula_type": "premium",
+        "applies_to": "해약환급금 미지급형 20년납 기준",
+        "variables": [
+          "경과기간별 해지율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "보험료 납입기간 20년납 기준으로 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%~14.13%, 납입기간 이후에 대하여 경과기간별로 연 0.8%~3.25%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_h간병보험_price_index_male",
+      "type": "Calculation",
+      "label": "보험가격지수_남자",
+      "properties": {
+        "formula_text": "일반가입형: 126.0%, 간편가입형: 166.0%",
+        "formula_type": "premium",
+        "applies_to": "40세 여자, 90세만기, 20년납, 500만원",
+        "variables": [
+          "보험료총액",
+          "참조순보험료총액",
+          "평균사업비총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "한화생명 H간병보험 무배당 [일반가입형] 40세 남자 114.2%, 한화생명 H간병보험 무배당 [간편가입형] 147.4%",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Product_Category#care",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H간병보험 무배당은 치매 및 장기요양에 대한 진단, 의료비, 간병 등을 보장하는 보장성상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Dividend_Method#hwl_hcareins_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H간병보험 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Surrender_Value#hwl_hcareins_mizigup",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않는 상품입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_hcareins_mizigup",
+      "target_id": "Calculation#hwl_hcareins_surrender",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Premium_Discount#hwl_hcareins_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_hcareins_group",
+      "target_id": "Calculation#hwl_hcareins_prepaid_discount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Eligibility#hwl_hcareins_group_condition",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급특약은 계약을 체결할 때 다음과 같은 조건을 만족하는 계약에 한하여 적용합니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Eligibility#hwl_hcaring_age_general",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "일반가입형 만15세~80세",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Eligibility#hwl_hcaring_coverage_limits",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "주계약 일반가입형 50만원 ~ 500만원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Rider#hwl_hcareins_longcare15_visit",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "장기요양(1-5등급)방문요양 지원금특약(월1회)(무) 및 장기요양(1-5등급)가족인요양보호사 방문요양특약(월1회)(무)의 경우 보험료 납입기간 중 장기요양보장개시일 이후 '1-5등급 장기요양상태'로 판정받은 경우에는 해당 특약에 대한 차회 이후의 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Rider#hwl_hcareins_dementia_cdr1_5yr",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "치매(CDR1점이상)간병자금특약(매월,최대5년)(무)의 경우 보험료 납입기간 중 치매보장개시일 이후 최초로 '경도이상 치매상태'로 진단 확정되었을 경우에는 해당 특약에 대한 차회 이후의 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Rider#hwl_hcareins_designated_claim_k19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요?",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_주계약_일반가입_사망보험금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "사망보험금 보험기간 중 피보험자가 사망하였을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_간병_주계약_일반가입_사망보험금",
+      "target_id": "Calculation#hwl_간병_사망보험금_납입보험료비교",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "사망보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 사망보험금으로 지급합니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA14_요양병원_암간병인지원급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "요양병원 암 간병인지원급여금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_간병_TA14_요양병원_암간병인지원급여금",
+      "target_id": "Exclusion#hwl_간병_암보장개시일전_암판정",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 '암보장개시일'의 전일 이전에 '암'으로 판정받았을 경우에는 특약을 무효로 하며 계약자에게 이미 납입한 이 특약의 보험료를 돌려드립니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA21_상급종합병원간병인지원급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "상급종합병원 간병인 지원급여금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_간병_KA41_간호간병통합서비스지원급여금",
+      "target_id": "Exclusion#hwl_간병_간호간병통합서비스제외",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "「의료법」 제4조의2(간호∙간병통합서비스의 제공 등)에서 정하는 간호∙간병통합서비스를 제공받는 경우에는 약관 제2-3조(보험금의 지급사유)에서 정한 보험금은 지급하지 않습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_KA41_간호간병통합서비스지원급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "간호·간병통합 서비스지원급여금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_간병_KA41_간호간병통합서비스지원급여금",
+      "target_id": "Calculation#hwl_간병_KA41_요양병원_지급예시",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "간호·간병통합서비스를 사용한 입원일까지의 경과기간",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_간병_TA23_중증무릎관절연골손상진단자금",
+      "target_id": "Calculation#hwl_간병_KA21_보험금감액",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "계약일부터 1년 미만의 보험금 감액과 관련한 사항",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA23_중증무릎관절연골손상진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "중증무릎관절연골손상 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA23_관절염카티스템수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "관절염 카티스템 수술자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA23_특정류마티스관절염진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "특정류마티스관절염 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_T23_급여치매CT검사비용",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급여 치매 CT, MRI, PET 검사비용",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_K31_급여치매치료제처방비",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급여 치매치료제처방비",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA23_신장질환관혈수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "신장질환 관혈수술자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA23_급여혈액복막투석치료자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급여 혈액 및 복막 투석 치료자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA23_급여CRRT투석치료자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급여 CRRT 투석 치료자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA22_의료최고도입원환자요양병원입원급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "의료최고도 입원환자 요양병원 입원급여금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_간병_TA22_의료최고도입원환자요양병원입원급여금",
+      "target_id": "Calculation#hwl_간병_TA22_입원급여금합산",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "의료최고도 입원환자 요양병원 입원급여금과 요양병원 입원급여금을 더하여 지급합니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA14_욕창진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "욕창 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA14_중등증이상욕창진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "중등증이상 욕창 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_TA31_응급환자응급실내원진료비",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "응급환자 응급실내원 진료비",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_KA31_장기요양1-2등급상급침실이용추가비용지원금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "1~2등급 장기요양상태 상급침실이용 추가비용 지원금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_KA21_가족인요양보호사방문요양지원금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "가족인 요양보호사 방문요양지원금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Coverage#hwl_간병_KA31_장기요양1-5등급방문요양지원금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "1~5등급 장기요양상태 방문요양 지원금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_longterm_care_cognitive_support_benefit_ka31",
+      "target_id": "Calculation#hwl_longterm_care_waiting_period_calc",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "장기요양보장개시일은 계약일로부터 그날을 포함하여 90일이 지난 날의 다음 날을 말합니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_longterm_care_daynight_care_benefit_ka31",
+      "target_id": "Calculation#hwl_longterm_care_waiting_period_calc",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "장기요양보장개시일은 계약일로부터 그날을 포함하여 90일이 지난 날의 다음 날을 말합니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_dementia_specialized_facility_benefit_ka21",
+      "target_id": "Calculation#hwl_dementia_waiting_period_calc",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "치매보장개시일은 계약일부터 그날을 포함하여 1년이 지난 날의 다음 날을 말합니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_mild_dementia_care_k41",
+      "target_id": "Calculation#hwl_dementia_care_benefit_calc",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "경도이상 치매간병자금은 진단 확정일을 포함하여 '매월 경도이상 치매상태 진단 확정일'에 지급",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_severe_dementia_care_k41",
+      "target_id": "Calculation#hwl_dementia_care_benefit_calc",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "중증 치매간병자금은 진단 확정일을 포함하여 '매월 중증 치매상태 진단 확정일'에 지급",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_first_day_admission_ta23",
+      "target_id": "Calculation#hwl_admission_benefit_calc_by_period",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "지급금액의 경과기간은 보험계약일부터 입원일까지의 경과기간입니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_간병_주계약_일반가입_사망보험금",
+      "target_id": "Calculation#hwl_간병_장해지급률합산_50퍼센트",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험료 납입기간 중 장해분류표 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_longterm_care_cognitive_support_benefit_ka31",
+      "target_id": "Exclusion#hwl_longterm_care_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "고의 자해로 인한 면책",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_longterm_care_intentional_harm",
+      "target_id": "Exception#hwl_longterm_care_mental_disability",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "심신상실 등으로 인한 예외",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_longterm_care_intentional_harm",
+      "target_id": "Exception#hwl_longterm_care_suicide_after_2years",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "2년 후 자살에 대한 예외",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_longterm_care_cognitive_support_benefit_ka31",
+      "target_id": "Exclusion#hwl_longterm_care_beneficiary_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험수익자의 고의 가해",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_longterm_care_cognitive_support_benefit_ka31",
+      "target_id": "Exclusion#hwl_longterm_care_fraud_claim",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험금 사기청구",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Exclusion#hwl_h간병보험_contract_invalid_consent",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "계약무효_동의미취득",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_h간병보험_contract_invalid_consent",
+      "target_id": "Exception#hwl_h간병보험_group_contract",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "단체계약예외",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Exclusion#hwl_h간병보험_contract_invalid_minor",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "계약무효_미성년자사망",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_h간병보험_contract_invalid_minor",
+      "target_id": "Exception#hwl_h간병보험_mental_capacity",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "의사능력보유예외",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Exclusion#hwl_h간병보험_contract_invalid_age",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "계약무효_연령미달초과",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_h간병보험_contract_invalid_age",
+      "target_id": "Exception#hwl_h간병보험_age_correction",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "연령도달시유효예외",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_hcareins_nodividend",
+      "target_id": "Exclusion#hwl_h간병보험_disclosure_violation",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "고지의무위반",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_h간병보험_calculation_basis",
+      "target_id": "Calculation#hwl_h간병보험_interest_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "적용이율_연복리2.75%",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_h간병보험_calculation_basis",
+      "target_id": "Calculation#hwl_h간병보험_lapse_rate_range",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "적용해지율범위",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_hcareins_group",
+      "target_id": "Calculation#hwl_h간병보험_price_index_male",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험가격지수_남자",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T13:43:57.226429+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 87,
+    "relation_count": 59,
+    "sections_processed": 6,
+    "api_calls": 7,
+    "total_input_tokens": 228385,
+    "total_output_tokens": 63293
+  }
+}

@@ -1,0 +1,1449 @@
+{
+  "document_id": "한화생명 간편가입 시그니처H암보험 무배당_상품요약서_20260101",
+  "product_name": "한화생명 간편가입 시그니처H암보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_signature_h_cancer",
+      "type": "Policy",
+      "label": "한화생명 간편가입 시그니처H암보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "간편가입 시그니처H암보험",
+        "contract_types": [
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 시그니처H암보험 무배당은 사망 및 암의 진단, 치료, 통원 등을 보장하며, 보장의 세분화/다양화를 통한 고객 니즈별 맞춤 상품 가입이 가능한 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#cancer",
+      "type": "Product_Category",
+      "label": "암보험",
+      "properties": {
+        "category": "암"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 시그니처H암보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_signature_h_cancer_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 시그니처H암보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_signature_h_cancer_nopayment",
+      "type": "Surrender_Value",
+      "label": "해약환급금 미지급형",
+      "properties": {
+        "calculation_basis": "해약환급금 미지급형",
+        "key_milestones": "납입기간중 0%, 납입기간후 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않는 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_signature_h_cancer_simplified",
+      "type": "Eligibility",
+      "label": "간편가입 자격",
+      "properties": {
+        "age_range": "유병력자나 고령자 대상",
+        "health_requirements": "간소화된 계약 전 알릴 의무 항목",
+        "contract_types": "표준체에 비하여 간소화된 심사"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험시장에서 소외되고 있는 유병력자나 고령자 등의 계약심사 및 건강검진의 부담을 줄여 보험에 가입할 수 있도록 계약심사 과정을 간소화(표준체에 비하여 간소화된 계약 전 알릴 의무 항목 활용)한 상품",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_signature_h_cancer_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_signature_h_cancer_prepay",
+      "type": "Premium_Discount",
+      "label": "보험료 선납할인",
+      "properties": {
+        "discount_type": "보험료 선납",
+        "discount_rate_text": "평균공시이율로 할인"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(갱신계약의 경우 갱신계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_signature_h_cancer_prepay_discount",
+      "type": "Calculation",
+      "label": "보험료 선납할인 계산",
+      "properties": {
+        "formula_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율로 할인",
+        "formula_type": "premium_discount",
+        "applies_to": "3개월분 이상 12개월분 이하 선납시",
+        "variables": [
+          "선납보험료",
+          "평균공시이율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(갱신계약의 경우 갱신계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_K19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약(K1.9)",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_signature_h_cancer_age_male",
+      "type": "Eligibility",
+      "label": "남자 가입나이",
+      "properties": {
+        "age_range": "만15세~80세(납입기간과 보험기간에 따라 상이)",
+        "health_requirements": "무진단",
+        "contract_types": [
+          "90세만기",
+          "100세만기"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "남자 5년납 만15세~80세 만15세~80세 7년납 만15세~80세 만15세~80세 10년납 만15세~79세 만15세~80세 15년납 만15세~74세 만15세~80세 20년납 만15세~69세 만15세~79세 30년납 만15세~59세 만15세~69세",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_signature_h_cancer_medical_exam",
+      "type": "Eligibility",
+      "label": "건강진단 여부",
+      "properties": {
+        "age_range": "피보험자 나이에 따라 판정",
+        "health_requirements": "무진단 가능(단, 기존 가입상황 및 계약 전 알릴 의무 사항에 따라 판정)",
+        "contract_types": [
+          "간편가입"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.바",
+        "source_text": "한화생명 간편가입 시그니처H암보험 무배당의 경우 무진단으로 가입 가능하나, 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_KA1.1_breast_female",
+      "type": "Rider",
+      "label": "3기이상 유방암 및 여성생식기암진단S특약",
+      "properties": {
+        "rider_code": "KA1.1",
+        "rider_name": "3기이상 유방암 및 여성생식기암진단S특약(KA1.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "3기이상 유방암 및 여성생식기암진단S특약(KA1.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_TA3.1_12organs",
+      "type": "Rider",
+      "label": "12대기관 양성신생물수술보장S특약",
+      "properties": {
+        "rider_code": "TA3.1",
+        "rider_name": "12대기관 양성신생물(3대기관용종포함)수술보장S특약(갱신형)(TA3.1) 무배당[간편가입형]",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "12대기관 양성신생물(3대기관용종포함)수술보장S특약(갱신형)(TA3.1) 무배당[간편가입형]",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_TA1.1_thyroid_robot",
+      "type": "Rider",
+      "label": "갑상선암 로봇수술보장S특약",
+      "properties": {
+        "rider_code": "TA1.1",
+        "rider_name": "갑상선암수술보장S특약(갱신형)(TA1.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "갑상선암 로봇수술보장S특약(갱신형)(TA1.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_TA1.1_thyroid_hormone",
+      "type": "Rider",
+      "label": "갑상선암 수술후 호르몬약물허가치료S특약",
+      "properties": {
+        "rider_code": "TA1.1",
+        "rider_name": "갑상선암 수술후 호르몬약물허가치료S특약(갱신형)(TA1.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "갑상선암 수술후 호르몬약물허가치료S특약(갱신형)(TA1.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_TA2.3_insured_tests",
+      "type": "Rider",
+      "label": "급여 NGS,MRI,PET,내시경검사비용지원S특약",
+      "properties": {
+        "rider_code": "TA2.3",
+        "rider_name": "급여 NGS,MRI,PET,내시경검사비용지원S특약(갱신형)(TA2.3) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 NGS,MRI,PET,내시경검사비용지원S특약(갱신형)(TA2.3) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_TA1.2_psma_pet",
+      "type": "Rider",
+      "label": "급여 특정 PSMA PET검사비용지원S특약",
+      "properties": {
+        "rider_code": "TA1.2",
+        "rider_name": "급여 특정 PSMA PET검사비용지원S특약(갱신형)(TA1.2) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 특정 PSMA PET검사비용지원S특약(갱신형)(TA1.2) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_K1.6_group",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약(K1.6)",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_signature_h_cancer_K1.2_disabled_tax",
+      "type": "Rider",
+      "label": "장애인전용 세제전환특약",
+      "properties": {
+        "rider_code": "K1.2",
+        "rider_name": "장애인전용 세제전환특약(K1.2)",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_주계약_암사망보험금",
+      "type": "Coverage",
+      "label": "암사망보험금",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "50만원",
+        "rider_code": "주계약",
+        "normalized_code": "cancer_death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.주계약",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암, 대장점막내암 제외)' 또는 보장개시일 이후에 '기타피부암', '대장점막내암'으로 진단이 확정되고, 보험기간 중 그 '암(기타피부암, 대장점막내암 제외)', '기타피부암' 또는 '대장점막내암'을 직접적인 원인으로 사망한 경우 | 50만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_KA1.1_3기이상유방암진단자금",
+      "type": "Coverage",
+      "label": "3기이상 유방암 진단자금",
+      "properties": {
+        "benefit_name": "3기이상 여성생식기암 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '3기 여성생식기암' 또는 '4기 여성생식기암'으로 진단 확정되었을 경우(최초 1회한)",
+        "payment_amount": "100만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "stage3_breast_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.3기이상 유방암 및 여성생식기암진단S특약",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '3기 유방암' 또는 '4기 유방암'으로 진단 확정되었을 경우(최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_KA1.1_4기여성생식기암진단자금",
+      "type": "Coverage",
+      "label": "4기 여성생식기암 진단자금",
+      "properties": {
+        "benefit_name": "4기 여성생식기암 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '4기 여성생식기암'으로 진단 확정되었을 경우(최초 1회한)",
+        "payment_amount": "100만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "stage4_female_reproductive_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.3기이상 유방암 및 여성생식기암진단S특약",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '4기 여성생식기암'으로 진단 확정되었을 경우(최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_TA3.1_3대기관양성신생물수술자금",
+      "type": "Coverage",
+      "label": "3대기관 양성신생물 및 용종 수술자금",
+      "properties": {
+        "benefit_name": "9대기관 양성신생물 수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '9대기관 양성신생물'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우(연간 1회를 한도로 함)",
+        "payment_amount": "1년미만: 1회당 5만원, 1년이상: 1회당 10만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "benign_neoplasm_polyp_surgery",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.12대기관 양성신생물수술보장S특약",
+        "source_text": "보험기간 중 피보험자가 '3대기관 양성신생물 및 용종'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우(연간 1회를 한도로 함) | 1년미만: 1회당 5만원, 1년이상: 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_TA1.1_갑상선암로봇수술자금",
+      "type": "Coverage",
+      "label": "갑상선암 로봇수술자금",
+      "properties": {
+        "benefit_name": "갑상선암 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '갑상선암'으로 진단 확정되었을 경우",
+        "payment_amount": "1년미만: 10만원, 1년이상: 20만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "thyroid_cancer_robot_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.갑상선암 로봇수술보장S특약",
+        "source_text": "피보험자가 보험기간 중 암보장개시일 이후에 '갑상선암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치∙레보아이 로봇수술'을 받았을 경우(단, 최초 1회한) | 1년미만: 500만원(계약일부터 180일이내 지급사유 발생시 250만원), 1년이상: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_주계약_이미납입보험료",
+      "type": "Calculation",
+      "label": "사망보험금 계산식",
+      "properties": {
+        "formula_text": "사망시 지급되는 보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 지급합니다.",
+        "formula_type": "benefit",
+        "applies_to": "사망보험금 지급시",
+        "variables": [
+          "이미 납입한 보험료",
+          "사망보험금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.주계약",
+        "source_text": "사망시 지급되는 보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_특약_계약일180일감액",
+      "type": "Calculation",
+      "label": "180일 이내 보험금 감액",
+      "properties": {
+        "formula_text": "계약일부터 180일이내 지급사유 발생시 250만원",
+        "formula_type": "benefit",
+        "applies_to": "갑상선암 로봇수술자금, 다빈치로봇수술자금",
+        "variables": [
+          "기본지급금액",
+          "감액적용기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.갑상선암 로봇수술보장S특약",
+        "source_text": "1년미만: 500만원 ※ 단, 계약일부터 180일이내 지급사유 발생시 250만원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_특약_1년미만감액",
+      "type": "Calculation",
+      "label": "1년 미만 보험금 감액",
+      "properties": {
+        "formula_text": "계약일부터 1년 미만에 보험금 지급사유가 발생한 경우 계약일부터 1년 이후 보험금 지급사유 발생시 지급하는 보험금의 50%를 지급",
+        "formula_type": "benefit",
+        "applies_to": "특정 특약들",
+        "variables": [
+          "1년이상 지급금액",
+          "감액비율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.나.비급여(전액본인부담 포함) 암주요치료보장S특약",
+        "source_text": "계약일부터 1년 미만에 약관 제2-3조(보험금의 지급사유)에서 정한 보험금 지급사유가 발생한 경우 계약일부터 1년 이후 보험금 지급사유 발생시 지급하는 보험금의 50%를 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_signature_cancer_women_treatment",
+      "type": "Coverage",
+      "label": "여성암주요치료자금",
+      "properties": {
+        "benefit_name": "전이암주요치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '전이암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '암 주요치료'('암 수술', '항암약물치료', '항암방사선치료') 중 어느 하나의 치료를 받았을 경우",
+        "payment_amount": "1년미만: 1회당 500만원, 1년이상: 1회당 1,000만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "female_cancer_major_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '여성암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '여성암'으로 '암 주요치료'('암 수술', '항암약물치료', '항암방사선치료') 중 어느 하나의 치료를 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_women_breast_surgery",
+      "type": "Coverage",
+      "label": "여성유방질환수술자금",
+      "properties": {
+        "benefit_name": "여성생식기질환수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '여성생식기질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "female_breast_disease_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 '여성유방질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_breast_removal_surgery",
+      "type": "Coverage",
+      "label": "유방절제수술자금",
+      "properties": {
+        "benefit_name": "유방절제수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '암보장개시일' 이후에 '유방암'으로 진단 확정되고, 보험기간 중 그 '유방암'의 직접적인 치료를 목적으로 '유방절제수술'을 받았을 경우",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "breast_removal_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 '암보장개시일' 이후에 '유방암'으로 진단 확정되고, 보험기간 중 그 '유방암'의 직접적인 치료를 목적으로 '유방절제수술'을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_breast_reconstruction",
+      "type": "Coverage",
+      "label": "유방재건관련수술자금",
+      "properties": {
+        "benefit_name": "유방재건관련수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '암보장개시일' 이후에 '유방암'으로 진단 확정되고, 보험기간 중 그 '유방암'의 직접적인 치료를 목적으로 '유방절제수술' 후 '유방재건관련 수술'을 받았을 경우",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "breast_reconstruction_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 '암보장개시일' 이후에 '유방암'으로 진단 확정되고, 보험기간 중 그 '유방암'의 직접적인 치료를 목적으로 '유방절제수술' 후 '유방재건관련 수술'을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_uterine_removal_surgery",
+      "type": "Coverage",
+      "label": "자궁적출수술자금",
+      "properties": {
+        "benefit_name": "자궁적출수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 보장개시일('여성생식기의 암'은 암보장개시일) 이후에 '여성생식기의 암', '여성생식기의 제자리암'으로 진단 확정되고, 보험기간 중 그 '여성생식기의 암', '여성생식기의 제자리암'의 직접적인 치료를 목적으로 '자궁적출수술'을 받았을 경우",
+        "payment_amount": "1년미만: 1회당 50만원, 1년이상: 1회당 100만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "uterus_removal_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 보장개시일('여성생식기의 암'은 암보장개시일) 이후에 '여성생식기의 암', '여성생식기의 제자리암'으로 진단 확정되고, 보험기간 중 그 '여성생식기의 암', '여성생식기의 제자리암'의 직접적인 치료를 목적으로 '자궁적출수술'을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_hifu_treatment",
+      "type": "Coverage",
+      "label": "특정자궁질환고강도초음파집속술치료비",
+      "properties": {
+        "benefit_name": "특정자궁질환고강도초음파집속술(HIFU)치료비",
+        "trigger_condition": "피보험자가 보험기간 중 '특정자궁질환'으로 진단 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '고강도초음파집속술(HIFU)'을 받았을 경우",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "specific_uterine_disease_hifu_treatment",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 '특정자궁질환'으로 진단 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '고강도초음파집속술(HIFU)'을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_vacuum_breast_removal",
+      "type": "Coverage",
+      "label": "진공보조장치특정유방양성병변절제수술비",
+      "properties": {
+        "benefit_name": "진공보조장치 특정유방 양성병변 절제수술비",
+        "trigger_condition": "피보험자가 보험기간 중 '여성 특정유방질환'으로 진단이 확정되고, 보험기간 중 '여성 특정유방질환'의 직접적인 치료를 목적으로 '진공보조장치 이용 유방 양성병변 절제술'을 받았을 경우",
+        "payment_amount": "1년미만: 1회당 10만원, 1년이상: 1회당 20만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "vacuum_assisted_breast_lesion_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 '여성 특정유방질환'으로 진단이 확정되고, 보험기간 중 '여성 특정유방질환'의 직접적인 치료를 목적으로 '진공보조장치 이용 유방 양성병변 절제술'을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_lymphedema_surgery",
+      "type": "Coverage",
+      "label": "암림프부종수술자금",
+      "properties": {
+        "benefit_name": "암림프부종수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'으로 '급여 림프부종 수술'을 받은 경우 또는 그 '암'의 직접적인 치료로 인한 '급여 림프부종 수술'을 받았을 경우",
+        "payment_amount": "1년미만: 150만원, 1년이상: 300만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "cancer_lymphedema_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'으로 '급여 림프부종 수술'을 받은 경우 또는 그 '암'의 직접적인 치료로 인한 '급여 림프부종 수술'을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_skin_reconstruction",
+      "type": "Coverage",
+      "label": "암피부재건수술자금",
+      "properties": {
+        "benefit_name": "암피부재건수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'으로 '급여 피부재건 수술'을 받은 경우 또는 그 '암'의 직접적인 치료로 인한 '급여 피부재건 수술'을 받았을 경우",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA3.1",
+        "normalized_code": "cancer_skin_reconstruction_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'으로 '급여 피부재건 수술'을 받은 경우 또는 그 '암'의 직접적인 치료로 인한 '급여 피부재건 수술'을 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_breast_cancer_diagnosis",
+      "type": "Coverage",
+      "label": "유방암진단자금",
+      "properties": {
+        "benefit_name": "유방암진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '유방암'으로 진단 확정되었을 경우",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "breast_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '유방암'으로 진단 확정되었을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_advanced_reproductive_cancer_diagnosis",
+      "type": "Coverage",
+      "label": "초기이외의유방생식기암전이포함진단자금",
+      "properties": {
+        "benefit_name": "초기 이외의 갑상선암 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '초기 이외의 갑상선암'으로 진단 확정되었을 경우",
+        "payment_amount": "100만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "non_early_breast_reproductive_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '초기 이외의 유방·생식기암(전이포함)'으로 진단 확정되었을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_metastatic_castration_resistant_prostate_cancer",
+      "type": "Coverage",
+      "label": "전이성거세저항성전립선암진단자금",
+      "properties": {
+        "benefit_name": "전이성 거세저항성 전립선암진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '전이성 거세저항성 전립선암(mCRPC)'으로 진단이 확정되었을 경우",
+        "payment_amount": "1년미만: 500만원, 1년이상: 1,000만원",
+        "rider_code": "KA2.1",
+        "normalized_code": "metastatic_castration_resistant_prostate_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 암보장개시일 이후에 '전이성 거세저항성 전립선암(mCRPC)'으로 진단이 확정되었을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_comprehensive_hospital_cancer_nutrition",
+      "type": "Coverage",
+      "label": "종합병원암집중영양치료자금",
+      "properties": {
+        "benefit_name": "종합병원통원(당일입원 포함)자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 기타피부암, 대장점막내암, 제자리암 또는 경계성종양으로 진단이 확정되고, 보험기간 중 그 기타피부암, 대장점막내암, 제자리암 또는 경계성종양의 직접적인 치료를 목적으로 종합병원에서 통원(당일입원 포함)치료를 받았을 경우",
+        "payment_amount": "1회당 5만원",
+        "rider_code": "KA4.1",
+        "normalized_code": "general_hospital_cancer_intensive_nutrition_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'의 직접적인 치료를 목적으로 종합병원에서 '급여 암 집중영양치료'를 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_disease_disability_benefit",
+      "type": "Coverage",
+      "label": "질병장해보험금",
+      "properties": {
+        "benefit_name": "질병장해보험금",
+        "trigger_condition": "피보험자가 보험기간 중 동일한 '질병'(재해 이외의 장해상태 발생 원인을 말합니다.)으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "payment_amount": "1년미만: 1회당 500만원 × 해당 장해지급률, 1년이상: 1회당 1,000만원 × 해당 장해지급률",
+        "rider_code": "TA4.1",
+        "normalized_code": "disease_disability",
+        "category": "DISABILITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 동일한 '질병'(재해 이외의 장해상태 발생 원인을 말합니다.)으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_severe_thyroid_cancer_diagnosis",
+      "type": "Coverage",
+      "label": "중증갑상선암진단자금",
+      "properties": {
+        "benefit_name": "중증 갑상선암진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '중증 갑상선암'으로 진단 확정되었을 경우",
+        "payment_amount": "100만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "severe_thyroid_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '중증 갑상선암'으로 진단 확정되었을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_specific_immune_anticancer_treatment",
+      "type": "Coverage",
+      "label": "특정면역항암약물허가치료자금",
+      "properties": {
+        "benefit_name": "항암약물치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우",
+        "payment_amount": "100만원",
+        "rider_code": "KA5.1",
+        "normalized_code": "specific_immune_anticancer_drug_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 보험금 지급 대상기간 이내에 '암'의 직접적인 치료를 목적으로 '특정면역항암약물허가치료'를 받은 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_targeted_anticancer_treatment_annual",
+      "type": "Coverage",
+      "label": "표적항암약물허가치료자금연1회",
+      "properties": {
+        "benefit_name": "표적항암약물허가치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 표적항암약물허가치료를 받았을 경우",
+        "payment_amount": "1년미만: 500만원, 1년이상: 1,000만원",
+        "rider_code": "KA3.1",
+        "normalized_code": "targeted_anticancer_drug_treatment_annual",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암'으로 '표적항암약물허가치료'를 받은 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_anticancer_heavy_ion_radiation",
+      "type": "Coverage",
+      "label": "항암중입자방사선치료자금",
+      "properties": {
+        "benefit_name": "항암중입자방사선치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '항암중입자방사선치료'를 받았을 경우",
+        "payment_amount": "1년미만: 500만원, 1년이상: 1,000만원",
+        "rider_code": "KA2.1",
+        "normalized_code": "anticancer_heavy_ion_radiation_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '항암중입자방사선치료'를 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_anticancer_radiation_treatment1",
+      "type": "Coverage",
+      "label": "항암방사선치료자금",
+      "properties": {
+        "benefit_name": "항암방사선치료자금Ⅱ",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일('암(기타피부암 및 갑상선암 제외)'은 암보장개시일) 이후에 '암(기타피부암 및 갑상선암 제외)', '기타피부암' 및 '갑상선암'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우",
+        "payment_amount": "100만원",
+        "rider_code": "KA5.1",
+        "normalized_code": "anticancer_radiation_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_anticancer_drug_treatment2",
+      "type": "Coverage",
+      "label": "항암약물치료자금2",
+      "properties": {
+        "benefit_name": "항암약물치료자금Ⅱ",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일('암(기타피부암 및 갑상선암 제외)'은 암보장개시일) 이후에 '암(기타피부암 및 갑상선암 제외)', '기타피부암' 및 '갑상선암'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우",
+        "payment_amount": "100만원",
+        "rider_code": "KA5.1",
+        "normalized_code": "anticancer_drug_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험기간 중 피보험자가 보장개시일('암(기타피부암 및 갑상선암 제외)'은 암보장개시일) 이후에 '암(기타피부암 및 갑상선암 제외)', '기타피부암' 및 '갑상선암'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_signature_cancer_intentional_harm",
+      "type": "Exclusion",
+      "label": "고의자해면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_signature_cancer_mental_state",
+      "type": "Exception",
+      "label": "심신상실예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해함으로 인하여 보험금 지급사유가 발생한 때",
+        "referenced_exclusion": "고의자해면책"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때에는 보험금을 지급하며 보험료 납입면제 사유가 발생한 때에는 보험료의 납입을 면제하여 드립니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_signature_cancer_beneficiary_harm",
+      "type": "Exclusion",
+      "label": "보험수익자고의면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_signature_cancer_fraud",
+      "type": "Exclusion",
+      "label": "사기계약면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_signature_cancer_surrender_value",
+      "type": "Calculation",
+      "label": "해약환급금계산식",
+      "properties": {
+        "formula_text": "해당계약의 '표준형'의 해약환급금의 50%",
+        "formula_type": "surrender_value",
+        "applies_to": "보험료 납입기간이 경과된 이후 계약이 해지될 경우",
+        "variables": [
+          "표준형 해약환급금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Product_Category#cancer",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 시그니처H암보험 무배당은 사망 및 암의 진단, 치료, 통원 등을 보장하는 상품",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Dividend_Method#hwl_signature_h_cancer_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 시그니처H암보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Surrender_Value#hwl_signature_h_cancer_nopayment",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 해약환급금을 지급하지 않는 상품",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Eligibility#hwl_signature_h_cancer_simplified",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "계약심사 과정을 간소화(표준체에 비하여 간소화된 계약 전 알릴 의무 항목 활용)한 상품",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Premium_Discount#hwl_signature_h_cancer_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Premium_Discount#hwl_signature_h_cancer_prepay",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율로 할인",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_signature_h_cancer_prepay",
+      "target_id": "Calculation#hwl_signature_h_cancer_prepay_discount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율로 할인",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_K19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험에 부가된 지정대리청구서비스특약(K1.9)은 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Eligibility#hwl_signature_h_cancer_age_male",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "남자 가입나이: 5년납 만15세~80세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Eligibility#hwl_signature_h_cancer_medical_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "한화생명 간편가입 시그니처H암보험 무배당의 경우 무진단으로 가입 가능",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_KA1.1_breast_female",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "3기이상 유방암 및 여성생식기암진단S특약(KA1.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_TA3.1_12organs",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "12대기관 양성신생물(3대기관용종포함)수술보장S특약(갱신형)(TA3.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_TA1.1_thyroid_robot",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "갑상선암 로봇수술보장S특약(갱신형)(TA1.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_TA1.1_thyroid_hormone",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "갑상선암 수술후 호르몬약물허가치료S특약(갱신형)(TA1.1) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_TA2.3_insured_tests",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 NGS,MRI,PET,내시경검사비용지원S특약(갱신형)(TA2.3) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_TA1.2_psma_pet",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 특정 PSMA PET검사비용지원S특약(갱신형)(TA1.2) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_K1.6_group",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Rider#hwl_signature_h_cancer_K1.2_disabled_tax",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_주계약_암사망보험금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "암사망보험금: 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암, 대장점막내암 제외)' 또는 보장개시일 이후에 '기타피부암', '대장점막내암'으로 진단이 확정되고, 보험기간 중 그 '암'을 직접적인 원인으로 사망한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_KA1.1_3기이상유방암진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "3기이상 유방암 진단자금: 보험기간 중 피보험자가 암보장개시일 이후에 '3기 유방암' 또는 '4기 유방암'으로 진단 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_KA1.1_4기여성생식기암진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "4기 여성생식기암 진단자금: 보험기간 중 피보험자가 암보장개시일 이후에 '4기 여성생식기암'으로 진단 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_TA3.1_3대기관양성신생물수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "3대기관 양성신생물 및 용종 수술자금: 보험기간 중 피보험자가 '3대기관 양성신생물 및 용종'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_TA1.1_갑상선암로봇수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "갑상선암 로봇수술자금: 피보험자가 보험기간 중 암보장개시일 이후에 '갑상선암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치∙레보아이 로봇수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_주계약_암사망보험금",
+      "target_id": "Calculation#hwl_주계약_이미납입보험료",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "사망시 지급되는 보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 지급합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_KA1.1_3기이상유방암진단자금",
+      "target_id": "Calculation#hwl_특약_계약일180일감액",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "계약일부터 180일이내 지급사유 발생시 250만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_TA3.1_3대기관양성신생물수술자금",
+      "target_id": "Calculation#hwl_특약_1년미만감액",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "1년미만: 1회당 5만원, 1년이상: 1회당 10만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_signature_cancer_women_treatment",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "여성암주요치료자금: 보험기간 중 피보험자가 암보장개시일 이후에 '여성암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '여성암'으로 '암 주요치료' 중 어느 하나의 치료를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_women_breast_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "여성유방질환수술자금: 피보험자가 보험기간 중 '여성유방질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_breast_removal_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "유방절제수술자금: 피보험자가 보험기간 중 '암보장개시일' 이후에 '유방암'으로 진단 확정되고, 보험기간 중 그 '유방암'의 직접적인 치료를 목적으로 '유방절제수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_breast_reconstruction",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "유방재건관련수술자금: 피보험자가 보험기간 중 '암보장개시일' 이후에 '유방암'으로 진단 확정되고, 보험기간 중 그 '유방암'의 직접적인 치료를 목적으로 '유방절제수술' 후 '유방재건관련 수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_uterine_removal_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "자궁적출수술자금: 피보험자가 보험기간 중 보장개시일('여성생식기의 암'은 암보장개시일) 이후에 '여성생식기의 암', '여성생식기의 제자리암'으로 진단 확정되고, 보험기간 중 그 '여성생식기의 암', '여성생식기의 제자리암'의 직접적인 치료를 목적으로 '자궁적출수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_hifu_treatment",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "특정자궁질환고강도초음파집속술(HIFU)치료비: 피보험자가 보험기간 중 '특정자궁질환'으로 진단 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '고강도초음파집속술(HIFU)'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_vacuum_breast_removal",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "진공보조장치 특정유방 양성병변 절제수술비: 피보험자가 보험기간 중 '여성 특정유방질환'으로 진단이 확정되고, 보험기간 중 '여성 특정유방질환'의 직접적인 치료를 목적으로 '진공보조장치 이용 유방 양성병변 절제술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_cancer_lymphedema_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "암림프부종수술자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'으로 '급여 림프부종 수술'을 받은 경우 또는 그 '암'의 직접적인 치료로 인한 '급여 림프부종 수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_cancer_skin_reconstruction",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "암피부재건수술자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'으로 '급여 피부재건 수술'을 받은 경우 또는 그 '암'의 직접적인 치료로 인한 '급여 피부재건 수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_breast_cancer_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "유방암진단자금: 보험기간 중 피보험자가 암보장개시일 이후에 '유방암'으로 진단 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_advanced_reproductive_cancer_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "초기 이외의 유방·생식기암(전이포함)진단자금: 보험기간 중 피보험자가 암보장개시일 이후에 '초기 이외의 유방·생식기암(전이포함)'으로 진단 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_metastatic_castration_resistant_prostate_cancer",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "전이성 거세저항성 전립선암진단자금: 피보험자가 보험기간 중 암보장개시일 이후에 '전이성 거세저항성 전립선암(mCRPC)'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_comprehensive_hospital_cancer_nutrition",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "종합병원 암집중영양치료자금: 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 '암'의 직접적인 치료를 목적으로 종합병원에서 '급여 암 집중영양치료'를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_disease_disability_benefit",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "질병장해보험금: 피보험자가 보험기간 중 동일한 '질병'으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_severe_thyroid_cancer_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "중증 갑상선암진단자금: 보험기간 중 피보험자가 암보장개시일 이후에 '중증 갑상선암'으로 진단 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_specific_immune_anticancer_treatment",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "특정면역항암약물허가치료자금: 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 보험금 지급 대상기간 이내에 '암'의 직접적인 치료를 목적으로 '특정면역항암약물허가치료'를 받은 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_targeted_anticancer_treatment_annual",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "표적항암약물허가치료자금: 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암'으로 '표적항암약물허가치료'를 받은 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_anticancer_heavy_ion_radiation",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "항암중입자방사선치료자금: 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '항암중입자방사선치료'를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_anticancer_radiation_treatment1",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "항암방사선치료자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_signature_h_cancer",
+      "target_id": "Coverage#hwl_anticancer_drug_treatment2",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "항암약물치료자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '항암약물치료'를 받은 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_signature_cancer_women_treatment",
+      "target_id": "Exclusion#hwl_signature_cancer_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험금 지급제한에서 고의자해면책 조건이 적용되는 보장",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_signature_cancer_intentional_harm",
+      "target_id": "Exception#hwl_signature_cancer_mental_state",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "고의자해면책에 대한 심신상실예외 조항",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_breast_cancer_diagnosis",
+      "target_id": "Exclusion#hwl_signature_cancer_beneficiary_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "보험수익자고의면책 조건이 적용되는 보장",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_comprehensive_hospital_cancer_nutrition",
+      "target_id": "Exclusion#hwl_signature_cancer_fraud",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "사기계약면책 조건이 적용되는 보장",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_signature_h_cancer_nopayment",
+      "target_id": "Calculation#hwl_signature_cancer_surrender_value",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "해약환급금계산식과 관련된 계산",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T13:29:45.971748+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 52,
+    "relation_count": 51,
+    "sections_processed": 5,
+    "api_calls": 6,
+    "total_input_tokens": 216664,
+    "total_output_tokens": 33998
+  }
+}

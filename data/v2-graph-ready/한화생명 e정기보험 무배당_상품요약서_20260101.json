@@ -1,0 +1,1105 @@
+{
+  "document_id": "한화생명 e정기보험 무배당_상품요약서_20260101",
+  "product_name": "한화생명 e정기보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_e정기보험",
+      "type": "Policy",
+      "label": "한화생명 e정기보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "정기보험",
+        "contract_types": [
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e정기보험 무배당은 스스로 온라인에서 청약하는 상품으로 다이렉트 인터넷보험(www.direct.hanwhalife.com)에서 가입하실 수 있으며, 대면채널에 비해 보험료가 저렴합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#정기",
+      "type": "Product_Category",
+      "label": "정기보험",
+      "properties": {
+        "category": "정기"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e정기보험 무배당은 경제활동시기에 집중적으로 보장이 가능한 금리확정형 정기보험입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_e정기보험_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e정기보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_e정기보험_순수보장형",
+      "type": "Surrender_Value",
+      "label": "순수보장형 해약환급금",
+      "properties": {
+        "calculation_basis": "납입기간중 0%, 납입기간후 50%",
+        "key_milestones": "전기납의 경우 보험기간 중 해약환급금 미지급"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품의 순수보장형은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_e정기보험_surrender_value",
+      "type": "Calculation",
+      "label": "해약환급금 계산식",
+      "properties": {
+        "formula_text": "순보험료식 계약자적립액 - 해약공제액 = 해약환급금",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 산출시",
+        "variables": [
+          "순보험료식 계약자적립액",
+          "해약공제액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "Eligibility#hwl_e정기보험_건강체",
+      "type": "Eligibility",
+      "label": "건강체 가입자격",
+      "properties": {
+        "age_range": "20세 이상",
+        "health_requirements": "비흡연(직전 1년간), 혈압(수축기 139mmHg 이하, 이완기 89mmHg 이하), BMI 18.5-25",
+        "contract_types": [
+          "순수보장형",
+          "만기환급형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "건강체 가입시점에 표준하체인수특약을 부가하지 않고도 해당계약 가입이 가능한 자로서 나이(20세 이상) 및 아래의 요건을 모두 만족하면 보험계약 체결시 또는 보험기간 중 언제든지 건강체로 가입이 가능합니다. ① 비흡연 : 직전 1년간 흡연사실이 없을 것 ② 혈 압 : 수축기혈압이 139(mmHg)이하이고 이완기혈압이 89(mmHg)이하일 것 ③ 체격 : BMI수치(체중/키²)가 18.5(kg/㎡)이상 25(kg/㎡)미만",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_e정기보험_단체취급",
+      "type": "Premium_Discount",
+      "label": "단체취급 할인",
+      "properties": {
+        "discount_type": "단체취급",
+        "discount_rate_text": "영업보험료의 1.5% 할인"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급계약의 경우 영업보험료의 1.5%를 할인하여 드립니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_e정기보험_단체할인",
+      "type": "Calculation",
+      "label": "단체취급 할인 계산식",
+      "properties": {
+        "formula_text": "영업보험료의 1.5%를 할인",
+        "formula_type": "discount",
+        "applies_to": "단체취급계약",
+        "variables": [
+          "영업보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급계약의 경우 영업보험료의 1.5%를 할인하여 드립니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_e정기보험_단체취급",
+      "type": "Eligibility",
+      "label": "단체취급 가입자격",
+      "properties": {
+        "age_range": "제한없음",
+        "health_requirements": "대상단체 소속원",
+        "contract_types": [
+          "주계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 계약자 수 또는 단체의 대표자를 계약자로 하고 단체소속원을 피보험자로 하는 주계약의 피보험자 수가 5인 이상이어야 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_e정기보험_age_min",
+      "type": "Eligibility",
+      "label": "최저가입나이",
+      "properties": {
+        "age_range": "만 19세~(건강체는 20세, 순수보장형 10년만기 전기납 남자는 30세, 여자는 40세)",
+        "health_requirements": "건강체 기준 상이",
+        "contract_types": [
+          "순수보장형",
+          "만기환급형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "최저가입나이 : 만 19세(건강체는 20세)(단, 순수보장형 10년만기 전기납 남자는 30세, 여자는 40세)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_e정기보험_coverage_limit",
+      "type": "Eligibility",
+      "label": "가입한도",
+      "properties": {
+        "age_range": "N/A",
+        "health_requirements": "보험가입금액 1,000만원 ~ 5억원",
+        "contract_types": [
+          "순수보장형",
+          "만기환급형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "가입한도 : 보험가입금액 1,000만원 ~ 5억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_e정기보험_health_exam",
+      "type": "Eligibility",
+      "label": "건강진단 요건",
+      "properties": {
+        "age_range": "N/A",
+        "health_requirements": "기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단 시행",
+        "contract_types": [
+          "순수보장형",
+          "만기환급형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "한화생명 e정기보험 무배당의 경우 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Rider#hwl_e정기보험_K1.1",
+      "type": "Rider",
+      "label": "건강체서비스특약Ⅱ",
+      "properties": {
+        "rider_code": "K1.1",
+        "rider_name": "건강체서비스특약Ⅱ 무배당",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 건강체서비스특약Ⅱ(K1.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_e정기보험_K1.6",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 단체취급특약(K1.6)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_e정기보험_K3.9",
+      "type": "Rider",
+      "label": "선지급서비스특약",
+      "properties": {
+        "rider_code": "K3.9",
+        "rider_name": "선지급서비스특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 선지급서비스특약(K3.9)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_e정기보험_K1.2",
+      "type": "Rider",
+      "label": "장애인전용 세제전환특약",
+      "properties": {
+        "rider_code": "K1.2",
+        "rider_name": "장애인전용 세제전환특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_e정기보험_K3.7",
+      "type": "Rider",
+      "label": "특정 신체부위∙질병 보장제한부 인수특약",
+      "properties": {
+        "rider_code": "K3.7",
+        "rider_name": "특정 신체부위∙질병 보장제한부 인수특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 특정 신체부위∙질병 보장제한부 인수특약(K3.7)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_e정기보험_K3.8",
+      "type": "Rider",
+      "label": "표준하체인수특약",
+      "properties": {
+        "rider_code": "K3.8",
+        "rider_name": "표준하체인수특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 표준하체인수특약(K3.8)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "type": "Coverage",
+      "label": "사망보험금 (순수보장형)",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "피보험자가 보험기간 중 사망한 경우",
+        "payment_amount": "1억원",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "사망보험금 | 피보험자가 보험기간 중 사망한 경우 | 1억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_e정기보험_만기보험금",
+      "type": "Coverage",
+      "label": "만기보험금",
+      "properties": {
+        "benefit_name": "만기보험금",
+        "trigger_condition": "피보험자가 보험기간이 끝날 때까지 살아 있을 경우",
+        "payment_amount": "이미 납입한 주계약 보험료의 100%",
+        "normalized_code": "maturity_benefit",
+        "category": "MATURITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "만기보험금 | 피보험자가 보험기간이 끝날 때까지 살아 있을 경우 | 이미 납입한 주계약 보험료의 100%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_e정기보험_장해비율계산",
+      "type": "Calculation",
+      "label": "장해지급률 합산 계산",
+      "properties": {
+        "formula_text": "장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상",
+        "formula_type": "premium",
+        "applies_to": "보험료 납입면제 조건",
+        "variables": [
+          "장해지급률",
+          "50%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상인 장해상태가 되었을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_e정기보험_만기보험료계산",
+      "type": "Calculation",
+      "label": "만기보험금 보험료 계산",
+      "properties": {
+        "formula_text": "이미 납입한 주계약 보험료의 100%",
+        "formula_type": "benefit",
+        "applies_to": "만기보험금 지급시",
+        "variables": [
+          "이미 납입한 주계약 보험료",
+          "100%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "이미 납입한 주계약 보험료의 100%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_고의자해",
+      "type": "Exclusion",
+      "label": "피보험자 고의 자해",
+      "properties": {
+        "exclusion_type": "무효",
+        "condition_text": "타인의 사망을 보험금 지급사유로 하는 계약에서 계약을 체결할 때까지 피보험자의 서면에 의한 동의를 얻지 않은 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "① 피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_e정기보험_심신상실",
+      "type": "Exception",
+      "label": "심신상실 상태 자해 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "가. 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우 특히 그 결과 사망에 이르게 된 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#hwl_e정기보험_2년후자살",
+      "type": "Exception",
+      "label": "2년 경과 후 자살 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "나. 계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_수익자고의",
+      "type": "Exclusion",
+      "label": "보험수익자 고의 해침",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "② 보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_계약자고의",
+      "type": "Exclusion",
+      "label": "계약자 고의 해침",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "③ 계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_사기목적",
+      "type": "Exclusion",
+      "label": "보험금 사기 목적",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "① 계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_서류위조",
+      "type": "Exclusion",
+      "label": "서류 위조/변조",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "② 계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_사기계약",
+      "type": "Exclusion",
+      "label": "사기에 의한 계약 체결",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_고지의무위반",
+      "type": "Exclusion",
+      "label": "고지의무 위반",
+      "properties": {
+        "exclusion_type": "고의/과실",
+        "condition_text": "고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한 할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_미성년자",
+      "type": "Exclusion",
+      "label": "미성년자 사망보험 가입",
+      "properties": {
+        "exclusion_type": "무효",
+        "condition_text": "만 15세 미만자, 심신상실자 또는 심신박약자를 피보험자로 하여 사망을 보험금 지급사유로 한 계약의 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "② 만 15세 미만자, 심신상실자(心神喪失者) 또는 심신박약자(心神薄弱者)를 피보험자로 하여 사망을 보험금 지급사유로 한 계약의 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_e정기보험_나이오류",
+      "type": "Exclusion",
+      "label": "나이 오류",
+      "properties": {
+        "exclusion_type": "무효",
+        "condition_text": "계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "③ 계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_e정기보험_보험료할인",
+      "type": "Calculation",
+      "label": "보장부분 적용이율 할인 계산",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "한화생명 e정기보험 무배당",
+        "variables": [
+          "연복리",
+          "2.75%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "보험료를 납입하는 시점과 보험금 지급 사이에는 시차가 발생하므로 이 기간 동안 기대되는 수익을 미리 예상하여 일정한 비율로 보험료를 할인해 주는데, 이 할인율을 보장부분 적용이율이라고 합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_e정기보험_해지율순수보장형",
+      "type": "Calculation",
+      "label": "적용해지율 계산 (순수보장형)",
+      "properties": {
+        "formula_text": "납입기간 이내: 경과기간별로 연 0.1%~8.4%, 납입기간 이후: 경과기간별로 연 0.8%",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 미지급형(납입기간중 0%, 납입기간후 50%) 10년납",
+        "variables": [
+          "경과기간",
+          "납입기간",
+          "0.1%",
+          "8.4%",
+          "0.8%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.다",
+        "source_text": "보험료 납입기간 10년납 기준으로 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%~8.4%, 납입기간 이후에 대하여 경과기간별로 연 0.8%이며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_eterm_general",
+      "type": "Surrender_Value",
+      "label": "e정기보험 해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "순보험료식 계약자적립액에서 해약공제액을 공제",
+        "key_milestones": "납입보험료보다 적거나 없을 수도 있음"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_eterm_pure_surrender",
+      "type": "Calculation",
+      "label": "순수보장형 해약환급금 계산",
+      "properties": {
+        "formula_text": "납입기간중: 0%, 납입기간후: 표준형 해약환급금 × 50%",
+        "formula_type": "surrender_value",
+        "applies_to": "순수보장형 해약시",
+        "variables": [
+          "표준형 해약환급금",
+          "납입기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나.(1)",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지될 경우에는 '표준형' 해약환급금의 50%에 해당하는 금액을 지급합니다",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "Calculation#hwl_eterm_surrender_rate",
+      "type": "Calculation",
+      "label": "환급률 계산 공식",
+      "properties": {
+        "formula_text": "해약환급금 ÷ 납입보험료 × 100 = 환급률",
+        "formula_type": "surrender_value",
+        "applies_to": "경과기간별 환급률 산출시",
+        "variables": [
+          "해약환급금",
+          "납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_eterm_interest_rate",
+      "type": "Calculation",
+      "label": "산출이율",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 산출시",
+        "variables": [
+          "산출이율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "산출이율은 연복리 2.75%입니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_eterm_surrender_deduction",
+      "type": "Calculation",
+      "label": "해약환급금 차감 요소",
+      "properties": {
+        "formula_text": "납입보험료 - 위험보험료 - 계약체결비용 - 계약관리비용(해약공제금액 포함) = 해약환급금",
+        "formula_type": "surrender_value",
+        "applies_to": "중도해지시",
+        "variables": [
+          "납입보험료",
+          "위험보험료",
+          "계약체결비용",
+          "계약관리비용",
+          "해약공제금액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "이 보험계약을 중도해지 할 경우 해약환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결 및 계약관리비용(해약공제금액 포함)등이 차감되므로",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_e정기보험_가격지수",
+      "type": "Calculation",
+      "label": "보험가격지수 계산공식",
+      "properties": {
+        "formula_text": "보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료) ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산정",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#생명보험상품공시시행세칙",
+      "type": "Regulation",
+      "label": "생명보험 상품공시 시행세칙",
+      "properties": {
+        "regulation_type": "정의",
+        "article_number": "상품공시시행세칙"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Product_Category#정기",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e정기보험 무배당은 경제활동시기에 집중적으로 보장이 가능한 금리확정형 정기보험입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Dividend_Method#hwl_e정기보험_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "이 보험은 무배당상품으로서 계약자배당을 하지 않습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "사망보험금: 피보험자가 보험기간 중 사망한 경우 1억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Coverage#hwl_e정기보험_만기보험금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "만기보험금: 피보험자가 보험기간이 끝날 때까지 살아 있을 경우 이미 납입한 주계약 보험료의 100%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Surrender_Value#hwl_e정기보험_순수보장형",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "순수보장형은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Eligibility#hwl_e정기보험_건강체",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "건강체 가입시점에 표준하체인수특약을 부가하지 않고도 해당계약 가입이 가능한 자로서 나이(20세 이상) 및 아래의 요건을 모두 만족하면 보험계약 체결시 또는 보험기간 중 언제든지 건강체로 가입이 가능합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Eligibility#hwl_e정기보험_age_min",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "최저가입나이 : 만 19세(건강체는 20세)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Eligibility#hwl_e정기보험_coverage_limit",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "가입한도 : 보험가입금액 1,000만원 ~ 5억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Eligibility#hwl_e정기보험_health_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "한화생명 e정기보험 무배당의 경우 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Premium_Discount#hwl_e정기보험_단체취급",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급계약의 경우 영업보험료의 1.5%를 할인하여 드립니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Eligibility#hwl_e정기보험_단체취급",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급특약은 계약을 체결할 때 다음과 같은 조건을 만족하는 계약에 한하여 적용합니다. 1. 주계약의 계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Rider#hwl_e정기보험_K1.1",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "+ 건강체서비스특약Ⅱ(K1.1) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Rider#hwl_e정기보험_K1.6",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "+ 단체취급특약(K1.6)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Rider#hwl_e정기보험_K3.9",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "+ 선지급서비스특약(K3.9)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Rider#hwl_e정기보험_K1.2",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "+ 장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Rider#hwl_e정기보험_K3.7",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "+ 특정 신체부위∙질병 보장제한부 인수특약(K3.7)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Rider#hwl_e정기보험_K3.8",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "+ 표준하체인수특약(K3.8)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Regulation#생명보험상품공시시행세칙",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "① 피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_수익자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "② 보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_계약자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "③ 계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_사기목적",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "① 계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_서류위조",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "② 계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_사기계약",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_고지의무위반",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한 할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_미성년자",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "② 만 15세 미만자, 심신상실자(心神喪失者) 또는 심신박약자(心神薄弱者)를 피보험자로 하여 사망을 보험금 지급사유로 한 계약의 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_사망보험금_순수",
+      "target_id": "Exclusion#hwl_e정기보험_나이오류",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "③ 계약을 체결할 때 계약에서 정한 피보험자의 나이에 미달되었거나 초과되었을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_e정기보험_고의자해",
+      "target_id": "Exception#hwl_e정기보험_심신상실",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "가. 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우 특히 그 결과 사망에 이르게 된 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_e정기보험_고의자해",
+      "target_id": "Exception#hwl_e정기보험_2년후자살",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "나. 계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_e정기보험_순수보장형",
+      "target_id": "Calculation#hwl_e정기보험_surrender_value",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_e정기보험_단체취급",
+      "target_id": "Calculation#hwl_e정기보험_단체할인",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급계약의 경우 영업보험료의 1.5%를 할인하여 드립니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_e정기보험_만기보험금",
+      "target_id": "Calculation#hwl_e정기보험_만기보험료계산",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험료의 납입이 면제된 경우 보험료 납입기간 종료일까지 보험료가 납입된 것으로 간주하여 만기보험금의 이미 납입한 주계약 보험료를 계산합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_eterm_general",
+      "target_id": "Calculation#hwl_eterm_pure_surrender",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "순수보장형(해약환급금 미지급형(납입기간중 0%, 납입기간후 50%))은 보험료 납입기간 중 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지될 경우에는 '표준형' 해약환급금의 50%에 해당하는 금액을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_eterm_general",
+      "target_id": "Calculation#hwl_eterm_surrender_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_eterm_general",
+      "target_id": "Calculation#hwl_eterm_interest_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "산출이율은 연복리 2.75%입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_eterm_general",
+      "target_id": "Calculation#hwl_eterm_surrender_deduction",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험계약을 중도해지 할 경우 해약환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결 및 계약관리비용(해약공제금액 포함)등이 차감되므로",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_e정기보험",
+      "target_id": "Calculation#hwl_e정기보험_가격지수",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T11:48:40.569803+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 42,
+    "relation_count": 37,
+    "sections_processed": 7,
+    "api_calls": 8,
+    "total_input_tokens": 40175,
+    "total_output_tokens": 19373
+  }
+}

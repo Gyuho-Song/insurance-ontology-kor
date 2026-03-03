@@ -1,0 +1,1191 @@
+{
+  "document_id": "한화생명 걸음e건강보험 무배당_상품요약서_20260201",
+  "product_name": "한화생명 걸음e건강보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_geoume_health",
+      "type": "Policy",
+      "label": "한화생명 걸음e건강보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "건강보험",
+        "contract_types": [
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 걸음e건강보험 무배당은 \"모듈구조상품\"으로서 여러 개의 주계약을 한번에 통합하여 청약(체결)하고 운용하는 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#health",
+      "type": "Product_Category",
+      "label": "건강보험",
+      "properties": {
+        "category": "건강"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 걸음e건강보험 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_geoume_nodividend",
+      "type": "Dividend_Method",
+      "label": "걸음e건강보험 무배당 구조",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 걸음e건강보험 무배당은 무배당 상품으로서 배당을 하지 않습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_geoume_reduced",
+      "type": "Surrender_Value",
+      "label": "해약환급금 미지급형",
+      "properties": {
+        "calculation_basis": "납입기간중 0%, 납입기간후 50%",
+        "key_milestones": "납입기간 중과 후로 구분"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품의 비갱신형 모듈보험은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Calculation#hwl_geoume_surrender",
+      "type": "Calculation",
+      "label": "해약환급금 계산",
+      "properties": {
+        "formula_text": "순보험료식 계약자적립액 - 해약공제액",
+        "formula_type": "surrender_value",
+        "applies_to": "해약시",
+        "variables": [
+          "순보험료식 계약자적립액",
+          "해약공제액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_geoume_health_activity",
+      "type": "Premium_Discount",
+      "label": "건강증진형보험료할인서비스",
+      "properties": {
+        "discount_type": "건강관리활동 기반",
+        "discount_rate_text": "7%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "건강증진형보험료할인서비스는 피보험자의 건강관리활동을 측정하여 보험료를 할인하여 드리는 서비스입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_geoume_health_discount",
+      "type": "Calculation",
+      "label": "건강증진형 할인금액 계산",
+      "properties": {
+        "formula_text": "월 보험료 × 할인율(7%)",
+        "formula_type": "discount",
+        "applies_to": "기준 걸음수(8,000보) 이상을 기준 일수(20일) 이상 달성시",
+        "variables": [
+          "월 보험료",
+          "할인율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 할인금액은 월 보험료에 할인율을 곱하여 계산하며, 보험료 할인율은 7%로 합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_geoume_premium_waiver",
+      "type": "Eligibility",
+      "label": "보험료 납입면제 요건",
+      "properties": {
+        "age_range": null,
+        "health_requirements": "동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태",
+        "contract_types": null
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었을 경우 차회 이후 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_geoume_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_geoume_K19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_georeume_age_male",
+      "type": "Eligibility",
+      "label": "남자 가입나이",
+      "properties": {
+        "age_range": "만 19~60세 (납입기간별 상이)",
+        "health_requirements": "건강진단 가능",
+        "contract_types": [
+          "e뇌혈관질환진단보장보험",
+          "e허혈성심장질환진단보장보험",
+          "e암진단보장보험Ⅱ"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "남자 10년납 만 19~60세, 15년납 만 19~60세, 20년납 만 19~59세, 30년납 만 19~49세 (80세만기 기준)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_georeume_coverage_limit",
+      "type": "Eligibility",
+      "label": "가입한도",
+      "properties": {
+        "age_range": "전연령",
+        "health_requirements": "가입한도 제한",
+        "contract_types": [
+          "e뇌혈관질환: 1,000~2,000만원",
+          "e허혈성심장질환: 200~1,000만원",
+          "e암진단: 1,000~5,000만원"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "e 뇌혈관질환진단보장보험(비갱신형) 무배당 1,000 만원 ~ 2,000 만원, e 허혈성심장질환진단보장보험(비갱신형) 무배당 200 만원 ~ 1,000 만원, e 암진단보장보험Ⅱ(비갱신형) 무배당 1,000만원 ~ 5,000만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_georeume_health_exam",
+      "type": "Eligibility",
+      "label": "건강진단여부",
+      "properties": {
+        "age_range": "전연령",
+        "health_requirements": "기존 보험가입상황 및 나이, 계약전 알릴의무에 따라 건강진단 시행",
+        "contract_types": [
+          "전 상품"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.바",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_걸음e건강_K1.1",
+      "type": "Rider",
+      "label": "건강증진형보험료할인특약",
+      "properties": {
+        "rider_code": "K1.1",
+        "rider_name": "건강증진형보험료할인특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "건강증진형보험료할인특약(K1.1)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_걸음e건강_K1.6",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_걸음e건강_K1.2",
+      "type": "Rider",
+      "label": "장애인전용 세제전환특약",
+      "properties": {
+        "rider_code": "K1.2",
+        "rider_name": "장애인전용 세제전환특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_걸음e건강_K3.7",
+      "type": "Rider",
+      "label": "특정 신체부위·질병 보장제한부 인수특약",
+      "properties": {
+        "rider_code": "K3.7",
+        "rider_name": "특정 신체부위·질병 보장제한부 인수특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "특정 신체부위·질병 보장제한부 인수특약(K3.7)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_걸음e건강_K3.8",
+      "type": "Rider",
+      "label": "표준하체인수특약",
+      "properties": {
+        "rider_code": "K3.8",
+        "rider_name": "표준하체인수특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "표준하체인수특약(K3.8)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_걸음e건강_뇌혈관질환진단자금",
+      "type": "Coverage",
+      "label": "뇌혈관질환 진단자금",
+      "properties": {
+        "benefit_name": "뇌혈관질환 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 500만원, 2년이상: 1,000만원",
+        "normalized_code": "cerebrovascular_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "뇌혈관질환 진단자금 | 보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원 | | | 2년이상 | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_걸음e건강_허혈성심장질환진단자금",
+      "type": "Coverage",
+      "label": "허혈성심장질환 진단자금",
+      "properties": {
+        "benefit_name": "허혈성심장질환 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 250만원, 2년이상: 500만원",
+        "normalized_code": "ischemic_heart_disease_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "허혈성심장질환 진단자금 | 보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 250만원 | | | 2년이상 | 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_걸음e건강_암진단자금",
+      "type": "Coverage",
+      "label": "암 진단자금",
+      "properties": {
+        "benefit_name": "소액암 진단자금",
+        "trigger_condition": "보험기간 중 암보장개시일 이후 피보험자가 '소액암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 300만원, 2년이상: 600만원",
+        "normalized_code": "cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "암 진단자금 | 보험기간 중 암보장개시일 이후 피보험자가 '암(직·결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 중증이외의 갑상선암, 대장점막내암 제외)'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원 | | | 2년이상 | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_걸음e건강_소액질병진단자금_기타피부암",
+      "type": "Coverage",
+      "label": "소액질병 진단자금(기타피부암)",
+      "properties": {
+        "benefit_name": "소액질병 진단급여금",
+        "trigger_condition": "중증이외의 갑상선암, 기타피부암, 경계성종양, 제자리암, 대장점막내암",
+        "payment_amount": "200만원(각각 최초1회한)",
+        "normalized_code": "small_disease_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "소액질병 진단자금 | 보험기간 중 피보험자가 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 100만원 | | | 2년이상 | 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_걸음e건강_장해지급률합계",
+      "type": "Calculation",
+      "label": "장해지급률 합계 계산",
+      "properties": {
+        "formula_text": "동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상",
+        "formula_type": "premium",
+        "applies_to": "보험료 납입면제 조건",
+        "variables": [
+          "장해지급률",
+          "50%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상인 장해상태가 되었을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_걸음e건강_뇌혈관질환제외",
+      "type": "Exclusion",
+      "label": "뇌혈관질환 제외 질병",
+      "properties": {
+        "exclusion_type": "질병제외",
+        "condition_text": "외상성 두개내 출혈, 혈관성 치매 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "외상성 두개내 출혈, 혈관성 치매 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_걸음e건강_고의자해",
+      "type": "Exclusion",
+      "label": "피보험자 고의 자해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_걸음e건강_심신상실",
+      "type": "Exception",
+      "label": "심신상실 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때에는 보험금을 지급하며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_걸음e건강_보험수익자고의",
+      "type": "Exclusion",
+      "label": "보험수익자 고의 가해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_걸음e건강_일부보험수익자",
+      "type": "Exception",
+      "label": "일부 보험수익자 예외",
+      "properties": {
+        "exception_condition": "보험수익자가 보험금의 일부 보험수익자인 경우",
+        "referenced_exclusion": "보험수익자 고의 가해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_걸음e건강_계약자고의",
+      "type": "Exclusion",
+      "label": "계약자 고의 가해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_걸음e건강_사기계약",
+      "type": "Exclusion",
+      "label": "사기에 의한 계약",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_geurme_ebrain",
+      "type": "Rider",
+      "label": "e뇌혈관질환진단보장보험(비갱신형) 무배당",
+      "properties": {
+        "rider_code": "ecancer2",
+        "rider_name": "e뇌혈관질환진단보장보험(비갱신형) 무배당",
+        "rider_type": "특약",
+        "price_index_male": "106.8%",
+        "price_index_female": "102.0%",
+        "coverage_amount": "2,000만원"
+      },
+      "provenance": {
+        "source_section_id": "sec4.나",
+        "source_text": "■ e뇌혈관질환진단보장보험(비갱신형) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_geurme_premium_discount",
+      "type": "Calculation",
+      "label": "보장부분 적용이율 계산",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "보험료 할인",
+        "variables": [
+          "적용이율",
+          "연복리"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "한화생명 걸음e건강보험 무배당의 적용이율은 연복리 2.75% 입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_걸음e건강_calculation_method",
+      "type": "Surrender_Value",
+      "label": "순보험료식 해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "순보험료식 계약자적립액에서 해약공제액을 공제",
+        "key_milestones": "납입기간 중 해약시 미지급, 납입완료 후 표준형의 50% 지급"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_걸음e건강_surrender_percentage",
+      "type": "Calculation",
+      "label": "납입완료 후 해약환급금 계산",
+      "properties": {
+        "formula_text": "표준형 해약환급금 × 50%",
+        "formula_type": "surrender_value",
+        "applies_to": "보험료 납입기간이 경과된 이후 계약 해지시",
+        "variables": [
+          "표준형 해약환급금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지될 경우에는 '표준형' 해약환급금의 50%에 해당하는 금액을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_걸음e건강_refund_rate",
+      "type": "Calculation",
+      "label": "환급률 산출공식",
+      "properties": {
+        "formula_text": "해약환급금 ÷ 납입보험료 × 100",
+        "formula_type": "surrender_value",
+        "applies_to": "경과기간별 환급률 계산",
+        "variables": [
+          "해약환급금",
+          "납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_걸음e건강_surrender_during_payment",
+      "type": "Exclusion",
+      "label": "납입기간 중 해약환급금 미지급",
+      "properties": {
+        "exclusion_type": "해약환급금 미지급",
+        "condition_text": "보험료 납입기간 중 해지될 경우 해약환급금을 지급하지 않음"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "이 상품은 보험료 납입기간 중 해지될 경우 해약환급금을 지급하지 않으며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_걸음e건강_zero_payment_period",
+      "type": "Surrender_Value",
+      "label": "납입기간 중 해약환급금 0%",
+      "properties": {
+        "calculation_basis": "납입기간 중 해약시 미지급",
+        "key_milestones": "20년 납입완료 전까지 0%, 20년 후 표준형 50% 지급"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "이 상품은 보험료 납입기간 중 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지될 경우에는 '표준형' 해약환급금의 50%에 해당하는 금액을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_georeume_health_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당 상품",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "한화생명 걸음e건강보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_georeume_health_price_index",
+      "type": "Calculation",
+      "label": "보험가격지수 계산식",
+      "properties": {
+        "formula_text": "보험료총액 ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산정",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율을 '보험가격지수'라고 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_georeume_health_heart_disease",
+      "type": "Rider",
+      "label": "e허혈성심장질환진단보장보험(비갱신형)",
+      "properties": {
+        "rider_name": "e허혈성심장질환진단보장보험(비갱신형) 무배당",
+        "rider_type": "특약",
+        "price_index_male": "97.5%",
+        "price_index_female": "96.3%",
+        "coverage_amount": "1,000만원"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "e허혈성심장질환진단보장보험(비갱신형) 무배당 | 80세만기 | 20년납 | 97.5% | 96.3% | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_georeume_health_cancer_diagnosis",
+      "type": "Rider",
+      "label": "e암진단보장보험Ⅱ(비갱신형)",
+      "properties": {
+        "rider_name": "e암진단보장보험Ⅱ(비갱신형) 무배당",
+        "rider_type": "특약",
+        "price_index_male": "104.5%",
+        "price_index_female": "107.9%",
+        "coverage_amount": "3,000만원"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "e암진단보장보험Ⅱ(비갱신형) 무배당 | 80세만기 | 20년납 | 104.5% | 107.9% | 3,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#cancer",
+      "type": "Product_Category",
+      "label": "암보장보험",
+      "properties": {
+        "category": "암"
+      },
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "e암진단보장보험Ⅱ(비갱신형) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_ecanc_general_cancer",
+      "type": "Coverage",
+      "label": "일반암 진단급여금",
+      "properties": {
+        "benefit_name": "소액암 진단급여금",
+        "trigger_condition": "직·결장암, 유방암, 여성생식기암, 전립선암",
+        "payment_amount": "600만원(최초1회한)",
+        "normalized_code": "general_cancer_diagnosis_benefit",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "일반암 진단: 1,000만원(최초1회한)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_coverage_range_index",
+      "type": "Calculation",
+      "label": "보장범위지수 계산",
+      "properties": {
+        "formula_text": "해당상품의 위험보험료 ÷ 표준상품의 위험보험료총액",
+        "formula_type": "premium",
+        "applies_to": "보장성보험 상품 비교",
+        "variables": [
+          "해당상품의 위험보험료",
+          "표준상품의 위험보험료총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "해당상품의 위험보험료(보험금 지급을 위한 보험료)를 '표준상품의 위험보험료총액'으로 나눈 비율을 '보장범위지수'라고 합니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Product_Category#health",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 걸음e건강보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Dividend_Method#hwl_geoume_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 걸음e건강보험 무배당은 무배당 상품으로서 배당을 하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Surrender_Value#hwl_geoume_reduced",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품의 비갱신형 모듈보험은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Premium_Discount#hwl_geoume_health_activity",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "건강증진형보험료할인서비스는 피보험자의 건강관리활동을 측정하여 보험료를 할인하여 드리는 서비스입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Premium_Discount#hwl_geoume_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Eligibility#hwl_geoume_premium_waiver",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었을 경우 차회 이후 보험료 납입을 면제",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Eligibility#hwl_georeume_age_male",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "남자 10년납 만 19~60세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Eligibility#hwl_georeume_coverage_limit",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "e 뇌혈관질환진단보장보험(비갱신형) 무배당 1,000 만원 ~ 2,000 만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Eligibility#hwl_georeume_health_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Rider#hwl_geoume_K19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요?",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Rider#hwl_걸음e건강_K1.1",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "건강증진형보험료할인특약(K1.1)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Rider#hwl_걸음e건강_K1.6",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Rider#hwl_걸음e건강_K1.2",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Rider#hwl_걸음e건강_K3.7",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "특정 신체부위·질병 보장제한부 인수특약(K3.7)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Rider#hwl_걸음e건강_K3.8",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "표준하체인수특약(K3.8)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Coverage#hwl_걸음e건강_뇌혈관질환진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "뇌혈관질환 진단자금 보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Coverage#hwl_걸음e건강_허혈성심장질환진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "허혈성심장질환 진단자금 보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Coverage#hwl_걸음e건강_암진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암 진단자금 보험기간 중 암보장개시일 이후 피보험자가 '암(직·결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 중증이외의 갑상선암, 대장점막내암 제외)'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Coverage#hwl_걸음e건강_소액질병진단자금_기타피부암",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "소액질병 진단자금 보험기간 중 피보험자가 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_뇌혈관질환진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_뇌혈관질환제외",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 외상성 두개내 출혈, 혈관성 치매 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_뇌혈관질환진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_뇌혈관질환진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_보험수익자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_뇌혈관질환진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_계약자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_허혈성심장질환진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_허혈성심장질환진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_보험수익자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_허혈성심장질환진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_계약자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_암진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_암진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_보험수익자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_암진단자금",
+      "target_id": "Exclusion#hwl_걸음e건강_계약자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_걸음e건강_고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_걸음e건강_보험수익자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_걸음e건강_소액질병진단자금_기타피부암",
+      "target_id": "Exclusion#hwl_걸음e건강_계약자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_걸음e건강_고의자해",
+      "target_id": "Exception#hwl_걸음e건강_심신상실",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때에는 보험금을 지급",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_걸음e건강_보험수익자고의",
+      "target_id": "Exception#hwl_걸음e건강_일부보험수익자",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Exclusion#hwl_걸음e건강_사기계약",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_geoume_reduced",
+      "target_id": "Calculation#hwl_geoume_surrender",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_geoume_health_activity",
+      "target_id": "Calculation#hwl_geoume_health_discount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 할인금액은 월 보험료에 할인율을 곱하여 계산하며, 보험료 할인율은 7%로 합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_걸음e건강_장해지급률합계",
+      "target_id": "Coverage#hwl_걸음e건강_뇌혈관질환진단자금",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상인 장해상태가 되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_걸음e건강_calculation_method",
+      "target_id": "Calculation#hwl_걸음e건강_surrender_percentage",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_걸음e건강_zero_payment_period",
+      "target_id": "Calculation#hwl_걸음e건강_refund_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_geoume_health",
+      "target_id": "Surrender_Value#hwl_걸음e건강_zero_payment_period",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "보험료 납입기간 중 해지될 경우 해약환급금을 지급하지 않으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_georeume_health_price_index",
+      "target_id": "Policy#hwl_geoume_health",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율을 '보험가격지수'라고 합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_ecanc_general_cancer",
+      "target_id": "Calculation#hwl_coverage_range_index",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec8",
+        "source_text": "해당상품의 위험보험료(보험금 지급을 위한 보험료)를 '표준상품의 위험보험료총액'으로 나눈 비율을 '보장범위지수'라고 합니다.",
+        "confidence": 1.0
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T12:09:17.739152+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 44,
+    "relation_count": 43,
+    "sections_processed": 8,
+    "api_calls": 9,
+    "total_input_tokens": 50699,
+    "total_output_tokens": 22228
+  }
+}

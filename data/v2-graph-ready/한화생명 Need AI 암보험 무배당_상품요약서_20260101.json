@@ -1,0 +1,1066 @@
+{
+  "document_id": "한화생명 Need AI 암보험 무배당_상품요약서_20260101",
+  "product_name": "한화생명 Need AI 암보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_needai_cancer",
+      "type": "Policy",
+      "label": "한화생명 Need AI 암보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "암보험",
+        "contract_types": [
+          "해약환급금 미지급형(납입기간중 0% 납입기간후 50%)"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 Need AI 암보험 무배당은 사망 및 암의 진단, 치료, 통원 등을 보장하며, 보장의 세분화/다양화를 통한 고객 니즈별 맞춤 상품 가입이 가능한 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_needai_cancer_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 Need AI 암보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_needai_cancer_low_return",
+      "type": "Surrender_Value",
+      "label": "해약환급금 미지급형",
+      "properties": {
+        "calculation_basis": "해약환급금 미지급형",
+        "key_milestones": "납입기간중 0%, 납입기간후 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급하는 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_needai_cancer_surrender_formula",
+      "type": "Calculation",
+      "label": "해약환급금 계산식",
+      "properties": {
+        "formula_text": "해약환급금 = 납입보험료 - 경과기간 위험보험료 - 계약체결비용 - 계약관리비용",
+        "formula_type": "surrender_value",
+        "applies_to": "중도해지시",
+        "variables": [
+          "납입보험료",
+          "경과기간 위험보험료",
+          "계약체결비용",
+          "계약관리비용",
+          "해약공제금액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_needai_cancer_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_needai_cancer_group_discount",
+      "type": "Eligibility",
+      "label": "단체취급할인 가입자격",
+      "properties": {
+        "age_range": null,
+        "health_requirements": null,
+        "contract_types": "단체소속 5인 이상"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 보험계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속되어야 합니다. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 보험계약자 수 또는 단체의 대표자를 보험계약자로 하고 단체소속원을 피보험자로 하는 주계약의 피보험자 수가 5인 이상이어야 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_needai_cancer_K19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#cancer",
+      "type": "Product_Category",
+      "label": "암보험",
+      "properties": {
+        "category": "암"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 Need AI 암보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_need_ai_cancer_age",
+      "type": "Eligibility",
+      "label": "연령 가입자격",
+      "properties": {
+        "age_range": "만15세 ~ 만80세 (납입기간별 상이)",
+        "health_requirements": "건강진단 시행 가능",
+        "contract_types": [
+          "주계약",
+          "비갱신형특약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "최저 가입 나이: 만15세, 최고 가입 나이: 성별 및 납입기간별로 아래와 같음",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_need_ai_cancer_coverage_limit",
+      "type": "Eligibility",
+      "label": "가입한도 자격",
+      "properties": {
+        "age_range": "",
+        "health_requirements": "",
+        "contract_types": [
+          "주계약: 200만원 ~ 500만원"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "주계약 200만원 ~ 500만원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_need_ai_cancer_health_exam",
+      "type": "Eligibility",
+      "label": "건강진단 자격",
+      "properties": {
+        "age_range": "",
+        "health_requirements": "기존 보험가입유무, 나이, 계약 전 알릴 의무 사항에 따라 건강진단 시행 가능",
+        "contract_types": []
+      },
+      "provenance": {
+        "source_section_id": "sec2.바",
+        "source_text": "기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_death",
+      "type": "Coverage",
+      "label": "암사망보험금",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "50만원 (가입금액 100만원 기준)",
+        "normalized_code": "cancer_death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "암사망보험금: 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 대장점막내암 제외)' 또는 보장개시일 이후에 '기타피부암' 또는 '대장점막내암'으로 진단이 확정되고, 보험기간 중 그 '암(기타피부암 및 대장점막내암 제외)', '기타피부암' 또는 '대장점막내암'을 직접적인 원인으로 사망한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_nonreimbursed_surgery",
+      "type": "Coverage",
+      "label": "비급여 암수술자금",
+      "properties": {
+        "benefit_name": "비급여(전액본인부담 포함) 암수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암'으로 '비급여(전액본인부담 포함) 암 수술'을 받은 경우",
+        "payment_amount": "매년(매회) 1,000만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "non_covered_cancer_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.KA1.1수술",
+        "source_text": "비급여(전액본인부담 포함) 암수술자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암'으로 '비급여(전액본인부담 포함) 암 수술'을 받은 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_specialized_nonreimbursed_surgery",
+      "type": "Coverage",
+      "label": "암중점치료기관 비급여 암수술자금",
+      "properties": {
+        "benefit_name": "암중점치료기관(상급종합병원 포함) 비급여(전액본인부담 포함) 암수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암'으로 암중점치료기관(상급종합병원 포함)에서 '비급여(전액본인부담 포함) 암 수술'을 받은 경우",
+        "payment_amount": "매년(매회) 1,000만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "cancer_center_non_covered_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.KA1.1수술",
+        "source_text": "암중점치료기관(상급종합병원 포함) 비급여(전액본인부담 포함) 암수술자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암'으로 암중점치료기관(상급종합병원 포함)에서 '비급여(전액본인부담 포함) 암 수술'을 받은 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_nonreimbursed_chemo_radiation",
+      "type": "Coverage",
+      "label": "비급여 항암약물·방사선치료자금",
+      "properties": {
+        "benefit_name": "비급여(전액본인부담 포함) 항암약물·방사선치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일 전일까지 '암'으로 '비급여(전액본인부담 포함) 항암약물치료' 또는 '비급여(전액본인부담 포함) 항암방사선치료' 중 어느 하나의 치료를 받은 경우",
+        "payment_amount": "매년(매회) 1,000만원",
+        "rider_code": "KA1.1",
+        "normalized_code": "non_covered_anticancer_drug_radiation",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.KA1.1항암약물방사선",
+        "source_text": "비급여(전액본인부담 포함) 항암약물·방사선치료자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일 전일까지 '암'으로 '비급여(전액본인부담 포함) 항암약물치료' 또는 '비급여(전액본인부담 포함) 항암방사선치료' 중 어느 하나의 치료를 받은 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_major_test_1yr",
+      "type": "Coverage",
+      "label": "암 주요검사비용 지원금(1년미만)",
+      "properties": {
+        "benefit_name": "암 주요검사비용 지원금",
+        "trigger_condition": "보험기간 중 피보험자가 의사에 의하여 '암'의 진단, 치료 또는 진행상태 확인을 위한 필요소견을 토대로 '암 주요검사'를 받은 경우(연간 1회한)",
+        "payment_amount": "1회당 20만원 (1년이상)",
+        "rider_code": "KA2.1",
+        "normalized_code": "cancer_major_exam_support",
+        "category": "EXAM_TEST"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.KA2.1검사",
+        "source_text": "암 주요검사비용 지원금: 보험기간 중 피보험자가 의사에 의하여 '암'의 진단, 치료 또는 진행상태 확인을 위한 필요소견을 토대로 '암 주요검사'를 받은 경우(연간 1회한), 1년미만: 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_diagnosis_major",
+      "type": "Coverage",
+      "label": "암진단자금",
+      "properties": {
+        "benefit_name": "전이암진단자금",
+        "trigger_condition": "보험기간 중 암보장개시일 이후 피보험자가 '전이암'으로 진단이 확정되었을 경우(최초1회한)",
+        "payment_amount": "1,000만원",
+        "rider_code": "KA2.1",
+        "normalized_code": "cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.KA2.1암보장",
+        "source_text": "암진단자금: 보험기간 중 암보장개시일 이후 피보험자가 '암(기타피부암, 대장점막내암, 초기유방암 및 초기갑상선암 제외)'로 진단이 확정되었을 경우(최초1회한)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_intentional_self_harm",
+      "type": "Exclusion",
+      "label": "고의적 자해 면책",
+      "properties": {
+        "exclusion_type": "고의적 자해",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_mental_incapacity",
+      "type": "Exception",
+      "label": "심신상실 면책 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "referenced_exclusion": "고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우 특히 그 결과 사망에 이르게 된 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#hwl_suicide_2years",
+      "type": "Exception",
+      "label": "2년 후 자살 면책 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일(부활계약의 경우는 부활청약일)부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_beneficiary_harm",
+      "type": "Exclusion",
+      "label": "보험수익자 고의가해 면책",
+      "properties": {
+        "exclusion_type": "고의가해",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_contractor_harm",
+      "type": "Exclusion",
+      "label": "계약자 고의가해 면책",
+      "properties": {
+        "exclusion_type": "고의가해",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_fraud_claim",
+      "type": "Exclusion",
+      "label": "사기목적 보험금청구 면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_document_forgery",
+      "type": "Exclusion",
+      "label": "서류위조 면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_paid_premium_comparison",
+      "type": "Calculation",
+      "label": "납입보험료 비교 계산",
+      "properties": {
+        "formula_text": "사망시 지급되는 보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 지급합니다",
+        "formula_type": "benefit",
+        "applies_to": "사망보험금 지급시",
+        "variables": [
+          "사망보험금",
+          "납입한 보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "사망시 지급되는 보험금이 이미 납입한 보험료보다 적을 경우에는 이미 납입한 보험료를 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_ka11_surgery",
+      "type": "Rider",
+      "label": "비급여 암수술특약",
+      "properties": {
+        "rider_code": "KA1.1",
+        "rider_name": "비급여(전액본인부담 포함) 암주요치료보장N특약(수술)(연1회)(KA1.1) 무배당[일반가입형]",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "비급여(전액본인부담 포함) 암주요치료보장N특약(수술)(연1회)(KA1.1) 무배당[일반가입형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_ka11_chemo",
+      "type": "Rider",
+      "label": "비급여 항암약물방사선특약",
+      "properties": {
+        "rider_code": "KA1.1",
+        "rider_name": "비급여(전액본인부담 포함) 암주요치료보장N특약(항암약물·방사선치료)(연1회)(KA1.1) 무배당[일반가입형]",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "비급여(전액본인부담 포함) 암주요치료보장N특약(항암약물·방사선치료)(연1회)(KA1.1) 무배당[일반가입형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_ka21_test",
+      "type": "Rider",
+      "label": "암검사치료특약",
+      "properties": {
+        "rider_code": "KA2.1",
+        "rider_name": "암검사치료N특약(KA2.1) 무배당[일반가입형]",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "암검사치료N특약(KA2.1) 무배당[일반가입형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_ka21_coverage",
+      "type": "Rider",
+      "label": "암보장특약",
+      "properties": {
+        "rider_code": "KA2.1",
+        "rider_name": "암보장N특약[전이암포함](KA2.1) 무배당[일반가입형]",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "암보장N특약[전이암포함](KA2.1) 무배당[일반가입형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_k16_group",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약(K1.6)",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Policy#hwl_need_ai_cancer",
+      "type": "Policy",
+      "label": "Need AI 암보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "암보험",
+        "contract_types": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "한화생명 Need AI 암보험 무배당 주계약 및 특약에 사용한 적용이율은 연복리 2.75%입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_need_ai_discount_rate",
+      "type": "Calculation",
+      "label": "보장부분 적용이율",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "주계약 및 특약 보험료 할인",
+        "variables": [
+          "적용이율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "한화생명 Need AI 암보험 무배당 주계약 및 특약에 사용한 적용이율은 연복리 2.75%입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_need_ai_surrender_rate",
+      "type": "Calculation",
+      "label": "적용해지율 계산",
+      "properties": {
+        "formula_text": "납입기간 이내: 연 0.1%~14.13%, 납입기간 이후: 연 0.8%",
+        "formula_type": "surrender_value",
+        "applies_to": "보험료 납입기간 10년납 기준 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)",
+        "variables": [
+          "경과기간",
+          "납입기간",
+          "해지율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.라",
+        "source_text": "보험료 납입기간 10년납 기준으로 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%~14.13%, 납입기간 이후에 대하여 경과기간별로 연 0.8%이며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_needai_cancer_calculation",
+      "type": "Surrender_Value",
+      "label": "해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "계약자적립액에서 해약공제액을 공제",
+        "key_milestones": "납입기간중 0%, 납입기간후 표준형의 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_needai_cancer_return_rate",
+      "type": "Calculation",
+      "label": "환급률 계산식",
+      "properties": {
+        "formula_text": "환급률 = 해약환급금 ÷ 납입보험료 × 100%",
+        "formula_type": "surrender_value",
+        "applies_to": "경과기간별 환급률 산출",
+        "variables": [
+          "해약환급금",
+          "납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 보험료로 나눈 비율입니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#hwl_needai_cancer_interest_rate",
+      "type": "Regulation",
+      "label": "산출이율 규정",
+      "properties": {
+        "regulation_type": "정의",
+        "article_number": "연복리 2.75%"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "주계약 및 특약의 산출이율은 연복리 2.75%입니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#pure_protection",
+      "type": "Product_Category",
+      "label": "순수보장성 상품",
+      "properties": {
+        "category": "보장"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "이 상품은 순수보장성으로 만기시 지급받는 금액(만기보험금)이 없습니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_price_index_formula",
+      "type": "Calculation",
+      "label": "보험가격지수 계산공식",
+      "properties": {
+        "formula_text": "보험료총액 ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산출",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#price_index_standard",
+      "type": "Regulation",
+      "label": "생명보험 상품공시 시행세칙 기준",
+      "properties": {
+        "article_number": "생명보험 상품공시 시행세칙",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 \"생명보험 상품공시 시행세칙\"에서 정한 기준에 따라 작성되었습니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Product_Category#cancer",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 Need AI 암보험 무배당은 사망 및 암의 진단, 치료, 통원 등을 보장하며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Dividend_Method#hwl_needai_cancer_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 Need AI 암보험 무배당은 무배당 상품으로서 배당을 하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Surrender_Value#hwl_needai_cancer_low_return",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Premium_Discount#hwl_needai_cancer_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Eligibility#hwl_need_ai_cancer_age",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "최저 가입 나이: 만15세, 최고 가입 나이: 성별 및 납입기간별로 아래와 같음",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Eligibility#hwl_need_ai_cancer_coverage_limit",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "주계약 200만원 ~ 500만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Eligibility#hwl_need_ai_cancer_health_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Rider#hwl_needai_cancer_K19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요?",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Rider#hwl_ka11_surgery",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "비급여(전액본인부담 포함) 암주요치료보장N특약(수술)(연1회)(KA1.1) 무배당[일반가입형]",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Rider#hwl_ka11_chemo",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "비급여(전액본인부담 포함) 암주요치료보장N특약(항암약물·방사선치료)(연1회)(KA1.1) 무배당[일반가입형]",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Rider#hwl_ka21_test",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암검사치료N특약(KA2.1) 무배당[일반가입형]",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Rider#hwl_ka21_coverage",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암보장N특약[전이암포함](KA2.1) 무배당[일반가입형]",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Rider#hwl_k16_group",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Coverage#hwl_cancer_death",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암사망보험금: 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 대장점막내암 제외)' 또는 보장개시일 이후에 '기타피부암' 또는 '대장점막내암'으로 진단이 확정되고",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Coverage#hwl_nonreimbursed_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "비급여(전액본인부담 포함) 암수술자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Coverage#hwl_specialized_nonreimbursed_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암중점치료기관(상급종합병원 포함) 비급여(전액본인부담 포함) 암수술자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Coverage#hwl_nonreimbursed_chemo_radiation",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "비급여(전액본인부담 포함) 항암약물·방사선치료자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 최초 진단이 확정되고",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Coverage#hwl_cancer_major_test_1yr",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암 주요검사비용 지원금: 보험기간 중 피보험자가 의사에 의하여 '암'의 진단, 치료 또는 진행상태 확인을 위한 필요소견을 토대로 '암 주요검사'를 받은 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Coverage#hwl_cancer_diagnosis_major",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암진단자금: 보험기간 중 암보장개시일 이후 피보험자가 '암(기타피부암, 대장점막내암, 초기유방암 및 초기갑상선암 제외)'로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_death",
+      "target_id": "Exclusion#hwl_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_nonreimbursed_surgery",
+      "target_id": "Exclusion#hwl_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_specialized_nonreimbursed_surgery",
+      "target_id": "Exclusion#hwl_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_nonreimbursed_chemo_radiation",
+      "target_id": "Exclusion#hwl_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_major_test_1yr",
+      "target_id": "Exclusion#hwl_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_diagnosis_major",
+      "target_id": "Exclusion#hwl_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_death",
+      "target_id": "Exclusion#hwl_beneficiary_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_death",
+      "target_id": "Exclusion#hwl_contractor_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_death",
+      "target_id": "Exclusion#hwl_fraud_claim",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_death",
+      "target_id": "Exclusion#hwl_document_forgery",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_intentional_self_harm",
+      "target_id": "Exception#hwl_mental_incapacity",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_intentional_self_harm",
+      "target_id": "Exception#hwl_suicide_2years",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_needai_cancer_group",
+      "target_id": "Eligibility#hwl_needai_cancer_group_discount",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 보험계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속되어야 합니다. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 보험계약자 수",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_needai_cancer_low_return",
+      "target_id": "Calculation#hwl_needai_cancer_surrender_formula",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_need_ai_discount_rate",
+      "target_id": "Regulation#hwl_needai_cancer_interest_rate",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "한화생명 Need AI 암보험 무배당 주계약 및 특약에 사용한 적용이율은 연복리 2.75%입니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_price_index_formula",
+      "target_id": "Regulation#price_index_standard",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 \"생명보험 상품공시 시행세칙\"에서 정한 기준에 따라 작성되었습니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_needai_cancer",
+      "target_id": "Product_Category#pure_protection",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 상품은 순수보장성으로 만기시 지급받는 금액(만기보험금)이 없습니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_major_test_1yr",
+      "target_id": "Calculation#hwl_paid_premium_comparison",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "지급금액의 경과기간은 보험계약일부터 검사일까지의 경과기간입니다",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_needai_cancer_calculation",
+      "target_id": "Calculation#hwl_needai_cancer_return_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 보험료로 나눈 비율입니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_need_ai_surrender_rate",
+      "target_id": "Regulation#hwl_needai_cancer_interest_rate",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "보험료 납입기간 10년납 기준으로 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)에 적용한 적용해지율",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T12:55:00.840304+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 39,
+    "relation_count": 39,
+    "sections_processed": 7,
+    "api_calls": 8,
+    "total_input_tokens": 79735,
+    "total_output_tokens": 19339
+  }
+}

@@ -1,0 +1,1903 @@
+{
+  "document_id": "한화생명 H건강플러스보험 무배당_상품요약서_20260201",
+  "product_name": "한화생명 H건강플러스보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_h건강플러스",
+      "type": "Policy",
+      "label": "한화생명 H건강플러스보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "건강보험",
+        "contract_types": [
+          "맞춤고지형",
+          "일반고지형",
+          "적립형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H건강플러스보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#건강",
+      "type": "Product_Category",
+      "label": "건강보험",
+      "properties": {
+        "category": "건강"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H건강플러스보험 무배당은 사망 및 3대질병(암, 뇌혈관질환, 허혈성심장질환)의 진단, 입원, 수술을 보장",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_h건강플러스_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H건강플러스보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h건강플러스_간편가입",
+      "type": "Eligibility",
+      "label": "간편가입형 자격",
+      "properties": {
+        "age_range": "",
+        "health_requirements": "무진단, 단 기존 다른 보험상품의 가입유무, 청약서의 계약 전 알릴 의무 사항 등에 따라 보험가입 가능여부를 판정",
+        "contract_types": [
+          "간편가입형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품의 간편가입형은 보험시장에서 소외되고 있는 유병력자나 고령자 등의 계약심사 및 건강검진의 부담을 줄여 보험에 가입할 수 있도록 계약심사 과정을 간소화(표준체에 비하여 비하여 간소화된 계약 전 알릴 의무 항목 활용)한 상품",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_h건강플러스_사망보장",
+      "type": "Coverage",
+      "label": "사망보장",
+      "properties": {
+        "benefit_name": "사망보장",
+        "trigger_condition": "사망",
+        "payment_amount": "보장금액",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H건강플러스보험 무배당은 사망 및 3대질병(암, 뇌혈관질환, 허혈성심장질환)의 진단, 입원, 수술을 보장",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Coverage#hwl_h건강플러스_암진단",
+      "type": "Coverage",
+      "label": "3대질병 진단보장",
+      "properties": {
+        "benefit_name": "3대질병 수술보장",
+        "trigger_condition": "3대질병(암, 뇌혈관질환, 허혈성심장질환)으로 인한 수술",
+        "payment_amount": "보장금액",
+        "normalized_code": "three_major_disease_diagnosis",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H건강플러스보험 무배당은 사망 및 3대질병(암, 뇌혈관질환, 허혈성심장질환)의 진단, 입원, 수술을 보장",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Coverage#hwl_h건강플러스_보험료납입면제",
+      "type": "Coverage",
+      "label": "보험료납입면제",
+      "properties": {
+        "benefit_name": "보험료납입면제",
+        "trigger_condition": "보장개시일 이후에 '뇌졸중'으로 진단이 확정",
+        "payment_amount": "보험료 납입면제",
+        "normalized_code": "premium_waiver",
+        "category": "PREMIUM_WAIVER"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "간편가입형 및 일반가입형Ⅱ의 경우, 보험료 납입기간 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었을 경우 차회 이후의 주계약 및 특약의 보험료 납입을 면제",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_h건강플러스_심근경색납입면제",
+      "type": "Coverage",
+      "label": "급성심근경색증 보험료납입면제",
+      "properties": {
+        "benefit_name": "보험료납입면제",
+        "trigger_condition": "보장개시일 이후에 '급성심근경색증'으로 진단이 확정",
+        "payment_amount": "보험료 납입면제",
+        "normalized_code": "premium_waiver",
+        "category": "PREMIUM_WAIVER"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보장개시일 이후에 '급성심근경색증'으로 진단이 확정된 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_h건강플러스_단체취급",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_h건강플러스_선납할인",
+      "type": "Premium_Discount",
+      "label": "보험료 선납할인",
+      "properties": {
+        "discount_type": "보험료 선납할인",
+        "discount_rate_text": "평균공시이율로 할인"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_h건강플러스_일부지급형",
+      "type": "Surrender_Value",
+      "label": "해약환급금 일부지급형",
+      "properties": {
+        "calculation_basis": "해약환급금 일부지급형",
+        "key_milestones": "납입기간중 50%, 납입기간후 100%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약 및 특약의 경우 해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)으로 표준형보다 낮은 보험료로 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 표준형의 해약환급금 대비 적은 해약환급금을 지급하는 상품",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_h건강플러스_해약환급금비율",
+      "type": "Calculation",
+      "label": "해약환급금 지급비율",
+      "properties": {
+        "formula_text": "납입기간중 50%, 납입기간후 100%",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 일부지급형",
+        "variables": [
+          "납입기간",
+          "표준형 해약환급금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_h건강플러스_K1.9",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? 계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_h건강플러스_치료비선지급",
+      "type": "Rider",
+      "label": "치료비 선지급서비스특약",
+      "properties": {
+        "rider_code": "",
+        "rider_name": "치료비 선지급서비스특약",
+        "rider_type": "선택"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "치료비 선지급서비스특약은 암주요치료비 및 특정순환계 통합치료비 보장 담보에 부가하여 치료 비보험금을 선지급해드리는 제도",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Calculation#hwl_h건강플러스_surrender_during",
+      "type": "Calculation",
+      "label": "납입기간중 해약환급금",
+      "properties": {
+        "formula_text": "납입기간후 100%",
+        "formula_type": "surrender_value",
+        "applies_to": "납입기간후",
+        "variables": [
+          "해약환급금",
+          "100%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.가",
+        "source_text": "해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h건강플러스_age_보장형",
+      "type": "Eligibility",
+      "label": "보장형계약 가입나이",
+      "properties": {
+        "age_range": "만15세~만80세",
+        "health_requirements": "청약서 계약 전 알릴 의무 사항",
+        "contract_types": [
+          "보장형계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "가입최저나이: 만15세\n가입최고나이: 보험종목, 성별, 및 보험료 납입기간별로 아래와 같음",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h건강플러스_age_적립형",
+      "type": "Eligibility",
+      "label": "적립형계약Ⅱ 가입나이",
+      "properties": {
+        "age_range": "25세~75세",
+        "health_requirements": "전환시점 기준",
+        "contract_types": [
+          "적립형 계약Ⅱ"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "가입최저나이: 25세\n가입최고나이: 보험종목 및 성별로 아래와 같음",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h건강플러스_amount",
+      "type": "Eligibility",
+      "label": "주계약 가입한도",
+      "properties": {
+        "age_range": "",
+        "health_requirements": "",
+        "contract_types": [
+          "주계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "주계약 100만원 ~ 1억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_h건강플러스_일반가입_건강진단",
+      "type": "Eligibility",
+      "label": "일반가입형 건강진단 가입",
+      "properties": {
+        "age_range": "",
+        "health_requirements": "기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정",
+        "contract_types": [
+          "일반가입형Ⅰ",
+          "일반가입형Ⅱ"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.바",
+        "source_text": "한화생명 H건강플러스보험 무배당[일반가입형Ⅰ, Ⅱ]의 경우 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_3disease_death",
+      "type": "Coverage",
+      "label": "3대질병사망보험금",
+      "properties": {
+        "benefit_name": "3대질병사망보험금 증액보장보험금",
+        "trigger_condition": "이 계약의 보험기간 중 피보험자가 보장개시일('암'은 암보장개시일) 이후에 '암', '뇌혈관질환' 또는 '허혈성심장질환'으로 진단이 확정되고, 증액계약의 보험기간 중 그 '암', '뇌혈관질환' 또는 '허혈성심장질환'을 직접적인 원인으로 사망한 경우",
+        "payment_amount": "증액계약의 보장보험금액",
+        "normalized_code": "three_major_disease_death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.주계약_맞춤고지형",
+        "source_text": "보험기간 중 피보험자가 보장개시일('암'은 암보장개시일) 이후에 '암', '뇌혈관질환' 또는 '허혈성심장질환'으로 진단이 확정되고, 그 '암', '뇌혈관질환' 또는 '허혈성심장질환'을 직접적인 원인으로 사망한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_death",
+      "type": "Coverage",
+      "label": "사망보험금",
+      "properties": {
+        "benefit_name": "사망보험금 증액보장보험금",
+        "trigger_condition": "증액계약의 보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "증액계약의 보장보험금액",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.주계약_맞춤고지형",
+        "source_text": "보험기간 중 피보험자가 보장개시일 이후에 사망한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_hkeongang_savings_death",
+      "type": "Calculation",
+      "label": "적립형 사망보험금 계산",
+      "properties": {
+        "formula_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "formula_type": "benefit",
+        "applies_to": "적립형 계약Ⅱ 사망보험금"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.적립형계약Ⅱ",
+        "source_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_2disease_disability",
+      "type": "Coverage",
+      "label": "2대질병장해보험금",
+      "properties": {
+        "benefit_name": "2대질병장해보험금",
+        "trigger_condition": "피보험자가 보험기간 중 '뇌혈관질환' 또는 '허혈성심장질환'으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "payment_amount": "1,000만원 × 해당 장해지급률",
+        "rider_code": "TA2.1",
+        "normalized_code": "two_major_disease_disability",
+        "category": "DISABILITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.2대질병후유장해특약",
+        "source_text": "피보험자가 보험기간 중 '뇌혈관질환' 또는 '허혈성심장질환'으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_hkeongang_2disease_disability_calc",
+      "type": "Calculation",
+      "label": "2대질병장해보험금 계산",
+      "properties": {
+        "formula_text": "1,000만원 × 해당 장해지급률",
+        "formula_type": "benefit",
+        "applies_to": "2대질병장해보험금"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.2대질병후유장해특약",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_brain_thrombectomy",
+      "type": "Coverage",
+      "label": "급여 뇌졸중 혈전제거술 수술자금",
+      "properties": {
+        "benefit_name": "급여 뇌졸중 혈전제거술 수술자금",
+        "trigger_condition": "보험기간 중 '뇌졸중'으로 진단 확정되고 보험기간 중 '뇌졸중'의 치료를 직접적인 목적으로 '급여 뇌졸중 혈전제거술'을 받았을 경우(연간 1회한)",
+        "payment_amount": "1년미만: 1회당 50만원, 1년이상: 1회당 100만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "covered_stroke_thrombectomy_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.뇌심혈관주요치료보장특약_혈전제거술",
+        "source_text": "보험기간 중 '뇌졸중'으로 진단 확정되고 보험기간 중 '뇌졸중'의 치료를 직접적인 목적으로 '급여 뇌졸중 혈전제거술'을 받았을 경우(연간 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_heart_thrombectomy",
+      "type": "Coverage",
+      "label": "급여 특정 심장질환 혈전제거술 수술자금",
+      "properties": {
+        "benefit_name": "급여 특정 심장질환 혈전제거술 수술자금",
+        "trigger_condition": "보험기간 중 '특정 심장질환'으로 진단 확정되고 보험기간 중 '특정 심장질환'의 치료를 직접적인 목적으로 '급여 특정 심장질환 혈전제거술'을 받았을 경우(연간 1회한)",
+        "payment_amount": "1년미만: 1회당 50만원, 1년이상: 1회당 100만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "covered_cardiac_thrombectomy_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.뇌심혈관주요치료보장특약_혈전제거술",
+        "source_text": "보험기간 중 '특정 심장질환'으로 진단 확정되고 보험기간 중 '특정 심장질환'의 치료를 직접적인 목적으로 '급여 특정 심장질환 혈전제거술'을 받았을 경우(연간 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_cardiovascular_surgery",
+      "type": "Coverage",
+      "label": "뇌심혈관 수술자금",
+      "properties": {
+        "benefit_name": "뇌심혈관 수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌심혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우(연간 1회한)",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "cerebrocardiovascular_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.뇌심혈관주요치료보장특약_수술",
+        "source_text": "보험기간 중 피보험자가 '뇌심혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우(연간 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_thrombolytic_therapy",
+      "type": "Coverage",
+      "label": "뇌심혈관 혈전용해치료보험금",
+      "properties": {
+        "benefit_name": "뇌심혈관 혈전용해치료보험금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌심혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '혈전용해치료'를 받았을 경우(연간 1회한)",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "cerebrocardiovascular_thrombolytic_treatment",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.뇌심혈관주요치료보장특약_혈전용해치료",
+        "source_text": "보험기간 중 피보험자가 '뇌심혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '혈전용해치료'를 받았을 경우(연간 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_cerebrovascular_diagnosis",
+      "type": "Coverage",
+      "label": "뇌혈관질환 진단자금",
+      "properties": {
+        "benefit_name": "뇌혈관질환 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 500만원, 1년이상: 1,000만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "cerebrovascular_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.뇌혈관질환진단보장특약",
+        "source_text": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_arrhythmia_diagnosis",
+      "type": "Coverage",
+      "label": "부정맥(기타부정맥 제외) 진단자금",
+      "properties": {
+        "benefit_name": "부정맥(기타부정맥 제외) 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '부정맥(기타부정맥 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 5만원, 1년이상: 10만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "arrhythmia_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.부정맥및기타부정맥진단특약",
+        "source_text": "보험기간 중 피보험자가 '부정맥(기타부정맥 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_other_arrhythmia_diagnosis",
+      "type": "Coverage",
+      "label": "기타부정맥 진단자금",
+      "properties": {
+        "benefit_name": "기타부정맥 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '기타부정맥'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 5만원, 1년이상: 10만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "other_arrhythmia_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.부정맥및기타부정맥진단특약",
+        "source_text": "보험기간 중 피보험자가 '기타부정맥'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_non_covered_cancer_surgery",
+      "type": "Coverage",
+      "label": "비급여(전액본인부담 포함) 암수술자금",
+      "properties": {
+        "benefit_name": "비급여(전액본인부담 포함) 항암약물·방사선치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '비급여(전액본인부담 포함) 항암약물치료' 또는 '비급여(전액본인부담 포함) 항암방사선치료' 중 어느 하나의 치료를 받은 경우(연간 1회한)",
+        "payment_amount": "1년미만: 1회당 50만원, 1년이상: 1회당 100만원",
+        "rider_code": "TA1.1",
+        "normalized_code": "non_covered_cancer_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.비급여암주요치료보장특약_수술",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '비급여(전액본인부담 포함) 암 수술'을 받은 경우(연간 1회한)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hkeongang_small_cancer_diagnosis",
+      "type": "Coverage",
+      "label": "소액암진단자금",
+      "properties": {
+        "benefit_name": "암진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(유방암, 전립선암, 기타피부암, 갑상선암, 대장점막내암 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 500만원, 1년이상: 1,000만원 (체증형의 경우 체증후: 2,000만원)",
+        "rider_code": "TA2.1",
+        "normalized_code": "small_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.소액암진단보장특약",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '유방암, 전립선암, 초기 이외의 갑상선암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_hkeongang_traumatic_intracranial",
+      "type": "Exclusion",
+      "label": "외상성 두개내 출혈 보장제한",
+      "properties": {
+        "exclusion_type": "질병분류제한",
+        "condition_text": "'외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.주계약",
+        "source_text": "'외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_hkeongang_TA21",
+      "type": "Rider",
+      "label": "2대질병후유장해(3-100%)특약(맞춤가입)(TA2.1) 무배당",
+      "properties": {
+        "rider_code": "TA2.1",
+        "rider_name": "2대질병후유장해(3-100%)특약(맞춤가입)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.가",
+        "source_text": "2대질병후유장해(3-100%)특약(맞춤가입)(TA2.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_hkeongang_TA11",
+      "type": "Rider",
+      "label": "비급여(전액본인부담 포함) 암주요치료보장특약Ⅱ(수술)(연1회)(맞춤가입)(TA1.1) 무배당",
+      "properties": {
+        "rider_code": "TA1.1",
+        "rider_name": "비급여(전액본인부담 포함) 암주요치료보장특약Ⅱ(수술)(연1회)(맞춤가입)",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.가",
+        "source_text": "비급여(전액본인부담 포함) 암주요치료보장특약Ⅱ(수술)(연1회)(맞춤가입)(TA1.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_hkeongang_TA12",
+      "type": "Rider",
+      "label": "보험료납입면제특약(맞춤가입)(TA1.2) 무배당",
+      "properties": {
+        "rider_code": "TA1.2",
+        "rider_name": "보험료납입면제특약(맞춤가입)",
+        "rider_type": "선택특약Ⅱ"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.가",
+        "source_text": "보험료납입면제특약(맞춤가입)(TA1.2) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_hkeongang_best_amount_choice",
+      "type": "Calculation",
+      "label": "사망보험금 최대지급액 선택",
+      "properties": {
+        "formula_text": "사망시 지급되는 보험금과 이미 납입한 보험료 및 해약환급금 중에서 큰 금액을 지급합니다",
+        "formula_type": "benefit",
+        "applies_to": "주계약 사망보험금",
+        "variables": [
+          "사망시 지급되는 보험금",
+          "이미 납입한 보험료",
+          "해약환급금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part1.나.주계약",
+        "source_text": "회사는 보험기간 중 피보험자에게 상기 보험금 지급사유가 발생한 경우 사망시 지급되는 보험금(증액계약이 제공된 경우 증액보장보험금 포함)과 이미 납입한 보험료 및 해약환급금 중에서 큰 금액을 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_increase_benefit",
+      "type": "Coverage",
+      "label": "증액보장보험금",
+      "properties": {
+        "benefit_name": "증액보장보험금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단이 확정되고, 증액계약의 보험기간 중 그 '암(기타피부암 및 갑상선암 제외)'의 직접적인 치료를 목적으로 '항암방사선치료'를 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "증액계약의 보장보험금액",
+        "rider_code": null,
+        "normalized_code": "increased_coverage_benefit",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급부명칭: 증액보장보험금, 지급사유: 증액계약의 보험기간 중 피보험자가 '유방암, 전립선암, 초기 이외의 갑상선암'으로 진단이 확정되었을 경우(최초 1회한), 지급금액: 증액계약의 보장보험금액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_cancer_minor_diagnosis_ta21",
+      "type": "Rider",
+      "label": "소액암진단보장특약(맞춤가입)(TA2.1) 무배당",
+      "properties": {
+        "rider_code": "TA2.1",
+        "rider_name": "소액암진단보장특약(맞춤가입)",
+        "rider_type": "선택"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "■ 소액암진단보장특약(맞춤가입)(TA2.1) 무배당[일반고지형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_minor_disease_diagnosis_basic",
+      "type": "Coverage",
+      "label": "소액질병진단자금 (기본형)",
+      "properties": {
+        "benefit_name": "소액질병진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 '기타피부암', '갑상선암', '대장점막내암', '제자리암', '경계성종양'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "각 질병별 1년미만: 500만원, 1년이상: 1,000만원",
+        "normalized_code": "small_disease_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급부명칭: 소액질병진단자금, 지급사유: 보험기간 중 피보험자가 보장개시일 이후에 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한), 경과기간: 1년미만 500만원, 1년이상 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_surgery_1to5_basic",
+      "type": "Coverage",
+      "label": "수술자금 (1-5종 기본형)",
+      "properties": {
+        "benefit_name": "수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '1~5종 수술분류표'에서 정한 수술을 받았을 경우",
+        "payment_amount": "체증전: 1종 20만원~5종 500만원, 체증후: 1종 40만원~5종 1000만원",
+        "normalized_code": "surgery_benefit",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급부명칭: 수술자금, 지급사유: 보험기간 중 피보험자가 '1~5종 수술분류표'에서 정한 수술을 받았을 경우, 지급금액: 1회당 1종 : 20만원, 2종 : 30만원, 3종 : 100만원, 4종 : 300만원, 5종 : 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_surgery_increase_formula",
+      "type": "Calculation",
+      "label": "증액보장보험금 수술자금 계산식",
+      "properties": {
+        "formula_text": "비관혈수술 1회당 증액계약의 보장보험금액 x 30%",
+        "formula_type": "benefit",
+        "applies_to": "뇌혈관질환 및 허혈성심장질환 증액보장보험금 비관혈수술",
+        "variables": [
+          "증액계약의 보장보험금액",
+          "30%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "지급금액: 1회당 1종: 증액계약의 보장보험금액 x 4%, 2종: 증액계약의 보장보험금액 x 6%, 3종: 증액계약의 보장보험금액 x 20%, 4종: 증액계약의 보장보험금액 x 60%, 5종: 증액계약의 보장보험금액 x 100%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_heart_failure_diagnosis_basic",
+      "type": "Coverage",
+      "label": "심부전 진단자금 (기본형)",
+      "properties": {
+        "benefit_name": "심부전 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '심부전'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1년미만: 50만원, 1년이상: 100만원",
+        "normalized_code": "heart_failure_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급부명칭: 심부전 진단자금, 지급사유: 보험기간 중 피보험자가 '심부전'으로 진단이 확정되었을 경우(최초 1회한), 경과기간: 1년미만 50만원, 1년이상 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_treatment_skin_thyroid",
+      "type": "Coverage",
+      "label": "기타피부암·갑상선암 주요치료자금",
+      "properties": {
+        "benefit_name": "기타피부암∙갑상선암 암수술자금, 기타피부암∙갑상선암 항암약물치료자금, 기타피부암∙갑상선암 항암방사선치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '기타피부암' 또는 '갑상선암'으로 진단이 확정되고, 그 직접적인 치료를 목적으로 각각 '암 수술', '항암약물치료', '항암방사선치료'를 받았을 경우(연간 1회한)",
+        "payment_amount": "각 치료별 1년미만: 100만원, 1년이상: 200만원 (체증형의 경우 체증후: 400만원)",
+        "normalized_code": "skin_thyroid_cancer_major_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "기타피부암∙갑상선암 암수술자금, 기타피부암∙갑상선암 항암약물치료자금, 기타피부암∙갑상선암 항암방사선치료자금 - 각각 1년미만: 1회당 100만원, 1년이상: 1회당 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_treatment_major",
+      "type": "Coverage",
+      "label": "암수술자금/항암약물치료자금/항암방사선치료자금",
+      "properties": {
+        "benefit_name": "암수술자금, 항암약물치료자금, 항암방사선치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단이 확정되고, 그 직접적인 치료를 목적으로 각각 '암 수술', '항암약물치료', '항암방사선치료'를 받았을 경우(연간 1회한)",
+        "payment_amount": "각 치료별 1년미만: 500만원, 1년이상: 1,000만원 (체증형의 경우 체증후: 2,000만원)",
+        "normalized_code": "cancer_comprehensive_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급부명칭: 암수술자금, 항암약물치료자금, 항암방사선치료자금 - 각각 1년미만: 1회당 500만원, 1년이상: 1회당 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_disability",
+      "type": "Coverage",
+      "label": "암장해보험금",
+      "properties": {
+        "benefit_name": "암장해보험금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "payment_amount": "1,000만원 × 해당 장해지급률 (체증형의 경우 체증후: 2,000만원 × 해당 장해지급률)",
+        "normalized_code": "cancer_disability",
+        "category": "DISABILITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급부명칭: 암장해보험금, 지급사유: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우, 지급금액: 1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_cancer_disability_formula",
+      "type": "Calculation",
+      "label": "암장해보험금 계산식",
+      "properties": {
+        "formula_text": "1,000만원 × 해당 장해지급률 (체증후: 2,000만원 × 해당 장해지급률)",
+        "formula_type": "benefit",
+        "applies_to": "암장해보험금",
+        "variables": [
+          "특약가입금액",
+          "장해지급률",
+          "체증여부"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "지급금액: 1,000만원 × 해당 장해지급률, 체증후 보험기간: 2,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_disease_injury_surgery",
+      "type": "Coverage",
+      "label": "질병재해수술자금",
+      "properties": {
+        "benefit_name": "수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해'로 인하여 수술을 받았을 경우(동일한 질병당 연간 1회한, 재해 사고일자당 1회한)",
+        "payment_amount": "1년미만: 5만원(재해로 인한 수술시 10만원), 1년이상: 10만원 (체증형의 경우 체증후: 20만원)",
+        "normalized_code": "disease_accident_surgery",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "급부명칭: 수술자금, 지급사유: 보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해'로 인하여 수술을 받았을 경우, 지급금액: 1년 미만 5만원(단, 재해로 인한 수술시 10만원), 1년 이상 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_surgery_graduated",
+      "type": "Coverage",
+      "label": "수술자금(체증형)",
+      "properties": {
+        "benefit_name": "수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해'로 인하여 수술을 받았을 경우(동일한 질병당 연간 1회한, 재해 사고일자당 1회한)",
+        "payment_amount": "1년미만: 5만원(재해 10만원), 1년이상 체증전: 10만원, 체증후: 20만원",
+        "normalized_code": "surgery_benefit",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "[체증형] 수술자금 | 보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해'로 인하여 수술을 받았을 경우(동일한 질병당 연간 1회한, 재해 사고일자당 1회한) | 1년미만: 5만원, 1년이상 체증전: 10만원, 체증후: 20만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_health_plus_ta1_1",
+      "type": "Rider",
+      "label": "특정순환계질환 통합치료보장특약(TA1.1)",
+      "properties": {
+        "rider_code": "TA1.1",
+        "rider_name": "특정순환계질환 통합치료보장특약(1억원한도)(맞춤가입)",
+        "rider_type": "특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "특정순환계질환 통합치료보장특약(1억원한도)(맞춤가입)(TA1.1) 무배당[맞춤고지형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_ta1_1_mri_customized",
+      "type": "Coverage",
+      "label": "급여 MRI 검사비용(맞춤고지형)",
+      "properties": {
+        "benefit_name": "급여 MRI 검사비용",
+        "trigger_condition": "피보험자가 보험기간 중 의사에 의하여 '특정순환계질환'의 진단 및 치료를 위한 필요 소견을 토대로, '급여 MRI'를 받은 경우(연간 1회한)",
+        "payment_amount": "1년미만: 10만원, 1년이상: 20만원",
+        "rider_code": "TA1.1",
+        "normalized_code": "covered_mri_exam",
+        "category": "EXAM_TEST"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "검사 급여 MRI 검사비용 | 피보험자가 보험기간 중 의사에 의하여 '특정순환계질환'의 진단 및 치료를 위한 필요 소견을 토대로, '급여 MRI'를 받은 경우(연간 1회한) | 1년미만: 10만원, 1년이상: 20만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_ta1_1_thrombolysis_customized",
+      "type": "Coverage",
+      "label": "혈전용해치료자금(맞춤고지형)",
+      "properties": {
+        "benefit_name": "혈전용해치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 '특정순환계질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '혈전용해치료'를 받았을 경우(연간 1회한)",
+        "payment_amount": "1년미만: 1,250만원, 1년이상: 2,500만원",
+        "rider_code": "TA1.1",
+        "normalized_code": "thrombolytic_treatment",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "주요치료 혈전용해치료자금 | 피보험자가 보험기간 중 '특정순환계질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '혈전용해치료'를 받았을 경우(연간 1회한) | 1년미만: 1,250만원, 1년이상: 2,500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_ta1_1_surgery_customized",
+      "type": "Coverage",
+      "label": "수술자금(특정순환계질환, 맞춤고지형)",
+      "properties": {
+        "benefit_name": "수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '특정순환계질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우(1회당)",
+        "payment_amount": "1년미만: 1,000만원, 1년이상: 2,000만원",
+        "rider_code": "TA1.1",
+        "normalized_code": "specific_circulatory_disease_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "수술자금 | 피보험자가 보험기간 중 '특정순환계질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우(1회당) | 1년미만: 1,000만원, 1년이상: 2,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_ta1_1_inpatient_rehab_customized",
+      "type": "Coverage",
+      "label": "급여 입원 특정순환계질환 재활치료자금(맞춤고지형)",
+      "properties": {
+        "benefit_name": "급여 입원 특정순환계질환 재활치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 '특정순환계질환'으로 진단이 확정되고, 보험기간 중 '급여 입원 특정순환계질환 재활치료'를 받았을 경우(1일 1회한)",
+        "payment_amount": "1년미만: 2만5천원, 1년이상: 5만원",
+        "rider_code": "TA1.1",
+        "normalized_code": "covered_inpatient_circulatory_rehabilitation",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "급여 입원 특정순환계질환 재활치료자금 | 피보험자가 보험기간 중 '특정순환계질환'으로 진단이 확정되고, 보험기간 중 '급여 입원 특정순환계질환 재활치료'를 받았을 경우(1일 1회한) | 1년미만: 2만5천원, 1년이상: 5만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_health_plus_ta2_1",
+      "type": "Rider",
+      "label": "표적항암약물허가치료특약(TA2.1)",
+      "properties": {
+        "rider_code": "TA2.1",
+        "rider_name": "항암약물치료특약(맞춤가입)",
+        "rider_type": "특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "표적항암약물허가치료특약(맞춤가입)(TA2.1) 무배당[맞춤고지형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_ta2_1_targeted_drug_basic",
+      "type": "Coverage",
+      "label": "표적항암약물허가치료자금(기본형)",
+      "properties": {
+        "benefit_name": "표적항암약물허가치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 표적항암약물허가치료를 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "1년미만: 500만원, 1년이상 체증전: 1,000만원, 체증후: 2,000만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "targeted_anticancer_drug_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "[기본형] 표적항암약물허가치료자금 | 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 표적항암약물허가치료를 받았을 경우(단, 최초 1회한) | 1년미만: 500만원, 1년이상: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_ta2_1_heavy_ion_basic",
+      "type": "Coverage",
+      "label": "항암중입자방사선치료자금(기본형)",
+      "properties": {
+        "benefit_name": "항암방사선치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "100만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "anticancer_heavy_ion_radiation_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "[기본형] 항암중입자방사선치료자금 | 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '항암중입자방사선치료'를 받았을 경우(단, 최초 1회한) | 1년미만: 500만원, 1년이상: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_health_plus_ta2_1_radiation_graduated",
+      "type": "Coverage",
+      "label": "항암방사선치료자금(체증형)",
+      "properties": {
+        "benefit_name": "항암방사선치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "체증전 보험기간: 100만원, 체증후 보험기간: 200만원",
+        "rider_code": null,
+        "normalized_code": "anticancer_radiation_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "[체증형] 항암방사선치료자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우(단, 최초 1회한) | 체증전: 100만원, 체증후: 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_health_plus_circulatory_diseases_3_conditions",
+      "type": "Exclusion",
+      "label": "특정순환계질환 제외 질병",
+      "properties": {
+        "exclusion_type": "질병 제외",
+        "condition_text": "'외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다."
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "이 특약의 '특정순환계질환'이라 함은 제9차 개정 한국표준질병∙사인분류 중 특정순환계질환Ⅱ 분류표에서 정한 질병을 말합니다. 다만, '외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_health_plus_ta1_1_1yr_limit_50percent",
+      "type": "Calculation",
+      "label": "특정순환계질환 1년미만 지급률",
+      "properties": {
+        "formula_text": "계약일부터 1년 미만에 보험금 지급사유 발생시 1년 이후 지급금액의 50%를 지급",
+        "formula_type": "benefit",
+        "applies_to": "계약일부터 1년 미만에 특정순환계질환 통합치료자금 지급사유 발생시",
+        "variables": [
+          "1년 이후 지급금액",
+          "50%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "계약일부터 1년 미만에 약관 제2-3조(보험금의 지급사유)의 각 호에서 정한 '특정순환계질환 통합치료자금'의 보험금 지급사유가 발생한 경우 계약일부터 1년 이후 보험금 지급사유 발생시 지급하는 '특정순환계질환 통합치료자금'의 50%를 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_health_plus_ta1_1_rehab_30times_limit",
+      "type": "Calculation",
+      "label": "특정순환계질환 재활치료 연간 한도",
+      "properties": {
+        "formula_text": "연간 발생한 '급여 입원 특정순환계질환 재활치료'와 '급여 외래 특정순환계질환 재활치료' 횟수를 합산하여 연간 최대 30회 한도",
+        "formula_type": "benefit",
+        "applies_to": "특정순환계질환 통합치료(재활치료)",
+        "variables": [
+          "급여 입원 재활치료",
+          "급여 외래 재활치료",
+          "연간 30회"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part3",
+        "source_text": "'특정순환계질환 통합치료(재활치료)'의 경우 연간 발생한 '급여 입원 특정순환계질환 재활치료'와 '급여 외래 특정순환계질환 재활치료' 횟수를 합산하여 연간 최대 30회 한도로 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_hplus_항암약물치료자금_기본_맞춤고지",
+      "type": "Coverage",
+      "label": "항암약물치료자금 기본형 맞춤고지",
+      "properties": {
+        "benefit_name": "항암약물치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "100만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "anticancer_drug_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "항암약물치료특약(맞춤가입)(TA2.1) 무배당[맞춤고지형] 기본형 항암약물치료자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우(단, 최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_hplus_허혈성심장질환진단자금_기본_맞춤고지",
+      "type": "Coverage",
+      "label": "허혈성심장질환진단자금 기본형 맞춤고지",
+      "properties": {
+        "benefit_name": "허혈성심장질환수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '수술분류표'에서 정한 수술을 받았을 경우",
+        "payment_amount": "관혈수술 1회당 100만원, 비관혈수술 1회당 30만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "ischemic_heart_disease_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "허혈성심장질환진단보장특약(맞춤가입)(TA2.1) 무배당[맞춤고지형] 기본형 허혈성심장질환진단자금 | 보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되었을 경우(최초 1회한) | 1년미만: 500만원, 1년이상: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_hplus_뇌혈관질환수술자금_기본_맞춤고지",
+      "type": "Coverage",
+      "label": "뇌혈관질환수술자금 기본형 맞춤고지",
+      "properties": {
+        "benefit_name": "뇌혈관질환수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술분류표에서 정한 수술을 받았을 경우",
+        "payment_amount": "관혈수술 체증전: 1회당 100만원, 체증후: 1회당 200만원, 비관혈수술 체증전: 1회당 30만원, 체증후: 1회당 60만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "cerebrovascular_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "회당주는뇌혈관질환수술보장특약(맞춤가입)(TA2.1) 무배당[맞춤고지형] 기본형 뇌혈관질환수술자금 | 보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술분류표에서 정한 수술을 받았을 경우 | 관혈수술 1회당 100만원, 비관혈수술 1회당 30만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_hplus_TA21_항암방사선",
+      "type": "Rider",
+      "label": "항암방사선치료특약",
+      "properties": {
+        "rider_code": null,
+        "rider_name": "항암방사선치료 특약",
+        "rider_type": "특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "기본형 (기준 : 특약가입금액 100만원) 항암방사선치료자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_hplus_TA21_허혈성심장질환진단",
+      "type": "Rider",
+      "label": "허혈성심장질환진단보장특약 TA2.1",
+      "properties": {
+        "rider_code": "TA2.1",
+        "rider_name": "회당주는허혈성심장질환수술보장특약(맞춤가입)",
+        "rider_type": "특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "허혈성심장질환진단보장특약(맞춤가입)(TA2.1) 무배당[맞춤고지형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_hplus_TA21_뇌혈관질환수술",
+      "type": "Rider",
+      "label": "회당주는뇌혈관질환수술보장특약 TA2.1",
+      "properties": {
+        "rider_code": "TA2.1",
+        "rider_name": "회당주는뇌혈관질환수술보장특약(맞춤가입)",
+        "rider_type": "특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part4",
+        "source_text": "회당주는뇌혈관질환수술보장특약(맞춤가입)(TA2.1) 무배당[맞춤고지형]",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Product_Category#건강",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H건강플러스보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Dividend_Method#hwl_h건강플러스_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 H건강플러스보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Eligibility#hwl_h건강플러스_간편가입",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품의 간편가입형은 보험시장에서 소외되고 있는 유병력자나 고령자 등의 계약심사 및 건강검진의 부담을 줄여 보험에 가입할 수 있도록 계약심사 과정을 간소화",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_h건강플러스_사망보장",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "사망보험금: 보험기간 중 피보험자가 보장개시일 이후에 사망한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_h건강플러스_암진단",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "3대질병사망보험금: 보험기간 중 피보험자가 보장개시일('암'은 암보장개시일) 이후에 '암', '뇌혈관질환' 또는 '허혈성심장질환'으로 진단이 확정되고",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_h건강플러스_보험료납입면제",
+      "type": "WAIVES_PREMIUM",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "피보험자가 보험료 납입기간 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었을 경우 차회 이후의 주계약 및 특약의 보험료 납입을 면제",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_h건강플러스_심근경색납입면제",
+      "type": "WAIVES_PREMIUM",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보장개시일 이후에 '급성심근경색증'으로 진단이 확정된 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Premium_Discount#hwl_h건강플러스_단체취급",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Premium_Discount#hwl_h건강플러스_선납할인",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 선납: 3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Surrender_Value#hwl_h건강플러스_일부지급형",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약 및 특약의 경우 해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)으로 표준형보다 낮은 보험료로 가입할 수 있도록 한 대신",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_h건강플러스_K1.9",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_h건강플러스_치료비선지급",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "치료비 선지급서비스특약은 암주요치료비 및 특정순환계 통합치료비 보장 담보에 부가하여 치료 비보험금을 선지급해드리는 제도",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_h건강플러스_일부지급형",
+      "target_id": "Calculation#hwl_h건강플러스_해약환급금비율",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_h건강플러스_해약환급금비율",
+      "target_id": "Calculation#hwl_h건강플러스_surrender_during",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "납입기간중 해약환급금",
+        "confidence": 0.8
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Eligibility#hwl_h건강플러스_age_보장형",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "보장형계약 가입최저나이: 만15세",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Eligibility#hwl_h건강플러스_age_적립형",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "적립형 계약Ⅱ 가입최저나이: 25세",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Eligibility#hwl_h건강플러스_amount",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "주계약: 100만원 ~ 1억원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Eligibility#hwl_h건강플러스_일반가입_건강진단",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "한화생명 H건강플러스보험 무배당[일반가입형Ⅰ, Ⅱ]의 경우 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_3disease_death",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "3대질병사망보험금: 보험기간 중 피보험자가 보장개시일('암'은 암보장개시일) 이후에 '암', '뇌혈관질환' 또는 '허혈성심장질환'으로 진단이 확정되고",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_death",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "사망보험금: 보험기간 중 피보험자가 보장개시일 이후에 사망한 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_hkeongang_death",
+      "target_id": "Calculation#hwl_hkeongang_savings_death",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "적립형 계약Ⅱ 사망보험금: 기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_2disease_disability",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "2대질병장해보험금: 피보험자가 보험기간 중 '뇌혈관질환' 또는 '허혈성심장질환'으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_hkeongang_2disease_disability",
+      "target_id": "Calculation#hwl_hkeongang_2disease_disability_calc",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_brain_thrombectomy",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 뇌졸중 혈전제거술 수술자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_heart_thrombectomy",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 특정 심장질환 혈전제거술 수술자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_cardiovascular_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "뇌심혈관 수술자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_thrombolytic_therapy",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "뇌심혈관 혈전용해치료보험금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_cerebrovascular_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "뇌혈관질환 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_arrhythmia_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "부정맥(기타부정맥 제외) 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_other_arrhythmia_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "기타부정맥 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_non_covered_cancer_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "비급여(전액본인부담 포함) 암수술자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hkeongang_small_cancer_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "소액암진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_hkeongang_cardiovascular_surgery",
+      "target_id": "Exclusion#hwl_hkeongang_traumatic_intracranial",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "다만, '외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_hkeongang_TA21",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "2대질병후유장해(3-100%)특약(맞춤가입)(TA2.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_hkeongang_TA11",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "비급여(전액본인부담 포함) 암주요치료보장특약Ⅱ(수술)(연1회)(맞춤가입)(TA1.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_hkeongang_TA12",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "보험료납입면제특약(맞춤가입)(TA1.2) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_hkeongang_death",
+      "target_id": "Calculation#hwl_hkeongang_best_amount_choice",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "회사는 보험기간 중 피보험자에게 상기 보험금 지급사유가 발생한 경우 사망시 지급되는 보험금(증액계약이 제공된 경우 증액보장보험금 포함)과 이미 납입한 보험료 및 해약환급금 중에서 큰 금액을 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_increase_benefit",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "증액보장보험금: 장기유지보너스금액을 보험료로 하여 증액계약의 보험기간 동안 보장하는 보험금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_cancer_minor_diagnosis_ta21",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "소액암진단보장특약(맞춤가입)(TA2.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_minor_disease_diagnosis_basic",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "소액질병진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_surgery_1to5_basic",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "수술자금: 1~5종 수술분류표에서 정한 수술을 받았을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_surgery_1to5_basic",
+      "target_id": "Calculation#hwl_surgery_increase_formula",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "증액보장보험금 수술자금 계산식: 1종: 증액계약의 보장보험금액 x 4%, 2종: 6%, 3종: 20%, 4종: 60%, 5종: 100%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_heart_failure_diagnosis_basic",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "심부전 진단자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_cancer_treatment_skin_thyroid",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "기타피부암∙갑상선암 주요치료자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_cancer_treatment_major",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "암수술자금/항암약물치료자금/항암방사선치료자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_cancer_disability",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "암장해보험금: 보험기간 중 피보험자가 암보장개시일 이후에 '암'으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_cancer_disability",
+      "target_id": "Calculation#hwl_cancer_disability_formula",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "암장해보험금 계산식: 1,000만원 × 해당 장해지급률",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_disease_injury_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "질병재해수술자금",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_health_plus_surgery_graduated",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "수술자금(체증형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_health_plus_ta1_1",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "특정순환계질환 통합치료보장특약(TA1.1)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_health_plus_ta1_1",
+      "target_id": "Coverage#hwl_health_plus_ta1_1_mri_customized",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 MRI 검사비용(맞춤고지형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_health_plus_ta1_1",
+      "target_id": "Coverage#hwl_health_plus_ta1_1_thrombolysis_customized",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "혈전용해치료자금(맞춤고지형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_health_plus_ta1_1",
+      "target_id": "Coverage#hwl_health_plus_ta1_1_surgery_customized",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "수술자금(특정순환계질환, 맞춤고지형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_health_plus_ta1_1",
+      "target_id": "Coverage#hwl_health_plus_ta1_1_inpatient_rehab_customized",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "급여 입원 특정순환계질환 재활치료자금(맞춤고지형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_health_plus_ta2_1",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "표적항암약물허가치료특약(TA2.1)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_health_plus_ta2_1",
+      "target_id": "Coverage#hwl_health_plus_ta2_1_targeted_drug_basic",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "표적항암약물허가치료자금(기본형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_health_plus_ta2_1",
+      "target_id": "Coverage#hwl_health_plus_ta2_1_heavy_ion_basic",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "항암중입자방사선치료자금(기본형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_health_plus_ta2_1",
+      "target_id": "Coverage#hwl_health_plus_ta2_1_radiation_graduated",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "항암방사선치료자금(체증형)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_health_plus_ta1_1_surgery_customized",
+      "target_id": "Exclusion#hwl_health_plus_circulatory_diseases_3_conditions",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "특정순환계질환 제외 질병: '외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_health_plus_ta1_1_surgery_customized",
+      "target_id": "Calculation#hwl_health_plus_ta1_1_1yr_limit_50percent",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "특정순환계질환 1년미만 지급률 50%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_health_plus_ta1_1_inpatient_rehab_customized",
+      "target_id": "Calculation#hwl_health_plus_ta1_1_rehab_30times_limit",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "특정순환계질환 재활치료 연간 한도 30회",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hplus_항암약물치료자금_기본_맞춤고지",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "항암약물치료자금 기본형 맞춤고지",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hplus_허혈성심장질환진단자금_기본_맞춤고지",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "허혈성심장질환진단자금 기본형 맞춤고지",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Coverage#hwl_hplus_뇌혈관질환수술자금_기본_맞춤고지",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "뇌혈관질환수술자금 기본형 맞춤고지",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_hplus_TA21_항암방사선",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "항암방사선치료특약",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_hplus_TA21_허혈성심장질환진단",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "허혈성심장질환진단보장특약 TA2.1",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_h건강플러스",
+      "target_id": "Rider#hwl_hplus_TA21_뇌혈관질환수술",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "회당주는뇌혈관질환수술보장특약 TA2.1",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T13:57:09.481615+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 68,
+    "relation_count": 67,
+    "sections_processed": 6,
+    "api_calls": 7,
+    "total_input_tokens": 307270,
+    "total_output_tokens": 41872
+  }
+}

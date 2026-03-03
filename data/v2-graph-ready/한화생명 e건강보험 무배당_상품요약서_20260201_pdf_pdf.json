@@ -1,0 +1,910 @@
+{
+  "document_id": "한화생명 e건강보험 무배당_상품요약서_20260201_pdf_pdf",
+  "product_name": "한화생명 e건강보험 무배당_상품요약서_20260201_pdf_pdf",
+  "entities": [
+    {
+      "id": "Policy#hwl_ehealthins",
+      "type": "Policy",
+      "label": "한화생명 e건강보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "건강보험",
+        "contract_types": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e건강보험 무배당은 \"모듈구조상품\"으로서 여러 개의 주계약을 한번에 통합하여 청약(체결)하고 운용하는 상품입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_ehealthins_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e건강보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_ehealthins_payment_structure",
+      "type": "Surrender_Value",
+      "label": "해약환급금 미지급형",
+      "properties": {
+        "calculation_basis": "해약환급금 미지급형",
+        "key_milestones": "납입기간중 0%, 납입기간후 50%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품의 비갱신형 모듈보험은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며, 보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Calculation#hwl_ehealthins_surrender_formula",
+      "type": "Calculation",
+      "label": "해약환급금 계산식",
+      "properties": {
+        "formula_text": "납입기간중 0%, 납입기간후 50%",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 미지급형",
+        "variables": [
+          "납입기간",
+          "환급률"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ehealthins_premium_exemption",
+      "type": "Eligibility",
+      "label": "보험료 납입면제 요건",
+      "properties": {
+        "health_requirements": "동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태",
+        "contract_types": [
+          "일반 모듈보험",
+          "e항암 약물ㆍ방사선 치료보장보험",
+          "e암주요치료보장보험"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었을 경우 차회 이후 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_ehealthins_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_ehealthins_K19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? A : 계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#건강",
+      "type": "Product_Category",
+      "label": "건강보험",
+      "properties": {
+        "category": "건강"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e건강보험 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#cancer",
+      "type": "Product_Category",
+      "label": "암보험",
+      "properties": {
+        "category": "암"
+      },
+      "provenance": {
+        "source_section_id": "sec2.가",
+        "source_text": "e암진단보장보험Ⅱ(비갱신형) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ehealthinsurance_age_male",
+      "type": "Eligibility",
+      "label": "남자 가입연령",
+      "properties": {
+        "age_range": "만 19~60세",
+        "health_requirements": "건강진단 필요시 시행",
+        "contract_types": "80세만기, 100세만기"
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "남자 10년납 만 19~60세, 15년납 만 19~60세, 20년납 만 19~59세, 30년납 만 19~49세",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ehealthinsurance_premium_payment",
+      "type": "Eligibility",
+      "label": "납입기간 및 주기",
+      "properties": {
+        "age_range": "납입기간별 상이",
+        "health_requirements": "10, 15, 20, 30년납",
+        "contract_types": "월납"
+      },
+      "provenance": {
+        "source_section_id": "sec2.다",
+        "source_text": "납입기간 - 10, 15, 20, 30년납, 납입주기 : 월납",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_ehealthinsurance_health_exam",
+      "type": "Eligibility",
+      "label": "건강진단 요건",
+      "properties": {
+        "age_range": "전체",
+        "health_requirements": "기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단 시행",
+        "contract_types": "가입가능여부 판정"
+      },
+      "provenance": {
+        "source_section_id": "sec2.바",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_e건강보험_K1.6",
+      "type": "Rider",
+      "label": "단체취급특약",
+      "properties": {
+        "rider_code": "K1.6",
+        "rider_name": "단체취급특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "단체취급특약(K1.6)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_e건강보험_모듈통합",
+      "type": "Rider",
+      "label": "모듈보험 통합계약체결∙운영특약",
+      "properties": {
+        "rider_code": null,
+        "rider_name": "모듈보험 통합계약체결∙운영특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "모듈보험 통합계약체결∙운영특약",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_e건강보험_K1.2",
+      "type": "Rider",
+      "label": "장애인전용 세제전환특약",
+      "properties": {
+        "rider_code": "K1.2",
+        "rider_name": "장애인전용 세제전환특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_e건강보험_K3.7",
+      "type": "Rider",
+      "label": "특정 신체부위∙질병 보장제한부 인수특약",
+      "properties": {
+        "rider_code": "K3.7",
+        "rider_name": "특정 신체부위∙질병 보장제한부 인수특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "특정 신체부위·질병 보장제한부 인수특약(K3.7)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_e건강보험_K3.8",
+      "type": "Rider",
+      "label": "표준하체인수특약",
+      "properties": {
+        "rider_code": "K3.8",
+        "rider_name": "표준하체인수특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "표준하체인수특약(K3.8)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_급성심근경색증_진단자금",
+      "type": "Coverage",
+      "label": "급성심근경색증 진단자금",
+      "properties": {
+        "benefit_name": "급성심근경색증 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '급성심근경색증'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 500만원, 2년이상: 1,000만원",
+        "rider_code": null,
+        "normalized_code": "acute_myocardial_infarction_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "급성심근경색증 진단자금 | 보험기간 중 피보험자가 '급성심근경색증'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원 | | | 2년이상 | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_뇌심혈관_입원급여금",
+      "type": "Coverage",
+      "label": "뇌심혈관 입원급여금",
+      "properties": {
+        "benefit_name": "뇌심혈관 입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌심혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우",
+        "payment_amount": "2년미만: 입원 1일당 5천원/1만원/1만원(병의원/종합병원/상급종합병원), 2년이상: 입원 1일당 1만원/1만원/1만원",
+        "rider_code": null,
+        "normalized_code": "cerebrocardiovascular_hospitalization",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "뇌심혈관 입원급여금 | 보험기간 중 피보험자가 '뇌심혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우 (1회 입원당 지급일수 120일한도)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_뇌출혈뇌경색증_진단자금",
+      "type": "Coverage",
+      "label": "뇌출혈 및 뇌경색증 진단자금",
+      "properties": {
+        "benefit_name": "뇌출혈 및 뇌경색증 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌출혈 및 뇌경색증'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 500만원, 2년이상: 1,000만원",
+        "rider_code": null,
+        "normalized_code": "cerebral_hemorrhage_infarction_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "뇌출혈 및 뇌경색증 진단자금 | 보험기간 중 피보험자가 '뇌출혈 및 뇌경색증'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_뇌출혈_진단자금",
+      "type": "Coverage",
+      "label": "뇌출혈 진단자금",
+      "properties": {
+        "benefit_name": "뇌혈관질환 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 500만원, 2년이상: 1,000만원",
+        "rider_code": null,
+        "normalized_code": "cerebral_hemorrhage_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "뇌출혈 진단자금 | 보험기간 중 피보험자가 '뇌출혈'로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_뇌혈관질환_관혈수술자금",
+      "type": "Coverage",
+      "label": "뇌혈관질환 관혈수술자금",
+      "properties": {
+        "benefit_name": "뇌혈관질환통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 '뇌혈관질환'의 치료를 직접적인 목적으로 병원 또는 의원에서 통원치료를 받았을 경우(1일 1회한, 연간 30회한)",
+        "payment_amount": "2년미만: 1회당 5천원, 2년이상: 1회당 1만원",
+        "rider_code": null,
+        "normalized_code": "cerebrovascular_open_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "뇌혈관질환 관혈수술자금 | 피보험자가 보험기간 중 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '관혈수술'을 받았을 경우(최초 1회한) | 2년미만 | 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_상급종합병원_암통원자금",
+      "type": "Coverage",
+      "label": "상급종합병원 암통원자금",
+      "properties": {
+        "benefit_name": "종합병원 통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 기타피부암, 대장점막내암, 제자리암 또는 경계성종양으로 진단이 확정되고, 보험기간 중 그 기타피부암, 대장점막내암, 제자리암 또는 경계성종양의 직접적인 치료를 목적으로 종합병원에서 통원치료를 받았을 경우(1일 1회한, 연간 30회한)",
+        "payment_amount": "2년미만: 1회당 5천원, 2년이상: 1회당 1만원",
+        "rider_code": null,
+        "normalized_code": "tertiary_hospital_cancer_outpatient",
+        "category": "CANCER_HOSPITAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "상급종합병원 암통원자금 | 보험기간 중 피보험자가 암보장개시일 이후에 암(기타피부암, 대장점막내암 제외)으로 진단이 확정되고, 보험기간 중 그 암(기타피부암, 대장점막내암 제외)의 직접적인 치료를 목적으로 상급종합병원에서 통원치료를 받았을 경우(1일 1회한, 연간 30회한) | 2년미만 | 1회당 5만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_심장질환_관혈수술자금",
+      "type": "Coverage",
+      "label": "심장질환 관혈수술자금",
+      "properties": {
+        "benefit_name": "심장질환 비관혈수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '심장질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '비관혈수술'을 받았을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 250만원, 2년이상: 500만원",
+        "rider_code": null,
+        "normalized_code": "cardiac_disease_open_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "심장질환 관혈수술자금 | 보험기간 중 피보험자가 '심장질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '관혈수술'을 받았을 경우(최초 1회한) | 2년미만 | 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_암다빈치로봇_수술자금",
+      "type": "Coverage",
+      "label": "암 다빈치 로봇 수술자금",
+      "properties": {
+        "benefit_name": "암 다빈치 로봇 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '암(갑상선암 및 전립선암 제외)'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치로봇 수술'을 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "2년미만: 500만원(계약일부터 180일이내 암 다빈치로봇 수술시 250만원), 2년이상: 1,000만원",
+        "rider_code": null,
+        "normalized_code": "cancer_davinci_robot_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "암 다빈치 로봇 수술자금 | 피보험자가 보험기간 중 암보장개시일 이후에 '암(갑상선암 및 전립선암 제외)'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치로봇 수술'을 받았을 경우(단, 최초 1회한) | 2년미만 | 500만원 ※ 단, 계약일부터 180일이내 암 다빈치로봇 수술시 250만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_갑상선암전립선암_다빈치로봇수술자금",
+      "type": "Coverage",
+      "label": "갑상선암 및 전립선암 다빈치로봇 수술자금",
+      "properties": {
+        "benefit_name": "갑상선암 및 전립선암 다빈치로봇 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '갑상선암' 또는 '전립선암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치로봇 수술'을 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "2년미만: 125만원(계약일부터 180일 이내 갑상선암 또는 전립선암 다빈치로봇 수술시 62만 5천원), 2년이상: 250만원",
+        "rider_code": null,
+        "normalized_code": "thyroid_prostate_cancer_robot_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "갑상선암 및 전립선암 다빈치로봇 수술자금 | 피보험자가 보험기간 중 암보장개시일 이후에 '갑상선암' 또는 '전립선암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치로봇 수술'을 받았을 경우(단, 최초 1회한) | 2년미만 | 125만원 ※ 단, 계약일부터 180일 이내 갑상선암 또는 전립선암 다빈치로봇 수술시 62만 5천원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_암수술자금",
+      "type": "Coverage",
+      "label": "암수술자금",
+      "properties": {
+        "benefit_name": "암수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일(암(기타피부암, 대장점막내암 제외)은 암보장개시일) 이후에 암(기타피부암, 대장점막내암 제외), 기타피부암, 대장점막내암, 제자리암 또는 경계성종양으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '수술분류표'에서 정한 수술을 받았을 경우",
+        "payment_amount": "2년미만: 관혈수술 1회당 250만원, 비관혈수술 1회당 50만원; 2년이상: 관혈수술 1회당 500만원, 비관혈수술 1회당 100만원",
+        "rider_code": null,
+        "normalized_code": "cancer_surgery",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "암수술자금 | 보험기간 중 피보험자가 보장개시일(암(기타피부암, 대장점막내암 제외)은 암보장개시일) 이후에 암(기타피부암, 대장점막내암 제외), 기타피부암, 대장점막내암, 제자리암 또는 경계성종양으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '수술분류표'에서 정한 수술을 받았을 경우 | 2년미만 | 관혈수술 1회당 250만원 비관혈수술 1회당 50만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_암주요치료자금",
+      "type": "Coverage",
+      "label": "암주요치료자금",
+      "properties": {
+        "benefit_name": "암주요치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암(기타피부암 및 갑상선암 제외)'으로 '암 주요치료'('암 수술', '항암약물치료', '항암방사선치료') 중 어느 하나의 치료를 받은 경우 (최초 진단확정일로부터 최대 10년간, 매년 1회를 한도로 지급(최대 10회 지급))",
+        "payment_amount": "2년미만: 매년(매회) 500만원, 2년이상: 매년(매회) 1,000만원",
+        "rider_code": null,
+        "normalized_code": "cancer_major_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "암주요치료자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암(기타피부암 및 갑상선암 제외)'으로 '암 주요치료'('암 수술', '항암약물치료', '항암방사선치료') 중 어느 하나의 치료를 받은 경우 (최초 진단확정일로부터 최대 10년간, 매년 1회를 한도로 지급(최대 10회 지급)) | 2년미만 | 매년(매회) 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_암통원자금",
+      "type": "Coverage",
+      "label": "암 통원자금",
+      "properties": {
+        "benefit_name": "통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 기타피부암, 대장점막내암, 제자리암 또는 경계성종양으로 진단이 확정되고, 보험기간 중 그 기타피부암, 대장점막내암, 제자리암 또는 경계성종양의 직접적인 치료를 목적으로 병원 또는 의원(한방병원 또는 한의원을 포함)에서 통원치료를 받았을 경우(1일 1회한, 연간 30회한)",
+        "payment_amount": "2년미만: 1회당 5천원, 2년이상: 1회당 1만원",
+        "rider_code": null,
+        "normalized_code": "cancer_outpatient",
+        "category": "CANCER_HOSPITAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "암 통원자금 | 보험기간 중 피보험자가 암보장개시일 이후에 암(기타피부암, 대장점막내암 제외)으로 진단이 확정되고, 보험기간 중 그 암(기타피부암, 대장점막내암 제외)의 직접적인 치료를 목적으로 병원 또는 의원(한방병원 또는 한의원을 포함)에서 통원치료를 받았을 경우(1일 1회한, 연간 30회한) | 2년미만 | 1회당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_암진단자금",
+      "type": "Coverage",
+      "label": "암 진단자금",
+      "properties": {
+        "benefit_name": "소액암 진단자금",
+        "trigger_condition": "보험기간 중 암보장개시일 이후 피보험자가 '소액암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 300만원, 2년이상: 600만원",
+        "rider_code": null,
+        "normalized_code": "cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "암 진단자금 | 보험기간 중 암보장개시일 이후 피보험자가 '암(직∙결장암, 유방암, 여성생식기암, 전립선암, 기타피부암, 중증이외의 갑상선암, 대장점막내암 제외)'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_소액질병진단자금",
+      "type": "Coverage",
+      "label": "소액질병 진단자금",
+      "properties": {
+        "benefit_name": "소액질병 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '기타피부암', '중증이외의 갑상선암', '대장점막내암', '제자리암', '경계성종양'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "2년미만: 100만원, 2년이상: 200만원",
+        "rider_code": null,
+        "normalized_code": "small_disease_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "소액질병 진단자금 | 보험기간 중 피보험자가 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한) | 2년미만 | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_뇌심혈관_외상성두개내출혈",
+      "type": "Exclusion",
+      "label": "외상성 두개내 출혈 제외",
+      "properties": {
+        "exclusion_type": "질병제외",
+        "condition_text": "외상성 두개내 출혈, 혈관성 치매 및 과거 무증상성 열공성 뇌경색증으로 분류되는 경우에는 보장하지 않습니다"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "다만, '외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_뇌심혈관입원_중복지급",
+      "type": "Calculation",
+      "label": "뇌심혈관 입원급여금 중복지급 계산",
+      "properties": {
+        "formula_text": "약관 제2-3조(보험금의 지급사유) 제2호의 지급사유가 발생한 경우에는 '뇌심혈관 입원급여금(종합병원)'과 '뇌심혈관 입원급여금(병·의원)'을 더하여 지급하며, 약관 제2-3조(보험금의 지급사유) 제3호의 지급사유가 발생한 경우에는 '뇌심혈관 입원급여금(상급종합병원)'과 '뇌심혈관 입원급여금(종합병원)' 및 '뇌심혈관 입원급여금(병·의원)'을 더하여 지급합니다.",
+        "formula_type": "benefit",
+        "applies_to": "상급종합병원/종합병원 입원시 중복지급 조건",
+        "variables": [
+          "뇌심혈관 입원급여금(병·의원)",
+          "뇌심혈관 입원급여금(종합병원)",
+          "뇌심혈관 입원급여금(상급종합병원)"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "약관 제2-3조(보험금의 지급사유) 제2호의 지급사유가 발생한 경우에는 '뇌심혈관 입원급여금(종합병원)'과 '뇌심혈관 입원급여금(병·의원)'을 더하여 지급하며, 약관 제2-3조(보험금의 지급사유) 제3호의 지급사유가 발생한 경우에는 '뇌심혈관 입원급여금(상급종합병원)'과 '뇌심혈관 입원급여금(종합병원)' 및 '뇌심혈관 입원급여금(병·의원)'을 더하여 지급합니다.",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Dividend_Method#hwl_ehealthins_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e건강보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Surrender_Value#hwl_ehealthins_payment_structure",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품의 비갱신형 모듈보험은 해약환급금 미지급형(납입기간중 0%, 납입기간후 50%)으로 보험료 납입기간 중 이 계약이 해지될 경우 해약환급금을 지급하지 않으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_ehealthins_payment_structure",
+      "target_id": "Calculation#hwl_ehealthins_surrender_formula",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간이 경과된 이후 계약이 해지되는 경우에는 표준형의 해약환급금 대비 50%에 해당하는 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Eligibility#hwl_ehealthins_premium_exemption",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었을 경우 차회 이후 보험료 납입을 면제",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Premium_Discount#hwl_ehealthins_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Rider#hwl_ehealthins_K19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요?",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Product_Category#건강",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 e건강보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Product_Category#cancer",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "e암진단보장보험Ⅱ(비갱신형) 무배당, e암수술보장보험Ⅱ(비갱신형) 무배당, e암다빈치로봇수술보장보험(비갱신형) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Eligibility#hwl_ehealthinsurance_age_male",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "남자 10년납 만 19~60세, 15년납 만 19~60세, 20년납 만 19~59세, 30년납 만 19~49세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Eligibility#hwl_ehealthinsurance_premium_payment",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "납입기간 10, 15, 20, 30년납, 납입주기 : 월납",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Eligibility#hwl_ehealthinsurance_health_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Rider#hwl_e건강보험_K1.6",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 단체취급특약(K1.6)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Rider#hwl_e건강보험_모듈통합",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 모듈보험 통합계약체결∙운영특약",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Rider#hwl_e건강보험_K1.2",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 장애인전용 세제전환특약(K1.2)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Rider#hwl_e건강보험_K3.7",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 특정 신체부위·질병 보장제한부 인수특약(K3.7)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Rider#hwl_e건강보험_K3.8",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 + 표준하체인수특약(K3.8)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_급성심근경색증_진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급성심근경색증 진단자금: 보험기간 중 피보험자가 '급성심근경색증'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_뇌심혈관_입원급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "뇌심혈관 입원급여금: 보험기간 중 피보험자가 '뇌심혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_뇌심혈관_입원급여금",
+      "target_id": "Exclusion#hwl_뇌심혈관_외상성두개내출혈",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, '외상성 두개내 출혈', '혈관성 치매' 및 '과거 무증상성 열공성 뇌경색증'으로 분류되는 경우에는 보장하지 않습니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_뇌심혈관_입원급여금",
+      "target_id": "Calculation#hwl_뇌심혈관입원_중복지급",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "약관 제2-3조(보험금의 지급사유) 제2호의 지급사유가 발생한 경우에는 '뇌심혈관 입원급여금(종합병원)'과 '뇌심혈관 입원급여금(병·의원)'을 더하여 지급하며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_뇌출혈뇌경색증_진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "뇌출혈 및 뇌경색증 진단자금: 보험기간 중 피보험자가 '뇌출혈 및 뇌경색증'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_뇌출혈_진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "뇌출혈 진단자금: 보험기간 중 피보험자가 '뇌출혈'로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_뇌혈관질환_관혈수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "뇌혈관질환 관혈수술자금: 피보험자가 보험기간 중 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '관혈수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_상급종합병원_암통원자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "상급종합병원 암통원자금: 보험기간 중 피보험자가 암보장개시일 이후에 암으로 진단이 확정되고, 보험기간 중 그 암의 직접적인 치료를 목적으로 상급종합병원에서 통원치료를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_심장질환_관혈수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "심장질환 관혈수술자금: 보험기간 중 피보험자가 '심장질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '관혈수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_암다빈치로봇_수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암 다빈치 로봇 수술자금: 피보험자가 보험기간 중 암보장개시일 이후에 '암(갑상선암 및 전립선암 제외)'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치로봇 수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_갑상선암전립선암_다빈치로봇수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "갑상선암 및 전립선암 다빈치로봇 수술자금: 피보험자가 보험기간 중 암보장개시일 이후에 '갑상선암' 또는 '전립선암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 '다빈치로봇 수술'을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_암수술자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암수술자금: 보험기간 중 피보험자가 보장개시일 이후에 암으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '수술분류표'에서 정한 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_암주요치료자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암주요치료자금: 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암' '암 주요치료'를 받은 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_암통원자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암 통원자금: 보험기간 중 피보험자가 암보장개시일 이후에 암으로 진단이 확정되고, 보험기간 중 그 암의 직접적인 치료를 목적으로 병원 또는 의원에서 통원치료를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_암진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암 진단자금: 보험기간 중 암보장개시일 이후 피보험자가 '암'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_ehealthins",
+      "target_id": "Coverage#hwl_소액질병진단자금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "소액질병 진단자금: 보험기간 중 피보험자가 '기타피부암', '중증이외의 갑상선암', '대장점막내암', '제자리암', '경계성종양'으로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T12:44:27.704699+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 33,
+    "relation_count": 32,
+    "sections_processed": 3,
+    "api_calls": 4,
+    "total_input_tokens": 58347,
+    "total_output_tokens": 21258
+  }
+}

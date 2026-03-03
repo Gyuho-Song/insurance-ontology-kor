@@ -1,0 +1,11 @@
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+.next
+.git
+__tests__
+*.test.ts
+*.test.tsx
+jest.config.ts
+jest.setup.ts

@@ -1,0 +1,62 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Messaging",
+      "Effect": "Allow",
+      "Action": ["sns:*", "sqs:*"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "StepFunctions",
+      "Effect": "Allow",
+      "Action": "states:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Lambda",
+      "Effect": "Allow",
+      "Action": "lambda:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "TextractBedrock",
+      "Effect": "Allow",
+      "Action": [
+        "textract:StartDocumentAnalysis", "textract:GetDocumentAnalysis",
+        "bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CDKBootstrap",
+      "Effect": "Allow",
+      "Action": ["ssm:*", "ecr:*"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Logs",
+      "Effect": "Allow",
+      "Action": "logs:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "STS",
+      "Effect": "Allow",
+      "Action": ["sts:AssumeRole", "sts:GetCallerIdentity"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AutoScalingELB",
+      "Effect": "Allow",
+      "Action": ["autoscaling:*", "elasticloadbalancing:*"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Route53",
+      "Effect": "Allow",
+      "Action": "route53:*",
+      "Resource": "*"
+    }
+  ]
+}

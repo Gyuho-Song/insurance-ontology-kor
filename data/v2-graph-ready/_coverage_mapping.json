@@ -1,0 +1,1587 @@
+[
+  {
+    "label": "사망보험금",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "보험료납입면제",
+    "normalized_code": "premium_waiver",
+    "category": "PREMIUM_WAIVER"
+  },
+  {
+    "label": "보험료 납입면제",
+    "normalized_code": "premium_waiver",
+    "category": "PREMIUM_WAIVER"
+  },
+  {
+    "label": "연금선지급금",
+    "normalized_code": "annuity_prepay",
+    "category": "ANNUITY_PREPAY"
+  },
+  {
+    "label": "암사망보험금",
+    "normalized_code": "cancer_death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "암진단자금",
+    "normalized_code": "cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "항암방사선치료자금",
+    "normalized_code": "anticancer_radiation_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "응급환자 응급실내원 진료비",
+    "normalized_code": "emergency_room_visit",
+    "category": "OUTPATIENT"
+  },
+  {
+    "label": "비급여(전액본인부담 포함) 암수술자금",
+    "normalized_code": "non_covered_cancer_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "급여 CRRT 투석 치료자금",
+    "normalized_code": "covered_crrt_dialysis_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "입원급여금",
+    "normalized_code": "hospitalization_benefit",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "뇌혈관질환 진단자금",
+    "normalized_code": "cerebrovascular_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "급여 스텐트삽입술 및 풍선혈관성형수술자금",
+    "normalized_code": "covered_stent_angioplasty_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "급성심근경색증 진단자금",
+    "normalized_code": "acute_myocardial_infarction_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "갑상선암 및 전립선암 다빈치로봇 수술자금",
+    "normalized_code": "thyroid_prostate_cancer_robot_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "표적항암약물허가치료자금",
+    "normalized_code": "targeted_anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "항암중입자방사선치료자금",
+    "normalized_code": "anticancer_heavy_ion_radiation_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "재해골절진단자금",
+    "normalized_code": "accidental_fracture_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "허혈성심장질환진단자금",
+    "normalized_code": "ischemic_heart_disease_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "심부전 진단자금",
+    "normalized_code": "heart_failure_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "가족인 요양보호사 방문요양지원금",
+    "normalized_code": "family_care_worker_support",
+    "category": "LONG_TERM_CARE"
+  },
+  {
+    "label": "치매전담형 시설급여금",
+    "normalized_code": "dementia_facility_benefit",
+    "category": "DEMENTIA_CARE"
+  },
+  {
+    "label": "대퇴골 재해골절 진단자금",
+    "normalized_code": "femur_accidental_fracture_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "5대(머리,척추) 재해골절 진단자금",
+    "normalized_code": "major_head_spine_fracture_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "급여 뇌졸중 혈전제거술 수술자금",
+    "normalized_code": "covered_stroke_thrombectomy_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "급여 특정 심장질환 혈전제거술 수술자금",
+    "normalized_code": "covered_cardiac_thrombectomy_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "뇌심혈관 수술자금",
+    "normalized_code": "cerebrocardiovascular_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "뇌심혈관 혈전용해치료보험금",
+    "normalized_code": "cerebrocardiovascular_thrombolytic_treatment",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "부정맥(기타부정맥 제외) 진단자금",
+    "normalized_code": "arrhythmia_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "기타부정맥 진단자금",
+    "normalized_code": "other_arrhythmia_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "소액암진단자금",
+    "normalized_code": "small_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "기타피부암·갑상선암 주요치료자금",
+    "normalized_code": "skin_thyroid_cancer_major_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "당뇨병질환 사망보험금",
+    "normalized_code": "diabetes_death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "만성당뇨병합병증 진단자금",
+    "normalized_code": "chronic_diabetes_complication_diagnosis",
+    "category": "DIABETES"
+  },
+  {
+    "label": "질병 실명 진단자금",
+    "normalized_code": "disease_blindness_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "질병 발목이상 하지절단자금",
+    "normalized_code": "disease_lower_limb_amputation",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "급여 혈액 및 복막투석 치료자금",
+    "normalized_code": "covered_hemodialysis_peritoneal_dialysis",
+    "category": "OTHER"
+  },
+  {
+    "label": "사망보험금(일반가입형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "암중점치료기관 비급여 암수술자금",
+    "normalized_code": "cancer_center_non_covered_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "비급여 항암약물·방사선치료자금",
+    "normalized_code": "non_covered_anticancer_drug_radiation",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "뇌출혈 및 뇌경색증 진단자금",
+    "normalized_code": "cerebral_hemorrhage_infarction_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "뇌출혈 진단자금",
+    "normalized_code": "cerebral_hemorrhage_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "암수술자금",
+    "normalized_code": "cancer_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암주요치료자금",
+    "normalized_code": "cancer_major_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암 진단자금",
+    "normalized_code": "cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "일반암 진단급여",
+    "normalized_code": "general_cancer_diagnosis_benefit",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "만기보험금",
+    "normalized_code": "maturity_benefit",
+    "category": "MATURITY"
+  },
+  {
+    "label": "급여 항응고제주사 치료자금",
+    "normalized_code": "covered_anticoagulant_injection_treatment",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "3기이상 유방암 진단자금",
+    "normalized_code": "stage3_breast_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "4기 여성생식기암 진단자금",
+    "normalized_code": "stage4_female_reproductive_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "3대기관 양성신생물 및 용종 수술자금",
+    "normalized_code": "benign_neoplasm_polyp_surgery",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "갑상선암 로봇수술자금",
+    "normalized_code": "thyroid_cancer_robot_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "여성암주요치료자금",
+    "normalized_code": "female_cancer_major_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "여성유방질환수술자금",
+    "normalized_code": "female_breast_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "질병장해보험금",
+    "normalized_code": "disease_disability",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "소액질병 진단자금(기타피부암)",
+    "normalized_code": "small_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "재해장해급여금",
+    "normalized_code": "accidental_disability_benefit",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "치핵 수술자금",
+    "normalized_code": "hemorrhoid_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "상급종합병원 1인실 입원급여금",
+    "normalized_code": "tertiary_hospital_single_room_hospitalization",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "수술자금",
+    "normalized_code": "surgery_benefit",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "카티라이프 수술자금",
+    "normalized_code": "cartilife_surgery",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "혈전용해치료자금",
+    "normalized_code": "thrombolytic_treatment",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "급여 입원 특정순환계질환 재활치료자금",
+    "normalized_code": "covered_inpatient_circulatory_rehabilitation",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "특정항암호르몬약물허가치료자금",
+    "normalized_code": "specific_anticancer_hormone_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "항암약물치료자금",
+    "normalized_code": "anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "사망보험금 (일반가입형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "요양병원 암 간병인지원급여금",
+    "normalized_code": "nursing_hospital_cancer_caregiver_support",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "상급종합병원 간병인 지원급여금",
+    "normalized_code": "tertiary_hospital_caregiver_support",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "중증무릎관절연골손상 진단자금",
+    "normalized_code": "severe_knee_cartilage_damage_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "관절염 카티스템 수술자금",
+    "normalized_code": "arthritis_cartistem_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "특정류마티스관절염 진단자금",
+    "normalized_code": "specific_rheumatoid_arthritis_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "급여 치매 CT, MRI, PET 검사비용",
+    "normalized_code": "covered_dementia_ct_mri_pet_exam",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "급여 치매치료제처방비",
+    "normalized_code": "covered_dementia_medication_prescription",
+    "category": "DEMENTIA_CARE"
+  },
+  {
+    "label": "신장질환 관혈수술자금",
+    "normalized_code": "kidney_disease_open_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "급여 혈액 및 복막 투석 치료자금",
+    "normalized_code": "covered_hemodialysis_peritoneal_dialysis",
+    "category": "OTHER"
+  },
+  {
+    "label": "의료최고도 입원환자 요양병원 입원급여금",
+    "normalized_code": "medical_high_dependency_nursing_hospital_admission",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "욕창 진단자금",
+    "normalized_code": "pressure_ulcer_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "중등증이상 욕창 진단자금",
+    "normalized_code": "moderate_severe_pressure_ulcer_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "1~2등급 장기요양상태 상급침실이용 추가비용 지원금",
+    "normalized_code": "grade1_2_long_term_care_premium_room_support",
+    "category": "LONG_TERM_CARE"
+  },
+  {
+    "label": "1~5등급 장기요양상태 방문요양 지원금",
+    "normalized_code": "grade1_5_long_term_care_home_visit_support",
+    "category": "LONG_TERM_CARE"
+  },
+  {
+    "label": "간호·간병통합 서비스지원급여금",
+    "normalized_code": "integrated_nursing_care_service_support",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "장기요양상태 판정자금",
+    "normalized_code": "long_term_care_assessment",
+    "category": "LONG_TERM_CARE"
+  },
+  {
+    "label": "장기요양상태 주∙야간보호 지원금",
+    "normalized_code": "long_term_care_day_night_protection_support",
+    "category": "LONG_TERM_CARE"
+  },
+  {
+    "label": "6대(팔,다리) 재해골절 수술자금",
+    "normalized_code": "major_limb_fracture_surgery",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "늑골 재해골절 수술자금",
+    "normalized_code": "rib_fracture_surgery",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "종합병원 입원급여금",
+    "normalized_code": "general_hospital_admission_benefit",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "중증치매 산정특례대상Ⅰ 보장보험금",
+    "normalized_code": "severe_dementia_special_calculation_target",
+    "category": "DEMENTIA_CARE"
+  },
+  {
+    "label": "중환자실 입원급여금",
+    "normalized_code": "icu_admission_benefit",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "급여 척추 및 근골격계 CT, MRI 검사자금",
+    "normalized_code": "covered_spine_musculoskeletal_ct_mri_exam",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "척추 및 근골격계 종합병원 수술급여금",
+    "normalized_code": "spine_musculoskeletal_general_hospital_surgery",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "급여 치매 CDR척도검사 지원비",
+    "normalized_code": "covered_dementia_cdr_scale_exam_support",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "경도이상 치매간병자금",
+    "normalized_code": "mild_dementia_care",
+    "category": "DEMENTIA_CARE"
+  },
+  {
+    "label": "중증 치매간병자금",
+    "normalized_code": "severe_dementia_care",
+    "category": "DEMENTIA_CARE"
+  },
+  {
+    "label": "치매통원자금",
+    "normalized_code": "dementia_outpatient",
+    "category": "DEMENTIA_CARE"
+  },
+  {
+    "label": "표적치매 약물허가 치료자금",
+    "normalized_code": "targeted_dementia_drug_treatment",
+    "category": "DEMENTIA_CARE"
+  },
+  {
+    "label": "사망보장",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "3대질병 진단보장",
+    "normalized_code": "three_major_disease_diagnosis",
+    "category": "OTHER"
+  },
+  {
+    "label": "급성심근경색증 보험료납입면제",
+    "normalized_code": "premium_waiver",
+    "category": "PREMIUM_WAIVER"
+  },
+  {
+    "label": "3대질병사망보험금",
+    "normalized_code": "three_major_disease_death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "2대질병장해보험금",
+    "normalized_code": "two_major_disease_disability",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "증액보장보험금",
+    "normalized_code": "increased_coverage_benefit",
+    "category": "OTHER"
+  },
+  {
+    "label": "소액질병진단자금 (기본형)",
+    "normalized_code": "small_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "수술자금 (1-5종 기본형)",
+    "normalized_code": "surgery_benefit",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "심부전 진단자금 (기본형)",
+    "normalized_code": "heart_failure_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "암수술자금/항암약물치료자금/항암방사선치료자금",
+    "normalized_code": "cancer_comprehensive_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암장해보험금",
+    "normalized_code": "cancer_disability",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "질병재해수술자금",
+    "normalized_code": "disease_accident_surgery",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "수술자금(체증형)",
+    "normalized_code": "surgery_benefit",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "급여 MRI 검사비용(맞춤고지형)",
+    "normalized_code": "covered_mri_exam",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "혈전용해치료자금(맞춤고지형)",
+    "normalized_code": "thrombolytic_treatment",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "수술자금(특정순환계질환, 맞춤고지형)",
+    "normalized_code": "specific_circulatory_disease_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "급여 입원 특정순환계질환 재활치료자금(맞춤고지형)",
+    "normalized_code": "covered_inpatient_circulatory_rehabilitation",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "표적항암약물허가치료자금(기본형)",
+    "normalized_code": "targeted_anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "항암중입자방사선치료자금(기본형)",
+    "normalized_code": "anticancer_heavy_ion_radiation_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "항암방사선치료자금(체증형)",
+    "normalized_code": "anticancer_radiation_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "항암약물치료자금 기본형 맞춤고지",
+    "normalized_code": "anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "허혈성심장질환진단자금 기본형 맞춤고지",
+    "normalized_code": "ischemic_heart_disease_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "뇌혈관질환수술자금 기본형 맞춤고지",
+    "normalized_code": "cerebrovascular_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "고지혈증 약물치료자금",
+    "normalized_code": "hyperlipidemia_drug_treatment",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "고혈압(원발성) 약물치료자금",
+    "normalized_code": "primary_hypertension_drug_treatment",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "고혈압질환 진단자금",
+    "normalized_code": "hypertension_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "비급여 암수술자금",
+    "normalized_code": "non_covered_cancer_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암 주요검사비용 지원금(1년미만)",
+    "normalized_code": "cancer_major_exam_support",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "뇌심혈관 입원급여금",
+    "normalized_code": "cerebrocardiovascular_hospitalization",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "뇌혈관질환 관혈수술자금",
+    "normalized_code": "cerebrovascular_open_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "상급종합병원 암통원자금",
+    "normalized_code": "tertiary_hospital_cancer_outpatient",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "심장질환 관혈수술자금",
+    "normalized_code": "cardiac_disease_open_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "암 다빈치 로봇 수술자금",
+    "normalized_code": "cancer_davinci_robot_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암 통원자금",
+    "normalized_code": "cancer_outpatient",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "소액질병 진단자금",
+    "normalized_code": "small_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "특정 고액치료비관련 암진단자금",
+    "normalized_code": "specific_high_cost_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "중증 갑상선암진단자금",
+    "normalized_code": "severe_thyroid_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "소액질병진단자금(기타피부암)",
+    "normalized_code": "small_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "특정 소액암 진단급여",
+    "normalized_code": "specific_small_cancer_diagnosis_benefit",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "소액질병 진단급여",
+    "normalized_code": "small_disease_diagnosis_benefit",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "사망보험금 (순수보장형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "당뇨병질환 연속혈당측정기 비용 지원금",
+    "normalized_code": "diabetes_continuous_glucose_monitor_support",
+    "category": "DIABETES"
+  },
+  {
+    "label": "급여 항혈소판제 경구약물치료 (아스피린 단독 처방) 자금",
+    "normalized_code": "covered_antiplatelet_oral_drug_treatment",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "보장형 계약 사망보험금",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "스마트전환형 계약 사망보험금",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "보험료납입면제(장해)",
+    "normalized_code": "premium_waiver",
+    "category": "PREMIUM_WAIVER"
+  },
+  {
+    "label": "암 주요검사비용 지원금",
+    "normalized_code": "cancer_major_exam_support",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "암 다학제 진료자금",
+    "normalized_code": "cancer_multidisciplinary_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "사망보험금(1종)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "50%장해 보험료납입면제",
+    "normalized_code": "premium_waiver",
+    "category": "PREMIUM_WAIVER"
+  },
+  {
+    "label": "유방절제수술자금",
+    "normalized_code": "breast_removal_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "유방재건관련수술자금",
+    "normalized_code": "breast_reconstruction_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "자궁적출수술자금",
+    "normalized_code": "uterus_removal_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "특정자궁질환고강도초음파집속술치료비",
+    "normalized_code": "specific_uterine_disease_hifu_treatment",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "진공보조장치특정유방양성병변절제수술비",
+    "normalized_code": "vacuum_assisted_breast_lesion_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "암림프부종수술자금",
+    "normalized_code": "cancer_lymphedema_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암피부재건수술자금",
+    "normalized_code": "cancer_skin_reconstruction_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "유방암진단자금",
+    "normalized_code": "breast_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "초기이외의유방생식기암전이포함진단자금",
+    "normalized_code": "non_early_breast_reproductive_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "전이성거세저항성전립선암진단자금",
+    "normalized_code": "metastatic_castration_resistant_prostate_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "종합병원암집중영양치료자금",
+    "normalized_code": "general_hospital_cancer_intensive_nutrition_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "중증갑상선암진단자금",
+    "normalized_code": "severe_thyroid_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "특정면역항암약물허가치료자금",
+    "normalized_code": "specific_immune_anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "표적항암약물허가치료자금연1회",
+    "normalized_code": "targeted_anticancer_drug_treatment_annual",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "항암약물치료자금2",
+    "normalized_code": "anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "사망보험금(1종 보장형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "사망보험금(스마트전환형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "허혈성심장질환 진단자금",
+    "normalized_code": "ischemic_heart_disease_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "일반암 진단급여금",
+    "normalized_code": "general_cancer_diagnosis_benefit",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "사망보험금(보장형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "암진단보장 Y 특약",
+    "normalized_code": "cancer_diagnosis_coverage",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "보험료납입면제 Y 특약",
+    "normalized_code": "premium_waiver",
+    "category": "PREMIUM_WAIVER"
+  },
+  {
+    "label": "주산기수술자금",
+    "normalized_code": "perinatal_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "주산기입원급여금",
+    "normalized_code": "perinatal_hospitalization",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "10대특정질병II수술자금",
+    "normalized_code": "ten_specific_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "23대특정질병수술자금",
+    "normalized_code": "twentythree_specific_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "뇌혈관질환진단자금",
+    "normalized_code": "cerebrovascular_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "기타피부암 소액질병진단자금",
+    "normalized_code": "skin_cancer_small_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "갑상선암 소액질병진단자금",
+    "normalized_code": "thyroid_cancer_small_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "대장점막내암 소액질병진단자금",
+    "normalized_code": "colon_intramucosal_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "제자리암 소액질병진단자금",
+    "normalized_code": "carcinoma_in_situ_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "경계성종양 소액질병진단자금",
+    "normalized_code": "borderline_tumor_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "신생아뇌출혈진단자금",
+    "normalized_code": "neonatal_brain_hemorrhage_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "현저한 추상 재해성형치료자금",
+    "normalized_code": "severe_disfigurement_plastic_treatment",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "특정재해골절 재해골절진단자금",
+    "normalized_code": "specific_accidental_fracture_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "기타 재해골절진단자금",
+    "normalized_code": "other_accidental_fracture_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "재해수술자금",
+    "normalized_code": "accident_surgery",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "스쿨존 교통사고치료자금",
+    "normalized_code": "school_zone_traffic_accident_treatment",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "교통사고중상 치료자금",
+    "normalized_code": "traffic_accident_serious_injury_treatment",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "중증질환자 뇌혈관질환 산정특례대상보장보험금",
+    "normalized_code": "severe_cerebrovascular_disease_special_calculation",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "8대장애진단자금",
+    "normalized_code": "eight_major_disability_diagnosis",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "급여 안면 및 경부 외 창상봉합술 수술자금 1종",
+    "normalized_code": "covered_facial_cervical_wound_suture_surgery",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "급여 재해골절 철심제거 수술자금",
+    "normalized_code": "covered_accidental_fracture_metal_removal_surgery",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "깁스치료자금",
+    "normalized_code": "cast_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "급여 부목치료자금",
+    "normalized_code": "covered_splint_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "독감(인플루엔자)입원급여금",
+    "normalized_code": "influenza_hospitalization_benefit",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "수두진단자금",
+    "normalized_code": "chickenpox_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "응급환자 응급실내원진료비",
+    "normalized_code": "emergency_room_visit",
+    "category": "OUTPATIENT"
+  },
+  {
+    "label": "중증세균성수막염진단자금",
+    "normalized_code": "severe_bacterial_meningitis_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "중증재생불량성빈혈진단자금",
+    "normalized_code": "severe_aplastic_anemia_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "특정 화상 및 부식(표재성포함 2도이상)진단자금",
+    "normalized_code": "specific_burns_corrosion_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "사망보험금(1종 기납입플러스형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "보험료납입면제(50%장해)",
+    "normalized_code": "premium_waiver",
+    "category": "PREMIUM_WAIVER"
+  },
+  {
+    "label": "사망보험금(2종)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "재해사망보장",
+    "normalized_code": "accidental_death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "재해고도장해보장",
+    "normalized_code": "accidental_severe_disability",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "고도장해보험금(1형,1년미만)",
+    "normalized_code": "severe_disability",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "재해사망",
+    "normalized_code": "accidental_death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "고도장해",
+    "normalized_code": "severe_disability",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "급여 에크모치료(체외순환막형산화요법) 보험금",
+    "normalized_code": "covered_ecmo_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "급여 특정 뇌혈관질환 특정재활치료비",
+    "normalized_code": "covered_specific_cerebrovascular_rehabilitation",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "남성 특정 생식기질환 수술자금",
+    "normalized_code": "male_specific_reproductive_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "특정 비뇨기계질환 수술자금",
+    "normalized_code": "specific_urological_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "남성 방광 결석 수술자금",
+    "normalized_code": "male_bladder_stone_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "탈장 수술자금",
+    "normalized_code": "hernia_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "뇌심Stage진단자금",
+    "normalized_code": "cerebrocardiac_stage_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "뇌졸중 진단자금",
+    "normalized_code": "stroke_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "뇌혈관질환 중증질환자 산정특례대상 보장보험금",
+    "normalized_code": "cerebrovascular_disease_severe_patient_special_calculation",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "당뇨 진단자금",
+    "normalized_code": "diabetes_diagnosis",
+    "category": "DIABETES"
+  },
+  {
+    "label": "인슐린 치료자금",
+    "normalized_code": "insulin_treatment",
+    "category": "DIABETES"
+  },
+  {
+    "label": "대상포진 진단자금",
+    "normalized_code": "herpes_zoster_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "통풍 진단자금",
+    "normalized_code": "gout_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "상급종합병원 뇌혈관질환 통원자금",
+    "normalized_code": "tertiary_hospital_cerebrovascular_outpatient",
+    "category": "OUTPATIENT"
+  },
+  {
+    "label": "관상동맥(심장동맥)우회 수술자금",
+    "normalized_code": "coronary_artery_bypass_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "대동맥인조혈관치환 수술자금",
+    "normalized_code": "aortic_artificial_vessel_replacement_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "심장판막 수술자금",
+    "normalized_code": "cardiac_valve_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "암다빈치로봇 수술자금",
+    "normalized_code": "cancer_davinci_robot_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암통원자금 (간편가입형)",
+    "normalized_code": "cancer_outpatient",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "암진단자금 (일반가입형)",
+    "normalized_code": "cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "암 림프부종 수술자금",
+    "normalized_code": "cancer_lymphedema_surgery",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "자궁적출 수술자금",
+    "normalized_code": "uterus_removal_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "자궁및난소특정질환 로봇수술자금",
+    "normalized_code": "uterus_ovary_specific_disease_robot_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "골다공증 및 특정관절질환 수술자금",
+    "normalized_code": "osteoporosis_specific_joint_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "특정자궁질환 고강도초음파집속술(HIFU) 치료비",
+    "normalized_code": "specific_uterine_disease_hifu_treatment",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "진공보조장치 특정유방 양성병변 절제 수술비",
+    "normalized_code": "vacuum_assisted_breast_lesion_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "요로결석 진단자금",
+    "normalized_code": "urolithiasis_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "요로결석 급여 체외충격파쇄석술 치료자금",
+    "normalized_code": "urolithiasis_covered_extracorporeal_shockwave_lithotripsy",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "유사암 진단자금",
+    "normalized_code": "cancer_like_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "초기 이외의 유방·생식기암(전이포함) 진단자금",
+    "normalized_code": "non_early_breast_reproductive_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "두경부암(전이포함) 진단자금",
+    "normalized_code": "head_neck_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "위암 및 식도암(전이포함) 진단자금",
+    "normalized_code": "gastric_esophageal_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "소장·대장·항문암 및 기타암(전이포함) 진단자금",
+    "normalized_code": "intestinal_colorectal_other_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "간·담낭·담도암 및 췌장암(전이포함) 진단자금",
+    "normalized_code": "liver_gallbladder_pancreatic_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "흉곽내기관·중피성암 및 연조직암(전이포함) 진단자금",
+    "normalized_code": "thoracic_mesothelioma_soft_tissue_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "골·피부 등 전신부위암(전이포함) 진단자금",
+    "normalized_code": "bone_skin_systemic_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "초기 이외의 갑상선암·기타내분비선암 및 비뇨기관암(전이포함) 진단자금",
+    "normalized_code": "non_early_thyroid_endocrine_urological_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "뇌암 및 중추신경계통암(전이포함) 진단자금",
+    "normalized_code": "brain_central_nervous_system_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "특정 비뇨기계(전립선 포함) 및 소화기계질환 로봇수술자금",
+    "normalized_code": "specific_urological_digestive_robot_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "질병 특정마취치료자금",
+    "normalized_code": "disease_specific_anesthesia_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "질병 특정수혈(전혈 및 분획제제) 치료자금",
+    "normalized_code": "disease_specific_blood_transfusion_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "재해 특정수혈(혈액성분채집술) 치료자금",
+    "normalized_code": "accident_specific_blood_transfusion_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "척추질환수술자금",
+    "normalized_code": "spinal_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "특정 골절 및 골절 동반 골다공증 수술자금",
+    "normalized_code": "specific_fracture_osteoporosis_surgery",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "오십견수술자금",
+    "normalized_code": "frozen_shoulder_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "백내장수술자금",
+    "normalized_code": "cataract_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "청각특정질환수술자금",
+    "normalized_code": "auditory_specific_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "사망보험금(간편가입형)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "2대질병 양성종양 진단자금",
+    "normalized_code": "two_major_disease_benign_tumor_diagnosis",
+    "category": "OTHER"
+  },
+  {
+    "label": "뇌혈관질환 진단자금(보장형)",
+    "normalized_code": "cerebrovascular_diagnosis",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "소액암진단자금(보장형)",
+    "normalized_code": "small_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "암진단자금(간편가입형-보장형)",
+    "normalized_code": "cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "비급여 항암약물·방사선치료자금(간편가입형)",
+    "normalized_code": "non_covered_anticancer_drug_radiation",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "심장질환 중증질환자 산정특례대상 보장보험금",
+    "normalized_code": "cardiac_disease_severe_patient_special_calculation",
+    "category": "CARDIOVASCULAR_DIAGNOSIS"
+  },
+  {
+    "label": "암 항암복합치료자금(간편가입형)",
+    "normalized_code": "cancer_comprehensive_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "유사암진단자금",
+    "normalized_code": "cancer_like_disease_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "인공디스크 치환수술자금",
+    "normalized_code": "artificial_disc_replacement_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "골절진단자금",
+    "normalized_code": "fracture_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "상급종합병원 전신마취 3시간 이상 동반 수술자금",
+    "normalized_code": "tertiary_hospital_general_anesthesia_3hour_surgery",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "암 중환자실 치료자금",
+    "normalized_code": "cancer_icu_treatment",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "통합암진단자금",
+    "normalized_code": "comprehensive_cancer_diagnosis",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "특정마취 및 특정수혈 치료자금",
+    "normalized_code": "specific_anesthesia_blood_transfusion_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "특정순환계질환 통합치료자금",
+    "normalized_code": "specific_circulatory_disease_comprehensive_treatment",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "급여 MRI 검사비용",
+    "normalized_code": "covered_mri_exam",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "급여 양전자단층촬영(PET) 검사비용",
+    "normalized_code": "covered_pet_scan",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "급여 혈전제거술 수술자금",
+    "normalized_code": "covered_thrombectomy_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "급여 지속적신대체요법(CRRT) 치료자금",
+    "normalized_code": "covered_crrt_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "급여 인공호흡기(12시간초과) 치료자금",
+    "normalized_code": "covered_ventilator_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "급여 저체온요법 치료자금",
+    "normalized_code": "covered_hypothermia_therapy",
+    "category": "OTHER"
+  },
+  {
+    "label": "급여 에크모치료(체외순환막 형산화요법) 치료자금",
+    "normalized_code": "covered_ecmo_treatment",
+    "category": "OTHER"
+  },
+  {
+    "label": "급여 NGS유전자 패널검사비용",
+    "normalized_code": "covered_ngs_genetic_panel_exam",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "급여 암 MRI 촬영검사비용",
+    "normalized_code": "covered_cancer_mri_exam",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "급여 양전자단층촬영(PET)검사비용",
+    "normalized_code": "covered_pet_scan",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "남성난임 정자채취지원금",
+    "normalized_code": "male_infertility_sperm_collection_support",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "급여 특정 PSMA PET 검사자금",
+    "normalized_code": "covered_specific_psma_pet_exam",
+    "category": "EXAM_TEST"
+  },
+  {
+    "label": "급여 특정 남성 난임 수술자금",
+    "normalized_code": "covered_specific_male_infertility_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "비급여 표적항암 약물허가 치료자금",
+    "normalized_code": "non_covered_targeted_anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "암통원(당일입원 포함)자금",
+    "normalized_code": "cancer_outpatient_same_day_admission",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "양성신생물, 제자리암 및 경계성종양 로봇수술자금",
+    "normalized_code": "benign_neoplasm_carcinoma_in_situ_robot_surgery",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "일반암 또는 갑상선암 입원급여",
+    "normalized_code": "general_or_thyroid_cancer_hospitalization",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "요양병원암입원급여금",
+    "normalized_code": "nursing_hospital_cancer_hospitalization",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "50%이상 재해장해",
+    "normalized_code": "fifty_percent_accidental_disability",
+    "category": "DISABILITY"
+  },
+  {
+    "label": "경험 암",
+    "normalized_code": "experienced_cancer",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "초기 이외의 갑상선암 진단급여",
+    "normalized_code": "non_early_thyroid_cancer_diagnosis_benefit",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "소액암 진단급여",
+    "normalized_code": "small_cancer_diagnosis_benefit",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "소액암(갑상선암 제외) 입원급여",
+    "normalized_code": "small_cancer_excluding_thyroid_hospitalization",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "적립형 사망보험금",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "스마트전환형 사망보험금",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "암진단보장",
+    "normalized_code": "cancer_diagnosis_coverage",
+    "category": "CANCER_DIAGNOSIS"
+  },
+  {
+    "label": "주산기 수술자금",
+    "normalized_code": "perinatal_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "주산기 입원급여금",
+    "normalized_code": "perinatal_hospitalization",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "10대특정질병II 수술자금",
+    "normalized_code": "ten_specific_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "23대특정질병 수술자금",
+    "normalized_code": "twentythree_specific_disease_surgery",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "수족구 진단자금",
+    "normalized_code": "hand_foot_mouth_disease_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "암직접치료통원자금",
+    "normalized_code": "cancer_direct_treatment_outpatient",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "저체중아출생자금(1.5kg 미만)",
+    "normalized_code": "low_birth_weight_benefit",
+    "category": "OTHER"
+  },
+  {
+    "label": "중증세균성수막염 진단자금",
+    "normalized_code": "severe_bacterial_meningitis_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "중증재생불량성빈혈 진단자금",
+    "normalized_code": "severe_aplastic_anemia_diagnosis",
+    "category": "SPECIFIC_DISEASE"
+  },
+  {
+    "label": "수술자금(8대특정질환제외)",
+    "normalized_code": "surgery_excluding_eight_specific_diseases",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "수술자금(일반)",
+    "normalized_code": "surgery_benefit",
+    "category": "SURGERY_GENERAL"
+  },
+  {
+    "label": "암직접치료입원급여금(주요암)",
+    "normalized_code": "cancer_direct_treatment_hospitalization",
+    "category": "CANCER_HOSPITAL"
+  },
+  {
+    "label": "특정 화상 및 부식(표재성포함 2도이상) 진단자금",
+    "normalized_code": "specific_burns_corrosion_diagnosis",
+    "category": "FRACTURE_INJURY"
+  },
+  {
+    "label": "표적항암약물허가치료자금(1년미만)",
+    "normalized_code": "targeted_anticancer_drug_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "항암양성자방사선치료자금(2년미만)",
+    "normalized_code": "anticancer_proton_radiation_treatment",
+    "category": "CANCER_TREATMENT"
+  },
+  {
+    "label": "허혈성심장질환 통원자금",
+    "normalized_code": "ischemic_heart_disease_outpatient",
+    "category": "OUTPATIENT"
+  },
+  {
+    "label": "급성뇌경색증 혈전용해치료보험금(1년미만)",
+    "normalized_code": "acute_cerebral_infarction_thrombolytic_treatment",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "뇌혈관질환 수술자금(관혈수술)",
+    "normalized_code": "cerebrovascular_open_surgery",
+    "category": "CARDIOVASCULAR_TREATMENT"
+  },
+  {
+    "label": "1~3등급 장기요양 상태 판정자금(일반가입형)",
+    "normalized_code": "grade1_3_long_term_care_assessment",
+    "category": "LONG_TERM_CARE"
+  },
+  {
+    "label": "사망보험금(적립형 계약Ⅱ)",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  },
+  {
+    "label": "1~5등급 장기요양상태 시설급여금",
+    "normalized_code": "grade1_5_long_term_care_facility_benefit",
+    "category": "LONG_TERM_CARE"
+  },
+  {
+    "label": "요양병원 제외 간병인 비용지원급여금",
+    "normalized_code": "caregiver_cost_support_excluding_nursing_hospital",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "간호·간병통합 서비스지원 급여금",
+    "normalized_code": "integrated_nursing_care_service_support",
+    "category": "HOSPITALIZATION"
+  },
+  {
+    "label": "스마트전환형사망보험금",
+    "normalized_code": "death_benefit",
+    "category": "DEATH_BENEFIT"
+  }
+]

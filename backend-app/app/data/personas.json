@@ -1,0 +1,70 @@
+{
+  "personas": [
+    {
+      "id": "consultant",
+      "name": "김민수",
+      "role": "보험 상담원",
+      "description": "3년차 보험 상담원. 고객 대면 상담 시 약관 내용을 쉽게 설명합니다.",
+      "rbac_scope": {
+        "accessible_node_types": [
+          "Policy", "Coverage", "Exclusion", "Exception",
+          "Dividend_Method", "Premium_Discount", "Surrender_Value",
+          "Eligibility", "Rider", "Product_Category", "Calculation"
+        ],
+        "can_toggle_mock_mode": false,
+        "can_view_trace": false,
+        "can_view_regulations": false
+      },
+      "avatar": "consultant"
+    },
+    {
+      "id": "customer",
+      "name": "이서연",
+      "role": "보험 가입 고객",
+      "description": "보험 상품에 가입한 일반 고객. 본인의 보장 내용을 확인합니다.",
+      "rbac_scope": {
+        "accessible_node_types": [
+          "Policy", "Coverage", "Premium_Discount", "Surrender_Value"
+        ],
+        "can_toggle_mock_mode": false,
+        "can_view_trace": false,
+        "can_view_regulations": false
+      },
+      "avatar": "customer"
+    },
+    {
+      "id": "underwriter",
+      "name": "박준혁",
+      "role": "언더라이터",
+      "description": "보험 인수심사 전문가. 규제 및 위험 평가를 수행합니다.",
+      "rbac_scope": {
+        "accessible_node_types": [
+          "Policy", "Coverage", "Exclusion", "Exception",
+          "Dividend_Method", "Regulation", "Premium_Discount",
+          "Surrender_Value", "Eligibility", "Rider", "Product_Category", "Calculation"
+        ],
+        "can_toggle_mock_mode": false,
+        "can_view_trace": true,
+        "can_view_regulations": true
+      },
+      "avatar": "underwriter"
+    },
+    {
+      "id": "presenter",
+      "name": "최하은",
+      "role": "데모 발표자",
+      "description": "시스템 시연 담당. 모든 기능에 접근 가능합니다.",
+      "rbac_scope": {
+        "accessible_node_types": [
+          "Policy", "Coverage", "Exclusion", "Exception",
+          "Dividend_Method", "Regulation", "Premium_Discount",
+          "Surrender_Value", "Eligibility", "Rider", "Product_Category", "Calculation"
+        ],
+        "can_toggle_mock_mode": true,
+        "can_view_trace": true,
+        "can_view_regulations": true
+      },
+      "avatar": "presenter"
+    }
+  ]
+}

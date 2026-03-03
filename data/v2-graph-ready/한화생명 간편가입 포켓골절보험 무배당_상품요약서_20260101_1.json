@@ -1,0 +1,674 @@
+{
+  "document_id": "한화생명 간편가입 포켓골절보험 무배당_상품요약서_20260101_1",
+  "product_name": "한화생명 간편가입 포켓골절보험 무배당_상품요약서_20260101",
+  "entities": [
+    {
+      "id": "Policy#hwl_pocket_fracture",
+      "type": "Policy",
+      "label": "한화생명 간편가입 포켓골절보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "골절보험",
+        "contract_types": [
+          "간편가입",
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당은 스스로 온라인에서 청약하는 상품으로 다이렉트 인터넷보험(www.direct.hanwhalife.com)에서 가입하실 수 있으며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_pocket_fracture_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#fracture",
+      "type": "Product_Category",
+      "label": "골절보험 상품",
+      "properties": {
+        "category": "골절"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_pocket_fracture_simplified",
+      "type": "Eligibility",
+      "label": "간편가입 자격요건",
+      "properties": {
+        "age_range": "고령자 포함",
+        "health_requirements": "간소화된 계약 전 알릴 의무 항목",
+        "contract_types": [
+          "간편심사"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험시장에서 소외되고 있는 유병력자나 고령자 등의 계약심사 및 건강검진의 부담을 줄여 보험에 가입할 수 있도록 계약심사 과정을 간소화(표준체에 비하여 간소화된 계약 전 알릴 의무 항목 활용)한 상품",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_pocket_fracture_K19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_pocket_fracture_direct",
+      "type": "Premium_Discount",
+      "label": "다이렉트 보험료 할인",
+      "properties": {
+        "discount_type": "다이렉트 인터넷보험",
+        "discount_rate_text": "대면채널에 비해 보험료가 저렴"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "다이렉트 인터넷보험(www.direct.hanwhalife.com)에서 가입하실 수 있으며, 대면채널에 비해 보험료가 저렴합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_pocket_fracture_age",
+      "type": "Eligibility",
+      "label": "가입나이 요건",
+      "properties": {
+        "age_range": "만 19세 ~ 65세",
+        "health_requirements": "무진단 가입 가능",
+        "contract_types": [
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "만 19세 ~ 65세",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_pocket_fracture_coverage_limit",
+      "type": "Eligibility",
+      "label": "가입한도 요건",
+      "properties": {
+        "age_range": "만 19세 ~ 65세",
+        "health_requirements": "보험가입금액 5만원 한도",
+        "contract_types": [
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "가입한도 : 보험가입금액 5만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_pocket_fracture_health",
+      "type": "Eligibility",
+      "label": "건강진단 요건",
+      "properties": {
+        "age_range": "만 19세 ~ 65세",
+        "health_requirements": "무진단으로 가입 가능하나, 기존 다른 보험상품의 가입유무, 청약서의 계약 전 알릴 의무 사항 등에 따라 보험가입 가능여부를 판정할 수 있음",
+        "contract_types": [
+          "무배당"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당의 경우 무진단으로 가입 가능하나, 기존 다른 보험상품의 가입유무, 청약서의 계약 전 알릴 의무 사항 등에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_pocket_fracture_K1.2",
+      "type": "Rider",
+      "label": "장애인전용 세제전환특약",
+      "properties": {
+        "rider_code": "K1.2",
+        "rider_name": "장애인전용 세제전환특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "장애인전용 세제전환특약(K1.2)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "type": "Coverage",
+      "label": "재해골절진단자금",
+      "properties": {
+        "benefit_name": "재해골절진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 보험기간 중 '재해골절'로 진단이 확정되었을 경우(1회당)",
+        "payment_amount": "5만원",
+        "normalized_code": "accidental_fracture_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "재해골절진단자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 보험기간 중 '재해골절'로 진단이 확정되었을 경우(1회당) | 5만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_pocket_fracture_intentional_self_harm",
+      "type": "Exclusion",
+      "label": "피보험자 고의적 자해",
+      "properties": {
+        "exclusion_type": "고의적 피해",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_pocket_fracture_mental_disorder",
+      "type": "Exception",
+      "label": "심신상실시 자해 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때",
+        "referenced_exclusion": "피보험자 고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때에는 보험금을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_pocket_fracture_partial_beneficiary",
+      "type": "Exception",
+      "label": "일부 보험수익자 예외",
+      "properties": {
+        "exception_condition": "보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급",
+        "referenced_exclusion": "보험수익자 고의적 피해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_pocket_fracture_contractor_intentional_harm",
+      "type": "Exclusion",
+      "label": "계약자 고의적 피해",
+      "properties": {
+        "exclusion_type": "고의적 피해",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_pocket_fracture_fraud_cause",
+      "type": "Exclusion",
+      "label": "보험금 수취목적 사고 유발",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_pocket_fracture_document_forgery",
+      "type": "Exclusion",
+      "label": "서류 위조 변조",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_pocket_fracture_existing_claim",
+      "type": "Exception",
+      "label": "기존 지급사유 예외",
+      "properties": {
+        "exception_condition": "이미 보험금 지급사유가 발생한 경우에는 보험금 지급에 영향을 미치지 않습니다",
+        "referenced_exclusion": "서류 위조 변조"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 이미 보험금 지급사유가 발생한 경우에는 보험금 지급에 영향을 미치지 않습니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_pocket_fracture_fraud_contract",
+      "type": "Exclusion",
+      "label": "사기에 의한 계약체결",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립된 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_pocket_fracture_disclosure_violation",
+      "type": "Exclusion",
+      "label": "고지의무 위반",
+      "properties": {
+        "exclusion_type": "고지의무 위반",
+        "condition_text": "고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "만일, 고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우, 회사는 계약자 또는 피보험자의 의사와 관계없이 계약을 해지하거나 보장을 제한할 수 있습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_pocket_fracture_interest_rate",
+      "type": "Calculation",
+      "label": "보장부분 적용이율",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "보험료 할인",
+        "variables": [
+          "연복리 2.75%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당에 사용한 적용이율은 연복리 2.75%입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_pocket_fracture_calculation",
+      "type": "Surrender_Value",
+      "label": "해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "순보험료식 계약자적립액에서 해약공제액을 공제한 금액",
+        "key_milestones": "3개월: 61.1%, 6개월: 40.7%, 9개월: 20.3%, 만기: 0%"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_pocket_fracture_surrender_formula",
+      "type": "Calculation",
+      "label": "해약환급금 계산 공식",
+      "properties": {
+        "formula_text": "납입보험료 - 경과된 기간의 위험보험료 - 계약체결 및 계약관리비용(해약공제금액 포함)",
+        "formula_type": "surrender_value",
+        "applies_to": "중도해지시",
+        "variables": [
+          "납입보험료",
+          "위험보험료",
+          "계약체결비용",
+          "계약관리비용",
+          "해약공제금액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_pocket_fracture_refund_rate",
+      "type": "Calculation",
+      "label": "환급률 계산식",
+      "properties": {
+        "formula_text": "해약환급금 ÷ 그 시점까지 납입한 납입보험료",
+        "formula_type": "surrender_value",
+        "applies_to": "경과기간별 환급률 산출",
+        "variables": [
+          "해약환급금",
+          "납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_pocket_fracture_price_index",
+      "type": "Calculation",
+      "label": "보험가격지수 계산식",
+      "properties": {
+        "formula_text": "보험료총액 ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산출",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Dividend_Method#hwl_pocket_fracture_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "이 보험은 무배당상품으로서 계약자배당을 하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Product_Category#fracture",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Eligibility#hwl_pocket_fracture_simplified",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당은 계약심사 과정을 간소화한 상품",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Rider#hwl_pocket_fracture_K19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Premium_Discount#hwl_pocket_fracture_direct",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "다이렉트 인터넷보험에서 가입하실 수 있으며, 대면채널에 비해 보험료가 저렴합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Eligibility#hwl_pocket_fracture_age",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "가입나이 : 만 19세 ~ 65세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Eligibility#hwl_pocket_fracture_coverage_limit",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "가입한도 : 보험가입금액 5만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Eligibility#hwl_pocket_fracture_health",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당의 경우 무진단으로 가입 가능",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Rider#hwl_pocket_fracture_K1.2",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제도성특약 : 장애인전용 세제전환특약(K1.2)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "재해골절진단자금 : 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 보험기간 중 '재해골절'로 진단이 확정되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "target_id": "Exclusion#hwl_pocket_fracture_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_pocket_fracture_intentional_self_harm",
+      "target_id": "Exception#hwl_pocket_fracture_mental_disorder",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 때에는 보험금을 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "target_id": "Exclusion#hwl_pocket_fracture_contractor_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_pocket_fracture_contractor_intentional_harm",
+      "target_id": "Exception#hwl_pocket_fracture_partial_beneficiary",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "target_id": "Exclusion#hwl_pocket_fracture_fraud_cause",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "target_id": "Exclusion#hwl_pocket_fracture_document_forgery",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_pocket_fracture_document_forgery",
+      "target_id": "Exception#hwl_pocket_fracture_existing_claim",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "다만, 이미 보험금 지급사유가 발생한 경우에는 보험금 지급에 영향을 미치지 않습니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "target_id": "Exclusion#hwl_pocket_fracture_fraud_contract",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "target_id": "Exclusion#hwl_pocket_fracture_disclosure_violation",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "고의 또는 중대한 과실로 중요한 사항에 대하여 사실과 다르게 알린 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Surrender_Value#hwl_pocket_fracture_calculation",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_pocket_fracture_accident_fracture",
+      "target_id": "Calculation#hwl_pocket_fracture_interest_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "한화생명 간편가입 포켓골절보험 무배당에 사용한 적용이율은 연복리 2.75%입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_pocket_fracture_calculation",
+      "target_id": "Calculation#hwl_pocket_fracture_surrender_formula",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_pocket_fracture_calculation",
+      "target_id": "Calculation#hwl_pocket_fracture_refund_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_pocket_fracture",
+      "target_id": "Calculation#hwl_pocket_fracture_price_index",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험료총액을 참조순보험료 총액과 평균사업비 총액을 합한 금액으로 나눈 비율을 보험가격지수라고 합니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T11:36:33.171134+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 25,
+    "relation_count": 24,
+    "sections_processed": 7,
+    "api_calls": 8,
+    "total_input_tokens": 29598,
+    "total_output_tokens": 12016
+  }
+}

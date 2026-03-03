@@ -1,0 +1,62 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CloudFormation",
+      "Effect": "Allow",
+      "Action": "cloudformation:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "IAM",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateRole", "iam:DeleteRole", "iam:GetRole", "iam:PassRole",
+        "iam:UpdateRole", "iam:TagRole", "iam:UntagRole", "iam:ListRoleTags",
+        "iam:AttachRolePolicy", "iam:DetachRolePolicy",
+        "iam:PutRolePolicy", "iam:GetRolePolicy", "iam:DeleteRolePolicy",
+        "iam:ListRolePolicies", "iam:ListAttachedRolePolicies",
+        "iam:CreatePolicy", "iam:DeletePolicy", "iam:GetPolicy",
+        "iam:GetPolicyVersion", "iam:ListPolicyVersions",
+        "iam:CreatePolicyVersion", "iam:DeletePolicyVersion",
+        "iam:CreateInstanceProfile", "iam:DeleteInstanceProfile",
+        "iam:GetInstanceProfile", "iam:AddRoleToInstanceProfile",
+        "iam:RemoveRoleFromInstanceProfile", "iam:ListInstanceProfilesForRole",
+        "iam:CreateOpenIDConnectProvider", "iam:DeleteOpenIDConnectProvider",
+        "iam:GetOpenIDConnectProvider", "iam:TagOpenIDConnectProvider",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "VPC",
+      "Effect": "Allow",
+      "Action": "ec2:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "EKS",
+      "Effect": "Allow",
+      "Action": "eks:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Neptune",
+      "Effect": "Allow",
+      "Action": ["neptune:*", "neptune-db:*"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "OpenSearchServerless",
+      "Effect": "Allow",
+      "Action": "aoss:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "S3",
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": "*"
+    }
+  ]
+}

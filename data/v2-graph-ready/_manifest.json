@@ -1,0 +1,947 @@
+{
+  "completed": {
+    "한화생명 포켓골절보험 무배당_상품요약서_20260101_1": {
+      "entities": 25,
+      "relations": 23,
+      "elapsed_sec": 105.8,
+      "api_calls": 8,
+      "input_tokens": 28808,
+      "output_tokens": 10455,
+      "warnings": [
+        "1 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Premium_Discount": 1,
+        "Rider": 4,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Eligibility": 2,
+        "Coverage": 1,
+        "Exclusion": 5,
+        "Exception": 3,
+        "Calculation": 4,
+        "Surrender_Value": 1,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T11:34:29.375264+00:00"
+    },
+    "한화생명 간편가입 포켓골절보험 무배당_상품요약서_20260101_1": {
+      "entities": 25,
+      "relations": 24,
+      "elapsed_sec": 120.8,
+      "api_calls": 8,
+      "input_tokens": 29598,
+      "output_tokens": 12016,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Dividend_Method": 1,
+        "Product_Category": 1,
+        "Eligibility": 4,
+        "Rider": 2,
+        "Premium_Discount": 1,
+        "Coverage": 1,
+        "Exclusion": 6,
+        "Exception": 3,
+        "Calculation": 4,
+        "Surrender_Value": 1
+      },
+      "extracted_at": "2026-02-24T11:36:33.171578+00:00"
+    },
+    "한화생명 스마트V상해보험 무배당_상품요약서_20260201": {
+      "entities": 34,
+      "relations": 37,
+      "elapsed_sec": 175.7,
+      "api_calls": 8,
+      "input_tokens": 36820,
+      "output_tokens": 19048,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 2,
+        "Dividend_Method": 1,
+        "Coverage": 2,
+        "Premium_Discount": 1,
+        "Calculation": 8,
+        "Rider": 4,
+        "Eligibility": 6,
+        "Exclusion": 5,
+        "Exception": 2,
+        "Surrender_Value": 1,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T11:39:31.910796+00:00"
+    },
+    "한화생명 스마트H상해보험 무배당_상품요약서_20260201": {
+      "entities": 34,
+      "relations": 38,
+      "elapsed_sec": 179.8,
+      "api_calls": 8,
+      "input_tokens": 37514,
+      "output_tokens": 18545,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Coverage": 4,
+        "Rider": 5,
+        "Premium_Discount": 1,
+        "Eligibility": 4,
+        "Calculation": 6,
+        "Product_Category": 2,
+        "Dividend_Method": 1,
+        "Exclusion": 6,
+        "Exception": 2,
+        "Surrender_Value": 1,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T11:42:34.668498+00:00"
+    },
+    "한화생명 H보장보험1 무배당 요약서 20260201": {
+      "entities": 37,
+      "relations": 33,
+      "elapsed_sec": 172.3,
+      "api_calls": 8,
+      "input_tokens": 39329,
+      "output_tokens": 17969,
+      "warnings": [
+        "3 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 2,
+        "Surrender_Value": 2,
+        "Coverage": 2,
+        "Premium_Discount": 2,
+        "Eligibility": 7,
+        "Rider": 6,
+        "Calculation": 6,
+        "Exclusion": 5,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T11:45:29.957780+00:00"
+    },
+    "한화생명 e정기보험 무배당_상품요약서_20260101": {
+      "entities": 42,
+      "relations": 37,
+      "elapsed_sec": 187.6,
+      "api_calls": 8,
+      "input_tokens": 40175,
+      "output_tokens": 19373,
+      "warnings": [
+        "3 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 2,
+        "Calculation": 11,
+        "Eligibility": 5,
+        "Premium_Discount": 1,
+        "Rider": 6,
+        "Coverage": 2,
+        "Exclusion": 9,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T11:48:40.570296+00:00"
+    },
+    "한화생명 상속H종신보험 무배당_상품요약서_20260101": {
+      "entities": 37,
+      "relations": 32,
+      "elapsed_sec": 179.3,
+      "api_calls": 8,
+      "input_tokens": 44290,
+      "output_tokens": 18724,
+      "warnings": [
+        "Multiple Policy entities: 2",
+        "4 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 2,
+        "Coverage": 3,
+        "Surrender_Value": 5,
+        "Calculation": 10,
+        "Eligibility": 3,
+        "Premium_Discount": 2,
+        "Rider": 3,
+        "Dividend_Method": 1,
+        "Product_Category": 1,
+        "Exclusion": 4,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T11:54:43.654315+00:00"
+    },
+    "한화생명 장애인전용 곰두리보장보험 무배당_상품요약서_20260101": {
+      "entities": 40,
+      "relations": 39,
+      "elapsed_sec": 194.4,
+      "api_calls": 9,
+      "input_tokens": 48942,
+      "output_tokens": 19968,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Eligibility": 5,
+        "Dividend_Method": 1,
+        "Premium_Discount": 1,
+        "Calculation": 7,
+        "Rider": 6,
+        "Product_Category": 2,
+        "Coverage": 10,
+        "Exclusion": 5,
+        "Exception": 1,
+        "Surrender_Value": 1
+      },
+      "extracted_at": "2026-02-24T12:00:46.929478+00:00"
+    },
+    "한화생명 경영인H정기보험 무배당_상품요약서_20260101": {
+      "entities": 44,
+      "relations": 40,
+      "elapsed_sec": 188.4,
+      "api_calls": 8,
+      "input_tokens": 48191,
+      "output_tokens": 21254,
+      "warnings": [
+        "3 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Eligibility": 7,
+        "Calculation": 9,
+        "Surrender_Value": 3,
+        "Premium_Discount": 2,
+        "Rider": 10,
+        "Coverage": 1,
+        "Exclusion": 6,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T12:05:51.803346+00:00"
+    },
+    "한화생명 걸음e건강보험 무배당_상품요약서_20260201": {
+      "entities": 44,
+      "relations": 43,
+      "elapsed_sec": 202.9,
+      "api_calls": 9,
+      "input_tokens": 50699,
+      "output_tokens": 22228,
+      "warnings": [
+        "6 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 2,
+        "Dividend_Method": 2,
+        "Surrender_Value": 3,
+        "Calculation": 8,
+        "Premium_Discount": 2,
+        "Eligibility": 4,
+        "Rider": 9,
+        "Coverage": 5,
+        "Exclusion": 6,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T12:09:17.739747+00:00"
+    },
+    "한화생명 e암보험(비갱신형) 무배당_상품요약서_20260101": {
+      "entities": 45,
+      "relations": 67,
+      "elapsed_sec": 247.1,
+      "api_calls": 9,
+      "input_tokens": 51157,
+      "output_tokens": 27476,
+      "warnings": [
+        "1 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 2,
+        "Calculation": 9,
+        "Eligibility": 5,
+        "Premium_Discount": 1,
+        "Rider": 5,
+        "Coverage": 7,
+        "Exclusion": 10,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T12:13:27.799992+00:00"
+    },
+    "한화생명 간편가입 H종신보험 무배당_상품요약서_20260101": {
+      "entities": 41,
+      "relations": 33,
+      "elapsed_sec": 189.1,
+      "api_calls": 8,
+      "input_tokens": 58000,
+      "output_tokens": 19983,
+      "warnings": [
+        "6 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 3,
+        "Calculation": 15,
+        "Premium_Discount": 1,
+        "Eligibility": 5,
+        "Rider": 4,
+        "Coverage": 3,
+        "Exclusion": 5,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T12:28:10.205967+00:00"
+    },
+    "한화생명 H종신보험 무배당_상품요약서_20260101": {
+      "entities": 40,
+      "relations": 34,
+      "elapsed_sec": 192.1,
+      "api_calls": 8,
+      "input_tokens": 59367,
+      "output_tokens": 19747,
+      "warnings": [
+        "Multiple Policy entities: 2",
+        "4 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 2,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Coverage": 2,
+        "Surrender_Value": 2,
+        "Calculation": 15,
+        "Eligibility": 6,
+        "Premium_Discount": 1,
+        "Rider": 3,
+        "Exclusion": 5,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T12:35:24.502539+00:00"
+    },
+    "한화생명 하나로H종신보험 무배당_상품요약서_20260101": {
+      "entities": 30,
+      "relations": 28,
+      "elapsed_sec": 200.0,
+      "api_calls": 8,
+      "input_tokens": 59684,
+      "output_tokens": 21495,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Dividend_Method": 1,
+        "Eligibility": 4,
+        "Rider": 2,
+        "Product_Category": 1,
+        "Coverage": 3,
+        "Calculation": 9,
+        "Exclusion": 4,
+        "Exception": 2,
+        "Surrender_Value": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T12:38:47.544263+00:00"
+    },
+    "한화생명 e건강보험 무배당_상품요약서_20260201_pdf_pdf": {
+      "entities": 33,
+      "relations": 32,
+      "elapsed_sec": 169.9,
+      "api_calls": 4,
+      "input_tokens": 58347,
+      "output_tokens": 21258,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 1,
+        "Calculation": 2,
+        "Eligibility": 4,
+        "Premium_Discount": 1,
+        "Rider": 6,
+        "Product_Category": 2,
+        "Coverage": 14,
+        "Exclusion": 1
+      },
+      "extracted_at": "2026-02-24T12:44:27.705166+00:00"
+    },
+    "한화생명 간편가입 H당뇨보험 무배당_상품요약서_20260101": {
+      "entities": 50,
+      "relations": 41,
+      "elapsed_sec": 225.4,
+      "api_calls": 8,
+      "input_tokens": 74200,
+      "output_tokens": 25507,
+      "warnings": [
+        "10 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 4,
+        "Dividend_Method": 1,
+        "Eligibility": 4,
+        "Surrender_Value": 2,
+        "Coverage": 12,
+        "Premium_Discount": 2,
+        "Calculation": 6,
+        "Rider": 10,
+        "Exclusion": 5,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T12:48:16.097263+00:00"
+    },
+    "한화생명 H당뇨보험 무배당_상품요약서_20260101_1": {
+      "entities": 49,
+      "relations": 47,
+      "elapsed_sec": 215.1,
+      "api_calls": 8,
+      "input_tokens": 81923,
+      "output_tokens": 23256,
+      "warnings": [
+        "3 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 2,
+        "Dividend_Method": 2,
+        "Surrender_Value": 2,
+        "Coverage": 12,
+        "Premium_Discount": 2,
+        "Calculation": 8,
+        "Rider": 8,
+        "Eligibility": 5,
+        "Exclusion": 5,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T12:51:54.171752+00:00"
+    },
+    "한화생명 Need AI 암보험 무배당_상품요약서_20260101": {
+      "entities": 39,
+      "relations": 39,
+      "elapsed_sec": 183.7,
+      "api_calls": 8,
+      "input_tokens": 79735,
+      "output_tokens": 19339,
+      "warnings": [
+        "Multiple Policy entities: 2"
+      ],
+      "type_counts": {
+        "Policy": 2,
+        "Dividend_Method": 1,
+        "Surrender_Value": 2,
+        "Calculation": 6,
+        "Premium_Discount": 1,
+        "Eligibility": 4,
+        "Rider": 6,
+        "Product_Category": 2,
+        "Coverage": 6,
+        "Exclusion": 5,
+        "Exception": 2,
+        "Regulation": 2
+      },
+      "extracted_at": "2026-02-24T12:55:00.840767+00:00"
+    },
+    "한화생명 간편가입 Need AI 암보험 무배당_상품요약서_20260101": {
+      "entities": 41,
+      "relations": 38,
+      "elapsed_sec": 206.5,
+      "api_calls": 8,
+      "input_tokens": 82879,
+      "output_tokens": 22870,
+      "warnings": [
+        "1 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 3,
+        "Calculation": 8,
+        "Eligibility": 3,
+        "Premium_Discount": 1,
+        "Coverage": 9,
+        "Rider": 4,
+        "Product_Category": 2,
+        "Exclusion": 5,
+        "Exception": 2,
+        "Regulation": 2
+      },
+      "extracted_at": "2026-02-24T12:58:30.385230+00:00"
+    },
+    "한화생명 상생친구 보장보험 무배당_상품요약서_20260201": {
+      "entities": 84,
+      "relations": 69,
+      "elapsed_sec": 346.5,
+      "api_calls": 8,
+      "input_tokens": 91274,
+      "output_tokens": 40230,
+      "warnings": [
+        "13 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Eligibility": 5,
+        "Coverage": 36,
+        "Premium_Discount": 2,
+        "Rider": 18,
+        "Dividend_Method": 1,
+        "Product_Category": 2,
+        "Calculation": 8,
+        "Exclusion": 6,
+        "Exception": 3,
+        "Surrender_Value": 1,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T13:04:19.841693+00:00"
+    },
+    "한화생명 케어백간병플러스보험 무배당_상품요약서_20260101": {
+      "entities": 46,
+      "relations": 37,
+      "elapsed_sec": 267.8,
+      "api_calls": 8,
+      "input_tokens": 110371,
+      "output_tokens": 29033,
+      "warnings": [
+        "Multiple Policy entities: 2",
+        "3 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 2,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Coverage": 9,
+        "Premium_Discount": 2,
+        "Calculation": 10,
+        "Eligibility": 5,
+        "Rider": 5,
+        "Surrender_Value": 2,
+        "Exclusion": 6,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T13:08:50.666029+00:00"
+    },
+    "한화생명 간편가입 시그니처H암보험 무배당_상품요약서_20260101": {
+      "entities": 52,
+      "relations": 51,
+      "elapsed_sec": 300.9,
+      "api_calls": 6,
+      "input_tokens": 216664,
+      "output_tokens": 33998,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 1,
+        "Eligibility": 3,
+        "Premium_Discount": 2,
+        "Calculation": 5,
+        "Rider": 9,
+        "Coverage": 25,
+        "Exclusion": 3,
+        "Exception": 1
+      },
+      "extracted_at": "2026-02-24T13:29:45.972351+00:00"
+    },
+    "한화생명 시그니처H암보험 무배당_상품요약서_20260101": {
+      "entities": 60,
+      "relations": 56,
+      "elapsed_sec": 322.5,
+      "api_calls": 6,
+      "input_tokens": 220342,
+      "output_tokens": 34703,
+      "warnings": [
+        "3 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Coverage": 21,
+        "Surrender_Value": 1,
+        "Premium_Discount": 2,
+        "Eligibility": 4,
+        "Rider": 18,
+        "Dividend_Method": 1,
+        "Product_Category": 1,
+        "Calculation": 9,
+        "Exclusion": 1,
+        "Exception": 1
+      },
+      "extracted_at": "2026-02-24T13:35:11.506439+00:00"
+    },
+    "한화생명 H간병보험 무배당_상품요약서_20260201_2": {
+      "entities": 87,
+      "relations": 59,
+      "elapsed_sec": 522.7,
+      "api_calls": 7,
+      "input_tokens": 228385,
+      "output_tokens": 63293,
+      "warnings": [
+        "22 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 2,
+        "Calculation": 15,
+        "Rider": 11,
+        "Premium_Discount": 1,
+        "Eligibility": 3,
+        "Coverage": 37,
+        "Exclusion": 10,
+        "Exception": 5
+      },
+      "extracted_at": "2026-02-24T13:43:57.227281+00:00"
+    },
+    "한화생명 시그니처 H통합건강보험 무배당_상품요약서_20260201": {
+      "entities": 85,
+      "relations": 79,
+      "elapsed_sec": 406.7,
+      "api_calls": 10,
+      "input_tokens": 261755,
+      "output_tokens": 46996,
+      "warnings": [
+        "3 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Dividend_Method": 1,
+        "Product_Category": 1,
+        "Eligibility": 6,
+        "Coverage": 38,
+        "Rider": 10,
+        "Premium_Discount": 2,
+        "Surrender_Value": 2,
+        "Calculation": 16,
+        "Exclusion": 5,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T13:50:46.938330+00:00"
+    },
+    "한화생명 H건강플러스보험 무배당_상품요약서_20260201": {
+      "entities": 68,
+      "relations": 67,
+      "elapsed_sec": 379.5,
+      "api_calls": 7,
+      "input_tokens": 307270,
+      "output_tokens": 41872,
+      "warnings": [],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Eligibility": 5,
+        "Coverage": 35,
+        "Premium_Discount": 2,
+        "Surrender_Value": 1,
+        "Calculation": 9,
+        "Rider": 11,
+        "Exclusion": 2
+      },
+      "extracted_at": "2026-02-24T13:57:09.482315+00:00"
+    },
+    "한화생명 시그니처 H통합건강보험 무배당(납입면제형)_상품요약서_20260201": {
+      "entities": 126,
+      "relations": 117,
+      "elapsed_sec": 661.3,
+      "api_calls": 8,
+      "input_tokens": 329961,
+      "output_tokens": 79241,
+      "warnings": [
+        "Multiple Policy entities: 2",
+        "1 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 2,
+        "Product_Category": 1,
+        "Dividend_Method": 2,
+        "Eligibility": 6,
+        "Premium_Discount": 2,
+        "Rider": 17,
+        "Surrender_Value": 3,
+        "Calculation": 13,
+        "Coverage": 76,
+        "Exclusion": 2,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T14:08:13.753149+00:00"
+    },
+    "의료법(법률)(제21111호)(20260212)": {
+      "entities": 30,
+      "relations": 17,
+      "elapsed_sec": 116.7,
+      "api_calls": 3,
+      "input_tokens": 32771,
+      "output_tokens": 11988,
+      "warnings": [
+        "7 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Regulation": 10,
+        "Eligibility": 6,
+        "Product_Category": 1,
+        "Exclusion": 8,
+        "Exception": 3,
+        "Coverage": 2
+      },
+      "extracted_at": "2026-02-24T14:19:07.055407+00:00"
+    },
+    "한화생명 간편가입 제로백H종신보험 무배당_상품요약서_20260201": {
+      "entities": 37,
+      "relations": 35,
+      "elapsed_sec": 184.1,
+      "api_calls": 8,
+      "input_tokens": 50397,
+      "output_tokens": 20181,
+      "warnings": [
+        "4 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Surrender_Value": 3,
+        "Calculation": 10,
+        "Premium_Discount": 1,
+        "Eligibility": 7,
+        "Rider": 4,
+        "Coverage": 3,
+        "Exclusion": 4,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T14:22:14.113793+00:00"
+    },
+    "한화생명 제로백H종신보험 무배당_상품요약서_20260201": {
+      "entities": 35,
+      "relations": 28,
+      "elapsed_sec": 160.0,
+      "api_calls": 8,
+      "input_tokens": 51048,
+      "output_tokens": 17009,
+      "warnings": [
+        "5 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Dividend_Method": 1,
+        "Coverage": 5,
+        "Surrender_Value": 3,
+        "Calculation": 9,
+        "Eligibility": 7,
+        "Premium_Discount": 1,
+        "Rider": 2,
+        "Product_Category": 1,
+        "Exclusion": 3,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T14:24:57.082958+00:00"
+    },
+    "보험업법 시행령(대통령령)(제35833호)(20260101)": {
+      "entities": 49,
+      "relations": 46,
+      "elapsed_sec": 228.4,
+      "api_calls": 5,
+      "input_tokens": 44697,
+      "output_tokens": 23492,
+      "warnings": [
+        "1 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Regulation": 27,
+        "Product_Category": 8,
+        "Exception": 4,
+        "Eligibility": 6,
+        "Exclusion": 3,
+        "Coverage": 1
+      },
+      "extracted_at": "2026-02-24T14:28:48.510513+00:00"
+    },
+    "보험업법 시행규칙(총리령)(제02016호)(20250218)": {
+      "entities": 59,
+      "relations": 53,
+      "elapsed_sec": 257.8,
+      "api_calls": 10,
+      "input_tokens": 53028,
+      "output_tokens": 28178,
+      "warnings": [],
+      "type_counts": {
+        "Regulation": 31,
+        "Eligibility": 9,
+        "Product_Category": 5,
+        "Exclusion": 6,
+        "Exception": 6,
+        "Coverage": 2
+      },
+      "extracted_at": "2026-02-24T14:35:53.906836+00:00"
+    },
+    "보험업법(법률)(제20436호)(20250131)": {
+      "entities": 36,
+      "relations": 31,
+      "elapsed_sec": 153.9,
+      "api_calls": 5,
+      "input_tokens": 53128,
+      "output_tokens": 16317,
+      "warnings": [],
+      "type_counts": {
+        "Regulation": 12,
+        "Product_Category": 3,
+        "Exclusion": 11,
+        "Eligibility": 4,
+        "Exception": 4,
+        "Coverage": 2
+      },
+      "extracted_at": "2026-02-24T14:38:30.778534+00:00"
+    },
+    "보험업감독업무시행세칙(금융감독원세칙)(20251231)": {
+      "entities": 104,
+      "relations": 78,
+      "elapsed_sec": 430.5,
+      "api_calls": 9,
+      "input_tokens": 108300,
+      "output_tokens": 44088,
+      "warnings": [
+        "1 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Regulation": 63,
+        "Eligibility": 11,
+        "Exclusion": 10,
+        "Coverage": 3,
+        "Exception": 9,
+        "Product_Category": 6,
+        "Calculation": 2
+      },
+      "extracted_at": "2026-02-24T14:45:44.274618+00:00"
+    },
+    "암관리법(법률)(제21065호)(20251001)": {
+      "entities": 37,
+      "relations": 23,
+      "elapsed_sec": 146.2,
+      "api_calls": 6,
+      "input_tokens": 46764,
+      "output_tokens": 14863,
+      "warnings": [
+        "4 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Regulation": 22,
+        "Coverage": 3,
+        "Eligibility": 5,
+        "Product_Category": 1,
+        "Exclusion": 5,
+        "Exception": 1
+      },
+      "extracted_at": "2026-02-24T14:57:25.081670+00:00"
+    },
+    "금융소비자 보호에 관한 법률(법률)(제21065호)(20260102)": {
+      "entities": 85,
+      "relations": 52,
+      "elapsed_sec": 400.2,
+      "api_calls": 9,
+      "input_tokens": 105201,
+      "output_tokens": 38863,
+      "warnings": [
+        "11 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Regulation": 39,
+        "Product_Category": 5,
+        "Exception": 9,
+        "Eligibility": 1,
+        "Exclusion": 27,
+        "Coverage": 4
+      },
+      "extracted_at": "2026-02-24T15:04:08.259017+00:00"
+    },
+    "한화생명 진심가득H보장보험 무배당_상품요약서_20260201": {
+      "entities": 68,
+      "relations": 62,
+      "elapsed_sec": 368.6,
+      "api_calls": 5,
+      "input_tokens": 144564,
+      "output_tokens": 40376,
+      "warnings": [
+        "5 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 1,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Coverage": 35,
+        "Eligibility": 4,
+        "Surrender_Value": 1,
+        "Calculation": 9,
+        "Premium_Discount": 2,
+        "Rider": 7,
+        "Exclusion": 5,
+        "Exception": 2
+      },
+      "extracted_at": "2026-02-24T15:14:45.777445+00:00"
+    },
+    "한화생명 간편가입 상속H종신보험 무배당_상품요약서_20260101": {
+      "entities": 37,
+      "relations": 23,
+      "elapsed_sec": 170.3,
+      "api_calls": 8,
+      "input_tokens": 43318,
+      "output_tokens": 16841,
+      "warnings": [
+        "Multiple Policy entities: 2",
+        "11 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 2,
+        "Coverage": 2,
+        "Calculation": 8,
+        "Surrender_Value": 4,
+        "Eligibility": 3,
+        "Premium_Discount": 2,
+        "Rider": 6,
+        "Dividend_Method": 2,
+        "Product_Category": 2,
+        "Exclusion": 3,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T15:19:43.765795+00:00"
+    },
+    "한화생명 간편가입 경영인H정기보험 무배당_상품요약서_20260101": {
+      "entities": 40,
+      "relations": 32,
+      "elapsed_sec": 193.9,
+      "api_calls": 8,
+      "input_tokens": 47270,
+      "output_tokens": 18725,
+      "warnings": [
+        "Multiple Policy entities: 2",
+        "4 orphan entities (not connected)"
+      ],
+      "type_counts": {
+        "Policy": 2,
+        "Product_Category": 1,
+        "Dividend_Method": 1,
+        "Eligibility": 8,
+        "Coverage": 1,
+        "Surrender_Value": 3,
+        "Calculation": 9,
+        "Premium_Discount": 1,
+        "Rider": 6,
+        "Exclusion": 5,
+        "Exception": 2,
+        "Regulation": 1
+      },
+      "extracted_at": "2026-02-24T15:23:00.671540+00:00"
+    }
+  },
+  "errors": {},
+  "updated_at": "2026-02-24T15:23:00.671628+00:00"
+}

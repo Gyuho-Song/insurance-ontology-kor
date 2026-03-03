@@ -1,0 +1,1818 @@
+{
+  "document_id": "한화생명 진심가득H보장보험 무배당_상품요약서_20260201",
+  "product_name": "한화생명 진심가득H보장보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_jinsim_guarantee",
+      "type": "Policy",
+      "label": "한화생명 진심가득 H 보장보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "보장보험",
+        "contract_types": "보장형 계약, New Start 계약, 적립형 계약"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 진심가득 H 보장보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#guarantee",
+      "type": "Product_Category",
+      "label": "보장보험",
+      "properties": {
+        "category": "보장"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 진심가득 H 보장보험 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_jinsim_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 진심가득 H 보장보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_jinsim_cancer_diagnosis",
+      "type": "Coverage",
+      "label": "암진단보장",
+      "properties": {
+        "benefit_name": "암진단보장",
+        "trigger_condition": "면책 및 감액기간 삭제로 가입 즉시 보장",
+        "payment_amount": "미명시",
+        "rider_code": "암진단보장 Y 특약 무배당",
+        "normalized_code": "cancer_diagnosis_coverage",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "암진단보장 Y 특약 무배당의 경우 면책 및 감액기간 삭제로 가입 즉시 보장합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_jinsim_age",
+      "type": "Eligibility",
+      "label": "가입연령 확대",
+      "properties": {
+        "age_range": "태아부터 35세까지",
+        "health_requirements": "미명시",
+        "contract_types": [
+          "보장형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "가입연령을 35 세까지 확대함으로 태아부터 사회초년생까지 보장이 가능합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_jinsim_partial",
+      "type": "Surrender_Value",
+      "label": "해약환급금 일부지급형",
+      "properties": {
+        "calculation_basis": "납입기간중 50%, 납입기간후 100%",
+        "key_milestones": "보험료 납입기간 중 표준형 대비 적은 해약환급금, 납입기간 경과 후 표준형과 동일"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "'해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)'은 보험료 납입기간 중 이 계약이 해지될 경우 표준형 해약환급금 대비 적은 해약환급금을 지급하는 대신 '표준형'보다 저렴한 보험료로 가입할 수 있도록 한 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_jinsim_surrender_formula",
+      "type": "Calculation",
+      "label": "해약환급금 계산",
+      "properties": {
+        "formula_text": "납입한 보험료에서 경과된 기간의 위험보험료, 계약체결 및 계약관리비용(해약공제금액 포함)이 차감",
+        "formula_type": "surrender_value",
+        "applies_to": "중도해지시",
+        "variables": [
+          "납입한 보험료",
+          "위험보험료",
+          "계약체결비용",
+          "계약관리비용",
+          "해약공제금액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "'해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)'",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_jinsim_premium_waiver",
+      "type": "Coverage",
+      "label": "보험료납입면제",
+      "properties": {
+        "benefit_name": "보험료납입면제",
+        "trigger_condition": "피보험자가 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)', '뇌혈관질환' 및 '허혈성심장질환'으로 진단이 확정된 경우",
+        "payment_amount": "차회 이후의 보험료 납입을 면제",
+        "rider_code": "보험료납입면제 Y 특약 무배당, 보험료납입면제 Y 특약(갱신형) 무배당",
+        "normalized_code": "premium_waiver",
+        "category": "PREMIUM_WAIVER"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료납입면제 Y 특약 무배당, 보험료납입면제 Y 특약(갱신형) 무배당은 보험기간 중 피보험자가 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)', '뇌혈관질환' 및 '허혈성심장질환'으로 진단이 확정된 경우 해당계약 및 이 특약의 차회 이후의 보험료 납입을 면제하여 드리는 특약을 말합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_jinsim_family_love",
+      "type": "Premium_Discount",
+      "label": "가족사랑 보험료 할인",
+      "properties": {
+        "discount_type": "가족사랑",
+        "discount_rate_text": "보험료(특약보험료 포함)의 1.0%를 할인"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "가족사랑 보험료 할인 : 피보험자의 형제자매가 2 명(본인 포함) 이상인 경우 보험료(특약보험료 포함)의 1.0%를 할인하여 영수합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_jinsim_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_jinsim_family_discount",
+      "type": "Calculation",
+      "label": "가족사랑 할인 계산",
+      "properties": {
+        "formula_text": "보험료(특약보험료 포함)의 1.0%를 할인",
+        "formula_type": "discount",
+        "applies_to": "피보험자의 형제자매가 2 명(본인 포함) 이상인 경우",
+        "variables": [
+          "보험료",
+          "특약보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "피보험자의 형제자매가 2 명(본인 포함) 이상인 경우 보험료(특약보험료 포함)의 1.0%를 할인하여 영수합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_jinsim_proxy_claim",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? A : 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_진심가득h_age",
+      "type": "Eligibility",
+      "label": "가입나이 요건",
+      "properties": {
+        "age_range": "0세(태아포함) ~ 35세",
+        "contract_types": [
+          "보장형 계약",
+          "적립형 계약",
+          "New Start 계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "보장형 계약 - 최저가입나이 : 0 세(태아포함) - 최고가입나이 : 보험종목, 보험기간 및 보험료 납입기간별로 아래와 같음",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_진심가득h_amount",
+      "type": "Eligibility",
+      "label": "가입한도",
+      "properties": {
+        "contract_types": [
+          "주계약"
+        ],
+        "health_requirements": "보험가입금액 1,000만원 ~ 2억원"
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "주계약 보험가입금액 1,000 만원 ~ 2 억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_진심가득h_health",
+      "type": "Eligibility",
+      "label": "건강진단 요건",
+      "properties": {
+        "health_requirements": "피보험자의 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다"
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "본 상품은 피보험자의 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_진심가득h_ka11",
+      "type": "Rider",
+      "label": "암진단보장 Y 특약 무배당[일반형]",
+      "properties": {
+        "rider_name": "허혈성심장질환진단보장 Y 특약 무배당[일반형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "암진단보장 Y 특약 무배당[일반형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_진심가득h_모성보장",
+      "type": "Rider",
+      "label": "모성보장특약 무배당",
+      "properties": {
+        "rider_name": "모성보장특약 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "모성보장특약 무배당 : 계약일로부터 임신종료 후 42 일까지의 기간",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_진심가득h_신생아뇌출혈",
+      "type": "Rider",
+      "label": "신생아뇌출혈보장특약 무배당[일반형]",
+      "properties": {
+        "rider_name": "신생아뇌출혈보장특약 무배당[일반형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "신생아뇌출혈보장특약 무배당[일반형] : 1 세만기",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_진심가득h_보험료납입면제",
+      "type": "Rider",
+      "label": "보험료납입면제 Y 특약 무배당",
+      "properties": {
+        "rider_name": "보험료납입면제 Y 특약 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "보험료납입면제 Y 특약 무배당: 부가대상 계약의 보험료 납입기간",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_T8.3",
+      "type": "Rider",
+      "label": "주산기수술보장특약",
+      "properties": {
+        "rider_code": "T10.3",
+        "rider_name": "주산기입원보장특약 무배당",
+        "rider_type": "의무부가특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "주산기수술보장특약(T8.3) 무배당(주계약 태아가입형 가입시)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_main_jaehae_janghe",
+      "type": "Coverage",
+      "label": "재해장해급여금",
+      "properties": {
+        "benefit_name": "재해장해급여금",
+        "trigger_condition": "피보험자에게 보험기간 중 발생한 재해로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "payment_amount": "1,000만원 × 해당 장해지급률",
+        "normalized_code": "accidental_disability_benefit",
+        "category": "DISABILITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "재해장해급여금 | 피보험자에게 보험기간 중 발생한 재해로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우 | 1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_main_janghe_rate",
+      "type": "Calculation",
+      "label": "재해장해급여금 계산",
+      "properties": {
+        "formula_text": "1,000만원 × 해당 장해지급률",
+        "formula_type": "benefit",
+        "applies_to": "재해장해급여금",
+        "variables": [
+          "보험가입금액 1,000만원",
+          "장해지급률"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_main_jeokrib_death",
+      "type": "Coverage",
+      "label": "사망보험금",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "1,000만원",
+        "rider_code": "K15.3",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "사망보험금 | 보험기간 중 피보험자가 사망한 경우 | 기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_main_death_benefit",
+      "type": "Calculation",
+      "label": "사망보험금 계산",
+      "properties": {
+        "formula_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "formula_type": "benefit",
+        "applies_to": "적립형 계약 사망보험금",
+        "variables": [
+          "기본보험료",
+          "계약자적립액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_T8.3_surgery",
+      "type": "Coverage",
+      "label": "주산기 수술자금",
+      "properties": {
+        "benefit_name": "주산기 통원자금",
+        "trigger_condition": "피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 통원치료를 받았을 경우",
+        "payment_amount": "(통원 1회당) 1만원",
+        "rider_code": "T8.3",
+        "normalized_code": "perinatal_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.T8.3",
+        "source_text": "주산기 수술자금 | 피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 50만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_T10.3_hospital",
+      "type": "Coverage",
+      "label": "주산기 입원급여금",
+      "properties": {
+        "benefit_name": "주산기 입원급여금",
+        "trigger_condition": "피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 그 치료를 직접적인 목적으로 보험기간 중 4일 이상 입원하였을 경우",
+        "payment_amount": "3일초과 1일당 1만원",
+        "rider_code": "T10.3",
+        "normalized_code": "perinatal_hospitalization",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.T10.3",
+        "source_text": "주산기 입원급여금 | 피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 그 치료를 직접적인 목적으로 보험기간 중 4일 이상 입원하였을 경우 | 3일초과 1일당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_104_10disease_surgery",
+      "type": "Coverage",
+      "label": "10대특정질병II 수술자금",
+      "properties": {
+        "benefit_name": "70대특정질병 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '70대특정질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 100만원",
+        "normalized_code": "ten_specific_disease_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.104대질병수술Y특약",
+        "source_text": "10대특정질병II 수술자금 | 피보험자가 보험기간 중 '10대특정질병II'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 300만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_104_23disease_surgery",
+      "type": "Coverage",
+      "label": "23대특정질병 수술자금",
+      "properties": {
+        "benefit_name": "23대특정질병 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '23대특정질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 200만원",
+        "normalized_code": "twentythree_specific_disease_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.104대질병수술Y특약",
+        "source_text": "23대특정질병 수술자금 | 피보험자가 보험기간 중 '23대특정질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_104_chimek_surgery",
+      "type": "Coverage",
+      "label": "치핵 수술자금",
+      "properties": {
+        "benefit_name": "치핵 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '치핵'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 30만원",
+        "normalized_code": "hemorrhoid_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.104대질병수술Y특약",
+        "source_text": "치핵 수술자금 | 피보험자가 보험기간 중 '치핵'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 30만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_acute_myocardial_diag",
+      "type": "Coverage",
+      "label": "급성심근경색증 진단자금",
+      "properties": {
+        "benefit_name": "급성심근경색증 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '급성심근경색증'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "acute_myocardial_infarction_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.급성심근경색증진단보장Y특약",
+        "source_text": "급성심근경색증 진단자금 | 보험기간 중 피보험자가 '급성심근경색증'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_noechulhyul_diag",
+      "type": "Coverage",
+      "label": "뇌출혈 진단자금",
+      "properties": {
+        "benefit_name": "신생아뇌출혈 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 신생아뇌출혈로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "cerebral_hemorrhage_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.뇌출혈진단보장Y특약",
+        "source_text": "뇌출혈 진단자금 | 보험기간 중 피보험자가 '뇌출혈'로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_small_disease_skin_cancer",
+      "type": "Coverage",
+      "label": "소액질병 진단자금(기타피부암)",
+      "properties": {
+        "benefit_name": "소액질병 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '갑상선암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "small_disease_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.소액질병진단보장Y특약",
+        "source_text": "소액질병 진단자금 | 보험기간 중 피보험자가 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_diag",
+      "type": "Coverage",
+      "label": "암진단자금",
+      "properties": {
+        "benefit_name": "암진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.암진단보장Y특약",
+        "source_text": "암진단자금 | 보험기간 중 피보험자가 보장개시일 이후에 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_sukjokgu_diag",
+      "type": "Coverage",
+      "label": "수족구 진단자금",
+      "properties": {
+        "benefit_name": "수족구 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '수족구'로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "10만원",
+        "normalized_code": "hand_foot_mouth_disease_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.수족구진단특약",
+        "source_text": "수족구 진단자금 | 보험기간 중 피보험자가 '수족구'로 진단이 확정되었을 경우(최초 1회한) | 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_heart_failure_diag",
+      "type": "Coverage",
+      "label": "심부전 진단자금",
+      "properties": {
+        "benefit_name": "심부전 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '심부전'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "100만원",
+        "normalized_code": "heart_failure_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.심부전진단특약",
+        "source_text": "심부전 진단자금 | 보험기간 중 피보험자가 '심부전'으로 진단이 확정되었을 경우(최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_major_treatment_skin_thyroid",
+      "type": "Coverage",
+      "label": "기타피부암·갑상선암 주요치료자금",
+      "properties": {
+        "benefit_name": "암직접치료통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 기타피부암, 대장점막내암, 제자리암 또는 경계성종양으로 진단이 확정되고, 보험기간 중 그 기타피부암, 대장점막내암, 제자리암 또는 경계성종양의 직접적인 치료를 목적으로 통원치료를 받았을 경우",
+        "payment_amount": "1회당 1만원",
+        "normalized_code": "skin_thyroid_cancer_major_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.암주요치료보장특약",
+        "source_text": "기타피부암·갑상선암 주요치료자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '기타피부암' 또는 '갑상선암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '기타피부암' 또는 '갑상선암'으로 '암 주요치료'('암 수술', '항암약물치료', '항암방사선치료') 중 어느 하나의 치료를 받은 경우(최초 진단확정일로부터 최대 10년간, 매년 1회를 한도로 지급(최대 10회 지급)) | 매년(매회) 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_major_treatment",
+      "type": "Coverage",
+      "label": "암주요치료자금",
+      "properties": {
+        "benefit_name": "암주요치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암(기타피부암 및 갑상선암 제외)'으로 '암 주요치료'('암 수술', '항암약물치료', '항암방사선치료') 중 어느 하나의 치료를 받은 경우",
+        "payment_amount": "매년(매회) 1,000만원",
+        "normalized_code": "cancer_major_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.암주요치료보장특약",
+        "source_text": "암주요치료자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암(기타피부암 및 갑상선암 제외)'으로 '암 주요치료'('암 수술', '항암약물치료', '항암방사선치료') 중 어느 하나의 치료를 받은 경우(최초 진단확정일로부터 최대 10년간, 매년 1회를 한도로 지급(최대 10회 지급)) | 매년(매회) 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_outpatient_treatment",
+      "type": "Coverage",
+      "label": "암직접치료통원자금",
+      "properties": {
+        "benefit_name": "암직접치료통원자금",
+        "trigger_condition": "보험기간 중 피보험자가 '암(기타피부암, 대장점막내암 제외)'으로 진단이 확정되고, 보험기간 중 그 '암(기타피부암, 대장점막내암 제외)'의 직접적인 치료를 목적으로 통원치료를 받았을 경우",
+        "payment_amount": "1회당 2만원",
+        "normalized_code": "cancer_direct_treatment_outpatient",
+        "category": "CANCER_HOSPITAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.암직접치료통원Y특약",
+        "source_text": "암직접치료통원자금 | 보험기간 중 피보험자가 '암(기타피부암, 대장점막내암 제외)'으로 진단이 확정되고, 보험기간 중 그 '암(기타피부암, 대장점막내암 제외)'의 직접적인 치료를 목적으로 통원치료를 받았을 경우 | 1회당 2만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_emergency_room",
+      "type": "Coverage",
+      "label": "응급환자 응급실내원 진료비",
+      "properties": {
+        "benefit_name": "응급환자 응급실내원 진료비",
+        "trigger_condition": "피보험자가 보험기간 중 '응급환자 응급실 내원 진료비 대상자'에 해당하였을 경우",
+        "payment_amount": "(내원 1회당) 2만원",
+        "normalized_code": "emergency_room_visit",
+        "category": "OUTPATIENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.응급환자 응급실내원특약",
+        "source_text": "응급환자 응급실내원 진료비 | 피보험자가 보험기간 중 '응급환자 응급실 내원 진료비 대상자'에 해당하였을 경우 | (내원 1회당) 2만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_disaster_fracture",
+      "type": "Coverage",
+      "label": "재해골절진단자금",
+      "properties": {
+        "benefit_name": "재해골절진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 재해골절로 진단 확정 되었을 경우",
+        "payment_amount": "1회당 10만원",
+        "normalized_code": "accidental_fracture_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.재해골절보장Y특약",
+        "source_text": "재해골절진단자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 재해골절로 진단 확정 되었을 경우 | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_low_weight_baby_under1.5",
+      "type": "Coverage",
+      "label": "저체중아출생자금(1.5kg 미만)",
+      "properties": {
+        "benefit_name": "저체중아 출생자금",
+        "trigger_condition": "피보험자가 보험기간 중 출산한 신생아의 출생 시 체중이 1.5Kg이상 2.0Kg미만인 경우",
+        "payment_amount": "50만원",
+        "normalized_code": "low_birth_weight_benefit",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.저체중아출생보장특약",
+        "source_text": "저체중아 출생자금 | 피보험자가 보험기간 중 출산한 신생아의 출생 시 체중이 2.0Kg 미만인 경우 | 1.5Kg미만 : 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_low_weight_condition",
+      "type": "Calculation",
+      "label": "저체중아 지급금액 계산",
+      "properties": {
+        "formula_text": "1.5Kg미만: 100만원, 1.5Kg이상 2.0Kg미만: 50만원",
+        "formula_type": "benefit",
+        "applies_to": "저체중아 출생 시",
+        "variables": [
+          "신생아 출생 시 체중"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.저체중아출생보장특약",
+        "source_text": "1.5Kg미만 : 100만원, 1.5Kg이상 2.0Kg미만 : 50만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_severe_meningitis",
+      "type": "Coverage",
+      "label": "중증세균성수막염 진단자금",
+      "properties": {
+        "benefit_name": "중증세균성수막염 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '중증세균성수막염'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "severe_bacterial_meningitis_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.중증세균성수막염진단특약",
+        "source_text": "중증세균성수막염 진단자금 | 보험기간 중 피보험자가 '중증세균성수막염'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_severe_aplastic_anemia",
+      "type": "Coverage",
+      "label": "중증재생불량성빈혈 진단자금",
+      "properties": {
+        "benefit_name": "중증재생불량성빈혈 진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '중증재생불량성빈혈'로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "severe_aplastic_anemia_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.중증재생불량성빈혈진단특약",
+        "source_text": "중증재생불량성빈혈 진단자금 | 보험기간 중 피보험자가 '중증재생불량성빈혈'로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_surgery_8disease_exclude",
+      "type": "Coverage",
+      "label": "수술자금(8대특정질환제외)",
+      "properties": {
+        "benefit_name": "수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해(10대특정질환제외)'로 인하여 수술을 받았을 경우(동일한 질병당 연간 1회한, 재해 사고일자당 1회한)",
+        "payment_amount": "10만원",
+        "normalized_code": "surgery_excluding_eight_specific_diseases",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.질병재해수술보장특약(8대특정질환제외)",
+        "source_text": "수술자금 | 보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해(8대특정질환제외)'로 인하여 수술을 받았을 경우(동일한 질병당 연간 1회한, 재해 사고일자당 1회한) | 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_surgery_general",
+      "type": "Coverage",
+      "label": "수술자금(일반)",
+      "properties": {
+        "benefit_name": "수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해'로 인하여 수술을 받았을 경우(동일한 질병당 연간 1회한, 재해 사고일자당 1회한)",
+        "payment_amount": "10만원",
+        "normalized_code": "surgery_benefit",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.질병재해수술보장특약Ⅱ",
+        "source_text": "수술자금 | 보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해'로 인하여 수술을 받았을 경우(동일한 질병당 연간 1회한, 재해 사고일자당 1회한) | 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cancer_inpatient_major",
+      "type": "Coverage",
+      "label": "암직접치료입원급여금(주요암)",
+      "properties": {
+        "benefit_name": "암직접치료입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 '기타피부암', '대장점막내암', '제자리암' 또는 '경계성종양'으로 진단이 확정되고, 그 '기타피부암', '대장점막내암', '제자리암' 또는 '경계성종양'의 직접적인 치료를 목적으로 1일 이상 입원하였을 경우",
+        "payment_amount": "1일당 2만원(1회 입원당 지급일수 120일 한도)",
+        "normalized_code": "cancer_direct_treatment_hospitalization",
+        "category": "CANCER_HOSPITAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.첫날부터 암직접치료입원Y특약",
+        "source_text": "암직접치료입원급여금 | 보험기간 중 피보험자가 '암(기타피부암, 대장점막내암 제외)'으로 진단이 확정되고, 그 '암(기타피부암, 대장점막내암 제외)'의 직접적인 치료를 목적으로 1일 이상 입원하였을 경우 | 1일당 5만원(1회 입원당 지급일수 120일 한도)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_first_day_hospital",
+      "type": "Coverage",
+      "label": "입원급여금",
+      "properties": {
+        "benefit_name": "입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우",
+        "payment_amount": "입원1일당 1만원",
+        "normalized_code": "hospitalization_benefit",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.첫날부터입원특약",
+        "source_text": "입원급여금 | 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우 | 입원1일당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_burn_2degree_diag",
+      "type": "Coverage",
+      "label": "특정 화상 및 부식(표재성포함 2도이상) 진단자금",
+      "properties": {
+        "benefit_name": "진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 보험기간 중 '특정화상 및 부식'으로 진단확정된 경우(연간 1회를 한도로 함)",
+        "payment_amount": "1회당 20만원",
+        "normalized_code": "specific_burns_corrosion_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.특정 화상 및 부식(표재성포함 2도이상)진단특약",
+        "source_text": "특정 화상 및 부식(표재성포함 2도이상) 진단자금 | 피보험자가 보험기간 중 재해 또는 재해 이외의 원인으로 인하여 '특정 화상 및 부식Ⅱ'으로 진단확정된 경우(연간 1회를 한도로 함) | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_targeted_anticancer_1year_under",
+      "type": "Coverage",
+      "label": "표적항암약물허가치료자금(1년미만)",
+      "properties": {
+        "benefit_name": "표적항암약물허가치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 표적항암약물허가치료를 받았을 경우(단, 최초 1회한) - 1년이상",
+        "payment_amount": "1,000만원",
+        "normalized_code": "targeted_anticancer_drug_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.표적항암약물허가치료특약",
+        "source_text": "표적항암약물허가치료자금 | 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 표적항암약물허가치료를 받았을 경우(단, 최초 1회한) | 1년미만: 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_targeted_anticancer_period",
+      "type": "Calculation",
+      "label": "표적항암약물허가치료자금 경과기간별 계산",
+      "properties": {
+        "formula_text": "1년미만: 500만원, 1년이상: 1,000만원",
+        "formula_type": "benefit",
+        "applies_to": "표적항암약물허가치료자금",
+        "variables": [
+          "경과기간(보험계약일부터 표적항암약물허가치료일까지)"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.표적항암약물허가치료특약",
+        "source_text": "1년미만: 500만원, 1년이상: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_anticancer_radiation",
+      "type": "Coverage",
+      "label": "항암방사선치료자금",
+      "properties": {
+        "benefit_name": "항암세기조절방사선치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 항암세기조절방사선치료를 받았을 경우(단, 최초 1회한) - 2년이상",
+        "payment_amount": "1,000만원",
+        "normalized_code": "anticancer_radiation_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.항암방사선치료특약",
+        "source_text": "항암방사선치료자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암, 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우(단, 최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_imrt_period",
+      "type": "Calculation",
+      "label": "항암세기조절방사선치료자금 경과기간별 계산",
+      "properties": {
+        "formula_text": "2년미만: 500만원, 2년이상: 1,000만원",
+        "formula_type": "benefit",
+        "applies_to": "항암양성자방사선치료자금",
+        "variables": [
+          "경과기간(보험계약일부터 항암양성자방사선치료일까지)"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.항암세기조절방사선치료특약",
+        "source_text": "2년미만: 500만원, 2년이상: 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_anticancer_drug",
+      "type": "Coverage",
+      "label": "항암약물치료자금",
+      "properties": {
+        "benefit_name": "항암약물치료자금Ⅱ",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일('암(기타피부암, 갑상선암 제외)'은 암보장개시일) 이후에 '암(기타피부암, 갑상선암 제외)', '기타피부암' 또는 '갑상선암'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우(단, 최초 1회한)",
+        "payment_amount": "100만원",
+        "normalized_code": "anticancer_drug_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.항암약물치료특약",
+        "source_text": "항암약물치료자금 | 보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암, 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우(단, 최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_proton_radiation_2year_under",
+      "type": "Coverage",
+      "label": "항암양성자방사선치료자금(2년미만)",
+      "properties": {
+        "benefit_name": "항암양성자방사선치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 항암양성자방사선치료를 받았을 경우(단, 최초 1회한) - 2년이상",
+        "payment_amount": "1,000만원",
+        "normalized_code": "anticancer_proton_radiation_treatment",
+        "category": "CANCER_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.항암양성자방사선치료특약",
+        "source_text": "항암양성자방사선치료자금 | 피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 항암양성자방사선치료를 받았을 경우(단, 최초 1회한) | 2년미만: 500만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_ischemic_heart_outpatient",
+      "type": "Coverage",
+      "label": "허혈성심장질환 통원자금",
+      "properties": {
+        "benefit_name": "허혈성심장질환 수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '수술분류표'에서 정한 수술을 받았을 경우",
+        "payment_amount": "관혈수술 1회당 100만원, 비관혈수술 1회당 30만원",
+        "rider_code": "TA2.3",
+        "normalized_code": "ischemic_heart_disease_outpatient",
+        "category": "OUTPATIENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.허혈성심장질환통원특약",
+        "source_text": "허혈성심장질환 통원자금 | 보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되고, 보험기간 중 그 '허혈성심장질환'의 치료를 직접적인 목적으로 병원 또는 의원(한방병원 또는 한의원을 포함)에서 통원치료를 받았을 경우(1일 1회한, 연간 30회한) | 1회당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_brain_thrombolysis_1year_under",
+      "type": "Coverage",
+      "label": "급성뇌경색증 혈전용해치료보험금(1년미만)",
+      "properties": {
+        "benefit_name": "급성심근경색증 혈전용해치료보험금",
+        "trigger_condition": "피보험자가 보험기간 중 '급성심근경색증Ⅱ'로 진단 확정되고 보험기간 중 '급성심근경색증Ⅱ'의 치료를 직접적인 목적으로 혈전용해치료를 받았을 경우(최초 1회한) - 1년이상",
+        "payment_amount": "200만원",
+        "normalized_code": "acute_cerebral_infarction_thrombolytic_treatment",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.혈전용해치료보장특약",
+        "source_text": "급성뇌경색증 혈전용해치료보험금 | 피보험자가 보험기간 중 '급성뇌경색증'으로 진단 확정되고 보험기간 중 '급성뇌경색증'의 치료를 직접적인 목적으로 혈전용해치료를 받았을 경우(최초 1회한) | 1년미만: 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_thrombolysis_period",
+      "type": "Calculation",
+      "label": "혈전용해치료보험금 경과기간별 계산",
+      "properties": {
+        "formula_text": "1년미만: 100만원, 1년이상: 200만원",
+        "formula_type": "benefit",
+        "applies_to": "혈전용해치료보험금",
+        "variables": [
+          "경과기간(보험계약일부터 혈전용해치료일까지)"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.혈전용해치료보장특약",
+        "source_text": "1년미만: 100만원, 1년이상: 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_cerebrovascular_surgery_open",
+      "type": "Coverage",
+      "label": "뇌혈관질환 수술자금(관혈수술)",
+      "properties": {
+        "benefit_name": "뇌혈관질환 수술자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술분류표에서 정한 비관혈수술을 받았을 경우",
+        "payment_amount": "비관혈수술 1회당 30만원",
+        "normalized_code": "cerebrovascular_open_surgery",
+        "category": "CARDIOVASCULAR_TREATMENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.회당주는뇌혈관질환수술보장특약",
+        "source_text": "뇌혈관질환 수술자금 | 보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술분류표에서 정한 수술을 받았을 경우 | 관혈수술 1회당 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_jinsim_TA2.3",
+      "type": "Rider",
+      "label": "회당주는허혈성심장질환수술보장특약(맞춤가입)(갱신형)(TA2.3)",
+      "properties": {
+        "rider_code": "TA2.3",
+        "rider_name": "회당주는허혈성심장질환수술보장특약(맞춤가입)(갱신형)",
+        "rider_type": "무배당[일반고지형]"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "회당주는허혈성심장질환수술보장특약(맞춤가입)(갱신형)(TA2.3) 무배당[일반고지형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_jinsim_intentional_self_harm",
+      "type": "Exclusion",
+      "label": "피보험자 고의 자해",
+      "properties": {
+        "exclusion_type": "고의 자해",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.다",
+        "source_text": "① 피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_jinsim_mental_incapacity",
+      "type": "Exception",
+      "label": "심신상실 상태 자해 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.다",
+        "source_text": "가. 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우 특히 그 결과 사망에 이르게 된 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#hwl_jinsim_suicide_2years",
+      "type": "Exception",
+      "label": "2년 경과 후 자살 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일(부활계약의 경우는 부활청약일)부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.다",
+        "source_text": "나. 계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_jinsim_beneficiary_harm",
+      "type": "Exclusion",
+      "label": "보험수익자 고의 가해",
+      "properties": {
+        "exclusion_type": "수익자 고의",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.다",
+        "source_text": "② 보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_jinsim_policyholder_harm",
+      "type": "Exclusion",
+      "label": "계약자 고의 가해",
+      "properties": {
+        "exclusion_type": "계약자 고의",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.다",
+        "source_text": "③ 계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_jinsim_fraud_occurrence",
+      "type": "Exclusion",
+      "label": "보험금 목적 고의 사고 발생",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.다",
+        "source_text": "① 계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_jinsim_document_forgery",
+      "type": "Exclusion",
+      "label": "서류 허위기재 및 위변조",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2.다",
+        "source_text": "② 계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_jinsim_insurance_price_index",
+      "type": "Calculation",
+      "label": "보험가격지수 계산식",
+      "properties": {
+        "formula_text": "보험료총액을 (참조순보험료 총액 + 평균사업비 총액)으로 나눈 비율",
+        "formula_type": "premium",
+        "applies_to": "보험가격지수 산정",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Product_Category#guarantee",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 진심가득 H 보장보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Dividend_Method#hwl_jinsim_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 진심가득 H 보장보험 무배당은 무배당상품으로서 계약자배당을 하지 않습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_jinsim_cancer_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 고액의 치료비가 요구되는 암, 뇌혈관질환, 허혈성심장질환 등 중대질병을 보장할 뿐만 아니라 다양한 특약 구성으로 개인별 맞춤형 보장이 가능",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Eligibility#hwl_jinsim_age",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "가입연령을 35 세까지 확대함으로 태아부터 사회초년생까지 보장이 가능합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Surrender_Value#hwl_jinsim_partial",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "'해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)'은 보험료 납입기간 중 이 계약이 해지될 경우 표준형 해약환급금 대비 적은 해약환급금을 지급",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_jinsim_premium_waiver",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료납입면제 Y 특약 무배당은 보험기간 중 피보험자가 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)', '뇌혈관질환' 및 '허혈성심장질환'으로 진단이 확정된 경우 해당계약 및 이 특약의 차회 이후의 보험료 납입을 면제",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Premium_Discount#hwl_jinsim_family_love",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "가족사랑 보험료 할인 : 피보험자의 형제자매가 2 명(본인 포함) 이상인 경우 보험료(특약보험료 포함)의 1.0%를 할인하여 영수합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Premium_Discount#hwl_jinsim_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Rider#hwl_jinsim_proxy_claim",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Eligibility#hwl_진심가득h_age",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "최저가입나이 : 0 세(태아포함) 최고가입나이 : 35 세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Eligibility#hwl_진심가득h_amount",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "주계약 보험가입금액 1,000 만원 ~ 2 억원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Eligibility#hwl_진심가득h_health",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "피보험자의 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_jinsim_partial",
+      "target_id": "Calculation#hwl_jinsim_surrender_formula",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_jinsim_family_love",
+      "target_id": "Calculation#hwl_jinsim_family_discount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "피보험자의 형제자매가 2 명(본인 포함) 이상인 경우 보험료(특약보험료 포함)의 1.0%를 할인하여 영수합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_main_jaehae_janghe",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "피보험자에게 보험기간 중 발생한 재해로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_main_jeokrib_death",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "보험기간 중 피보험자가 사망한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_main_jaehae_janghe",
+      "target_id": "Calculation#hwl_main_janghe_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_main_jeokrib_death",
+      "target_id": "Calculation#hwl_main_death_benefit",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_T8.3_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_T10.3_hospital",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 그 치료를 직접적인 목적으로 보험기간 중 4일 이상 입원하였을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_104_10disease_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "피보험자가 보험기간 중 '10대특정질병II'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_104_23disease_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "피보험자가 보험기간 중 '23대특정질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_104_chimek_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "피보험자가 보험기간 중 '치핵'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_acute_myocardial_diag",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "보험기간 중 피보험자가 '급성심근경색증'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_noechulhyul_diag",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "보험기간 중 피보험자가 '뇌출혈'로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_small_disease_skin_cancer",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "보험기간 중 피보험자가 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_cancer_diag",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part1",
+        "source_text": "보험기간 중 피보험자가 보장개시일 이후에 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_sukjokgu_diag",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '수족구'로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_heart_failure_diag",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '심부전'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_cancer_major_treatment_skin_thyroid",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '기타피부암' 또는 '갑상선암'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '기타피부암' 또는 '갑상선암'으로 '암 주요치료'",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_cancer_major_treatment",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암 및 갑상선암 제외)'으로 최초 진단이 확정되고, 최초 진단확정일로부터 이후 매년 진단확정일의 전일까지 '암(기타피부암 및 갑상선암 제외)'으로 '암 주요치료'",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_cancer_outpatient_treatment",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '암(기타피부암, 대장점막내암 제외)'으로 진단이 확정되고, 보험기간 중 그 '암(기타피부암, 대장점막내암 제외)'의 직접적인 치료를 목적으로 통원치료를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_emergency_room",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험기간 중 '응급환자 응급실 내원 진료비 대상자'에 해당하였을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_disaster_fracture",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 재해골절로 진단 확정 되었을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_low_weight_baby_under1.5",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험기간 중 출산한 신생아의 출생 시 체중이 2.0Kg 미만인 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_low_weight_baby_under1.5",
+      "target_id": "Calculation#hwl_low_weight_condition",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "-1.5Kg미만 : 100만원 -1.5Kg이상 2.0Kg미만 : 50만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_severe_meningitis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '중증세균성수막염'으로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_severe_aplastic_anemia",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '중증재생불량성빈혈'로 진단이 확정되었을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_surgery_8disease_exclude",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해(8대특정질환제외)'로 인하여 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_surgery_general",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '수술 보장 대상 질병 및 재해'로 인하여 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_cancer_inpatient_major",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '암(기타피부암, 대장점막내암 제외)'으로 진단이 확정되고, 그 '암(기타피부암, 대장점막내암 제외)'의 직접적인 치료를 목적으로 1일 이상 입원하였을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_first_day_hospital",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_burn_2degree_diag",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험기간 중 재해 또는 재해 이외의 원인으로 인하여 '특정 화상 및 부식Ⅱ'으로 진단확정된 경우(연간 1회를 한도로 함)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_targeted_anticancer_1year_under",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 표적항암약물허가치료를 받았을 경우(단, 최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_targeted_anticancer_1year_under",
+      "target_id": "Calculation#hwl_targeted_anticancer_period",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "1년미만 500만원 1년이상 1,000만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_anticancer_radiation",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암, 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암방사선치료를 받았을 경우(단, 최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_anticancer_radiation",
+      "target_id": "Calculation#hwl_imrt_period",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "2년미만 500만원 2년이상 1,000만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_anticancer_drug",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 암보장개시일 이후에 '암(기타피부암, 갑상선암 제외)'으로 진단 확정되고 보험기간 중 그 직접적인 치료를 목적으로 항암약물치료를 받았을 경우(단, 최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_proton_radiation_2year_under",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험기간 중 암보장개시일 이후에 '암'으로 진단이 확정되고, 보험기간 중 그 직접적인 치료를 목적으로 항암양성자방사선치료를 받았을 경우(단, 최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_ischemic_heart_outpatient",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되고, 보험기간 중 그 '허혈성심장질환'의 치료를 직접적인 목적으로 병원 또는 의원에서 통원치료를 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_brain_thrombolysis_1year_under",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "피보험자가 보험기간 중 '급성뇌경색증'으로 진단 확정되고 보험기간 중 '급성뇌경색증'의 치료를 직접적인 목적으로 혈전용해치료를 받았을 경우(최초 1회한)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_brain_thrombolysis_1year_under",
+      "target_id": "Calculation#hwl_thrombolysis_period",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "1년미만 100만원 1년이상 200만원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Coverage#hwl_cerebrovascular_surgery_open",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술분류표에서 정한 수술을 받았을 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Rider#hwl_jinsim_TA2.3",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "회당주는허혈성심장질환수술보장특약(맞춤가입)(갱신형)(TA2.3)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_jinsim_cancer_diagnosis",
+      "target_id": "Exclusion#hwl_jinsim_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "다음의 한 가지의 경우에 의하여 보험금 지급사유가 발생한 때에는 회사는 보험금을 지급하지 않으며 보험료 납입면제 사유가 발생한 때에는 보험료의 납입을 면제하지 않습니다. ① 피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_jinsim_intentional_self_harm",
+      "target_id": "Exception#hwl_jinsim_mental_incapacity",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "다만, 다음 중 어느 하나에 해당하여 보험금 지급사유가 발생한 때에는 보험금을 지급하며 보험료 납입면제 사유가 발생한 때에는 보험료의 납입을 면제하여 드립니다. 가. 피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_jinsim_intentional_self_harm",
+      "target_id": "Exception#hwl_jinsim_suicide_2years",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "나. 계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_jinsim_cancer_diagnosis",
+      "target_id": "Exclusion#hwl_jinsim_beneficiary_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "② 보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_jinsim_cancer_diagnosis",
+      "target_id": "Exclusion#hwl_jinsim_policyholder_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "③ 계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_jinsim_cancer_diagnosis",
+      "target_id": "Exclusion#hwl_jinsim_fraud_occurrence",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "① 계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_jinsim_cancer_diagnosis",
+      "target_id": "Exclusion#hwl_jinsim_document_forgery",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3_part2",
+        "source_text": "② 계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_jinsim_guarantee",
+      "target_id": "Calculation#hwl_jinsim_insurance_price_index",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해당 상품의 보험료총액을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율을 '보험가격지수'라고 합니다.",
+        "confidence": 1.0
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T15:14:45.776674+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 68,
+    "relation_count": 62,
+    "sections_processed": 4,
+    "api_calls": 5,
+    "total_input_tokens": 144564,
+    "total_output_tokens": 40376
+  }
+}

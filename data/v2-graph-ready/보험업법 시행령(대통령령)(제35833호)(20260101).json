@@ -1,0 +1,1295 @@
+{
+  "document_id": "보험업법 시행령(대통령령)(제35833호)(20260101)",
+  "product_name": "보험업법 시행령(대통령령)(제35833호)(20260101)",
+  "entities": [
+    {
+      "id": "Regulation#보험업법시행령_art1",
+      "type": "Regulation",
+      "label": "목적 규정",
+      "properties": {
+        "article_number": "제1조",
+        "article_title": "목적",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art1",
+        "source_text": "이 영은 「보험업법」에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#생명보험",
+      "type": "Product_Category",
+      "label": "생명보험계약",
+      "properties": {
+        "category": "생명보험",
+        "article_reference": "제1조의2 제2항",
+        "category_type": "설계사구분",
+        "includes": "간단생명보험설계사"
+      },
+      "provenance": {
+        "source_section_id": "art1-2.par2",
+        "source_text": "법 제2조제1호가목에서 \"대통령령으로 정하는 계약\"이란 다음 각 호의 계약을 말한다. 1. 생명보험계약 2. 연금보험계약(퇴직보험계약을 포함한다)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#연금보험",
+      "type": "Product_Category",
+      "label": "연금보험계약",
+      "properties": {
+        "category": "연금보험",
+        "includes": "퇴직보험계약",
+        "article_reference": "제1조의2 제2항"
+      },
+      "provenance": {
+        "source_section_id": "art1-2.par2",
+        "source_text": "2. 연금보험계약(퇴직보험계약을 포함한다)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#손해보험",
+      "type": "Product_Category",
+      "label": "손해보험계약",
+      "properties": {
+        "category": "손해보험",
+        "article_reference": "제1조의2 제3항",
+        "subcategories": [
+          "화재보험",
+          "해상보험",
+          "자동차보험",
+          "보증보험",
+          "재보험",
+          "책임보험",
+          "기술보험",
+          "권리보험",
+          "도난보험",
+          "유리보험",
+          "동물보험",
+          "원자력보험",
+          "비용보험",
+          "날씨보험"
+        ],
+        "category_type": "설계사구분",
+        "includes": "간단손해보험설계사"
+      },
+      "provenance": {
+        "source_section_id": "art1-2.par3",
+        "source_text": "법 제2조제1호나목에서 \"대통령령으로 정하는 계약\"이란 다음 각 호의 계약을 말한다. 1. 화재보험계약 2. 해상보험계약(항공ㆍ운송보험계약을 포함한다) 3. 자동차보험계약 4. 보증보험계약 5. 재보험계약 6. 책임보험계약 7. 기술보험계약 8. 권리보험계약 9. 도난보험계약 10. 유리보험계약 11. 동물보험계약 12. 원자력보험계약 13. 비용보험계약 14. 날씨보험계약",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#상해질병보험",
+      "type": "Product_Category",
+      "label": "상해질병보험계약",
+      "properties": {
+        "category": "상해질병보험",
+        "article_reference": "제1조의2 제4항",
+        "subcategories": [
+          "상해보험",
+          "질병보험",
+          "간병보험"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art1-2.par4",
+        "source_text": "법 제2조제1호다목에서 \"대통령령으로 정하는 계약\"이란 다음 각 호의 계약을 말한다. 1. 상해보험계약 2. 질병보험계약 3. 간병보험계약",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art2",
+      "type": "Regulation",
+      "label": "신용공여 범위 정의",
+      "properties": {
+        "article_number": "제2조",
+        "article_title": "신용공여의 범위",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art2",
+        "source_text": "법 제2조제13호에 따른 신용공여의 범위는 다음 각 호의 것으로서 그 구체적인 내용은 금융위원회가 정하여 고시한다. 1. 대출 2. 어음 및 채권의 매입 3. 그 밖에 거래 상대방의 지급불능 시 이로 인하여 보험회사에 손실을 초래할 수 있는 거래",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업법시행령_art2_exception",
+      "type": "Exception",
+      "label": "신용공여 범위 예외",
+      "properties": {
+        "article_number": "제2조",
+        "exception_type": "신용공여 범위 제외"
+      },
+      "provenance": {
+        "source_section_id": "art2.par2",
+        "source_text": "금융위원회는 제1항에도 불구하고 다음 각 호의 어느 하나에 해당하는 거래를 신용공여의 범위에 포함시키지 아니할 수 있다. 1. 보험회사에 손실을 초래할 가능성이 적은 것으로 판단되는 거래 2. 금융시장에 미치는 영향 등 해당 거래의 상황에 비추어 신용공여의 범위에 포함시키지 아니하는 것이 타당하다고 판단되는 거래",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art3",
+      "type": "Regulation",
+      "label": "총자산 범위 정의",
+      "properties": {
+        "article_number": "제3조",
+        "article_title": "총자산의 범위",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art3",
+        "source_text": "법 제2조제14호에서 \"영업권 등 대통령령으로 정하는 자산\"이란 영업권과 법 제108조제1항제2호 및 제3호에 따른 특별계정 자산(제50조제1항의 특별계정 자산은 제외한다)을 말한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art4",
+      "type": "Regulation",
+      "label": "자기자본 범위 정의",
+      "properties": {
+        "article_number": "제4조",
+        "article_title": "자기자본의 범위",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art4",
+        "source_text": "법 제2조제15호에 따른 자기자본을 산출할 때 합산하여야 할 항목 및 빼야 할 항목은 다음 각 호의 기준에 따라 금융위원회가 정하여 고시한다. 1. 합산하여야 할 항목: 납입자본금, 자본잉여금 및 이익잉여금 등 보험회사의 자본 충실에 기여하거나 영업활동에서 발생하는 손실을 보전할 수 있는 것",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art5",
+      "type": "Regulation",
+      "label": "동일차주 범위 정의",
+      "properties": {
+        "article_number": "제5조",
+        "article_title": "동일차주의 범위",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art5",
+        "source_text": "법 제2조제16호에서 \"대통령령으로 정하는 자\"란 「독점규제 및 공정거래에 관한 법률」 제2조제11호에 따른 기업집단에 속하는 회사를 말한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art6-2",
+      "type": "Regulation",
+      "label": "전문보험계약자 범위 정의",
+      "properties": {
+        "article_number": "제6조의2",
+        "article_title": "전문보험계약자의 범위 등",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art6-2",
+        "source_text": "법 제2조제19호 각 목 외의 부분 단서에서 \"대통령령으로 정하는 자\"란 다음 각 호의 자를 말한다. 1. 지방자치단체 2. 주권상장법인 3. 제2항제15호에 해당하는 자 4. 제3항제15호, 제16호 및 제18호에 해당하는 자",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art7",
+      "type": "Regulation",
+      "label": "외국보험회사 계약 허용",
+      "properties": {
+        "article_number": "제7조",
+        "article_title": "보험계약의 체결",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art7",
+        "source_text": "법 제3조 단서에 따라 보험회사가 아닌 자와 보험계약을 체결할 수 있는 경우는 다음 각 호의 어느 하나에 해당하는 경우로 한다. 1. 외국보험회사와 생명보험계약, 수출적하보험계약, 수입적하보험계약, 항공보험계약, 여행보험계약, 선박보험계약, 장기상해보험계약 또는 재보험계약을 체결하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업법시행령_art7_exception",
+      "type": "Exception",
+      "label": "비보험회사 계약 허용 예외",
+      "properties": {
+        "article_number": "제7조",
+        "exception_type": "외국보험회사 계약 허용",
+        "conditions": [
+          "국내 보험회사 3곳 이상 가입 거절",
+          "국내 미취급 보험종목",
+          "외국 체결 후 국내 지속",
+          "금융위원회 승인"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art7.par1",
+        "source_text": "2. 제1호 외의 경우로서 대한민국에서 취급되는 보험종목에 관하여 셋 이상의 보험회사로부터 가입이 거절되어 외국보험회사와 보험계약을 체결하는 경우 3. 대한민국에서 취급되지 아니하는 보험종목에 관하여 외국보험회사와 보험계약을 체결하는 경우 4. 외국에서 보험계약을 체결하고, 보험기간이 지나기 전에 대한민국에서 그 계약을 지속시키는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art8",
+      "type": "Regulation",
+      "label": "보험종목 정의",
+      "properties": {
+        "article_number": "제8조",
+        "article_title": "보험종목 등",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art8",
+        "source_text": "① 법 제4조제1항제2호바목에서 \"대통령령으로 정하는 보험종목\"이란 다음 각 호의 어느 하나에 해당하는 보험종목을 말한다. 1. 책임보험 2. 기술보험 3. 권리보험 4. 도난ㆍ유리ㆍ동물ㆍ원자력 보험 8. 비용보험 9. 날씨보험",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#책임보험",
+      "type": "Product_Category",
+      "label": "책임보험",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "art8.par1",
+        "source_text": "1. 책임보험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#기술보험",
+      "type": "Product_Category",
+      "label": "기술보험",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "art8.par1",
+        "source_text": "2. 기술보험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#권리보험",
+      "type": "Product_Category",
+      "label": "권리보험",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "art8.par1",
+        "source_text": "3. 권리보험",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art9",
+      "type": "Regulation",
+      "label": "허가신청 요건",
+      "properties": {
+        "article_number": "제9조",
+        "article_title": "허가신청",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art9",
+        "source_text": "① 법 제5조에 따라 보험업의 허가를 신청하는 자는 금융위원회에 제출하는 신청서에 다음 각 호의 사항을 적어야 한다. 1. 상호 2. 주된 사무소의 소재지 3. 대표자 및 임원의 성명ㆍ주민등록번호 및 주소 4. 자본금 또는 기금에 관한 사항 5. 시설, 설비 및 인력에 관한 사항 6. 허가를 받으려는 보험종목",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업법시행령_art9_requirement",
+      "type": "Eligibility",
+      "label": "보험업 허가신청 자격요건",
+      "properties": {
+        "requirements": [
+          "상호",
+          "주된 사무소의 소재지",
+          "대표자 및 임원의 성명ㆍ주민등록번호 및 주소",
+          "자본금 또는 기금에 관한 사항",
+          "시설, 설비 및 인력에 관한 사항",
+          "허가를 받으려는 보험종목"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art9.par1",
+        "source_text": "법 제5조에 따라 보험업의 허가를 신청하는 자는 금융위원회에 제출하는 신청서에 다음 각 호의 사항을 적어야 한다. 1. 상호 2. 주된 사무소의 소재지 3. 대표자 및 임원의 성명ㆍ주민등록번호 및 주소 4. 자본금 또는 기금에 관한 사항 5. 시설, 설비 및 인력에 관한 사항 6. 허가를 받으려는 보험종목",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art10",
+      "type": "Regulation",
+      "label": "허가의 세부 요건",
+      "properties": {
+        "article_number": "제10조",
+        "article_title": "허가의 세부 요건 등",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art10",
+        "source_text": "① 법 제6조제1항제2호에 따라 보험업의 허가를 받으려는 자가 갖추어야 하는 전문 인력 및 물적 시설의 세부 요건은 다음 각 호와 같다. 1. 임원이 「금융회사의 지배구조에 관한 법률」 제5조제1항에 따른 임원의 결격사유에 해당되지 아니하여야 하며, 허가를 받으려는 보험업에 관한 전문성과 건전성을 갖춘 보험 전문 인력과 보험회사의 업무 수행을 위한 전산요원 등 필요한 인력을 갖출 것",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업법시행령_art10_requirement",
+      "type": "Eligibility",
+      "label": "전문인력 및 물적시설 요건",
+      "properties": {
+        "requirements": [
+          "임원 결격사유 해당 안됨",
+          "보험 전문 인력 보유",
+          "전산요원 등 필요 인력 보유",
+          "전산설비 구축",
+          "사무실 등 공간 확보"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art10.par1",
+        "source_text": "법 제6조제1항제2호에 따라 보험업의 허가를 받으려는 자가 갖추어야 하는 전문 인력 및 물적 시설의 세부 요건은 다음 각 호와 같다. 1. 임원이 「금융회사의 지배구조에 관한 법률」 제5조제1항에 따른 임원의 결격사유에 해당되지 아니하여야 하며, 허가를 받으려는 보험업에 관한 전문성과 건전성을 갖춘 보험 전문 인력과 보험회사의 업무 수행을 위한 전산요원 등 필요한 인력을 갖출 것 2. 허가를 받으려는 보험업을 경영하는 데에 필요한 전산설비를 구축하고 사무실 등 공간을 충분히 확보할 것",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#보험업법시행령_art10_exception",
+      "type": "Exception",
+      "label": "업무 외부위탁 예외",
+      "properties": {
+        "exception_conditions": [
+          "손해사정업무 위탁",
+          "보험계약 심사를 위한 조사업무 위탁",
+          "보험금 지급심사를 위한 보험사고 조사업무 위탁",
+          "전산설비의 개발ㆍ운영 및 유지ㆍ보수에 관한 업무 위탁",
+          "정보처리 업무 위탁"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art10.par2",
+        "source_text": "보험업의 허가를 받으려는 자가 다음 각 호의 어느 하나에 해당하는 업무를 외부에 위탁하는 경우에는 법 제6조제1항제2호 후단에 따라 그 업무와 관련된 전문 인력과 물적 시설을 갖춘 것으로 본다. 1. 손해사정업무 2. 보험계약 심사를 위한 조사업무 3. 보험금 지급심사를 위한 보험사고 조사업무 4. 전산설비의 개발ㆍ운영 및 유지ㆍ보수에 관한 업무 5. 정보처리 업무",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art12",
+      "type": "Regulation",
+      "label": "보험종목별 자본금 기준",
+      "properties": {
+        "article_number": "제12조",
+        "article_title": "보험종목별 자본금 또는 기금",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art12",
+        "source_text": "① 법 제9조제1항 단서에 따라 보험종목의 일부만을 취급하려는 보험회사가 납입하여야 하는 보험종목별 자본금 또는 기금의 액수는 다음 각 호의 구분에 따른다. 1. 생명보험: 200억원 2. 연금보험(퇴직보험을 포함한다): 200억원 3. 화재보험: 100억원 4. 해상보험(항공ㆍ운송보험을 포함한다): 150억원 5. 자동차보험: 200억원 6. 보증보험: 300억원 7. 재보험: 300억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art13",
+      "type": "Regulation",
+      "label": "통신판매전문보험회사",
+      "properties": {
+        "article_number": "제13조",
+        "article_title": "통신판매전문보험회사",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art13",
+        "source_text": "① 법 제9조제2항제1호에서 \"대통령령으로 정하는 바에 따라 모집을 하는 보험회사\"란 총보험계약건수 및 수입보험료의 100분의 90 이상을 전화, 우편, 컴퓨터통신 등 통신수단을 이용하여 모집하는 보험회사(이하 \"통신판매전문보험회사\"라 한다)를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#보험업법시행령_art13_requirement",
+      "type": "Eligibility",
+      "label": "통신판매전문보험회사 요건",
+      "properties": {
+        "requirements": [
+          "총보험계약건수 및 수입보험료의 100분의 90 이상을 통신수단으로 모집"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art13.par1",
+        "source_text": "총보험계약건수 및 수입보험료의 100분의 90 이상을 전화, 우편, 컴퓨터통신 등 통신수단을 이용하여 모집하는 보험회사",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art13_2",
+      "type": "Regulation",
+      "label": "소액단기전문보험회사",
+      "properties": {
+        "article_number": "제13조의2",
+        "article_title": "소액단기전문보험회사",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art13_2",
+        "source_text": "① 법 제9조제2항제2호에서 \"모집할 수 있는 보험상품의 종류, 보험기간, 보험금의 상한액, 연간 총보험료 상한액 등 대통령령으로 정하는 기준\"이란 다음 각 호의 구분에 따른 기준을 말한다. 1. 모집할 수 있는 보험상품의 종류 2. 보험기간: 2년 이내의 범위에서 금융위원회가 정하여 고시하는 기간 3. 보험금의 상한액: 5천만원 4. 연간 총보험료 상한액: 500억원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art14",
+      "type": "Regulation",
+      "label": "외국보험회사 영업기금",
+      "properties": {
+        "article_number": "제14조",
+        "article_title": "외국보험회사의 영업기금",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art14",
+        "source_text": "법 제9조제3항에 따른 외국보험회사의 영업기금은 30억원 이상으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art15",
+      "type": "Regulation",
+      "label": "겸영 가능 보험종목",
+      "properties": {
+        "article_number": "제15조",
+        "article_title": "겸영 가능 보험종목",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art15",
+        "source_text": "① 법 제10조제2호에서 \"대통령령으로 정하는 보험종목\"이란 다음 각 호의 보험을 말한다. 1. 「소득세법」 제20조의3제1항제2호 각 목 외의 부분에 따른 연금저축계좌를 설정하는 계약 2. 「근로자퇴직급여 보장법」 제29조제2항에 따른 보험계약 및 법률 제10967호 근로자퇴직급여 보장법 전부개정법률 부칙 제2조제1항 본문에 따른 퇴직보험계약",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업법시행령_art15_prohibition",
+      "type": "Exclusion",
+      "label": "겸영 제한 대상",
+      "properties": {
+        "prohibited_entities": [
+          "손해보험업의 보험종목 일부만을 취급하는 보험회사",
+          "제3보험업만을 경영하는 보험회사"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art15.par1",
+        "source_text": "다만, 법 제4조제1항제2호에 따른 손해보험업의 보험종목(재보험과 보증보험은 제외한다. 이하 이 조에서 같다) 일부만을 취급하는 보험회사와 제3보험업만을 경영하는 보험회사는 겸영할 수 없다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art16",
+      "type": "Regulation",
+      "label": "겸영업무의 범위",
+      "properties": {
+        "article_number": "제16조",
+        "article_title": "겸영업무의 범위",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art16",
+        "source_text": "① 법 제11조제1호에서 \"대통령령으로 정하는 금융 관련 법령에서 정하고 있는 금융업무\"란 다음 각 호의 어느 하나에 해당하는 업무를 말한다. 1. 「자산유동화에 관한 법률」에 따른 유동화자산의 관리업무 3. 「한국주택금융공사법」에 따른 채권유동화자산의 관리업무 4. 「전자금융거래법」 제28조제2항제1호에 따른 전자자금이체업무 5. 「신용정보의 이용 및 보호에 관한 법률」에 따른 본인신용정보관리업",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art17",
+      "type": "Regulation",
+      "label": "겸영업무ㆍ부수업무 회계처리",
+      "properties": {
+        "article_number": "제17조",
+        "article_title": "겸영업무ㆍ부수업무의 회계처리",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art17",
+        "source_text": "① 법 제11조의3에 따라 보험회사가 제16조제1항제1호부터 제3호까지, 제2항제2호부터 제4호까지의 업무 및 부수업무(직전 사업연도 매출액이 해당 보험회사 수입보험료의 1천분의 1 또는 10억원 중 많은 금액에 해당하는 금액을 초과하는 업무만 해당한다)를 하는 경우에는 해당 업무에 속하는 자산ㆍ부채 및 수익ㆍ비용을 보험업과 구분하여 회계처리하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art18",
+      "type": "Regulation",
+      "label": "행정정보의 공동이용",
+      "properties": {
+        "article_number": "제18조",
+        "article_title": "행정정보의 공동이용",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art18",
+        "source_text": "① 보험회사는 법 제2조제2호의 업무를 수행하기 위해 필요한 경우 「전자정부법」 제36조제2항에 따른 행정정보의 공동이용을 통해 별표 2에 따른 행정정보를 확인할 수 있다. ② 보험협회는 제84조제2항제6호의 업무를 수행하기 위해 필요한 경우 「전자정부법」 제36조제2항에 따른 행정정보의 공동이용을 통해 다음 각 호의 행정정보를 확인할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art23-2",
+      "type": "Regulation",
+      "label": "자본감소의 정의",
+      "properties": {
+        "article_number": "제23조의2",
+        "article_title": "자본감소",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art23-2",
+        "source_text": "법 제18조제2항에서 \"대통령령으로 정하는 자본감소\"란 주식 금액 또는 주식 수의 감소에 따른 자본금의 실질적 감소를 말한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art25",
+      "type": "Regulation",
+      "label": "상호회사 설립등기 첨부서류",
+      "properties": {
+        "article_number": "제25조",
+        "article_title": "설립등기신청서의 첨부서류",
+        "regulation_type": "절차"
+      },
+      "provenance": {
+        "source_section_id": "art25",
+        "source_text": "법 제40조에 따라 상호회사의 설립등기를 하려는 경우에는 등기신청서에 다음 각 호의 서류를 첨부하여야 한다. 1. 정관 2. 사원명부 3. 사원을 모집하는 경우에는 각 사원의 입사청약서 4. 이사, 감사 또는 검사인의 조사보고서 및 그 부속서류 5. 창립총회의 의사록 6. 대표이사에 관한 이사회의 의사록",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업법시행령_art25_requirement",
+      "type": "Eligibility",
+      "label": "상호회사 설립등기 요건",
+      "properties": {
+        "requirement_type": "서류첨부",
+        "applicable_entity": "상호회사"
+      },
+      "provenance": {
+        "source_section_id": "art25",
+        "source_text": "법 제40조에 따라 상호회사의 설립등기를 하려는 경우에는 등기신청서에 다음 각 호의 서류를 첨부하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art25-2",
+      "type": "Regulation",
+      "label": "외국보험회사국내지점 자산보유 의무",
+      "properties": {
+        "article_number": "제25조의2",
+        "article_title": "외국보험회사국내지점의 자산 보유 등",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art25-2",
+        "source_text": "법 제75조제1항에 따라 외국보험회사국내지점은 다음 각 호의 어느 하나에 해당하는 자산을 대한민국에서 보유하여야 한다. 1. 현금 또는 국내 금융기관에 대한 예금, 적금 및 부금 2. 국내에 예탁하거나 보관된 증권 3. 국내에 있는 자에 대한 대여금, 그 밖의 채권 4. 국내에 있는 고정자산",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업법시행령_art25-2_requirement",
+      "type": "Eligibility",
+      "label": "외국보험회사국내지점 자산보유 요건",
+      "properties": {
+        "requirement_type": "자산보유",
+        "applicable_entity": "외국보험회사국내지점"
+      },
+      "provenance": {
+        "source_section_id": "art25-2",
+        "source_text": "법 제75조제1항에 따라 외국보험회사국내지점은 다음 각 호의 어느 하나에 해당하는 자산을 대한민국에서 보유하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art26",
+      "type": "Regulation",
+      "label": "모집할 수 있는 자",
+      "properties": {
+        "article_number": "제26조",
+        "article_title": "모집할 수 있는 자",
+        "regulation_type": "허가"
+      },
+      "provenance": {
+        "source_section_id": "art26",
+        "source_text": "법 제83조제2항에 따라 법 제91조제2항에 따른 금융기관보험대리점등 중 다음 각 호의 어느 하나에 해당하는 자는 소속 임직원이 아닌 자로 하여금 모집을 하게 하거나, 보험계약 체결과 관련한 상담 또는 소개를 하게 하고 상담 또는 소개의 대가를 지급할 수 있다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#보험업법시행령_art26_모집자격",
+      "type": "Eligibility",
+      "label": "모집자 자격요건",
+      "properties": {
+        "requirement_type": "모집자격",
+        "applicable_entities": [
+          "신용카드업자",
+          "조합"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art26.par1",
+        "source_text": "1. 제40조제1항제3호에 따른 신용카드업자 2. 제40조제1항제4호에 따른 조합(「농업협동조합법」 제161조의12에 따라 설립된 농협생명보험 또는 농협손해보험이 판매하는 보험상품을 모집하는 경우로 한정한다)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art27",
+      "type": "Regulation",
+      "label": "보험설계사의 구분 및 등록요건",
+      "properties": {
+        "article_number": "제27조",
+        "article_title": "보험설계사의 구분 및 등록요건",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art27",
+        "source_text": "법 제84조에 따른 보험설계사는 다음 각 호와 같이 구분한다. 1. 생명보험설계사 2. 손해보험설계사 3. 제3보험설계사",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#제3보험설계사",
+      "type": "Product_Category",
+      "label": "제3보험설계사",
+      "properties": {
+        "category_type": "설계사구분",
+        "includes": "간단제3보험설계사"
+      },
+      "provenance": {
+        "source_section_id": "art27.par1.num3",
+        "source_text": "제3보험설계사[제30조제1항제3호에 따른 간단제3보험대리점 소속의 보험설계사(이하 \"간단제3보험설계사\"라 한다)를 포함한다]",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업법시행령_art27_등록결격사유",
+      "type": "Exclusion",
+      "label": "보험설계사 등록결격사유",
+      "properties": {
+        "exclusion_type": "등록결격",
+        "excluded_persons": [
+          "직무정지 이상 조치를 받은 임원",
+          "정직 이상 조치를 받은 직원",
+          "제재 받기 전 사임·사직한 자"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art27.par3",
+        "source_text": "법 제84조제2항제7호에서 \"대통령령으로 정하는 자\"란 다음 각 호의 어느 하나에 해당하는 사람을 말한다. 1. 직무정지 이상의 조치를 받은 임원 2. 정직 이상의 조치를 받은 직원 3. 제1호나 제2호에 따른 제재를 받기 전에 사임 또는 사직한 사람",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art28",
+      "type": "Regulation",
+      "label": "보험설계사의 영업범위",
+      "properties": {
+        "article_number": "제29조",
+        "article_title": "보험설계사의 교차모집",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art28",
+        "source_text": "보험설계사의 영업범위는 다음 각 호의 구분에 따른 보험종목으로 한다. 1. 생명보험설계사: 법 제4조제1항제1호의 보험종목 2. 손해보험설계사: 법 제4조제1항제2호의 보험종목 3. 제3보험설계사: 법 제4조제1항제3호의 보험종목",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#보험업법시행령_art28_간단보험설계사",
+      "type": "Exception",
+      "label": "간단보험설계사 영업범위 예외",
+      "properties": {
+        "exception_type": "영업범위제한",
+        "applicable_to": "간단보험설계사"
+      },
+      "provenance": {
+        "source_section_id": "art28.par1",
+        "source_text": "다만, 간단생명보험설계사, 간단손해보험설계사 및 간단제3보험설계사(이하 \"간단보험설계사\"라 한다)의 영업범위는 제31조제1항 단서에 따른 간단보험대리점이 영위하는 본업과의 관련성 등을 고려하여 금융위원회가 정하여 고시하는 보험종목으로 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#보험업법시행령_art29_보험회사금지행위",
+      "type": "Exclusion",
+      "label": "교차모집 관련 보험회사 금지행위",
+      "properties": {
+        "exclusion_type": "금지행위",
+        "prohibited_acts": [
+          "정보제공",
+          "편향모집",
+          "추가대가요구"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art29.par3",
+        "source_text": "법 제85조제4항에 따라 교차모집보험설계사의 소속 보험회사 또는 교차모집을 위탁한 보험회사는 다음 각 호의 행위를 하여서는 아니 된다. 1. 교차모집보험설계사에게 자사 소속의 보험설계사로 전환하도록 권유하는 행위 2. 교차모집보험설계사에게 자사를 위하여 모집하는 경우 보험회사가 정한 수수료ㆍ수당 외에 추가로 대가를 지급하기로 약속하거나 이를 지급하는 행위",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art29의2",
+      "type": "Regulation",
+      "label": "보험설계사 등의 교육",
+      "properties": {
+        "article_number": "제29조의2",
+        "article_title": "보험설계사 등의 교육",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art29의2",
+        "source_text": "법 제85조의2제1항에 따라 보험회사, 보험대리점 및 보험중개사는 소속 보험설계사에게 법 제84조에 따라 최초로 등록한 날을 기준으로 2년마다(매 2년이 된 날부터 6개월 이내를 말한다) 별표 4 제1호 및 제3호의 기준에 따라 교육을 해야 한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art29의2_불완전판매방지교육",
+      "type": "Regulation",
+      "label": "불완전판매방지교육",
+      "properties": {
+        "article_number": "제29조의2",
+        "article_title": "불완전판매방지교육",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art29의2.par3",
+        "source_text": "보험회사등은 전년도 불완전판매 건수 및 비율이 금융위원회가 정하여 고시하는 기준 이상인 소속 보험설계사에게 제1항에 따른 교육과는 별도로 해당 사업연도에 별표 4 제2호의 기준에 따라 불완전 판매를 방지하기 위한 교육을 해야 한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#보험업법시행령_art29의3",
+      "type": "Regulation",
+      "label": "고객응대직원의 보호를 위한 조치",
+      "properties": {
+        "article_number": "제29조의3",
+        "article_title": "고객응대직원의 보호를 위한 조치",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art29의3",
+        "source_text": "법 제85조의4제1항제4호에서 \"법적 조치 등 대통령령으로 정하는 조치\"란 다음 각 호의 조치를 말한다. 1. 고객의 폭언이나 성희롱, 폭행 등이 관계 법률의 형사처벌규정에 위반된다고 판단되고 그 행위로 피해를 입은 직원이 요청하는 경우: 관할 수사기관 등에 고발",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#보험업법시행령_art29의3_직원보호",
+      "type": "Coverage",
+      "label": "고객응대직원 보호조치",
+      "properties": {
+        "protection_scope": "고객 폭언·성희롱·폭행으로부터 직원 보호",
+        "measures": [
+          "고발",
+          "조치요구",
+          "행정지원",
+          "교육실시"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art29의3",
+        "source_text": "1. 고객의 폭언이나 성희롱, 폭행 등이 관계 법률의 형사처벌규정에 위반된다고 판단되고 그 행위로 피해를 입은 직원이 요청하는 경우: 관할 수사기관 등에 고발 2. 고객의 폭언등이 관계 법률의 형사처벌규정에 위반되지는 아니하나 그 행위로 피해를 입은 직원의 피해정도 및 그 직원과 다른 직원에 대한 장래 피해발생 가능성 등을 고려하여 필요하다고 판단되는 경우: 관할 수사기관 등에 필요한 조치 요구",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Regulation#보험업법시행령_art1",
+      "target_id": "Product_Category#생명보험",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "이 영은 「보험업법」에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art1",
+      "target_id": "Product_Category#연금보험",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "이 영은 「보험업법」에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art1",
+      "target_id": "Product_Category#손해보험",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "이 영은 「보험업법」에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art1",
+      "target_id": "Product_Category#상해질병보험",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "이 영은 「보험업법」에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art2",
+      "target_id": "Exception#보험업법시행령_art2_exception",
+      "type": "EXCEPTIONALLY_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "금융위원회는 제1항에도 불구하고 다음 각 호의 어느 하나에 해당하는 거래를 신용공여의 범위에 포함시키지 아니할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art7",
+      "target_id": "Exception#보험업법시행령_art7_exception",
+      "type": "EXCEPTIONALLY_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "법 제3조 단서에 따라 보험회사가 아닌 자와 보험계약을 체결할 수 있는 경우는 다음 각 호의 어느 하나에 해당하는 경우로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art8",
+      "target_id": "Product_Category#책임보험",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제4조제1항제2호바목에서 \"대통령령으로 정하는 보험종목\"이란 다음 각 호의 어느 하나에 해당하는 보험종목을 말한다. 1. 책임보험",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art8",
+      "target_id": "Product_Category#기술보험",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제4조제1항제2호바목에서 \"대통령령으로 정하는 보험종목\"이란 다음 각 호의 어느 하나에 해당하는 보험종목을 말한다. 2. 기술보험",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art8",
+      "target_id": "Product_Category#권리보험",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제4조제1항제2호바목에서 \"대통령령으로 정하는 보험종목\"이란 다음 각 호의 어느 하나에 해당하는 보험종목을 말한다. 3. 권리보험",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art9",
+      "target_id": "Eligibility#보험업법시행령_art9_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제5조에 따라 보험업의 허가를 신청하는 자는 금융위원회에 제출하는 신청서에 다음 각 호의 사항을 적어야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art10",
+      "target_id": "Eligibility#보험업법시행령_art10_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제6조제1항제2호에 따라 보험업의 허가를 받으려는 자가 갖추어야 하는 전문 인력 및 물적 시설의 세부 요건은 다음 각 호와 같다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art10",
+      "target_id": "Exception#보험업법시행령_art10_exception",
+      "type": "EXCEPTIONALLY_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보험업의 허가를 받으려는 자가 다음 각 호의 어느 하나에 해당하는 업무를 외부에 위탁하는 경우에는 법 제6조제1항제2호 후단에 따라 그 업무와 관련된 전문 인력과 물적 시설을 갖춘 것으로 본다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art13",
+      "target_id": "Eligibility#보험업법시행령_art13_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제9조제2항제1호에서 \"대통령령으로 정하는 바에 따라 모집을 하는 보험회사\"란 총보험계약건수 및 수입보험료의 100분의 90 이상을 전화, 우편, 컴퓨터통신 등 통신수단을 이용하여 모집하는 보험회사를 말한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art15",
+      "target_id": "Exclusion#보험업법시행령_art15_prohibition",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "다만, 법 제4조제1항제2호에 따른 손해보험업의 보험종목(재보험과 보증보험은 제외한다. 이하 이 조에서 같다) 일부만을 취급하는 보험회사와 제3보험업만을 경영하는 보험회사는 겸영할 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art25",
+      "target_id": "Eligibility#보험업법시행령_art25_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "법 제40조에 따라 상호회사의 설립등기를 하려는 경우에는 등기신청서에 다음 각 호의 서류를 첨부하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art25-2",
+      "target_id": "Eligibility#보험업법시행령_art25-2_requirement",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "법 제75조제1항에 따라 외국보험회사국내지점은 다음 각 호의 어느 하나에 해당하는 자산을 대한민국에서 보유하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art26",
+      "target_id": "Eligibility#보험업법시행령_art26_모집자격",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "법 제83조제2항에 따라 법 제91조제2항에 따른 금융기관보험대리점등 중 다음 각 호의 어느 하나에 해당하는 자는 소속 임직원이 아닌 자로 하여금 모집을 하게 하거나, 보험계약 체결과 관련한 상담 또는 소개를 하게 하고 상담 또는 소개의 대가를 지급할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art27",
+      "target_id": "Product_Category#제3보험설계사",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "법 제84조에 따른 보험설계사는 다음 각 호와 같이 구분한다. 3. 제3보험설계사",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art27",
+      "target_id": "Exclusion#보험업법시행령_art27_등록결격사유",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "법 제84조제2항제7호에서 \"대통령령으로 정하는 자\"란 다음 각 호의 어느 하나에 해당하는 사람을 말한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art28",
+      "target_id": "Exception#보험업법시행령_art28_간단보험설계사",
+      "type": "EXCEPTIONALLY_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "다만, 간단생명보험설계사, 간단손해보험설계사 및 간단제3보험설계사의 영업범위는 제31조제1항 단서에 따른 간단보험대리점이 영위하는 본업과의 관련성 등을 고려하여 금융위원회가 정하여 고시하는 보험종목으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art29의3",
+      "target_id": "Coverage#보험업법시행령_art29의3_직원보호",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "법 제85조의4제1항제4호에서 \"법적 조치 등 대통령령으로 정하는 조치\"란 다음 각 호의 조치를 말한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art2",
+      "target_id": "Regulation#보험업법시행령_art3",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "법 제2조제13호에 따른 신용공여의 범위는 다음 각 호의 것으로서 그 구체적인 내용은 금융위원회가 정하여 고시한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art3",
+      "target_id": "Regulation#보험업법시행령_art4",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "법 제2조제14호에서 \"영업권 등 대통령령으로 정하는 자산\"이란 영업권과 법 제108조제1항제2호 및 제3호에 따른 특별계정 자산을 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art4",
+      "target_id": "Regulation#보험업법시행령_art5",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "법 제2조제15호에 따른 자기자본을 산출할 때 합산하여야 할 항목 및 빼야 할 항목은 다음 각 호의 기준에 따라 금융위원회가 정하여 고시한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art5",
+      "target_id": "Regulation#보험업법시행령_art6-2",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "법 제2조제16호에서 \"대통령령으로 정하는 자\"란 「독점규제 및 공정거래에 관한 법률」 제2조제11호에 따른 기업집단에 속하는 회사를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art6-2",
+      "target_id": "Regulation#보험업법시행령_art7",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "법 제2조제19호 각 목 외의 부분 단서에서 \"대통령령으로 정하는 자\"란 다음 각 호의 자를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art7",
+      "target_id": "Regulation#보험업법시행령_art8",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "법 제3조 단서에 따라 보험회사가 아닌 자와 보험계약을 체결할 수 있는 경우는 다음 각 호의 어느 하나에 해당하는 경우로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art8",
+      "target_id": "Regulation#보험업법시행령_art9",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제4조제1항 각 호에 따른 보험종목의 구체적 구분기준은 금융위원회가 정하여 고시한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art9",
+      "target_id": "Regulation#보험업법시행령_art10",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제5조에 따라 보험업의 허가를 신청하는 자는 금융위원회에 제출하는 신청서에 다음 각 호의 사항을 적어야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art10",
+      "target_id": "Regulation#보험업법시행령_art12",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제6조제1항제2호에 따라 보험업의 허가를 받으려는 자가 갖추어야 하는 전문 인력 및 물적 시설의 세부 요건은 다음 각 호와 같다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art12",
+      "target_id": "Regulation#보험업법시행령_art13",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제9조제1항 단서에 따라 보험종목의 일부만을 취급하려는 보험회사가 납입하여야 하는 보험종목별 자본금 또는 기금의 액수는 다음 각 호의 구분에 따른다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art13",
+      "target_id": "Regulation#보험업법시행령_art13_2",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제9조제2항제1호에서 \"대통령령으로 정하는 바에 따라 모집을 하는 보험회사\"란 총보험계약건수 및 수입보험료의 100분의 90 이상을 전화, 우편, 컴퓨터통신 등 통신수단을 이용하여 모집하는 보험회사를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art13_2",
+      "target_id": "Regulation#보험업법시행령_art14",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제9조제2항제2호에서 \"모집할 수 있는 보험상품의 종류, 보험기간, 보험금의 상한액, 연간 총보험료 상한액 등 대통령령으로 정하는 기준\"이란 다음 각 호의 구분에 따른 기준을 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art14",
+      "target_id": "Regulation#보험업법시행령_art15",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제9조제3항에 따른 외국보험회사의 영업기금은 30억원 이상으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art15",
+      "target_id": "Regulation#보험업법시행령_art16",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제10조제2호에서 \"대통령령으로 정하는 보험종목\"이란 다음 각 호의 보험을 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art16",
+      "target_id": "Regulation#보험업법시행령_art17",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제11조제1호에서 \"대통령령으로 정하는 금융 관련 법령에서 정하고 있는 금융업무\"란 다음 각 호의 어느 하나에 해당하는 업무를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art17",
+      "target_id": "Regulation#보험업법시행령_art18",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "법 제11조의3에 따라 보험회사가 제16조제1항제1호부터 제3호까지, 제2항제2호부터 제4호까지의 업무 및 부수업무를 하는 경우에는 해당 업무에 속하는 자산·부채 및 수익·비용을 보험업과 구분하여 회계처리하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art18",
+      "target_id": "Regulation#보험업법시행령_art23-2",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보험회사는 법 제2조제2호의 업무를 수행하기 위해 필요한 경우 「전자정부법」 제36조제2항에 따른 행정정보의 공동이용을 통해 별표 2에 따른 행정정보를 확인할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art23-2",
+      "target_id": "Regulation#보험업법시행령_art25",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "법 제18조제2항에서 \"대통령령으로 정하는 자본감소\"란 주식 금액 또는 주식 수의 감소에 따른 자본금의 실질적 감소를 말한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art25",
+      "target_id": "Regulation#보험업법시행령_art25-2",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "법 제40조에 따라 상호회사의 설립등기를 하려는 경우에는 등기신청서에 다음 각 호의 서류를 첨부하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art25-2",
+      "target_id": "Regulation#보험업법시행령_art26",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "법 제75조제1항에 따라 외국보험회사국내지점은 다음 각 호의 어느 하나에 해당하는 자산을 대한민국에서 보유하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art26",
+      "target_id": "Regulation#보험업법시행령_art27",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "법 제83조제2항에 따라 법 제91조제2항에 따른 금융기관보험대리점등 중 다음 각 호의 어느 하나에 해당하는 자는 소속 임직원이 아닌 자로 하여금 모집을 하게 하거나, 보험계약 체결과 관련한 상담 또는 소개를 하게 하고 상담 또는 소개의 대가를 지급할 수 있다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art27",
+      "target_id": "Regulation#보험업법시행령_art28",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "법 제84조에 따른 보험설계사는 다음 각 호와 같이 구분한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art28",
+      "target_id": "Regulation#보험업법시행령_art29의2",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "보험설계사의 영업범위는 다음 각 호의 구분에 따른 보험종목으로 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art29의2",
+      "target_id": "Regulation#보험업법시행령_art29의2_불완전판매방지교육",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "법 제85조의2제1항에 따라 보험회사, 보험대리점 및 보험중개사는 소속 보험설계사에게 법 제84조에 따라 최초로 등록한 날을 기준으로 2년마다 별표 4 제1호 및 제3호의 기준에 따라 교육을 해야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#보험업법시행령_art29의2_불완전판매방지교육",
+      "target_id": "Regulation#보험업법시행령_art29의3",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "보험회사등은 전년도 불완전판매 건수 및 비율이 금융위원회가 정하여 고시하는 기준 이상인 소속 보험설계사에게 제1항에 따른 교육과는 별도로 해당 사업연도에 별표 4 제2호의 기준에 따라 불완전 판매를 방지하기 위한 교육을 해야 한다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T14:28:48.509904+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 49,
+    "relation_count": 46,
+    "sections_processed": 4,
+    "api_calls": 5,
+    "total_input_tokens": 44697,
+    "total_output_tokens": 23492
+  }
+}

@@ -1,0 +1,1065 @@
+{
+  "document_id": "한화생명 간편가입 H종신보험 무배당_상품요약서_20260101",
+  "product_name": "한화생명 간편가입 H종신보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_간편가입h종신보험",
+      "type": "Policy",
+      "label": "한화생명 간편가입 H종신보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "간편가입 종신보험",
+        "contract_types": [
+          "1종(기본납입면제형)",
+          "2종(3대질병납입면제형)"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 H종신보험 무배당의 특이사항은 무엇인가요? 이 상품은 보험기간 동안 사망 위험을 보장하는 종신보험이며, 사망보험금을 체증형 기능으로 강화한 상품으로, 1종(기본납입면제형), 2종(3대질병납입면제형)을 선택하여 가입할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#종신",
+      "type": "Product_Category",
+      "label": "종신보험",
+      "properties": {
+        "category": "종신"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 보험기간 동안 사망 위험을 보장하는 종신보험이며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_간편가입h종신보험_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 간편가입 H종신보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_간편가입h종신보험_일부지급형1",
+      "type": "Surrender_Value",
+      "label": "해약환급금 일부지급형Ⅰ",
+      "properties": {
+        "calculation_basis": "납입기간중 50%",
+        "key_milestones": "Ⅰ형(5년납), Ⅱ형(7년납)"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해약환급금 일부지급형Ⅰ(납입기간중 50%)은 보험료 납입기간 및 보험료 납입완료 시점부터 3년 미만의 기간 중 계약이 해지될 경우 '표준형'의 해약환급금 대비 적은 해약환급금을 지급하는 대신 '표준형'보다 낮은 보험료로 가입할 수 있도록 한 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간편가입h종신보험_일부지급형1_납입기간중",
+      "type": "Calculation",
+      "label": "일부지급형Ⅰ 납입기간 중 해약환급금",
+      "properties": {
+        "formula_text": "보장형 계약 표준형의 기본해약환급금 × 50% + 해약환급금 일부지급형Ⅱ 계약의 추가계약자적립액",
+        "formula_type": "surrender_value",
+        "applies_to": "보험료 납입기간 중",
+        "variables": [
+          "표준형 기본해약환급금",
+          "추가계약자적립액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 : 보장형 계약 표준형의 기본해약환급금 × 50% + 해약환급금 일부지급형Ⅰ 계약의 추가계약자적립액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간편가입h종신보험_추가납입한도",
+      "type": "Calculation",
+      "label": "추가납입보험료 납입한도",
+      "properties": {
+        "formula_text": "기본보험료 × 12 × 100% × 가입 후 경과년수 - 이미 납입한 추가납입보험료의 합계액",
+        "formula_type": "premium",
+        "applies_to": "보험기간 중 기본보험료 총액의 1배 이내",
+        "variables": [
+          "기본보험료",
+          "가입 후 경과년수",
+          "이미 납입한 추가납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "기본보험료 × 12 × 100% × 가입 후 경과년수 - 이미 납입한 추가납입보험료의 합계액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_간편가입h종신보험_단체취급",
+      "type": "Premium_Discount",
+      "label": "단체취급 할인",
+      "properties": {
+        "discount_type": "단체취급",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급 할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_간편가입h종신보험_간편가입",
+      "type": "Eligibility",
+      "label": "간편가입 자격",
+      "properties": {
+        "age_range": "유병력자나 고령자 등",
+        "health_requirements": "간소화된 계약 전 알릴 의무 항목",
+        "contract_types": [
+          "간편가입"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험시장에서 소외되고 있는 유병력자나 고령자 등의 계약심사 및 건강검진의 부담을 줄여 보험에 가입할 수 있도록 계약심사 과정을 간소화(표준체에 비하여 간소화된 계약 전 알릴 의무 항목 활용)한 상품",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_간편가입h종신보험_플래티넘보너스",
+      "type": "Calculation",
+      "label": "플래티넘보너스 가산금액",
+      "properties": {
+        "formula_text": "주계약 기본보험료 × 12 × 보험료 납입기간 × 플래티넘보너스지급률",
+        "formula_type": "benefit",
+        "applies_to": "플래티넘보너스 가산일",
+        "variables": [
+          "주계약 기본보험료",
+          "보험료 납입기간",
+          "플래티넘보너스지급률"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "플래티넘보너스 가산금액 : 주계약 기본보험료 × 12 × 보험료 납입기간 × 플래티넘보너스지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_간편가입h종신보험_k19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_simple_h_age_type1",
+      "type": "Eligibility",
+      "label": "1종 가입나이",
+      "properties": {
+        "age_range": "만 15세 ~ 59세(남자), 만 15세 ~ 64세(여자)",
+        "health_requirements": "건강진단 시행 가능",
+        "contract_types": [
+          "2종(3대질병납입면제형)"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "1종(기본납입면제형) - 가입최저나이 : 만 15세 - 가입최고나이 : 성별, 납입기간별로 아래와 같음",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_simple_h_coverage_limit",
+      "type": "Eligibility",
+      "label": "가입한도",
+      "properties": {
+        "age_range": "~29세: 10만원~5억원, 30세~: 10만원~20억원",
+        "health_requirements": "위험직급별 가입한도 적용",
+        "contract_types": [
+          "보장형계약",
+          "적립형계약",
+          "스마트전환형계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "보장형 계약 1종, 적립형 계약, 스마트전환형 계약 ~29세 10만원 ~ 5억원 30세~ 10만원 ~ 20억원 ※ 단, 위험직급별 가입한도까지",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_simple_h_health_exam",
+      "type": "Eligibility",
+      "label": "건강진단",
+      "properties": {
+        "age_range": "전연령",
+        "health_requirements": "기존 보험가입유무, 나이, 계약 전 알릴 의무사항에 따라 건강진단 시행 가능",
+        "contract_types": [
+          "모든계약유형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_simple_h_3major_care",
+      "type": "Rider",
+      "label": "3대질병케어특약",
+      "properties": {
+        "rider_code": "KA3.1",
+        "rider_name": "3대질병케어특약",
+        "rider_type": "선택특약Ⅱ"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "3대질병케어특약 무배당 : 주계약과 동일",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_simple_h_9major_waiver",
+      "type": "Rider",
+      "label": "9대질병보험료납입면제특약",
+      "properties": {
+        "rider_code": "KA1.3",
+        "rider_name": "9대질병보험료납입면제특약",
+        "rider_type": "선택특약Ⅱ"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "9대질병보험료납입면제특약 무배당 : 주계약 보험료 납입기간과 동일",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_simple_h_ka1.3_pension",
+      "type": "Rider",
+      "label": "3대질병연금전환특약(KA1.3) 무배당",
+      "properties": {
+        "rider_code": "KA1.3",
+        "rider_name": "3대질병연금전환특약",
+        "rider_type": "제도성특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "3대질병연금전환특약(KA1.3) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_simple_h_death_protection",
+      "type": "Coverage",
+      "label": "보장형 계약 사망보험금",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.1",
+        "source_text": "사망보험금 | 보험기간 중 피보험자가 사망한 경우 | 사망보험금 지급사유 발생당시 기본보험금액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_simple_h_death_smart",
+      "type": "Coverage",
+      "label": "스마트전환형 계약 사망보험금",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "사망보험금 지급사유 발생당시 기본보험금액",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.3",
+        "source_text": "사망보험금 | 보험기간 중 피보험자가 사망한 경우 | 사망보험금 지급사유 발생당시 기본보험금액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_simple_h_pension_advance",
+      "type": "Coverage",
+      "label": "연금선지급금",
+      "properties": {
+        "benefit_name": "연금선지급금",
+        "trigger_condition": "피보험자가 매년 연금선지급 해당일에 살아있을 경우",
+        "payment_amount": "산출방법서에서 정한 방법에 따라 계산한 매년 감액할 금액에 해당하는 해약환급금을 매년 연금선지급 해당일에 지급",
+        "normalized_code": "annuity_prepay",
+        "category": "ANNUITY_PREPAY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.4",
+        "source_text": "연금선지급금 | 피보험자가 매년 연금선지급 해당일에 살아있을 경우 | 산출방법서에서 정한 방법에 따라 계산한 매년 감액할 금액에 해당하는 해약환급금을 매년 연금선지급 해당일에 지급",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_simple_h_basic_insurance_amount",
+      "type": "Calculation",
+      "label": "기본보험금액 계산",
+      "properties": {
+        "formula_text": "기준사망보험금과 계약자적립액의 101% 금액 중 큰 금액",
+        "formula_type": "benefit",
+        "applies_to": "보장형 계약",
+        "variables": [
+          "기준사망보험금",
+          "계약자적립액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.1",
+        "source_text": "기본보험금액이라 함은 기준사망보험금과 계약자적립액의 101% 금액 중 큰 금액을 말합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_simple_h_reference_death_benefit_1year",
+      "type": "Calculation",
+      "label": "계약 1년 미만 기준사망보험금",
+      "properties": {
+        "formula_text": "보험가입금액의 50%",
+        "formula_type": "benefit",
+        "applies_to": "계약일로부터 1년 미만에 재해 이외의 원인으로 사망 시",
+        "variables": [
+          "보험가입금액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.1",
+        "source_text": "단, 계약일로부터 1년 미만에 재해 이외의 원인으로 사망 시 보험가입금액의 50%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_simple_h_reference_death_benefit_increase",
+      "type": "Calculation",
+      "label": "기준사망보험금 체증 계산",
+      "properties": {
+        "formula_text": "보험가입금액을 계약일 이후 2년 경과시점 계약해당일부터 체증경과년수동안 매년 20%씩 정액 체증한 금액",
+        "formula_type": "benefit",
+        "applies_to": "계약일 이후 2년 경과시점 계약해당일부터 종신까지",
+        "variables": [
+          "보험가입금액",
+          "체증경과년수"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.1",
+        "source_text": "보험가입금액을 계약일 이후 2년 경과시점 계약 해당일부터 체증경과년수동안 매년 20%씩 정액 체증한 금액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_simple_h_savings_death_benefit",
+      "type": "Calculation",
+      "label": "적립형 사망보험금 계산",
+      "properties": {
+        "formula_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "formula_type": "benefit",
+        "applies_to": "적립형 계약",
+        "variables": [
+          "기본보험료",
+          "계약자적립액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.2",
+        "source_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_simple_h_smart_basic_insurance_amount",
+      "type": "Calculation",
+      "label": "스마트전환형 기본보험금액 계산",
+      "properties": {
+        "formula_text": "보험가입금액을 전환일 이후 6년 경과시점 월계약해당일부터 체증경과년수동안 매년 5%씩 체증한 금액",
+        "formula_type": "benefit",
+        "applies_to": "스마트전환형 1종(체증형) 전환일 이후 6년 경과시점부터",
+        "variables": [
+          "보험가입금액",
+          "체증경과년수"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약.3",
+        "source_text": "기본보험금액이라 함은 기준사망보험금과 '이미 납입한 보험료' 그리고 적립액의 101% 금액 중 가장 큰 금액을 말합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_simple_h_intentional_self_harm",
+      "type": "Exclusion",
+      "label": "피보험자 고의 자해 면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_simple_h_mental_disorder",
+      "type": "Exception",
+      "label": "심신상실 면책 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_simple_h_2year_suicide",
+      "type": "Exception",
+      "label": "2년 후 자살 면책 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "피보험자 고의 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_simple_h_beneficiary_harm",
+      "type": "Exclusion",
+      "label": "수익자 고의 가해 면책",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_simple_h_fraud_benefit",
+      "type": "Exclusion",
+      "label": "보험금 목적 사고 유발 면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_simple_h_document_forgery",
+      "type": "Exclusion",
+      "label": "서류 위조 변조 면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_simple_h_fraudulent_contract",
+      "type": "Exclusion",
+      "label": "사기 계약 체결 면책",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#hwl_simple_h_age_limit",
+      "type": "Eligibility",
+      "label": "연령 제한",
+      "properties": {
+        "age_range": "만15세 이상",
+        "health_requirements": "심신상실자 및 심신박약자 제외"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "만15세 미만자(실제 만나이 기준), 심신상실자(心神喪失者) 또는 심신박약자(心神薄弱者)를 피보험자로 하여 사망을 보험금 지급사유로 한 계약의 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간편가입H종신_주계약적립액이율",
+      "type": "Calculation",
+      "label": "주계약 적립액 산출 이율",
+      "properties": {
+        "formula_text": "계약일로부터 10년 이내 연복리 2.5%, 10년 초과 연복리 1.0%",
+        "formula_type": "premium",
+        "applies_to": "주계약 적립액 산출",
+        "variables": [
+          "계약일",
+          "10년",
+          "연복리 2.5%",
+          "연복리 1.0%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "주계약 적립액 산출에 적용되는 이율은 계약일로부터 10년 이내 연복리 2.5%, 10년 초과 연복리 1.0%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간편가입H종신_특약산출이율",
+      "type": "Calculation",
+      "label": "특약 산출이율",
+      "properties": {
+        "formula_text": "연복리 2.75%",
+        "formula_type": "premium",
+        "applies_to": "특약 산출",
+        "variables": [
+          "연복리 2.75%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "특약의 산출이율은 연복리 2.75%입니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_간편가입H종신_해지율5년납",
+      "type": "Calculation",
+      "label": "적용해지율 (5년납 기준)",
+      "properties": {
+        "formula_text": "납입기간 이내 연 0.1%~12.5%, 납입완료 후 3년 미만 연 7.5%~10.9%",
+        "formula_type": "surrender_value",
+        "applies_to": "보험료 납입기간 5년납 기준 해약환급금 일부지급형",
+        "variables": [
+          "납입기간",
+          "연 0.1%~12.5%",
+          "납입완료 시점",
+          "3년 미만",
+          "연 7.5%~10.9%"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.다",
+        "source_text": "보험료 납입기간 5년납 기준으로 해약환급금 일부지급형에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%~12.5%이며, 납입완료 시점부터 3년 미만의 기간에 대하여 경과기간별로 연 7.5%~10.9%입니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_h종신_산출기준",
+      "type": "Surrender_Value",
+      "label": "해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "계약자적립액에서 해약공제액 공제",
+        "key_milestones": "납입완료시 100% 환급, 이후 증가"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_h종신_해약환급금",
+      "type": "Calculation",
+      "label": "해약환급금 산출공식",
+      "properties": {
+        "formula_text": "계약자적립액 - 해약공제액",
+        "formula_type": "surrender_value",
+        "applies_to": "중도해지시",
+        "variables": [
+          "계약자적립액",
+          "해약공제액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_h종신_환급률",
+      "type": "Calculation",
+      "label": "환급률 계산식",
+      "properties": {
+        "formula_text": "해약환급금 ÷ 납입보험료 × 100",
+        "formula_type": "surrender_value",
+        "applies_to": "경과기간별 환급률 산출",
+        "variables": [
+          "해약환급금",
+          "납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_h종신_1종예시",
+      "type": "Surrender_Value",
+      "label": "1종 해약환급금 예시",
+      "properties": {
+        "calculation_basis": "보험가입금액 1억원, 40세, 해약환급금 일부지급형Ⅱ, 7년납, 월납",
+        "key_milestones": "3개월: 0%, 7년: 100%, 60년: 170.8%(남)/172.0%(여)"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "1종(기본납입면제형) (기준 : 보험가입금액 1억원, 40세, 해약환급금 일부지급형Ⅱ, 7년납, 월납, 단위: 원)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_h종신_산출이율",
+      "type": "Calculation",
+      "label": "산출이율 적용",
+      "properties": {
+        "formula_text": "10년 이내: 연복리 2.5%, 10년 초과: 연복리 1.0% (특약: 2.75%)",
+        "formula_type": "surrender_value",
+        "applies_to": "주계약 해약환급금 산출시",
+        "variables": [
+          "경과기간",
+          "이율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "주계약 산출이율은 10년 이내 연복리 2.5%, 10년 초과 연복리 1.0%(다만 특약의 경우 2.75%)입니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_price_index_formula",
+      "type": "Calculation",
+      "label": "보험가격지수 계산식",
+      "properties": {
+        "formula_text": "보험료총액 ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산정",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Product_Category#종신",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 보험기간 동안 사망 위험을 보장하는 종신보험이며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Dividend_Method#hwl_간편가입h종신보험_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 간편가입 H종신보험 무배당은 무배당 상품으로서 계약자배당을 하지 않습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Coverage#hwl_simple_h_death_protection",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험기간 중 피보험자가 사망한 경우 사망보험금 지급사유 발생당시 기본보험금액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Coverage#hwl_simple_h_death_smart",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "스마트전환형 계약 보험기간 중 피보험자가 사망한 경우 기본보험금액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Coverage#hwl_simple_h_pension_advance",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 매년 연금선지급 해당일에 살아있을 경우 연금선지급금",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Surrender_Value#hwl_간편가입h종신보험_일부지급형1",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "해약환급금 일부지급형Ⅰ(납입기간중 50%)은 보험료 납입기간 및 보험료 납입완료 시점부터 3년 미만의 기간 중 계약이 해지될 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Premium_Discount#hwl_간편가입h종신보험_단체취급",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급 할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Eligibility#hwl_간편가입h종신보험_간편가입",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "유병력자나 고령자 등의 계약심사 및 건강검진의 부담을 줄여 보험에 가입할 수 있도록 계약심사 과정을 간소화한 상품",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Eligibility#hwl_simple_h_age_type1",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "1종(기본납입면제형) 가입최저나이 : 만 15세",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Eligibility#hwl_simple_h_coverage_limit",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "~29세 10만원 ~ 5억원 30세~ 10만원 ~ 20억원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Eligibility#hwl_simple_h_health_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Rider#hwl_간편가입h종신보험_k19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요?",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Rider#hwl_simple_h_3major_care",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "3대질병케어특약(KA3.1) 무배당[간편가입형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Rider#hwl_simple_h_9major_waiver",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "9대질병보험료납입면제특약(KA1.3) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_간편가입h종신보험",
+      "target_id": "Rider#hwl_simple_h_ka1.3_pension",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "3대질병연금전환특약(KA1.3) 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Exclusion#hwl_simple_h_intentional_self_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우 회사는 보험금을 지급하지 않으며",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Exclusion#hwl_simple_h_beneficiary_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Exclusion#hwl_simple_h_fraud_benefit",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Exclusion#hwl_simple_h_document_forgery",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Exclusion#hwl_simple_h_fraudulent_contract",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_simple_h_intentional_self_harm",
+      "target_id": "Exception#hwl_simple_h_mental_disorder",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_simple_h_intentional_self_harm",
+      "target_id": "Exception#hwl_simple_h_2year_suicide",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약의 보장개시일부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_간편가입h종신보험_일부지급형1",
+      "target_id": "Calculation#hwl_간편가입h종신보험_일부지급형1_납입기간중",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 : 보장형 계약 표준형의 기본해약환급금 × 50%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_간편가입h종신보험_추가납입한도",
+      "target_id": "Policy#hwl_간편가입h종신보험",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "기본보험료 × 12 × 100% × 가입 후 경과년수 - 이미 납입한 추가납입보험료의 합계액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_간편가입h종신보험_플래티넘보너스",
+      "target_id": "Policy#hwl_간편가입h종신보험",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "플래티넘보너스 가산금액 : 주계약 기본보험료 × 12 × 보험료 납입기간 × 플래티넘보너스지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Calculation#hwl_simple_h_basic_insurance_amount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "기본보험금액이라 함은 기준사망보험금과 계약자적립액의 101% 금액 중 큰 금액을 말합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Calculation#hwl_simple_h_reference_death_benefit_1year",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약일로부터 1년 미만에 재해 이외의 원인으로 사망 시 보험가입금액의 50%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_protection",
+      "target_id": "Calculation#hwl_simple_h_reference_death_benefit_increase",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험가입금액을 계약일 이후 2년 경과시점 계약 해당일부터 체증경과년수동안 매년 20%씩 정액 체증한 금액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_death_smart",
+      "target_id": "Calculation#hwl_simple_h_smart_basic_insurance_amount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "기본보험금액이라 함은 기준사망보험금과 '이미 납입한 보험료' 그리고 적립액의 101% 금액 중 가장 큰 금액을 말합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_simple_h_pension_advance",
+      "target_id": "Policy#hwl_간편가입h종신보험",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "산출방법서에서 정한 방법에 따라 계산한 매년 감액할 금액에 해당하는 해약환급금을 매년 연금선지급 해당일에 지급",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_h종신_산출기준",
+      "target_id": "Calculation#hwl_h종신_해약환급금",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_h종신_1종예시",
+      "target_id": "Calculation#hwl_h종신_환급률",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_price_index_formula",
+      "target_id": "Policy#hwl_간편가입h종신보험",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액을 참조순보험료 총액과 평균사업비 총액을 합한 금액으로 나눈 비율을 보험가격지수라고 합니다",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T12:28:10.205459+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 41,
+    "relation_count": 33,
+    "sections_processed": 7,
+    "api_calls": 8,
+    "total_input_tokens": 58000,
+    "total_output_tokens": 19983
+  }
+}

@@ -1,0 +1,1183 @@
+{
+  "document_id": "한화생명 케어백간병플러스보험 무배당_상품요약서_20260101",
+  "product_name": "한화생명 케어백간병플러스보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_carebackplus",
+      "type": "Policy",
+      "label": "케어백간병플러스보험",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "간병보험",
+        "contract_types": [
+          "간편가입형",
+          "일반가입형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 케어백간병플러스보험 무배당은 장기요양에 대한 진단, 의료비, 간병 등을 보장하며, 주계약 및 일부특약 가입시 증액보장보험금으로 보장금액을 강화하는 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Product_Category#nursing_care",
+      "type": "Product_Category",
+      "label": "간병보험",
+      "properties": {
+        "category": "간병"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 케어백간병플러스보험 무배당은 장기요양에 대한 진단, 의료비, 간병 등을 보장하며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_carebackplus_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 케어백간병플러스보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_carebackplus_premium_exemption",
+      "type": "Coverage",
+      "label": "보험료납입면제",
+      "properties": {
+        "benefit_name": "특약 보험료 납입면제",
+        "trigger_condition": "보험료 납입기간 중 장기요양보장개시일 이후 '1-5등급 장기요양상태'로 판정받은 경우",
+        "payment_amount": "해당 특약에 대한 차회 이후의 보험료 납입을 면제",
+        "normalized_code": "premium_waiver",
+        "category": "PREMIUM_WAIVER"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었거나 장기요양보장개시일 이후 '1~3등급 장기요양상태'로 판정받은 경우 차회 이후의 주계약 및 특약의 보험료 납입을 면제하여 드립니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_carebackplus_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_carebackplus_prepayment",
+      "type": "Premium_Discount",
+      "label": "보험료선납할인",
+      "properties": {
+        "discount_type": "보험료 선납",
+        "discount_rate_text": "평균공시이율로 할인"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_carebackplus_prepayment_discount",
+      "type": "Calculation",
+      "label": "보험료선납할인계산",
+      "properties": {
+        "formula_text": "평균공시이율(계약 체결 시점의 평균공시이율)로 할인",
+        "formula_type": "premium",
+        "applies_to": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우",
+        "variables": [
+          "평균공시이율",
+          "선납 보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_carebackplus_group",
+      "type": "Eligibility",
+      "label": "단체취급가입자격",
+      "properties": {
+        "contract_types": [
+          "단체취급"
+        ],
+        "health_requirements": "약관에서 정하는 대상단체에 소속"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 보험계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 보험계약자 수 또는 단체의 대표자를 보험계약자로 하고 단체소속원을 피보험자로 하는 주계약의 피보험자 수가 5인 이상이어야 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_carebackplus_k19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? 보험계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_carebackplus_partial",
+      "type": "Surrender_Value",
+      "label": "해약환급금일부지급형",
+      "properties": {
+        "calculation_basis": "납입기간중 50%, 납입기간후 100%",
+        "key_milestones": [
+          "납입기간중",
+          "납입기간후"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신, 보험료 납입기간 중 계약이 해지될 경우 표준형의 해약환급금 대비 적은 해약환급금을 지급하는 상품입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Policy#hwl_carebackcareplus",
+      "type": "Policy",
+      "label": "한화생명 케어백간병플러스보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "간병보험",
+        "contract_types": [
+          "간편가입형(0년)",
+          "간편가입형(2년)",
+          "간편가입형(5년)",
+          "간편가입형(10년)",
+          "일반가입형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.가",
+        "source_text": "한화생명 케어백간병플러스보험 무배당",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_carebackcareplus_surrender50",
+      "type": "Calculation",
+      "label": "해약환급금 일부지급 계산식",
+      "properties": {
+        "formula_text": "납입기간 중: 표준형 기본해약환급금 × 50%, 납입기간 경과후: 표준형 해약환급금",
+        "formula_type": "surrender_value",
+        "applies_to": "해약환급금 일부지급형",
+        "variables": [
+          "표준형 기본해약환급금",
+          "표준형 해약환급금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.가",
+        "source_text": "해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_carebackcareplus_age_guarantee",
+      "type": "Eligibility",
+      "label": "보장형 계약 가입자격",
+      "properties": {
+        "age_range": "25세 ~ 75세",
+        "contract_types": [
+          "적립형계약Ⅱ"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "보장형 계약 - 가입최저나이: 만15세 - 가입최고나이: 보험종목, 성별 및 보험료 납입기간별로 아래와 같음",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_carebackcareplus_limit_simple0",
+      "type": "Eligibility",
+      "label": "간편가입형(0년/2년) 가입한도",
+      "properties": {
+        "contract_types": [
+          "간편가입형(5년)",
+          "간편가입형(10년)",
+          "일반가입형"
+        ],
+        "coverage_limit": "100만원 – 2,000만원"
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "간편가입형(0년) 100만원 - 500만원 간편가입형(2년)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_carebackcareplus_health_general",
+      "type": "Eligibility",
+      "label": "일반가입형 건강진단",
+      "properties": {
+        "health_requirements": "무진단으로 가입 가능하나, 기존 다른 보험상품의 가입유무, 나이, 청약서의 계약 전 알릴 의무 사항 등에 따라 건강진단 시행 가능"
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "한화생명 케어백간병플러스보험 무배당[일반가입형]의 경우 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_carebackcareplus_longterm15",
+      "type": "Rider",
+      "label": "장기요양(1-5등급)보장P특약",
+      "properties": {
+        "rider_name": "장기요양(1-5등급)입원보장P특약(요양병원)(연1회)(무)",
+        "rider_type": "<UNKNOWN>",
+        "rider_code": "<UNKNOWN>"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "장기요양(1-5등급)보장P특약(무)",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_케어백간병플러스_ta41_간병인비용지원금",
+      "type": "Rider",
+      "label": "간병인비용지원금P특약",
+      "properties": {
+        "rider_code": "TA4.1",
+        "rider_name": "간병인지원금P특약(1-180일)(요양병원)(TA4.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "간병인비용지원금P특약[1백만원이상, 요양병원제외](TA4.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_케어백간병플러스_ta41_간병인지원금_요양병원제외",
+      "type": "Rider",
+      "label": "간병인지원금P특약(요양병원 제외)",
+      "properties": {
+        "rider_code": "TA4.1",
+        "rider_name": "간병인지원금P특약(1-180일)(요양병원 제외)(TA4.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "간병인지원금P특약(1-180일)(요양병원 제외)(TA4.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_케어백간병플러스_ta41_간호간병서비스지원금",
+      "type": "Rider",
+      "label": "간호·간병서비스지원금P특약",
+      "properties": {
+        "rider_code": "TA4.1",
+        "rider_name": "간호·간병서비스지원금P특약(1-180일)(TA4.1) 무배당",
+        "rider_type": "선택특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "간호·간병서비스지원금P특약(1-180일)(TA4.1) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_사망보험금_일반가입형",
+      "type": "Coverage",
+      "label": "사망보험금(일반가입형)",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "보험기간 중 피보험자가 사망한 경우",
+        "payment_amount": "1년 미만: 500만원(단, 재해로 인한 사망시 1,000만원), 1년 이상: 1,000만원",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "사망보험금 | 보험기간 중 피보험자가 사망한 경우 | 1~3등급 장기요양 상태 판정자금의 지급사유가 발생하지 않은 경우 : 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_장기요양상태판정자금_일반가입형",
+      "type": "Coverage",
+      "label": "1~3등급 장기요양 상태 판정자금(일반가입형)",
+      "properties": {
+        "benefit_name": "1~5등급 장기요양상태 판정자금",
+        "trigger_condition": "피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~5등급 장기요양상태'로 판정받은 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "grade1_3_long_term_care_assessment",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "1~3등급 장기요양 상태 판정자금 | 피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~3등급 장기요양상태'로 판정받은 경우(최초 1회한) | 800만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_적립형사망보험금",
+      "type": "Coverage",
+      "label": "사망보험금(적립형 계약Ⅱ)",
+      "properties": {
+        "benefit_name": "사망보험금",
+        "trigger_condition": "피보험자가 보험기간 중 사망한 경우",
+        "payment_amount": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "normalized_code": "death_benefit",
+        "category": "DEATH_BENEFIT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "사망보험금 | 피보험자가 보험기간 중 사망한 경우 | 기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_시설급여금",
+      "type": "Coverage",
+      "label": "1~5등급 장기요양상태 시설급여금",
+      "properties": {
+        "benefit_name": "1~5등급 장기요양상태 요양병원 입원급여금",
+        "trigger_condition": "피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 요양병원에 입원하였을 경우(연간 1회한)",
+        "payment_amount": "10만원",
+        "rider_code": "TA2.1",
+        "normalized_code": "grade1_5_long_term_care_facility_benefit",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "1~5등급 장기요양상태 시설급여금 | 피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '시설급여'를 이용하였을 경우 | 이용 1회당 10만원(단, 월간 1회에 한함)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_간병인비용지원급여금",
+      "type": "Coverage",
+      "label": "요양병원 제외 간병인 비용지원급여금",
+      "properties": {
+        "benefit_name": "요양병원 간병인 지원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 요양병원에 1일 이상 입원하며 '간병인'을 사용하여 실질적으로 유상의 간병서비스를 이용한 경우",
+        "payment_amount": "1년미만: 간병인 사용 1일당 1만5천원(단, 재해로 인한 간병인사용 입원시 1일당 3만원), 1년이상: 간병인 사용 1일당 3만원",
+        "rider_code": "TA4.1",
+        "normalized_code": "caregiver_cost_support_excluding_nursing_hospital",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "요양병원 제외 간병인 비용지원급여금 | 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 요양병원을 제외한 병원급 또는 의원급 의료기관에 입원하여 치료를 받으며 간병인을 사용한 '연간 간병인 사용금액 총액'이 1백만원 이상인 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_간호간병서비스지원급여금",
+      "type": "Coverage",
+      "label": "간호·간병통합 서비스지원 급여금",
+      "properties": {
+        "benefit_name": "간호·간병통합 서비스지원 급여금",
+        "trigger_condition": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일이상 입원하며 입원기간 중에 '간호·간병통합서비스'를 사용한 경우",
+        "payment_amount": "1년 미만: 간호·간병통합 서비스 사용 1일당 1만원(단, 재해로 인한 입원시 입원 1일당 2만원), 1년 이상: 간호·간병통합 서비스 사용 1일당 2만원",
+        "rider_code": "TA4.1",
+        "normalized_code": "integrated_nursing_care_service_support",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "간호·간병통합 서비스지원 급여금 | 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일이상 입원하며 입원기간 중에 '간호·간병통합서비스'를 사용한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_가족인요양보호사방문요양지원금",
+      "type": "Coverage",
+      "label": "가족인 요양보호사 방문요양지원금",
+      "properties": {
+        "benefit_name": "가족인 요양보호사 방문요양지원금",
+        "trigger_condition": "피보험자가 보험기간 중 '장기요양보장개시일' 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '가족인 요양보호사'를 통해 방문요양을 이용하였을 경우",
+        "payment_amount": "이용 1회당 10만원(단, 판정후 보험월 기준 월 1회에 한함)",
+        "rider_code": "TA4.1",
+        "normalized_code": "family_care_worker_support",
+        "category": "LONG_TERM_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "가족인 요양보호사 방문요양지원금 | 피보험자가 보험기간 중 '장기요양보장개시일' 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '가족인 요양보호사'를 통해 방문요양을 이용하였을 경우 | 이용 1회당 10만원(단, 판정후 보험월 기준 월 1회에 한함)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_케어백간병플러스_치매전담형시설급여금",
+      "type": "Coverage",
+      "label": "치매전담형 시설급여금",
+      "properties": {
+        "benefit_name": "치매전담형 시설급여금",
+        "trigger_condition": "피보험자가 보험기간 중 장기요양기관 이용대상자 보장개시일 이후에 '특정 치매전담형 장기요양기관 이용대상자'에 해당되어 보험기간 중 '치매전담형 시설급여'를 이용하였을 경우(연간 1회한)",
+        "payment_amount": "이용 1회당 100만원",
+        "rider_code": "TA4.1",
+        "normalized_code": "dementia_facility_benefit",
+        "category": "DEMENTIA_CARE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "치매전담형 시설급여금 | 피보험자가 보험기간 중 장기요양기관 이용대상자 보장개시일 이후에 '특정 치매전담형 장기요양기관 이용대상자'에 해당되어 보험기간 중 '치매전담형 시설급여'를 이용하였을 경우(연간 1회한) | 이용 1회당 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_케어백간병플러스_적립형사망보험금계산",
+      "type": "Calculation",
+      "label": "적립형 사망보험금 계산식",
+      "properties": {
+        "formula_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "formula_type": "benefit",
+        "applies_to": "적립형 계약Ⅱ 사망보험금 지급시",
+        "variables": [
+          "기본보험료",
+          "계약자적립액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_케어백간병플러스_간편가입형사망보험금차감계산",
+      "type": "Calculation",
+      "label": "간편가입형 사망보험금 차감 계산식",
+      "properties": {
+        "formula_text": "1,000만원 – '1~3등급 장기요양 상태 판정자금'",
+        "formula_type": "benefit",
+        "applies_to": "간편가입형에서 1~3등급 장기요양 상태 판정자금의 지급사유가 발생한 경우",
+        "variables": [
+          "장기요양 상태 판정자금"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "1,000만원 – '1~3등급 장기요양 상태 판정자금'",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_케어백간병플러스_증액보장보험금계산",
+      "type": "Calculation",
+      "label": "증액보장보험금 계산식",
+      "properties": {
+        "formula_text": "증액계약의 보장보험금액 x 5%, 증액계약의 보장보험금액 x 20%, 증액계약의 보장보험금액 x 40%, 증액계약의 보장보험금액 x 90%",
+        "formula_type": "benefit",
+        "applies_to": "연간 간병인 사용금액 총액에 따른 증액보장보험금 지급시",
+        "variables": [
+          "증액계약의 보장보험금액",
+          "연간 간병인 사용금액 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "증액계약의 보장보험금액 x 5%, 증액계약의 보장보험금액 x 20%, 증액계약의 보장보험금액 x 40%, 증액계약의 보장보험금액 x 90%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_케어백간병플러스_피보험자고의자해",
+      "type": "Exclusion",
+      "label": "피보험자의 고의적 자해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_케어백간병플러스_심신상실예외",
+      "type": "Exception",
+      "label": "심신상실 등으로 인한 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생하거나 보험료 납입면제 사유가 발생한 경우",
+        "referenced_exclusion": "피보험자의 고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생하거나 보험료 납입면제 사유가 발생한 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exception#hwl_케어백간병플러스_2년후자살예외",
+      "type": "Exception",
+      "label": "계약 2년 후 자살 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "피보험자의 고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#hwl_케어백간병플러스_보험수익자고의",
+      "type": "Exclusion",
+      "label": "보험수익자의 고의",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_케어백간병플러스_사기목적보험금지급사유발생",
+      "type": "Exclusion",
+      "label": "사기 목적으로 인한 보험금 지급사유 발생",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_케어백간병플러스_서류위조변조",
+      "type": "Exclusion",
+      "label": "서류 위조·변조",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_케어백간병플러스_사기계약체결",
+      "type": "Exclusion",
+      "label": "사기에 의한 보험계약 체결",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "보험계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립된 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_케어백간병플러스_노인장기요양보험법제한",
+      "type": "Exclusion",
+      "label": "노인장기요양보험법에 의한 제한",
+      "properties": {
+        "exclusion_type": "법률제한",
+        "condition_text": "피보험자가 「노인장기요양보험법」에 의해 장기요양급여의 제한을 받은 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나",
+        "source_text": "회사는 피보험자가 「노인장기요양보험법」에 의해 장기요양급여의 제한을 받은 경우에는 약관 제2-3조(보험금의 지급사유)에서 정한 '1~5등급 장기요양상태 판정자금'을 지급하지 않습니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_careplus_interest_rate",
+      "type": "Calculation",
+      "label": "보장부분 적용이율 계산",
+      "properties": {
+        "formula_text": "계약일로부터 10년 이내 연복리 3.0%, 10년 이후 연복리 1.75%",
+        "formula_type": "interest_rate",
+        "applies_to": "주계약 및 특약",
+        "variables": [
+          "계약일",
+          "기간(10년 기준)",
+          "연복리율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "한화생명 케어백간병플러스보험 무배당의 주계약 및 특약에 사용한 적용이율은 계약일로부터 10년 이내 연복리 3.0%, 10년 이후 연복리 1.75%입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_careplus_special_interest",
+      "type": "Calculation",
+      "label": "특정 특약 적용이율",
+      "properties": {
+        "formula_text": "전기간 연복리 2.75%",
+        "formula_type": "interest_rate",
+        "applies_to": "장기요양(1-5등급)가족인요양보호사 방문요양P특약(월1회)(무), 장기요양(1-5등급)입원보장P특약(요양병원 제외)(연1회)(무) 및 장기요양(1-5등급)입원보장P특약(요양병원)(연1회)(무)",
+        "variables": [
+          "연복리율",
+          "전기간"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "(단, 장기요양(1-5등급)가족인요양보호사 방문요양P특약(월1회)(무), 장기요양(1-5등급)입원보장P특약(요양병원 제외)(연1회)(무) 및 장기요양(1-5등급)입원보장P특약(요양병원)(연1회)(무)는 전기간 연복리 2.75%입니다.)",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_careplus_lapse_rate",
+      "type": "Calculation",
+      "label": "적용해지율 계산",
+      "properties": {
+        "formula_text": "납입기간 이내에 대하여 경과기간별로 연 0.1%-18.28%",
+        "formula_type": "lapse_rate",
+        "applies_to": "보험료 납입기간 20년납 기준으로 해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)",
+        "variables": [
+          "경과기간",
+          "납입기간",
+          "해지율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.다",
+        "source_text": "보험료 납입기간 20년납 기준으로 해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)에 적용한 적용해지율은 납입기간 이내에 대하여 경과기간별로 연 0.1%-18.28%이며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_carebaek_calculation",
+      "type": "Surrender_Value",
+      "label": "해약환급금 산출기준",
+      "properties": {
+        "calculation_basis": "순보험료식 계약자적립액에서 해약공제액 공제",
+        "key_milestones": "1년 미만: 0%, 납입완료 후: 120% 이상"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 순보험료식 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_carebaek_return_rate",
+      "type": "Calculation",
+      "label": "환급률 계산공식",
+      "properties": {
+        "formula_text": "해약환급금 ÷ 그 시점까지 납입한 납입보험료",
+        "formula_type": "surrender_value",
+        "applies_to": "경과기간별 환급률 산출",
+        "variables": [
+          "해약환급금",
+          "납입보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#hwl_carebaek_contract_types",
+      "type": "Eligibility",
+      "label": "계약유형별 가입자격",
+      "properties": {
+        "age_range": "40세 기준",
+        "contract_types": [
+          "간편가입형(0년)",
+          "간편가입형(2년)",
+          "간편가입형(5년)",
+          "간편가입형(10년)",
+          "일반가입형"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "간편가입형(0년), 간편가입형(2년), 간편가입형(5년), 간편가입형(10년), 일반가입형",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Calculation#hwl_careplus_price_index",
+      "type": "Calculation",
+      "label": "보험가격지수 계산식",
+      "properties": {
+        "formula_text": "보험료총액 ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "price_index",
+        "applies_to": "보험가격지수 산출",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 '참조순보험료 총액'과 '평균사업비 총액'을 합한 금액으로 나눈 비율을 '보험가격지수'라고 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#insurance_price_index",
+      "type": "Regulation",
+      "label": "생명보험 상품공시 시행세칙",
+      "properties": {
+        "regulation_type": "기준",
+        "article_number": "생명보험 상품공시 시행세칙"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다.",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Product_Category#nursing_care",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 케어백간병플러스보험 무배당은 장기요양에 대한 진단, 의료비, 간병 등을 보장하며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Dividend_Method#hwl_carebackplus_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "한화생명 케어백간병플러스보험 무배당은 무배당 상품으로서 배당을 하지 않습니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Coverage#hwl_carebackplus_premium_exemption",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 납입기간 중 동일한 재해로 여러 신체부위의 장해지급률을 더하여 50%이상 장해상태가 되었거나 장기요양보장개시일 이후 '1~3등급 장기요양상태'로 판정받은 경우 차회 이후의 주계약 및 특약의 보험료 납입을 면제",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Premium_Discount#hwl_carebackplus_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Premium_Discount#hwl_carebackplus_prepayment",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 선납 3개월분 이상 12개월분 이하의 보험료가 선납되는 경우 이 계약의 평균공시이율로 할인하여 이를 영수합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Eligibility#hwl_carebackplus_group",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 보험계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Rider#hwl_carebackplus_k19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요?",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackplus",
+      "target_id": "Surrender_Value#hwl_carebackplus_partial",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 상품은 해약환급금 일부지급형(납입기간중 50%, 납입기간후 100%)으로 표준형보다 낮은 보험료로 보험을 가입할 수 있도록 한 대신",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Coverage#hwl_케어백간병플러스_사망보험금_일반가입형",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "사망보험금: 보험기간 중 피보험자가 사망한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Coverage#hwl_케어백간병플러스_장기요양상태판정자금_일반가입형",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "1~3등급 장기요양 상태 판정자금: 피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~3등급 장기요양상태'로 판정받은 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Coverage#hwl_케어백간병플러스_적립형사망보험금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "사망보험금: 피보험자가 보험기간 중 사망한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Rider#hwl_carebackcareplus_longterm15",
+      "target_id": "Coverage#hwl_케어백간병플러스_시설급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "1~5등급 장기요양상태 시설급여금: 피보험자가 보험기간 중 장기요양보장개시일 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '시설급여'를 이용하였을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_케어백간병플러스_ta41_간병인비용지원금",
+      "target_id": "Coverage#hwl_케어백간병플러스_간병인비용지원급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "요양병원 제외 간병인 비용지원급여금: 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 요양병원을 제외한 병원급 또는 의원급 의료기관에 입원하여 치료를 받으며 간병인을 사용한 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Rider#hwl_케어백간병플러스_ta41_간호간병서비스지원금",
+      "target_id": "Coverage#hwl_케어백간병플러스_간호간병서비스지원급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "간호·간병통합 서비스지원 급여금: 보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일이상 입원하며 입원기간 중에 '간호·간병통합서비스'를 사용한 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Coverage#hwl_케어백간병플러스_가족인요양보호사방문요양지원금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "가족인 요양보호사 방문요양지원금: 피보험자가 보험기간 중 '장기요양보장개시일' 이후에 '1~5등급 장기요양상태'로 판정받고 보험기간 중 '가족인 요양보호사'를 통해 방문요양을 이용하였을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Coverage#hwl_케어백간병플러스_치매전담형시설급여금",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "치매전담형 시설급여금: 피보험자가 보험기간 중 장기요양기관 이용대상자 보장개시일 이후에 '특정 치매전담형 장기요양기관 이용대상자'에 해당되어 보험기간 중 '치매전담형 시설급여'를 이용하였을 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_사망보험금_일반가입형",
+      "target_id": "Exclusion#hwl_케어백간병플러스_피보험자고의자해",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_케어백간병플러스_피보험자고의자해",
+      "target_id": "Exception#hwl_케어백간병플러스_심신상실예외",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해침으로 인하여 보험금 지급사유가 발생한 경우",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_케어백간병플러스_피보험자고의자해",
+      "target_id": "Exception#hwl_케어백간병플러스_2년후자살예외",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약의 보장개시일부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_사망보험금_일반가입형",
+      "target_id": "Exclusion#hwl_케어백간병플러스_보험수익자고의",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_시설급여금",
+      "target_id": "Exclusion#hwl_케어백간병플러스_노인장기요양보험법제한",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "회사는 피보험자가 「노인장기요양보험법」에 의해 장기요양급여의 제한을 받은 경우에는 보험금을 지급하지 않습니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_간병인비용지원급여금",
+      "target_id": "Exclusion#hwl_케어백간병플러스_사기목적보험금지급사유발생",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_간병인비용지원급여금",
+      "target_id": "Exclusion#hwl_케어백간병플러스_서류위조변조",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Exclusion#hwl_케어백간병플러스_사기계약체결",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었을 경우",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_적립형사망보험금",
+      "target_id": "Calculation#hwl_케어백간병플러스_적립형사망보험금계산",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "기본보험료의 6배 + 사망보험금 지급사유 발생당시의 계약자적립액",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_사망보험금_일반가입형",
+      "target_id": "Calculation#hwl_케어백간병플러스_간편가입형사망보험금차감계산",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "1,000만원 – '1~3등급 장기요양 상태 판정자금'",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_carebackplus_prepayment",
+      "target_id": "Calculation#hwl_carebackplus_prepayment_discount",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 계약의 평균공시이율(계약 체결 시점의 평균공시이율)로 할인하여 이를 영수합니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Eligibility#hwl_carebackcareplus_age_guarantee",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "보장형계약: 가입최저나이: 만15세, 가입최고나이: 보험종목, 성별 및 보험료 납입기간별로 아래와 같음",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Eligibility#hwl_carebackcareplus_limit_simple0",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "간편가입형(0년): 100만원 - 500만원, 간편가입형(2년): 100만원 – 2,000만원",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Eligibility#hwl_carebackcareplus_health_general",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "한화생명 케어백간병플러스보험 무배당[일반가입형]의 경우 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_carebaek_calculation",
+      "target_id": "Calculation#hwl_carebaek_return_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Eligibility#hwl_carebaek_contract_types",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "간편가입형(0년), 간편가입형(2년), 간편가입형(5년), 간편가입형(10년), 일반가입형",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_적립형사망보험금",
+      "target_id": "Calculation#hwl_careplus_interest_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "계약일로부터 10년 이내 연복리 3.0%, 10년 이후 연복리 1.75%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_케어백간병플러스_가족인요양보호사방문요양지원금",
+      "target_id": "Calculation#hwl_careplus_special_interest",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "전기간 연복리 2.75%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_carebackplus_partial",
+      "target_id": "Calculation#hwl_careplus_lapse_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "경과기간별로 연 0.1%-18.28%",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#insurance_price_index",
+      "target_id": "Calculation#hwl_careplus_price_index",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_carebackcareplus",
+      "target_id": "Regulation#insurance_price_index",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T13:08:50.665472+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 46,
+    "relation_count": 37,
+    "sections_processed": 7,
+    "api_calls": 8,
+    "total_input_tokens": 110371,
+    "total_output_tokens": 29033
+  }
+}

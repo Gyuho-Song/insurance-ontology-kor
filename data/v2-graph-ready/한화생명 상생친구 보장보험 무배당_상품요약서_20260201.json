@@ -1,0 +1,2157 @@
+{
+  "document_id": "한화생명 상생친구 보장보험 무배당_상품요약서_20260201",
+  "product_name": "한화생명 상생친구 보장보험 무배당_상품요약서",
+  "entities": [
+    {
+      "id": "Policy#hwl_sangsaeng_friend",
+      "type": "Policy",
+      "label": "한화생명 상생친구 보장보험 무배당",
+      "properties": {
+        "provider": "한화생명",
+        "product_type": "보장보험",
+        "contract_types": [
+          "주계약",
+          "의무부가특약",
+          "종속특약",
+          "선택특약",
+          "제도성특약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 상생친구 보장보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_sangsaeng_friend_contractor",
+      "type": "Eligibility",
+      "label": "계약자 가입자격",
+      "properties": {
+        "age_range": null,
+        "health_requirements": null,
+        "contract_types": [
+          "장애인",
+          "가구중위소득 60%이하 한부모 가정의 부 또는 모",
+          "차상위계층인 다문화 가정의 부 또는 모"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "계약자가 \"장애인\", \"가구중위소득 60%이하 한부모 가정의 부 또는 모\" 또는 \"차상위계층인 다문화 가정의 부 또는 모\"인 경우에 한하여 계약자의 자녀를 피보험자로 하여 가입이 가능합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Coverage#hwl_sangsaeng_friend_cancer_y",
+      "type": "Coverage",
+      "label": "암진단보장 Y 특약",
+      "properties": {
+        "benefit_name": "암진단보장 Y 특약",
+        "trigger_condition": "암진단",
+        "payment_amount": "명시되지 않음",
+        "rider_code": null,
+        "normalized_code": "cancer_diagnosis_coverage",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "암진단보장 Y 특약 무배당의 경우 면책 및 감액기간 삭제로 가입 즉시 보장합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#hwl_sangsaeng_friend_premium_waiver_y",
+      "type": "Coverage",
+      "label": "보험료납입면제 Y 특약",
+      "properties": {
+        "benefit_name": "보험료납입면제 Y 특약",
+        "trigger_condition": "암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외), 뇌혈관질환, 허혈성심장질환 진단확정",
+        "payment_amount": "차회 이후 보험료 납입면제",
+        "rider_code": null,
+        "normalized_code": "premium_waiver",
+        "category": "PREMIUM_WAIVER"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료납입면제 Y 특약(무), 보험료납입면제 Y 특약(갱신형)(무)는 보험기간 중 피보험자가 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)', '뇌혈관질환' 및 '허혈성심장질환'으로 진단이 확정된 경우 해당계약 및 이 특약의 차회 이후의 보험료 납입을 면제하여 드리는 특약을 말합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_sangsaeng_friend_group",
+      "type": "Premium_Discount",
+      "label": "단체취급할인",
+      "properties": {
+        "discount_type": "단체취급할인",
+        "discount_rate_text": "1.5%"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 할인은 단체취급할인이 있으며, 아래와 같이 적용합니다. 단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_sangsaeng_friend_group_conditions",
+      "type": "Eligibility",
+      "label": "단체취급특약 적용조건",
+      "properties": {
+        "age_range": null,
+        "health_requirements": null,
+        "contract_types": [
+          "대상단체 소속",
+          "5인 이상"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "주계약의 계약자 또는 피보험자가 약관에서 정하는 대상단체에 소속 되어야 합니다. 단체취급특약의 적용을 받는 인원수는 동일 단체에 소속한 주계약의 계약자 수 또는 단체의 대표자를 계약자로 하고 단체소속원을 피보험자로 하는 주계약의 피보험자 수가 5인 이상이어야 합니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_friend_k19",
+      "type": "Rider",
+      "label": "지정대리청구서비스특약",
+      "properties": {
+        "rider_code": "K1.9",
+        "rider_name": "지정대리청구서비스특약",
+        "rider_type": "제도성"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은 어떤 특약인가요? 계약자가 주계약 및 특약에서 정한 보험금을 직접 청구할 수 없는, 회사가 정한 특별한 사정이 있을 경우를 대비하여 계약 체결시 또는 계약체결 이후 지정대리청구인을 지정할 수 있는 제도성 특약입니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_friend_emergency_renewal",
+      "type": "Rider",
+      "label": "응급환자 응급실내원특약(갱신형)",
+      "properties": {
+        "rider_code": null,
+        "rider_name": "응급환자 응급실내원특약(갱신형) 무배당(상생협력형)",
+        "rider_type": "갱신형 특약",
+        "insurance_period": "3년만기 자동갱신(최대 100세)",
+        "premium_payment_period": "전기납"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "응급환자 응급실내원특약(갱신형) 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_friend_cast_renewal",
+      "type": "Rider",
+      "label": "깁스 및 급여 부목치료보장특약(갱신형)",
+      "properties": {
+        "rider_code": null,
+        "rider_name": "깁스 및 급여 부목치료보장특약(갱신형) 무배당",
+        "rider_type": "갱신형"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "깁스 및 급여 부목치료보장특약(갱신형) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_friend_suture_face_renewal",
+      "type": "Rider",
+      "label": "급여 재해 창상봉합술 보장특약[안면, 경부](갱신형)",
+      "properties": {
+        "rider_code": null,
+        "rider_name": "급여 재해 창상봉합술 보장특약[안면,경부 외](갱신형)(연 3회) 무배당",
+        "rider_type": "갱신형"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "급여 재해 창상봉합술 보장특약[안면, 경부](갱신형)(연 3회) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_friend_fracture_surgery_renewal",
+      "type": "Rider",
+      "label": "급여 재해골절 철심제거 수술특약(갱신형)",
+      "properties": {
+        "rider_code": null,
+        "rider_name": "급여 재해골절 철심제거 수술특약(연 1회)(갱신형) 무배당",
+        "rider_type": "갱신형"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "급여 재해골절 철심제거 수술특약(연 1회)(갱신형) 무배당",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Dividend_Method#hwl_sangsaeng_friend_nodividend",
+      "type": "Dividend_Method",
+      "label": "무배당",
+      "properties": {
+        "dividend_type": "무배당"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 상생친구 보장보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#protection",
+      "type": "Product_Category",
+      "label": "보장보험",
+      "properties": {
+        "category": "보장"
+      },
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 상생친구 보장보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_sangsaeng_age_range",
+      "type": "Eligibility",
+      "label": "가입나이 요건",
+      "properties": {
+        "age_range": "0세(태아포함) ~ 30세",
+        "contract_types": [
+          "보장형 계약"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.라",
+        "source_text": "■ 보장형 계약 - 최저가입나이 : 0세(태아포함) - 최고가입나이 : 30세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_sangsaeng_coverage_limit",
+      "type": "Eligibility",
+      "label": "가입한도 요건",
+      "properties": {
+        "coverage_limit": "보험가입금액 : 1,000만원 ~ 2억원",
+        "contract_types": [
+          "주계약 기준"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "■ 가입한도(주계약 기준) 주계약 | 보험가입금액 : 1,000만원 ~ 2억원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Eligibility#hwl_sangsaeng_health_exam",
+      "type": "Eligibility",
+      "label": "건강진단 요건",
+      "properties": {
+        "health_requirements": "피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단 시행 가능"
+      },
+      "provenance": {
+        "source_section_id": "sec2.마",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며, 그 결과에 따라 보험가입 가능여부를 판정할 수 있습니다.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_cancer_y",
+      "type": "Rider",
+      "label": "암진단보장 Y 특약",
+      "properties": {
+        "rider_name": "암진단보장Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약",
+        "insurance_period": "20년만기",
+        "premium_payment_period": "전기납"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "∙ 암진단보장 Y 특약 무배당(상생협력형), 소액질병진단보장 Y 특약 무배당(상생협력형), 뇌혈관질환진단보장 Y 특약 무배당(상생협력형), 허혈성심장질환진단보장 Y 특약 무배당(상생협력형), 104대질병수술 Y 특약 무배당(상생협력형), 첫날부터입원 Y 특약 무배당(상생협력형), 재해수술추상골절치료보장 Y 특약 무배당(상생협력형), 질병후유장해(3-100%)Y 특약 무배당(상생협력형), 중증질환자 뇌혈관질환 산정특례대상보장특약 무배당(상생협력형), 중증질환자 심장질환 산정특례대상보장특약 무배당(상생협력형) : 20년만기",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_newborn_brain",
+      "type": "Rider",
+      "label": "신생아뇌출혈보장특약",
+      "properties": {
+        "rider_name": "신생아뇌출혈보장특약 무배당",
+        "rider_type": "종속특약",
+        "insurance_period": "1세만기",
+        "premium_payment_period": "전기납"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "∙ 신생아뇌출혈보장특약 무배당(상생협력형) : 1세만기",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_burn_diagnosis",
+      "type": "Rider",
+      "label": "특정 화상 및 부식 진단특약",
+      "properties": {
+        "rider_name": "특정 화상 및 부식(표재성포함 2도이상)진단특약 무배당(상생협력형)",
+        "rider_type": "선택특약",
+        "insurance_period": "20년만기",
+        "premium_payment_period": "전기납"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "∙ 특정 화상 및 부식(표재성포함 2도이상)진단특약 무배당(상생협력형), 독감(인플루엔자) 입원보장특약 무배당(상생협력형), 중증재생불량성빈혈진단특약 무배당(상생협력형) : 20년만기",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_8_disability",
+      "type": "Rider",
+      "label": "8대장애진단특약",
+      "properties": {
+        "rider_name": "8대장애진단특약(T3.3) 무배당",
+        "rider_type": "선택특약",
+        "insurance_period": "20세만기",
+        "premium_payment_period": "전기납",
+        "rider_code": "T3.3"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "∙ 8대장애진단특약 무배당(상생협력형), 중증세균성수막염진단특약 무배당(상생협력형), 수두진단특약 무배당(상생협력형) : 20세만기",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Rider#hwl_sangsaeng_perinatal_hospitalization",
+      "type": "Rider",
+      "label": "주산기입원보장특약",
+      "properties": {
+        "rider_name": "주산기입원보장특약(T10.3) 무배당",
+        "rider_type": "의무부가",
+        "insurance_period": "1세만기",
+        "premium_payment_period": "전기납, 일시납",
+        "special_note": "태아가입시 의무부가",
+        "rider_code": "T10.3"
+      },
+      "provenance": {
+        "source_section_id": "sec2.나",
+        "source_text": "∙ 주산기입원보장특약 무배당, 주산기수술보장특약 무배당 : 1세만기",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "Product_Category#guarantee",
+      "type": "Product_Category",
+      "label": "순수보장성 상품",
+      "properties": {
+        "category": "보장"
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "이 상품은 순수보장성으로 만기시 지급받는 금액(만기보험금)이 없습니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_accident_disability",
+      "type": "Coverage",
+      "label": "재해장해급여금",
+      "properties": {
+        "benefit_name": "재해장해급여금",
+        "trigger_condition": "피보험자에게 보험기간 중 발생한 재해로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "payment_amount": "1,000만원 × 해당 장해지급률",
+        "normalized_code": "accidental_disability_benefit",
+        "category": "DISABILITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "재해장해급여금 | 피보험자에게 보험기간 중 발생한 재해로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우 | 1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_saengsaeng_disability_rate",
+      "type": "Calculation",
+      "label": "재해장해급여금 계산",
+      "properties": {
+        "formula_text": "1,000만원 × 해당 장해지급률",
+        "formula_type": "benefit",
+        "applies_to": "재해장해급여금",
+        "variables": [
+          "보험가입금액(1,000만원)",
+          "해당 장해지급률"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주계약",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_perinatal_surgery",
+      "type": "Coverage",
+      "label": "주산기수술자금",
+      "properties": {
+        "benefit_name": "주산기수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 50만원",
+        "rider_code": "T8.3",
+        "normalized_code": "perinatal_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주산기수술보장특약",
+        "source_text": "주산기수술자금 | 피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 50만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_perinatal_hospitalization",
+      "type": "Coverage",
+      "label": "주산기입원급여금",
+      "properties": {
+        "benefit_name": "입원급여금",
+        "trigger_condition": "보험기간 중 피보험자가 질병으로 진단받거나 재해가 발생하여 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우",
+        "payment_amount": "입원1일당 1만원",
+        "rider_code": "T10.3",
+        "normalized_code": "perinatal_hospitalization",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.주산기입원보장특약",
+        "source_text": "주산기입원급여금 | 피보험자가 보험기간 중 '주산기질환'으로 진단이 확정되고, 그 치료를 직접적인 목적으로 보험기간 중 4일 이상 입원하였을 경우 | 3일초과 1일당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_104disease_surgery_10",
+      "type": "Coverage",
+      "label": "10대특정질병II수술자금",
+      "properties": {
+        "benefit_name": "70대특정질병수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '70대특정질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 100만원",
+        "normalized_code": "ten_specific_disease_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.104대질병수술Y특약",
+        "source_text": "10대특정질병II수술자금 | 피보험자가 보험기간 중 '10대특정질병II'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 300만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_104disease_surgery_23",
+      "type": "Coverage",
+      "label": "23대특정질병수술자금",
+      "properties": {
+        "benefit_name": "23대특정질병수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '23대특정질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 200만원",
+        "normalized_code": "twentythree_specific_disease_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.104대질병수술Y특약",
+        "source_text": "23대특정질병수술자금 | 피보험자가 보험기간 중 '23대특정질병'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 200만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_hemorrhoids_surgery",
+      "type": "Coverage",
+      "label": "치핵 수술자금",
+      "properties": {
+        "benefit_name": "치핵 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '치핵'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우",
+        "payment_amount": "1회당 30만원",
+        "normalized_code": "hemorrhoid_surgery",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.104대질병수술Y특약",
+        "source_text": "치핵 수술자금 | 피보험자가 보험기간 중 '치핵'으로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 수술을 받았을 경우 | 1회당 30만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_cerebrovascular_diagnosis",
+      "type": "Coverage",
+      "label": "뇌혈관질환진단자금",
+      "properties": {
+        "benefit_name": "뇌혈관질환진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "cerebrovascular_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.뇌혈관질환진단보장Y특약",
+        "source_text": "뇌혈관질환진단자금 | 보험기간 중 피보험자가 '뇌혈관질환'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_minor_disease_skin_cancer",
+      "type": "Coverage",
+      "label": "기타피부암 소액질병진단자금",
+      "properties": {
+        "benefit_name": "소액질병진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "skin_cancer_small_disease_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.소액질병진단보장Y특약",
+        "source_text": "소액질병진단자금 | 보험기간 중 피보험자가 '기타피부암'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_minor_disease_thyroid",
+      "type": "Coverage",
+      "label": "갑상선암 소액질병진단자금",
+      "properties": {
+        "benefit_name": "소액질병진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '유방암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "thyroid_cancer_small_disease_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.소액질병진단보장Y특약",
+        "source_text": "보험기간 중 피보험자가 '갑상선암'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_minor_disease_colon",
+      "type": "Coverage",
+      "label": "대장점막내암 소액질병진단자금",
+      "properties": {
+        "benefit_name": "소액질병진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '대장점막내암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "colon_intramucosal_cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.소액질병진단보장Y특약",
+        "source_text": "보험기간 중 피보험자가 '대장점막내암'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_minor_disease_insitu",
+      "type": "Coverage",
+      "label": "제자리암 소액질병진단자금",
+      "properties": {
+        "benefit_name": "소액질병진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '제자리암'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "carcinoma_in_situ_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.소액질병진단보장Y특약",
+        "source_text": "보험기간 중 피보험자가 '제자리암'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_minor_disease_borderline",
+      "type": "Coverage",
+      "label": "경계성종양 소액질병진단자금",
+      "properties": {
+        "benefit_name": "소액질병진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '양성뇌종양'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "borderline_tumor_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.소액질병진단보장Y특약",
+        "source_text": "보험기간 중 피보험자가 '경계성종양'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_newborn_brain_hemorrhage",
+      "type": "Coverage",
+      "label": "신생아뇌출혈진단자금",
+      "properties": {
+        "benefit_name": "신생아뇌출혈진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 신생아뇌출혈로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "neonatal_brain_hemorrhage_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.신생아뇌출혈보장특약",
+        "source_text": "신생아뇌출혈진단자금 | 보험기간 중 피보험자가 보장개시일 이후에 신생아뇌출혈로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_cancer_diagnosis",
+      "type": "Coverage",
+      "label": "암진단자금",
+      "properties": {
+        "benefit_name": "암진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 보장개시일 이후에 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "cancer_diagnosis",
+        "category": "CANCER_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.암진단보장Y특약",
+        "source_text": "암진단자금 | 보험기간 중 피보험자가 보장개시일 이후에 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_disfigurement_severe",
+      "type": "Coverage",
+      "label": "현저한 추상 재해성형치료자금",
+      "properties": {
+        "benefit_name": "재해성형치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '추상(추한 모습)'으로 진단 확정되었을 경우",
+        "payment_amount": "1회당 200만원",
+        "normalized_code": "severe_disfigurement_plastic_treatment",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.재해수술추상골절치료보장Y특약",
+        "source_text": "재해성형치료자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '현저한 추상(추한 모습)'으로 진단 확정되었을 경우 | 1회당 300만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_specific_fracture",
+      "type": "Coverage",
+      "label": "특정재해골절 재해골절진단자금",
+      "properties": {
+        "benefit_name": "재해골절진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '특정재해골절'로 진단 확정 되었을 경우",
+        "payment_amount": "1회당 50만원",
+        "normalized_code": "specific_accidental_fracture_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.재해수술추상골절치료보장Y특약",
+        "source_text": "재해골절진단자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '특정재해골절'로 진단 확정 되었을 경우 | 1회당 50만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_other_fracture",
+      "type": "Coverage",
+      "label": "기타 재해골절진단자금",
+      "properties": {
+        "benefit_name": "재해골절진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '특정재해골절'이외 '재해골절'로 진단 확정 되었을 경우",
+        "payment_amount": "1회당 30만원",
+        "normalized_code": "other_accidental_fracture_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.재해수술추상골절치료보장Y특약",
+        "source_text": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 '특정재해골절'이외 '재해골절'로 진단 확정 되었을 경우 | 1회당 30만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_accident_surgery",
+      "type": "Coverage",
+      "label": "재해수술자금",
+      "properties": {
+        "benefit_name": "재해수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 수술을 받았을 경우",
+        "payment_amount": "1회당 50만원",
+        "normalized_code": "accident_surgery",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.재해수술추상골절치료보장Y특약",
+        "source_text": "재해수술자금 | 피보험자가 보험기간 중 발생한 재해를 직접적인 원인으로 수술을 받았을 경우 | 1회당 50만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_school_zone_traffic",
+      "type": "Coverage",
+      "label": "스쿨존 교통사고치료자금",
+      "properties": {
+        "benefit_name": "스쿨존 교통사고치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 스쿨존 교통사고를 직접적인 원인으로 치료를 받았을 경우(다만, 13세 계약 해당일 전일까지만 보장)",
+        "payment_amount": "1회당 30만원",
+        "normalized_code": "school_zone_traffic_accident_treatment",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.재해수술추상골절치료보장Y특약",
+        "source_text": "스쿨존 교통사고치료자금 | 피보험자가 보험기간 중 스쿨존 교통사고를 직접적인 원인으로 치료를 받았을 경우(다만, 13세 계약 해당일 전일까지만 보장) | 1회당 30만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_traffic_serious",
+      "type": "Coverage",
+      "label": "교통사고중상 치료자금",
+      "properties": {
+        "benefit_name": "교통사고중상 치료자금",
+        "trigger_condition": "피보험자가 보험기간 중 교통사고로 인하여 3주 이상의 치료를 요하는 부상(중상)을 입었을 경우",
+        "payment_amount": "1회당 30만원",
+        "normalized_code": "traffic_accident_serious_injury_treatment",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.재해수술추상골절치료보장Y특약",
+        "source_text": "교통사고중상 치료자금 | 피보험자가 보험기간 중 교통사고로 인하여 3주 이상의 치료를 요하는 부상(중상)을 입었을 경우 | 1회당 30만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_severe_cerebrovascular",
+      "type": "Coverage",
+      "label": "중증질환자 뇌혈관질환 산정특례대상보장보험금",
+      "properties": {
+        "benefit_name": "중증질환자 심장질환 산정특례대상보장보험금",
+        "trigger_condition": "피보험자가 보험기간 중 중증질환자 심장질환 산정특례대상에 해당하는 수술 또는 약제투여를 받고 보험기간 중 '중증질환자 심장질환 산정특례대상'으로 적용된 경우(연간 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "severe_cerebrovascular_disease_special_calculation",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.중증질환자뇌혈관질환산정특례대상보장특약",
+        "source_text": "중증질환자 뇌혈관질환 산정특례대상보장보험금 | 피보험자가 보험기간 중 중증질환자 뇌혈관질환 산정특례대상에 해당하는 수술 또는 진료(입원 포함)를 받고 보험기간 중 '중증질환자 뇌혈관질환 산정특례대상'으로 적용된 경우(연간 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_disease_disability",
+      "type": "Coverage",
+      "label": "질병장해보험금",
+      "properties": {
+        "benefit_name": "질병장해보험금",
+        "trigger_condition": "피보험자가 보험기간 중 동일한 질병(재해 이외의 장해상태 발생 원인을 말합니다.)으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우",
+        "payment_amount": "1,000만원 × 해당 장해지급률",
+        "normalized_code": "disease_disability",
+        "category": "DISABILITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.질병후유장해Y특약",
+        "source_text": "질병장해보험금 | 피보험자가 보험기간 중 동일한 질병(재해 이외의 장해상태 발생 원인을 말합니다.)으로 인하여 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우 | 1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_saengsaeng_disease_disability",
+      "type": "Calculation",
+      "label": "질병장해보험금 계산",
+      "properties": {
+        "formula_text": "1,000만원 × 해당 장해지급률",
+        "formula_type": "benefit",
+        "applies_to": "질병장해보험금",
+        "variables": [
+          "특약가입금액(1,000만원)",
+          "해당 장해지급률"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.질병후유장해Y특약",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_ischemic_heart",
+      "type": "Coverage",
+      "label": "허혈성심장질환진단자금",
+      "properties": {
+        "benefit_name": "허혈성심장질환진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "normalized_code": "ischemic_heart_disease_diagnosis",
+        "category": "CARDIOVASCULAR_DIAGNOSIS"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.허혈성심장질환진단보장Y특약",
+        "source_text": "허혈성심장질환진단자금 | 보험기간 중 피보험자가 '허혈성심장질환'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_8_disability",
+      "type": "Coverage",
+      "label": "8대장애진단자금",
+      "properties": {
+        "benefit_name": "8대심한장애진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '8대 장애' 중 하나 이상의 장애로 「장애인복지법 시행규칙」에 의거하여 '장애의 정도가 심한 장애인'으로 판정된 경우(최초 1회한)",
+        "payment_amount": "100만원",
+        "rider_code": "T3.3",
+        "normalized_code": "eight_major_disability_diagnosis",
+        "category": "DISABILITY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.8대장애진단특약",
+        "source_text": "8대장애진단자금 | 보험기간 중 피보험자가 '8대 장애' 중 하나 이상의 장애로 「장애인복지법 시행령」에 의거하여 '장애인'으로 등록된 경우(최초 1회한) | 100만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_wound_suture_face_1st",
+      "type": "Coverage",
+      "label": "급여 안면 및 경부 외 창상봉합술 수술자금 1종",
+      "properties": {
+        "benefit_name": "급여 안면 및 경부 창상봉합술 수술자금",
+        "trigger_condition": "보험기간 중 피보험자에게 재해가 발생하고 그 치료를 직접적인 목적으로 보험기간 중 '급여 입원 안면 및 경부 창상봉합술' 또는 '급여 통원 안면 및 경부 창상봉합술'을 받았을 경우(종별 1일 1회한, 종별 연간 3회한) - 3종",
+        "payment_amount": "3종 : 10만원",
+        "rider_code": "T3.3",
+        "normalized_code": "covered_facial_cervical_wound_suture_surgery",
+        "category": "SURGERY_GENERAL"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.급여재해창상봉합술보장특약안면경부외",
+        "source_text": "급여 안면 및 경부 외 창상봉합술 수술자금 | 보험기간 중 피보험자에게 재해가 발생하고 그 치료를 직접적인 목적으로 보험기간 중 '급여 입원 안면 및 경부 외 창상봉합술' 또는 '급여 통원 안면 및 경부 외 창상봉합술'을 받았을 경우(종별 1일 1회한, 종별 연간 3회한) | 1종 : 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_pin_removal",
+      "type": "Coverage",
+      "label": "급여 재해골절 철심제거 수술자금",
+      "properties": {
+        "benefit_name": "급여 재해골절 철심제거 수술자금",
+        "trigger_condition": "피보험자가 보험기간 중 '재해골절Ⅱ(치아파절 제외)'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '급여 철심제거 수술'을 받았을 경우(연간 1회한)",
+        "payment_amount": "10만원",
+        "rider_code": "T3.3",
+        "normalized_code": "covered_accidental_fracture_metal_removal_surgery",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.급여재해골절철심제거수술특약",
+        "source_text": "급여 재해골절 철심제거 수술자금 | 피보험자가 보험기간 중 '재해골절Ⅱ(치아파절 제외)'로 진단이 확정되고, 보험기간 중 그 치료를 직접적인 목적으로 '급여 철심제거 수술'을 받았을 경우(연간 1회한) | 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_cast_treatment",
+      "type": "Coverage",
+      "label": "깁스치료자금",
+      "properties": {
+        "benefit_name": "깁스치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 재해 또는 재해 이외의 원인으로 인하여 '깁스(Cast)치료'를 받은 경우",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "T3.3",
+        "normalized_code": "cast_treatment",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.깁스및급여부목치료보장특약",
+        "source_text": "깁스치료자금 | 보험기간 중 피보험자가 재해 또는 재해 이외의 원인으로 인하여 '깁스(Cast)치료'를 받은 경우 | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_splint_treatment",
+      "type": "Coverage",
+      "label": "급여 부목치료자금",
+      "properties": {
+        "benefit_name": "급여 부목치료자금",
+        "trigger_condition": "보험기간 중 피보험자가 '급여 부목치료'를 받은 경우(연간 1회한)",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "T3.3",
+        "normalized_code": "covered_splint_treatment",
+        "category": "OTHER"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.깁스및급여부목치료보장특약",
+        "source_text": "급여 부목치료자금 | 보험기간 중 피보험자가 '급여 부목치료'를 받은 경우(연간 1회한) | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_flu_hospitalization",
+      "type": "Coverage",
+      "label": "독감(인플루엔자)입원급여금",
+      "properties": {
+        "benefit_name": "독감(인플루엔자)입원급여금",
+        "trigger_condition": "피보험자가 보험기간 중 독감(인플루엔자)로 진단이 확정되고, 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우(1회 입원당 30일 한도)",
+        "payment_amount": "입원 1일당 1만원",
+        "rider_code": "T3.3",
+        "normalized_code": "influenza_hospitalization_benefit",
+        "category": "HOSPITALIZATION"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.독감인플루엔자입원보장특약",
+        "source_text": "독감(인플루엔자)입원급여금 | 피보험자가 보험기간 중 독감(인플루엔자)로 진단이 확정되고, 그 치료를 직접적인 목적으로 1일 이상 입원하였을 경우(1회 입원당 30일 한도) | 입원 1일당 1만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_chickenpox",
+      "type": "Coverage",
+      "label": "수두진단자금",
+      "properties": {
+        "benefit_name": "수두진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '수두'로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "10만원",
+        "rider_code": "T3.3",
+        "normalized_code": "chickenpox_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.수두진단특약",
+        "source_text": "수두진단자금 | 보험기간 중 피보험자가 '수두'로 진단이 확정되었을 경우(최초 1회한) | 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_emergency_room",
+      "type": "Coverage",
+      "label": "응급환자 응급실내원진료비",
+      "properties": {
+        "benefit_name": "응급환자 응급실내원진료비",
+        "trigger_condition": "피보험자가 보험기간 중 '응급환자 응급실 내원 진료비 대상자'에 해당하였을 경우",
+        "payment_amount": "내원 1회당 2만원",
+        "rider_code": "T4.3",
+        "normalized_code": "emergency_room_visit",
+        "category": "OUTPATIENT"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.응급환자응급실내원특약",
+        "source_text": "응급환자 응급실내원진료비 | 피보험자가 보험기간 중 '응급환자 응급실 내원 진료비 대상자'에 해당하였을 경우 | (내원 1회당) 2만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_severe_bacterial_meningitis",
+      "type": "Coverage",
+      "label": "중증세균성수막염진단자금",
+      "properties": {
+        "benefit_name": "중증세균성수막염진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '중증세균성수막염'으로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "rider_code": "T3.3",
+        "normalized_code": "severe_bacterial_meningitis_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.중증세균성수막염진단특약",
+        "source_text": "중증세균성수막염진단자금 | 보험기간 중 피보험자가 '중증세균성수막염'으로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_severe_aplastic_anemia",
+      "type": "Coverage",
+      "label": "중증재생불량성빈혈진단자금",
+      "properties": {
+        "benefit_name": "중증재생불량성빈혈진단자금",
+        "trigger_condition": "보험기간 중 피보험자가 '중증재생불량성빈혈'로 진단이 확정되었을 경우(최초 1회한)",
+        "payment_amount": "1,000만원",
+        "rider_code": "T3.3",
+        "normalized_code": "severe_aplastic_anemia_diagnosis",
+        "category": "SPECIFIC_DISEASE"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.중증재생불량성빈혈진단특약",
+        "source_text": "중증재생불량성빈혈진단자금 | 보험기간 중 피보험자가 '중증재생불량성빈혈'로 진단이 확정되었을 경우(최초 1회한) | 1,000만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#hwl_saengsaeng_burn_corrosion",
+      "type": "Coverage",
+      "label": "특정 화상 및 부식(표재성포함 2도이상)진단자금",
+      "properties": {
+        "benefit_name": "특정 화상 및 부식(표재성포함 2도이상)진단자금",
+        "trigger_condition": "피보험자가 보험기간 중 재해 또는 재해 이외의 원인으로 인하여 '특정 화상 및 부식Ⅱ'으로 진단확정된 경우(연간 1회를 한도로 함)",
+        "payment_amount": "1회당 10만원",
+        "rider_code": "T4.1",
+        "normalized_code": "specific_burns_corrosion_diagnosis",
+        "category": "FRACTURE_INJURY"
+      },
+      "provenance": {
+        "source_section_id": "sec3.나.특정화상및부식진단특약",
+        "source_text": "특정 화상 및 부식(표재성포함 2도이상)진단자금 | 피보험자가 보험기간 중 재해 또는 재해 이외의 원인으로 인하여 '특정 화상 및 부식Ⅱ'으로 진단확정된 경우(연간 1회를 한도로 함) | 1회당 10만원",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_104disease_surgery",
+      "type": "Rider",
+      "label": "104대질병수술Y특약",
+      "properties": {
+        "rider_name": "104대질병수술Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 104대질병수술Y특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_cerebrovascular_diagnosis",
+      "type": "Rider",
+      "label": "뇌혈관질환진단보장Y특약",
+      "properties": {
+        "rider_name": "뇌혈관질환진단보장Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 뇌혈관질환진단보장Y특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_minor_disease_diagnosis",
+      "type": "Rider",
+      "label": "소액질병진단보장Y특약",
+      "properties": {
+        "rider_name": "소액질병진단보장Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 소액질병진단보장Y특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_accident_surgery_disfigurement",
+      "type": "Rider",
+      "label": "재해수술추상골절치료보장Y특약",
+      "properties": {
+        "rider_name": "재해수술추상골절치료보장Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 재해수술추상골절치료보장Y특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_severe_cerebrovascular_special",
+      "type": "Rider",
+      "label": "중증질환자 뇌혈관질환 산정특례대상보장특약",
+      "properties": {
+        "rider_name": "중증질환자 심장질환 산정특례대상보장특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 중증질환자 뇌혈관질환 산정특례대상보장특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_disease_disability",
+      "type": "Rider",
+      "label": "질병후유장해Y특약",
+      "properties": {
+        "rider_name": "질병후유장해(3-100%)Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 질병후유장해(3-100%)Y특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_first_day_hospitalization",
+      "type": "Rider",
+      "label": "첫날부터입원Y특약",
+      "properties": {
+        "rider_name": "첫날부터입원Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 첫날부터입원Y특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Rider#hwl_saengsaeng_ischemic_heart_diagnosis",
+      "type": "Rider",
+      "label": "허혈성심장질환진단보장Y특약",
+      "properties": {
+        "rider_name": "허혈성심장질환진단보장Y특약 무배당[상생협력형]",
+        "rider_type": "종속특약"
+      },
+      "provenance": {
+        "source_section_id": "sec3.가",
+        "source_text": "+ 허혈성심장질환진단보장Y특약 무배당[상생협력형]",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_saengsaeng_intentional_harm",
+      "type": "Exclusion",
+      "label": "고의적 자해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "피보험자가 고의로 자신을 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_saengsaeng_mental_harm",
+      "type": "Exception",
+      "label": "심신상실 자해 예외",
+      "properties": {
+        "exception_condition": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "referenced_exclusion": "고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우 특히 그 결과 사망에 이르게 된 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_saengsaeng_suicide_2year",
+      "type": "Exception",
+      "label": "2년 경과 후 자살 예외",
+      "properties": {
+        "exception_condition": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우",
+        "referenced_exclusion": "고의적 자해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우에는 약관에서 정한 사망보험금을 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_saengsaeng_beneficiary_harm",
+      "type": "Exclusion",
+      "label": "보험수익자의 고의적 피해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "보험수익자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#hwl_saengsaeng_partial_beneficiary",
+      "type": "Exception",
+      "label": "일부 보험수익자 예외",
+      "properties": {
+        "exception_condition": "보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급",
+        "referenced_exclusion": "보험수익자의 고의적 피해"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "다만, 보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_saengsaeng_contractor_harm",
+      "type": "Exclusion",
+      "label": "계약자의 고의적 피해",
+      "properties": {
+        "exclusion_type": "고의",
+        "condition_text": "계약자가 고의로 피보험자를 해친 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_saengsaeng_fraud_purpose",
+      "type": "Exclusion",
+      "label": "사기 목적 사고 발생",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_saengsaeng_document_falsification",
+      "type": "Exclusion",
+      "label": "서류 위조/변조",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#hwl_saengsaeng_fraudulent_contract",
+      "type": "Exclusion",
+      "label": "사기적 계약 체결",
+      "properties": {
+        "exclusion_type": "사기",
+        "condition_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우"
+      },
+      "provenance": {
+        "source_section_id": "sec3.다",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음을 회사가 증명하는 경우",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_sangho_premium_discount_rate",
+      "type": "Calculation",
+      "label": "보장부분 적용이율에 의한 보험료 할인",
+      "properties": {
+        "formula_text": "보험료를 납입하는 시점과 보험금 지급 사이에는 시차가 발생하므로 이 기간 동안 기대되는 수익을 미리 예상하여 일정한 비율로 보험료를 할인",
+        "formula_type": "premium_discount",
+        "applies_to": "보험료 산출 시 할인",
+        "variables": [
+          "적용이율",
+          "납입시점",
+          "보험금지급시점"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "보험료를 납입하는 시점과 보험금 지급 사이에는 시차가 발생하므로 이 기간 동안 기대되는 수익을 미리 예상하여 일정한 비율로 보험료를 할인해 주는데, 이 할인율을 보장부분 적용이율이라고 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Premium_Discount#hwl_sangho_guarantee_rate",
+      "type": "Premium_Discount",
+      "label": "보장부분 적용이율",
+      "properties": {
+        "discount_type": "보장부분 적용이율",
+        "discount_rate_text": "연복리 2.75%(다만, 보험기간 3년 이하인 갱신형 특약의 경우 2.25%)"
+      },
+      "provenance": {
+        "source_section_id": "sec4.가",
+        "source_text": "한화생명 상생친구 보장보험 무배당 주계약 및 특약의 산출이율은 연복리 2.75%(다만, 보험기간 3년 이하인 갱신형 특약의 경우 2.25%)입니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_sangho_risk_rate_impact",
+      "type": "Calculation",
+      "label": "적용위험률에 따른 보험료 산출",
+      "properties": {
+        "formula_text": "적용해지율이 높으면 보험료는 내려가고, 낮으면 보험료는 올라갑니다",
+        "formula_type": "premium",
+        "applies_to": "해지율 기반 보험료 산출",
+        "variables": [
+          "적용해지율",
+          "보험료"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec4.나",
+        "source_text": "일반적으로 적용위험률이 높으면 보험료는 올라가고, 낮으면 보험료는 내려갑니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Surrender_Value#hwl_sangsaeng_general",
+      "type": "Surrender_Value",
+      "label": "해약환급금 산출 기준",
+      "properties": {
+        "calculation_basis": "계약자적립액에서 해약공제액을 공제한 금액",
+        "key_milestones": "1년까지 0%, 2년부터 환급금 발생"
+      },
+      "provenance": {
+        "source_section_id": "sec6.가",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_sangsaeng_surrender_rate",
+      "type": "Calculation",
+      "label": "해약환급률 계산식",
+      "properties": {
+        "formula_text": "납입보험료 - 위험보험료 - 계약체결 및 계약관리비용(해약공제금액 포함)",
+        "formula_type": "surrender_value",
+        "applies_to": "중도해지시 해약환급금 산출",
+        "variables": [
+          "납입보험료",
+          "위험보험료",
+          "계약체결비용",
+          "계약관리비용",
+          "해약공제금액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec6.나",
+        "source_text": "상기 예시된 환급률은 경과기간별로 각 시점에서의 해약환급금을 그 시점까지 납입한 납입보험료로 나눈 비율입니다",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "Regulation#insurance_pricing_index",
+      "type": "Regulation",
+      "label": "보험가격지수 기준",
+      "properties": {
+        "regulation_type": "정의",
+        "article_number": "생명보험 상품공시 시행세칙"
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Calculation#hwl_sangsaeng_pricing_index",
+      "type": "Calculation",
+      "label": "보험가격지수 계산식",
+      "properties": {
+        "formula_text": "보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료) ÷ (참조순보험료 총액 + 평균사업비 총액)",
+        "formula_type": "pricing_index",
+        "applies_to": "보험가격지수 산출",
+        "variables": [
+          "보험료총액",
+          "참조순보험료 총액",
+          "평균사업비 총액"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_sangsaeng_reference_premium",
+      "type": "Calculation",
+      "label": "참조순보험료 총액 산출",
+      "properties": {
+        "formula_text": "평균공시이율, 평균해지율 및 참조순보험요율을 적용하여 산출",
+        "formula_type": "reference_premium",
+        "applies_to": "참조순보험료 총액",
+        "variables": [
+          "평균공시이율",
+          "평균해지율",
+          "참조순보험요율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "참조순보험료 총액 : 금융감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균(평균공시이율), 평균해지율 및 참조순보험요율을 적용하여 산출한 보험금 지급을 위한 보험료",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Calculation#hwl_sangsaeng_average_expense",
+      "type": "Calculation",
+      "label": "평균사업비 총액 계산",
+      "properties": {
+        "formula_text": "상품군별 생명보험상품 전체의 평균 사업비율을 반영하여 계산(역산)한 값",
+        "formula_type": "average_expense",
+        "applies_to": "평균사업비 총액",
+        "variables": [
+          "평균 사업비율"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "평균사업비 총액 : 상품군별 생명보험상품 전체의 평균 사업비율을 반영하여 계산(역산)한 값",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Product_Category#protection",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "한화생명 상생친구 보장보험 무배당",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Product_Category#guarantee",
+      "type": "OWNS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 상품은 순수보장성으로 만기시 지급받는 금액(만기보험금)이 없습니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Dividend_Method#hwl_sangsaeng_friend_nodividend",
+      "type": "NO_DIVIDEND_STRUCTURE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec5",
+        "source_text": "이 보험은 무배당 상품으로서 계약자배당을 하지 않습니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Eligibility#hwl_sangsaeng_friend_contractor",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "계약자가 \"장애인\", \"가구중위소득 60%이하 한부모 가정의 부 또는 모\" 또는 \"차상위계층인 다문화 가정의 부 또는 모\"인 경우에 한하여 계약자의 자녀를 피보험자로 하여 가입이 가능합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Eligibility#hwl_sangsaeng_age_range",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "최저가입나이 : 0세(태아포함), 최고가입나이 : 30세",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Eligibility#hwl_sangsaeng_coverage_limit",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "주계약 보험가입금액 : 1,000만원 ~ 2억원",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Eligibility#hwl_sangsaeng_health_exam",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec2",
+        "source_text": "본 상품은 피보험자의 기존 보험가입상황 및 나이, 청약서의 계약전 알릴의무에 따라 건강진단을 시행할 수 있으며",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Premium_Discount#hwl_sangsaeng_friend_group",
+      "type": "HAS_DISCOUNT",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료 할인은 단체취급할인이 있으며, 단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Eligibility#hwl_sangsaeng_friend_group_conditions",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급특약은 계약을 체결할 때 다음과 같은 조건을 만족하는 계약에 한하여 적용합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Rider#hwl_sangsaeng_friend_k19",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "이 보험에 부가된 지정대리청구서비스특약(K1.9)은",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Rider#hwl_sangsaeng_friend_emergency_renewal",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "응급환자 응급실내원특약(갱신형) 무배당(상생협력형)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Rider#hwl_sangsaeng_friend_cast_renewal",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "깁스 및 급여 부목치료보장특약(갱신형) 무배당(상생협력형)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Rider#hwl_sangsaeng_friend_suture_face_renewal",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 재해 창상봉합술 보장특약[안면,경부](갱신형)(연 3회) 무배당(상생협력형)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Rider#hwl_sangsaeng_friend_fracture_surgery_renewal",
+      "type": "HAS_RIDER",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 재해골절 철심제거 수술특약(연 1회)(갱신형) 무배당(상생협력형)",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_sangsaeng_friend_cancer_y",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "암진단보장 Y 특약 무배당의 경우 면책 및 감액기간 삭제로 가입 즉시 보장합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_sangsaeng_friend_premium_waiver_y",
+      "type": "WAIVES_PREMIUM",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "보험료납입면제 Y 특약(무), 보험료납입면제 Y 특약(갱신형)(무)는 보험기간 중 피보험자가 '암(기타피부암, 대장점막내암, 초기유방암, 초기갑상선암 제외)', '뇌혈관질환' 및 '허혈성심장질환'으로 진단이 확정된 경우 해당계약 및 이 특약의 차회 이후의 보험료 납입을 면제하여 드리는 특약을 말합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "재해장해급여금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_perinatal_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "주산기수술자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_perinatal_hospitalization",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "주산기입원급여금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_104disease_surgery_10",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "10대특정질병II수술자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_104disease_surgery_23",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "23대특정질병수술자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_hemorrhoids_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "치핵 수술자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_cerebrovascular_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "뇌혈관질환진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_minor_disease_skin_cancer",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "기타피부암 소액질병진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_minor_disease_thyroid",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "갑상선암 소액질병진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_minor_disease_colon",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "대장점막내암 소액질병진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_minor_disease_insitu",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "제자리암 소액질병진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_minor_disease_borderline",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "경계성종양 소액질병진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_newborn_brain_hemorrhage",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "신생아뇌출혈진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_cancer_diagnosis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "암진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_disfigurement_severe",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "현저한 추상 재해성형치료자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_specific_fracture",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "특정재해골절 재해골절진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_other_fracture",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "기타 재해골절진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_accident_surgery",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "재해수술자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_school_zone_traffic",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "스쿨존 교통사고치료자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_traffic_serious",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "교통사고중상 치료자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_severe_cerebrovascular",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "중증질환자 뇌혈관질환 산정특례대상보장보험금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_disease_disability",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "질병장해보험금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_ischemic_heart",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "허혈성심장질환진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_8_disability",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "8대장애진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_wound_suture_face_1st",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 안면 및 경부 외 창상봉합술 수술자금 1종",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_pin_removal",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 재해골절 철심제거 수술자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_cast_treatment",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "깁스치료자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_splint_treatment",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "급여 부목치료자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_flu_hospitalization",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "독감(인플루엔자)입원급여금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_chickenpox",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "수두진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_emergency_room",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "응급환자 응급실내원진료비",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_severe_bacterial_meningitis",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "중증세균성수막염진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_severe_aplastic_anemia",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "중증재생불량성빈혈진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Coverage#hwl_saengsaeng_burn_corrosion",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "특정 화상 및 부식(표재성포함 2도이상)진단자금",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Surrender_Value#hwl_sangsaeng_general",
+      "type": "SURRENDER_PAYS",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "target_id": "Exclusion#hwl_saengsaeng_intentional_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 고의로 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "target_id": "Exclusion#hwl_saengsaeng_beneficiary_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "target_id": "Exclusion#hwl_saengsaeng_contractor_harm",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자가 고의로 피보험자를 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "target_id": "Exclusion#hwl_saengsaeng_fraud_purpose",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금을 지급받을 목적으로 고의로 보험금 지급사유를 발생시킨 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "target_id": "Exclusion#hwl_saengsaeng_document_falsification",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자, 피보험자 또는 보험수익자가 보험금 청구에 관한 서류에 고의로 사실과 다른 것을 기재하였거나 그 서류 또는 증거를 위조 또는 변조한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "target_id": "Exclusion#hwl_saengsaeng_fraudulent_contract",
+      "type": "EXCLUDED_IF",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약자 또는 피보험자가 대리진단, 약물사용을 수단으로 진단절차를 통과하거나 진단서 위·변조 또는 청약일 이전에 암 또는 인간면역결핍바이러스(HIV) 감염의 진단 확정을 받은 후 이를 숨기고 가입하는 등의 뚜렷한 사기의사에 의하여 계약이 성립되었음",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_saengsaeng_intentional_harm",
+      "target_id": "Exception#hwl_saengsaeng_mental_harm",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_saengsaeng_intentional_harm",
+      "target_id": "Exception#hwl_saengsaeng_suicide_2year",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "계약의 보장개시일(부활(효력회복)계약의 경우는 부활(효력회복)청약일)부터 2년이 지난 후에 자살한 경우",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Exclusion#hwl_saengsaeng_beneficiary_harm",
+      "target_id": "Exception#hwl_saengsaeng_partial_beneficiary",
+      "type": "EXCEPTION_ALLOWED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "보험수익자가 보험금의 일부 보험수익자인 경우에는 다른 보험수익자에 대한 보험금은 지급합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_accident_disability",
+      "target_id": "Calculation#hwl_saengsaeng_disability_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Coverage#hwl_saengsaeng_disease_disability",
+      "target_id": "Calculation#hwl_saengsaeng_disease_disability",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec3",
+        "source_text": "1,000만원 × 해당 장해지급률",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_sangsaeng_friend_group",
+      "target_id": "Calculation#hwl_sangho_premium_discount_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec1",
+        "source_text": "단체취급할인 : 1.5%",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Premium_Discount#hwl_sangho_guarantee_rate",
+      "target_id": "Calculation#hwl_sangho_risk_rate_impact",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec4",
+        "source_text": "보장부분 적용이율이 높으면 보험료는 내려가고, 낮아지면 보험료는 올라갑니다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Surrender_Value#hwl_sangsaeng_general",
+      "target_id": "Calculation#hwl_sangsaeng_surrender_rate",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec6",
+        "source_text": "이 보험의 보험료 계산시 적용한 위험률로 산출한 계약자적립액에서 해약공제액을 공제한 금액을 해약환급금으로 지급합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Policy#hwl_sangsaeng_friend",
+      "target_id": "Regulation#insurance_pricing_index",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "보험가격지수는 '생명보험 상품공시 시행세칙'에서 정한 기준에 따라 작성되었습니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Regulation#insurance_pricing_index",
+      "target_id": "Calculation#hwl_sangsaeng_pricing_index",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "해당 상품의 보험료총액을 \"참조순보험료 총액\"과 \"평균사업비 총액\"을 합한 금액으로 나눈 비율을 \"보험가격지수\"라고 합니다",
+        "confidence": 1.0
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_sangsaeng_pricing_index",
+      "target_id": "Calculation#hwl_sangsaeng_reference_premium",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "금융감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균(평균공시이율), 평균해지율 및 참조순보험요율을 적용하여 산출한 보험금 지급을 위한 보험료",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Calculation#hwl_sangsaeng_pricing_index",
+      "target_id": "Calculation#hwl_sangsaeng_average_expense",
+      "type": "CALCULATED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "sec7",
+        "source_text": "상품군별 생명보험상품 전체의 평균 사업비율을 반영하여 계산(역산)한 값",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T13:04:19.840917+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 84,
+    "relation_count": 69,
+    "sections_processed": 7,
+    "api_calls": 8,
+    "total_input_tokens": 91274,
+    "total_output_tokens": 40230
+  }
+}

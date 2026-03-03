@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .chat-markdown {
+    @apply prose prose-sm max-w-none;
+    @apply prose-p:my-1 prose-headings:my-2 prose-li:my-0.5;
+    @apply prose-h1:text-base prose-h2:text-sm prose-h3:text-sm;
+    @apply prose-table:text-xs prose-th:px-2 prose-th:py-1 prose-td:px-2 prose-td:py-1;
+    @apply prose-code:text-xs prose-code:px-1 prose-code:py-0.5 prose-code:rounded;
+    @apply prose-headings:text-inherit prose-p:text-inherit prose-li:text-inherit;
+    @apply [&>*:last-child]:mb-0;
+  }
+}

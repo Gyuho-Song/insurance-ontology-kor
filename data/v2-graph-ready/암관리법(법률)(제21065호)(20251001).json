@@ -1,0 +1,815 @@
+{
+  "document_id": "암관리법(법률)(제21065호)(20251001)",
+  "product_name": "암관리법(법률)(제21065호)(20251001)",
+  "entities": [
+    {
+      "id": "Regulation#암관리법_art1",
+      "type": "Regulation",
+      "label": "암관리법의 목적",
+      "properties": {
+        "article_number": "제1조",
+        "article_title": "목적",
+        "regulation_type": "목적규정"
+      },
+      "provenance": {
+        "source_section_id": "art1",
+        "source_text": "이 법은 국가가 암의 예방, 진료, 연구 및 암 치료 후 사후관리 등에 관한 정책을 종합적으로 수립ㆍ시행함으로써 암으로 인한 개인적 고통과 피해 및 사회적 부담을 줄이고 국민건강증진에 이바지함을 목적으로 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art3",
+      "type": "Regulation",
+      "label": "국가 등의 암관리 의무",
+      "properties": {
+        "article_number": "제3조",
+        "article_title": "국가 등의 의무",
+        "regulation_type": "의무규정"
+      },
+      "provenance": {
+        "source_section_id": "art3.par1",
+        "source_text": "국가 및 지방자치단체는 암의 예방, 진료, 연구 및 암 치료 후 사후관리 등(이하 \"암관리\"라 한다)에 관한 사업을 시행하고 지원함으로써 암을 예방하고 암환자에게 적절한 의료서비스가 제공될 수 있도록 적극 노력하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art3_의료인의무",
+      "type": "Regulation",
+      "label": "의료인의 암관리사업 협조 의무",
+      "properties": {
+        "article_number": "제3조",
+        "article_title": "국가 등의 의무",
+        "regulation_type": "의무규정"
+      },
+      "provenance": {
+        "source_section_id": "art3.par2",
+        "source_text": "「의료법」에 따른 의료인 및 의료기관의 장은 국가 및 지방자치단체가 시행하는 암관리에 관한 사업(이하 \"암관리사업\"이라 한다)에 적극 협조하여야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art4",
+      "type": "Regulation",
+      "label": "암 예방의 날 및 교육홍보 의무",
+      "properties": {
+        "article_number": "제4조",
+        "article_title": "암 예방의 날 및 홍보 등",
+        "regulation_type": "의무규정"
+      },
+      "provenance": {
+        "source_section_id": "art4",
+        "source_text": "암에 대한 국민의 이해를 높이고 암의 예방ㆍ치료 및 관리 의욕을 고취시키기 위하여 매년 3월 21일을 암 예방의 날로 정하고, 이에 적합한 행사를 하여야 한다.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "Coverage#암관리법_art3_의료서비스보장",
+      "type": "Coverage",
+      "label": "암환자 의료서비스 보장",
+      "properties": {
+        "coverage_scope": "암환자 경제적 부담능력 고려",
+        "protection_type": "적절한 의료서비스 보장",
+        "coverage_type": "의료비 지원"
+      },
+      "provenance": {
+        "source_section_id": "art3.par1",
+        "source_text": "암을 예방하고 암환자에게 적절한 의료서비스가 제공될 수 있도록 적극 노력하여야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art5",
+      "type": "Regulation",
+      "label": "암관리종합계획의 수립",
+      "properties": {
+        "article_number": "제5조",
+        "article_title": "암관리종합계획의 수립",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art5",
+        "source_text": "보건복지부장관은 제6조에 따른 국가암관리위원회의 심의를 거쳐 암관리종합계획(이하 \"종합계획\"이라 한다)을 5년마다 세워야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art6",
+      "type": "Regulation",
+      "label": "국가암관리위원회 설치",
+      "properties": {
+        "article_number": "제6조",
+        "article_title": "국가암관리위원회",
+        "regulation_type": "정의"
+      },
+      "provenance": {
+        "source_section_id": "art6",
+        "source_text": "종합계획의 수립 등 암관리에 관한 중요사항을 심의하기 위하여 보건복지부장관 소속으로 국가암관리위원회(이하 \"위원회\"라 한다)를 둔다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art9",
+      "type": "Regulation",
+      "label": "암연구사업 시행",
+      "properties": {
+        "article_number": "제9조",
+        "article_title": "암연구사업",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art9",
+        "source_text": "보건복지부장관은 암의 예방과 진료기술의 발전을 위하여 암 연구ㆍ개발사업(이하 \"암연구사업\"이라 한다)을 시행한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art10의2",
+      "type": "Regulation",
+      "label": "암예방사업 시행 의무",
+      "properties": {
+        "article_number": "제11조",
+        "article_title": "암검진사업",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art10.2",
+        "source_text": "보건복지부장관은 암 발생 위험을 낮추거나 암 발생을 감소시키기 위하여 다음 각 호의 예방사업(이하 \"암예방사업\"이라 한다)을 시행하여야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Coverage#암관리법_art11_medical_cost",
+      "type": "Coverage",
+      "label": "암검진비용 지원",
+      "properties": {
+        "coverage_type": "의료비 지원",
+        "coverage_scope": "의료급여수급자 및 건강보험가입자"
+      },
+      "provenance": {
+        "source_section_id": "art11",
+        "source_text": "보건복지부장관은 암검진을 받는 사람 중 「의료급여법」에 따른 의료급여수급자 및 대통령령으로 정하는 건강보험가입자에 대하여는 예산 또는 「국민건강증진법」에 따른 국민건강증진기금(이하 \"국민건강증진기금\"이라 한다)에서 그 비용의 전부 또는 일부를 지원할 수 있다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#암관리법_art13_support_application",
+      "type": "Eligibility",
+      "label": "의료비 지원 신청 요건",
+      "properties": {
+        "requirement_type": "신청 절차",
+        "application_method": "관할 보건소장 신청"
+      },
+      "provenance": {
+        "source_section_id": "art13",
+        "source_text": "제1항에 따라 의료비를 지원받으려는 암환자 또는 그를 대리하는 사람(이하 \"암환자등\"이라 한다)은 관할 보건소장에게 지원 신청을 하여야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Product_Category#보험업법_보험",
+      "type": "Product_Category",
+      "label": "보험업법 보험상품",
+      "properties": {
+        "category_type": "보험상품",
+        "legal_basis": "보험업법 제4조제1항"
+      },
+      "provenance": {
+        "source_section_id": "art13",
+        "source_text": "「보험업법」 제4조제1항 각 호에 따른 보험에 가입하여 납부한 보험료와 그 밖에 대통령령으로 정하는 자료 또는 정보(이하 \"보험정보\"라 한다)",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art14",
+      "type": "Regulation",
+      "label": "암등록통계사업 시행",
+      "properties": {
+        "article_number": "제14조",
+        "article_title": "암등록통계사업",
+        "regulation_type": "의무"
+      },
+      "provenance": {
+        "source_section_id": "art14",
+        "source_text": "보건복지부장관은 암 발생 위험 요인과 암의 발생 및 치료에 관한 자료를 지속적이고 체계적으로 수집ㆍ분석하여 암 발생률, 생존율 등의 통계를 산출하기 위한 등록ㆍ관리ㆍ조사사업(이하 \"암등록통계사업\"이라 한다)을 시행하여야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Exclusion#암관리법_art16_investigation_prohibition",
+      "type": "Exclusion",
+      "label": "역학조사 방해 금지",
+      "properties": {
+        "prohibition_type": "행위 제한",
+        "prohibited_acts": [
+          "역학조사 거부·방해·회피",
+          "거짓 진술·자료 제출",
+          "사실 누락·은폐"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art16",
+        "source_text": "누구든지 질병관리청장 또는 시ㆍ도지사가 실시하는 역학조사에서 다음 각 호의 행위를 하여서는 아니 된다. 1. 정당한 사유 없이 역학조사를 거부ㆍ방해 또는 회피하는 행위 2. 거짓으로 진술하거나 거짓 자료를 제출하는 행위 3. 고의적으로 사실을 누락ㆍ은폐하는 행위",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#암관리법_art17_center_designation",
+      "type": "Eligibility",
+      "label": "중앙암등록본부 지정 기준",
+      "properties": {
+        "requirement_type": "기관 지정 요건",
+        "eligible_institutions": [
+          "국립암센터",
+          "보건복지부령 기준 충족 암 전문 연구기관"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art17",
+        "source_text": "보건복지부장관은 다음 각 호의 업무를 수행하기 위하여 국립암센터 또는 보건복지부령으로 정하는 시설ㆍ인력ㆍ장비 등의 기준을 충족하는 암 전문 연구기관 중 1개 기관을 중앙암등록본부로 지정할 수 있다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#암관리법_art19_regional_center",
+      "type": "Eligibility",
+      "label": "지역암센터 지정 기준",
+      "properties": {
+        "requirement_type": "기관 지정 요건",
+        "eligible_institutions": [
+          "종합병원 중 보건복지부령 기준 충족 기관"
+        ]
+      },
+      "provenance": {
+        "source_section_id": "art19",
+        "source_text": "보건복지부장관은 「의료법」 제3조제2항제3호마목에 따른 종합병원 중 보건복지부령으로 정하는 기준을 충족하는 종합병원을 시ㆍ도별 지역암센터로 지정할 수 있다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art27",
+      "type": "Regulation",
+      "label": "국립암센터 설립 등",
+      "properties": {
+        "article_number": "제30조",
+        "article_title": "사업",
+        "regulation_type": "사업규정"
+      },
+      "provenance": {
+        "source_section_id": "art27",
+        "source_text": "① 암에 관한 전문적인 연구와 암환자의 진료 등을 위하여 국립암센터를 설립ㆍ운영한다. ② 국립암센터는 법인으로 한다. ③ 국립암센터는 주된 사무소의 소재지에서 설립등기를 함으로써 성립한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art28",
+      "type": "Regulation",
+      "label": "정관",
+      "properties": {
+        "article_number": "제28조",
+        "article_title": "정관",
+        "regulation_type": "정관규정"
+      },
+      "provenance": {
+        "source_section_id": "art28",
+        "source_text": "① 국립암센터의 정관에는 다음 각 호의 사항을 기재하여야 한다. 1. 목적 2. 명칭 3. 주된 사무소 및 부속기관의 소재지 4. 사업 및 재정에 관한 사항 5. 이사회에 관한 사항 6. 기구와 직원의 정원에 관한 사항",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art31",
+      "type": "Regulation",
+      "label": "임원",
+      "properties": {
+        "article_number": "제31조",
+        "article_title": "임원",
+        "regulation_type": "임원규정"
+      },
+      "provenance": {
+        "source_section_id": "art31",
+        "source_text": "① 국립암센터에 임원으로 이사장ㆍ원장을 포함한 9명 이내의 이사와 감사 1명을 둔다. ② 이사장, 이사(대통령령으로 정하는 5명 이내의 당연직 이사는 제외한다. 이하 제4항 및 제32조제1항제2호에서 같다) 및 감사는 이사회에서 선임하되, 보건복지부장관의 승인을 받아야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#암관리법_art31_disqualification",
+      "type": "Exclusion",
+      "label": "임원 결격사유",
+      "properties": {
+        "prohibition_type": "자격제한"
+      },
+      "provenance": {
+        "source_section_id": "art31.par8",
+        "source_text": "⑧ 「국가공무원법」 제33조 각 호의 어느 하나에 해당하는 사람은 임원이 될 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art43",
+      "type": "Regulation",
+      "label": "동일 명칭 사용의 금지",
+      "properties": {
+        "article_number": "제43조",
+        "article_title": "동일 명칭 사용의 금지",
+        "regulation_type": "금지규정"
+      },
+      "provenance": {
+        "source_section_id": "art43",
+        "source_text": "이 법에 따른 국립암센터가 아니면 국립암센터의 명칭을 사용할 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#암관리법_art43_naming",
+      "type": "Exclusion",
+      "label": "국립암센터 명칭 사용 금지",
+      "properties": {
+        "prohibition_type": "명칭사용제한"
+      },
+      "provenance": {
+        "source_section_id": "art43",
+        "source_text": "이 법에 따른 국립암센터가 아니면 국립암센터의 명칭을 사용할 수 없다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art44",
+      "type": "Regulation",
+      "label": "비밀유지 의무",
+      "properties": {
+        "article_number": "제44조",
+        "article_title": "비밀유지 의무",
+        "regulation_type": "의무규정"
+      },
+      "provenance": {
+        "source_section_id": "art44",
+        "source_text": "국립암센터의 임직원 또는 그 직에 있었던 자는 직무상 알게 된 비밀을 누설하거나 도용(盜用)하여서는 아니 된다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#암관리법_art44_confidentiality",
+      "type": "Exclusion",
+      "label": "비밀 누설 금지",
+      "properties": {
+        "prohibition_type": "비밀보호의무"
+      },
+      "provenance": {
+        "source_section_id": "art44",
+        "source_text": "국립암센터의 임직원 또는 그 직에 있었던 자는 직무상 알게 된 비밀을 누설하거나 도용(盜用)하여서는 아니 된다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Eligibility#암관리법_art28_approval",
+      "type": "Eligibility",
+      "label": "정관 변경 인가 요건",
+      "properties": {
+        "requirement_type": "인가요건"
+      },
+      "provenance": {
+        "source_section_id": "art28.par2",
+        "source_text": "② 국립암센터는 정관을 변경하려는 경우에는 보건복지부장관의 인가를 받아야 한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Eligibility#암관리법_art31_approval",
+      "type": "Eligibility",
+      "label": "임원 선임 승인 요건",
+      "properties": {
+        "requirement_type": "승인요건"
+      },
+      "provenance": {
+        "source_section_id": "art31.par2",
+        "source_text": "② 이사장, 이사(대통령령으로 정하는 5명 이내의 당연직 이사는 제외한다. 이하 제4항 및 제32조제1항제2호에서 같다) 및 감사는 이사회에서 선임하되, 보건복지부장관의 승인을 받아야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art46",
+      "type": "Regulation",
+      "label": "비용 지원",
+      "properties": {
+        "article_number": "제46조",
+        "article_title": "비용 지원",
+        "regulation_type": "지원규정"
+      },
+      "provenance": {
+        "source_section_id": "art46",
+        "source_text": "국가와 지방자치단체는 다음 각 호의 어느 하나에 해당하는 비용의 전부 또는 일부를 지원할 수 있다. 1. 지역암센터가 제19조제2항의 사업을 하기 위하여 필요한 시설ㆍ인력 및 장비 등을 확충하는 데 드는 비용 2. 중앙암등록본부 및 지역암등록본부의 암등록통계사업에 드는 비용과 의료기관의 암등록통계자료 제출에 드는 비용 3. 암검진사업의 시행 및 지원에 드는 비용 4. 암예방사업에 드는 비용 5. 재가암환자 관리사업에 드는 비용",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Coverage#암관리법_art46_support",
+      "type": "Coverage",
+      "label": "암관리사업 비용 지원 범위",
+      "properties": {
+        "coverage_scope": "암센터 시설확충, 암등록통계사업, 암검진사업, 암예방사업, 재가암환자관리사업, 암데이터사업, 암생존자통합지지사업 등",
+        "support_level": "전부 또는 일부"
+      },
+      "provenance": {
+        "source_section_id": "art46",
+        "source_text": "국가와 지방자치단체는 다음 각 호의 어느 하나에 해당하는 비용의 전부 또는 일부를 지원할 수 있다. 1. 지역암센터가 제19조제2항의 사업을 하기 위하여 필요한 시설ㆍ인력 및 장비 등을 확충하는 데 드는 비용",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art47",
+      "type": "Regulation",
+      "label": "지도ㆍ감독",
+      "properties": {
+        "article_number": "제47조",
+        "article_title": "지도ㆍ감독",
+        "regulation_type": "감독권한"
+      },
+      "provenance": {
+        "source_section_id": "art47",
+        "source_text": "보건복지부장관은 국립암센터의 업무를 지도ㆍ감독하며, 업무ㆍ회계 등에 관하여 필요한 사항을 보고하게 하거나 필요한 서류의 제출을 명할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art48",
+      "type": "Regulation",
+      "label": "청문",
+      "properties": {
+        "article_number": "제48조",
+        "article_title": "청문",
+        "regulation_type": "절차규정"
+      },
+      "provenance": {
+        "source_section_id": "art48",
+        "source_text": "보건복지부장관은 제12조의2제3항, 제17조제3항, 제18조의2제2항 또는 제19조제5항에 따라 지정을 취소하려는 경우에는 청문을 하여야 한다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exclusion#암관리법_art49_prohibition",
+      "type": "Exclusion",
+      "label": "개인정보 목적 외 사용 금지",
+      "properties": {
+        "prohibition_type": "개인정보 오남용 금지",
+        "subject": "암관리사업 종사자"
+      },
+      "provenance": {
+        "source_section_id": "art49",
+        "source_text": "이 법에 따라 암관리사업에 종사하거나 종사하였던 사람은 「개인정보 보호법」 제18조제2항에 따른 경우를 제외하고는 업무상 알게 된 개인정보를 타인에게 제공 또는 누설하거나 목적 외의 용도로 사용하여서는 아니 된다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Exception#암관리법_art49_exception",
+      "type": "Exception",
+      "label": "개인정보보호법 예외 사유",
+      "properties": {
+        "exception_condition": "개인정보 보호법 제18조제2항에 따른 경우"
+      },
+      "provenance": {
+        "source_section_id": "art49",
+        "source_text": "「개인정보 보호법」 제18조제2항에 따른 경우를 제외하고는",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art50",
+      "type": "Regulation",
+      "label": "위임 및 위탁",
+      "properties": {
+        "article_number": "제50조",
+        "article_title": "위임 및 위탁",
+        "regulation_type": "권한위임"
+      },
+      "provenance": {
+        "source_section_id": "art50",
+        "source_text": "① 이 법에 따른 보건복지부장관의 권한은 그 일부를 대통령령으로 정하는 바에 따라 시ㆍ도지사 또는 시장ㆍ군수ㆍ구청장에게 위임할 수 있다. ② 이 법에 따른 보건복지부장관의 업무는 그 일부를 대통령령으로 정하는 바에 따라 국립암센터, 「국민건강보험법」에 따른 국민건강보험공단ㆍ건강보험심사평가원 또는 그 밖에 암관리사업을 하는 법인ㆍ단체에 위탁할 수 있다.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art50-2",
+      "type": "Regulation",
+      "label": "금융정보등 또는 개인정보 오남용 벌칙",
+      "properties": {
+        "article_number": "제50조의2",
+        "article_title": "벌칙",
+        "regulation_type": "벌칙"
+      },
+      "provenance": {
+        "source_section_id": "art50-2",
+        "source_text": "제13조의2제5항 또는 제49조를 위반하여 금융정보등 또는 개인정보를 이 법에서 정한 목적 외의 다른 용도로 사용하거나 다른 사람 또는 기관에 제공 또는 유출한 사람은 5년 이하의 징역 또는 5천만원 이하의 벌금에 처한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art51",
+      "type": "Regulation",
+      "label": "제44조 위반 벌칙",
+      "properties": {
+        "article_number": "제51조",
+        "article_title": "벌칙",
+        "regulation_type": "벌칙"
+      },
+      "provenance": {
+        "source_section_id": "art51",
+        "source_text": "제44조를 위반한 자는 3년 이하의 징역 또는 3천만원 이하의 벌금에 처한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art51-2",
+      "type": "Regulation",
+      "label": "역학조사 방해 등 벌칙",
+      "properties": {
+        "article_number": "제51조의2",
+        "article_title": "벌칙",
+        "regulation_type": "벌칙"
+      },
+      "provenance": {
+        "source_section_id": "art51-2",
+        "source_text": "제16조제4항을 위반하여 정당한 사유 없이 역학조사를 거부ㆍ방해 또는 회피하거나 거짓으로 진술 또는 거짓 자료의 제출을 하거나 고의적으로 사실을 누락ㆍ은폐한 사람은 200만원 이하의 벌금에 처한다.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "Regulation#암관리법_art52",
+      "type": "Regulation",
+      "label": "제43조 위반 과태료",
+      "properties": {
+        "article_number": "제52조",
+        "article_title": "과태료",
+        "regulation_type": "벌칙"
+      },
+      "provenance": {
+        "source_section_id": "art52",
+        "source_text": "제43조를 위반한 자에게는 200만원 이하의 과태료를 부과한다. 제1항에 따른 과태료는 대통령령으로 정하는 바에 따라 보건복지부장관이 부과ㆍ징수한다.",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Regulation#암관리법_art3",
+      "target_id": "Coverage#암관리법_art3_의료서비스보장",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "국가 및 지방자치단체는 암의 예방, 진료, 연구 및 암 치료 후 사후관리 등에 관한 사업을 시행하고 지원함으로써 암을 예방하고 암환자에게 적절한 의료서비스가 제공될 수 있도록 적극 노력하여야 한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art46",
+      "target_id": "Coverage#암관리법_art46_support",
+      "type": "HAS_COVERAGE",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "국가와 지방자치단체는 다음 각 호의 어느 하나에 해당하는 비용의 전부 또는 일부를 지원할 수 있다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Coverage#암관리법_art11_medical_cost",
+      "target_id": "Eligibility#암관리법_art13_support_application",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "제1항에 따라 의료비를 지원받으려는 암환자 또는 그를 대리하는 사람은 관할 보건소장에게 지원 신청을 하여야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art5",
+      "target_id": "Regulation#암관리법_art6",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch2",
+        "source_text": "보건복지부장관은 제6조에 따른 국가암관리위원회의 심의를 거쳐 암관리종합계획을 5년마다 세워야 한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art1",
+      "target_id": "Regulation#암관리법_art3",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "암관리법의 목적 달성을 위한 국가 등의 의무",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art1",
+      "target_id": "Regulation#암관리법_art4",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "암관리법의 목적 달성을 위한 교육홍보 의무",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art3",
+      "target_id": "Regulation#암관리법_art3_의료인의무",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch1",
+        "source_text": "「의료법」에 따른 의료인 및 의료기관의 장은 국가 및 지방자치단체가 시행하는 암관리에 관한 사업에 적극 협조하여야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art28",
+      "target_id": "Eligibility#암관리법_art28_approval",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "국립암센터는 정관을 변경하려는 경우에는 보건복지부장관의 인가를 받아야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art31",
+      "target_id": "Eligibility#암관리법_art31_approval",
+      "type": "REQUIRES_ELIGIBILITY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "이사장, 이사 및 감사는 이사회에서 선임하되, 보건복지부장관의 승인을 받아야 한다",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art31",
+      "target_id": "Exclusion#암관리법_art31_disqualification",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "「국가공무원법」 제33조 각 호의 어느 하나에 해당하는 사람은 임원이 될 수 없다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art43",
+      "target_id": "Exclusion#암관리법_art43_naming",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "이 법에 따른 국립암센터가 아니면 국립암센터의 명칭을 사용할 수 없다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art44",
+      "target_id": "Exclusion#암관리법_art44_confidentiality",
+      "type": "STRICTLY_PROHIBITED",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "국립암센터의 임직원 또는 그 직에 있었던 자는 직무상 알게 된 비밀을 누설하거나 도용하여서는 아니 된다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art50",
+      "target_id": "Regulation#암관리법_art9",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "이 법에 따른 보건복지부장관의 업무는 그 일부를 대통령령으로 정하는 바에 따라 국립암센터, 국민건강보험공단ㆍ건강보험심사평가원 또는 그 밖에 암관리사업을 하는 법인ㆍ단체에 위탁할 수 있다",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art50",
+      "target_id": "Regulation#암관리법_art10의2",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "이 법에 따른 보건복지부장관의 업무는 그 일부를 위탁할 수 있다",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art50",
+      "target_id": "Regulation#암관리법_art14",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "이 법에 따른 보건복지부장관의 업무는 그 일부를 위탁할 수 있다",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art50",
+      "target_id": "Regulation#암관리법_art27",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "이 법에 따른 보건복지부장관의 업무는 그 일부를 국립암센터에 위탁할 수 있다",
+        "confidence": 0.85
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art27",
+      "target_id": "Regulation#암관리법_art28",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "국립암센터 설립을 위한 정관 규정",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art27",
+      "target_id": "Regulation#암관리법_art31",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch3",
+        "source_text": "국립암센터 설립을 위한 임원 규정",
+        "confidence": 0.9
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art50-2",
+      "target_id": "Exclusion#암관리법_art49_prohibition",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제13조의2제5항 또는 제49조를 위반하여 금융정보등 또는 개인정보를 이 법에서 정한 목적 외의 다른 용도로 사용하거나 다른 사람 또는 기관에 제공 또는 유출한 사람은 5년 이하의 징역 또는 5천만원 이하의 벌금에 처한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art51",
+      "target_id": "Exclusion#암관리법_art44_confidentiality",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제44조를 위반한 자는 3년 이하의 징역 또는 3천만원 이하의 벌금에 처한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art51-2",
+      "target_id": "Exclusion#암관리법_art16_investigation_prohibition",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제16조제4항을 위반하여 정당한 사유 없이 역학조사를 거부ㆍ방해 또는 회피하거나 거짓으로 진술 또는 거짓 자료의 제출을 하거나 고의적으로 사실을 누락ㆍ은폐한 사람은 200만원 이하의 벌금에 처한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art52",
+      "target_id": "Exclusion#암관리법_art43_naming",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch5",
+        "source_text": "제43조를 위반한 자에게는 200만원 이하의 과태료를 부과한다",
+        "confidence": 0.95
+      }
+    },
+    {
+      "source_id": "Regulation#암관리법_art47",
+      "target_id": "Regulation#암관리법_art27",
+      "type": "GOVERNED_BY",
+      "properties": {},
+      "provenance": {
+        "source_section_id": "ch4",
+        "source_text": "보건복지부장관은 국립암센터의 업무를 지도ㆍ감독하며, 업무ㆍ회계 등에 관하여 필요한 사항을 보고하게 하거나 필요한 서류의 제출을 명할 수 있다",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "extraction_metadata": {
+    "extracted_at": "2026-02-24T14:57:25.081143+00:00",
+    "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "entity_count": 37,
+    "relation_count": 23,
+    "sections_processed": 5,
+    "api_calls": 6,
+    "total_input_tokens": 46764,
+    "total_output_tokens": 14863
+  }
+}
