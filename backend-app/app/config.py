@@ -17,8 +17,8 @@ class Settings(BaseSettings):
     bedrock_embedding_model_id: str = "amazon.titan-embed-text-v2:0"
 
     # S3
-    mock_cache_bucket: str = "ontology-demo-mock-cache-767884848530"
-    parsed_bucket: str = "ontology-demo-parsed-data-767884848530"
+    mock_cache_bucket: str = ""
+    parsed_bucket: str = ""
 
     # Performance tuning
     vector_search_top_k: int = 5
