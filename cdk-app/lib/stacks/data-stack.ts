@@ -12,6 +12,7 @@ export interface DataStackProps extends cdk.StackProps {
   readonly opensearchSecurityGroup: ec2.ISecurityGroup;
   readonly neptuneMinCapacity: number;
   readonly neptuneMaxCapacity: number;
+  readonly ossVpcEndpointId?: string; // Pre-created AOSS VPC Endpoint ID
 }
 
 export class DataStack extends cdk.Stack {
@@ -86,35 +87,38 @@ export class DataStack extends cdk.Stack {
       }),
     });
 
-    // OpenSearch Serverless VPC Endpoint (must be created before Network Policy)
-    const ossVpcEndpoint = new opensearch.CfnVpcEndpoint(this, 'OSSVpcEndpoint', {
-      name: `${RESOURCE_NAMES.OPENSEARCH_COLLECTION}-vpce`,
-      vpcId: props.vpc.vpcId,
-      subnetIds: dataSubnets.subnetIds,
-      securityGroupIds: [props.opensearchSecurityGroup.securityGroupId],
-    });
+    // OpenSearch Serverless VPC Endpoint
+    // Use pre-created VPC endpoint if provided (avoids CFN stabilization timeout)
+    let vpceId: string;
+    if (props.ossVpcEndpointId) {
+      vpceId = props.ossVpcEndpointId;
+    } else {
+      const ossVpcEndpoint = new opensearch.CfnVpcEndpoint(this, 'OSSVpcEndpoint', {
+        name: `${RESOURCE_NAMES.OPENSEARCH_COLLECTION}-vpce`,
+        vpcId: props.vpc.vpcId,
+        subnetIds: dataSubnets.subnetIds,
+        securityGroupIds: [props.opensearchSecurityGroup.securityGroupId],
+      });
+      vpceId = ossVpcEndpoint.attrId;
+    }
 
     // Network Policy — references VPC Endpoint ID
     const networkPolicy = new opensearch.CfnSecurityPolicy(this, 'OSSNetworkPolicy', {
       name: `${RESOURCE_NAMES.OPENSEARCH_COLLECTION}-net`,
       type: 'network',
-      policy: cdk.Fn.sub(
-        JSON.stringify([
-          {
-            Rules: [
-              {
-                Resource: [`collection/${RESOURCE_NAMES.OPENSEARCH_COLLECTION}`],
-                ResourceType: 'collection',
-              },
-            ],
-            AllowFromPublic: false,
-            SourceVPCEs: ['${VpceId}'],
-          },
-        ]),
-        { VpceId: ossVpcEndpoint.attrId },
-      ),
+      policy: JSON.stringify([
+        {
+          Rules: [
+            {
+              Resource: [`collection/${RESOURCE_NAMES.OPENSEARCH_COLLECTION}`],
+              ResourceType: 'collection',
+            },
+          ],
+          AllowFromPublic: false,
+          SourceVPCEs: [vpceId],
+        },
+      ]),
     });
-    networkPolicy.addDependency(ossVpcEndpoint);
 
     // Collection
     const collection = new opensearch.CfnCollection(this, 'OSSCollection', {
@@ -166,12 +170,12 @@ export class DataStack extends cdk.Stack {
 
     this.parsedBucket = new s3.Bucket(this, 'ParsedDataBucket', {
       ...commonBucketProps,
-      bucketName: `${RESOURCE_NAMES.PARSED_BUCKET}-${this.account}-${this.region}`,
+      bucketName: `${RESOURCE_NAMES.PARSED_BUCKET}-${this.account}`,
     });
 
     this.mockCacheBucket = new s3.Bucket(this, 'MockCacheBucket', {
       ...commonBucketProps,
-      bucketName: `${RESOURCE_NAMES.MOCK_CACHE_BUCKET}-${this.account}-${this.region}`,
+      bucketName: `${RESOURCE_NAMES.MOCK_CACHE_BUCKET}-${this.account}`,
       cors: [
         {
           allowedHeaders: ['*'],

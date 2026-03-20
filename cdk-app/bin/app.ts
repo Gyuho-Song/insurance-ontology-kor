@@ -34,6 +34,7 @@ const dataStack = new DataStack(app, STACK_NAMES.DATA, {
   opensearchSecurityGroup: vpcStack.opensearchSecurityGroup,
   neptuneMinCapacity: DEMO_ENV.neptune.minCapacity,
   neptuneMaxCapacity: DEMO_ENV.neptune.maxCapacity,
+  ossVpcEndpointId: app.node.tryGetContext('ossVpcEndpointId'),
 });
 dataStack.addDependency(vpcStack);
 

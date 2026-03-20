@@ -33,8 +33,8 @@ export class EksStack extends cdk.Stack {
   public readonly cluster: eks.Cluster;
   public readonly fastapiServiceAccount: eks.ServiceAccount;
   public readonly nextjsServiceAccount: eks.ServiceAccount;
-  public readonly backendRepo: ecr.Repository;
-  public readonly frontendRepo: ecr.Repository;
+  public readonly backendRepo: ecr.IRepository;
+  public readonly frontendRepo: ecr.IRepository;
 
   constructor(scope: Construct, id: string, props: EksStackProps) {
     super(scope, id, props);
@@ -43,17 +43,13 @@ export class EksStack extends cdk.Stack {
     // ECR Repositories
     // =========================================
 
-    this.backendRepo = new ecr.Repository(this, 'BackendRepo', {
-      repositoryName: RESOURCE_NAMES.BACKEND_REPO,
-      removalPolicy: cdk.RemovalPolicy.RETAIN,
-      lifecycleRules: [{ maxImageCount: 10 }],
-    });
+    this.backendRepo = ecr.Repository.fromRepositoryName(
+      this, 'BackendRepo', RESOURCE_NAMES.BACKEND_REPO,
+    );
 
-    this.frontendRepo = new ecr.Repository(this, 'FrontendRepo', {
-      repositoryName: RESOURCE_NAMES.FRONTEND_REPO,
-      removalPolicy: cdk.RemovalPolicy.RETAIN,
-      lifecycleRules: [{ maxImageCount: 10 }],
-    });
+    this.frontendRepo = ecr.Repository.fromRepositoryName(
+      this, 'FrontendRepo', RESOURCE_NAMES.FRONTEND_REPO,
+    );
 
     // =========================================
     // EKS Cluster
@@ -192,6 +188,10 @@ export class EksStack extends cdk.Stack {
       },
     });
     configMap.node.addDependency(namespace);
+    // Ensure ALB Controller webhook is ready before any Service/Ingress
+    if (this.cluster.albController) {
+      configMap.node.addDependency(this.cluster.albController);
+    }
 
     // =========================================
     // K8s Deployments
@@ -228,7 +228,7 @@ export class EksStack extends cdk.Stack {
         },
       },
     });
-    fastApiDeployment.node.addDependency(namespace);
+    fastApiDeployment.node.addDependency(configMap);
 
     // FastAPI Service
     const fastApiService = this.cluster.addManifest('FastApiService', {
@@ -244,7 +244,7 @@ export class EksStack extends cdk.Stack {
         type: 'ClusterIP',
       },
     });
-    fastApiService.node.addDependency(namespace);
+    fastApiService.node.addDependency(fastApiDeployment);
 
     // Next.js Deployment
     const nextjsDeployment = this.cluster.addManifest('NextjsDeployment', {
@@ -277,7 +277,7 @@ export class EksStack extends cdk.Stack {
         },
       },
     });
-    nextjsDeployment.node.addDependency(namespace);
+    nextjsDeployment.node.addDependency(fastApiService);
 
     // Next.js Service
     const nextjsService = this.cluster.addManifest('NextjsService', {
@@ -293,7 +293,7 @@ export class EksStack extends cdk.Stack {
         type: 'ClusterIP',
       },
     });
-    nextjsService.node.addDependency(namespace);
+    nextjsService.node.addDependency(nextjsDeployment);
 
     // ALB Ingress
     const appIngress = this.cluster.addManifest('AppIngress', {
@@ -334,7 +334,7 @@ export class EksStack extends cdk.Stack {
         ],
       },
     });
-    appIngress.node.addDependency(namespace);
+    appIngress.node.addDependency(nextjsService);
 
     // HPA for FastAPI
     const fastApiHpa = this.cluster.addManifest('FastApiHpa', {
@@ -363,7 +363,7 @@ export class EksStack extends cdk.Stack {
         ],
       },
     });
-    fastApiHpa.node.addDependency(namespace);
+    fastApiHpa.node.addDependency(appIngress);
 
     // =========================================
     // Outputs
