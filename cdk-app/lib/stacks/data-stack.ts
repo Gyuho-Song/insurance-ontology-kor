@@ -12,7 +12,6 @@ export interface DataStackProps extends cdk.StackProps {
   readonly opensearchSecurityGroup: ec2.ISecurityGroup;
   readonly neptuneMinCapacity: number;
   readonly neptuneMaxCapacity: number;
-  readonly ossVpcEndpointId?: string; // Pre-created AOSS VPC Endpoint ID
 }
 
 export class DataStack extends cdk.Stack {
@@ -87,38 +86,35 @@ export class DataStack extends cdk.Stack {
       }),
     });
 
-    // OpenSearch Serverless VPC Endpoint
-    // Use pre-created VPC endpoint if provided (avoids CFN stabilization timeout)
-    let vpceId: string;
-    if (props.ossVpcEndpointId) {
-      vpceId = props.ossVpcEndpointId;
-    } else {
-      const ossVpcEndpoint = new opensearch.CfnVpcEndpoint(this, 'OSSVpcEndpoint', {
-        name: `${RESOURCE_NAMES.OPENSEARCH_COLLECTION}-vpce`,
-        vpcId: props.vpc.vpcId,
-        subnetIds: dataSubnets.subnetIds,
-        securityGroupIds: [props.opensearchSecurityGroup.securityGroupId],
-      });
-      vpceId = ossVpcEndpoint.attrId;
-    }
+    // OpenSearch Serverless VPC Endpoint (must be created before Network Policy)
+    const ossVpcEndpoint = new opensearch.CfnVpcEndpoint(this, 'OSSVpcEndpoint', {
+      name: `${RESOURCE_NAMES.OPENSEARCH_COLLECTION}-vpce`,
+      vpcId: props.vpc.vpcId,
+      subnetIds: dataSubnets.subnetIds,
+      securityGroupIds: [props.opensearchSecurityGroup.securityGroupId],
+    });
 
     // Network Policy — references VPC Endpoint ID
     const networkPolicy = new opensearch.CfnSecurityPolicy(this, 'OSSNetworkPolicy', {
       name: `${RESOURCE_NAMES.OPENSEARCH_COLLECTION}-net`,
       type: 'network',
-      policy: JSON.stringify([
-        {
-          Rules: [
-            {
-              Resource: [`collection/${RESOURCE_NAMES.OPENSEARCH_COLLECTION}`],
-              ResourceType: 'collection',
-            },
-          ],
-          AllowFromPublic: false,
-          SourceVPCEs: [vpceId],
-        },
-      ]),
+      policy: cdk.Fn.sub(
+        JSON.stringify([
+          {
+            Rules: [
+              {
+                Resource: [`collection/${RESOURCE_NAMES.OPENSEARCH_COLLECTION}`],
+                ResourceType: 'collection',
+              },
+            ],
+            AllowFromPublic: false,
+            SourceVPCEs: ['${VpceId}'],
+          },
+        ]),
+        { VpceId: ossVpcEndpoint.attrId },
+      ),
     });
+    networkPolicy.addDependency(ossVpcEndpoint);
 
     // Collection
     const collection = new opensearch.CfnCollection(this, 'OSSCollection', {
@@ -132,22 +128,32 @@ export class DataStack extends cdk.Stack {
     this.opensearchCollectionArn = collection.attrArn;
     this.opensearchCollectionEndpoint = collection.attrCollectionEndpoint;
 
-    // Data Access Policy — grants full data access to all IAM principals in this account
+    // Data Access Policy — grants EKS pods access to collection
     new opensearch.CfnAccessPolicy(this, 'OSSDataAccessPolicy', {
       name: `${RESOURCE_NAMES.OPENSEARCH_COLLECTION}-access`,
       type: 'data',
       policy: JSON.stringify([
         {
-          Description: 'Full data access for index and collection operations',
+          Description: 'Data access for index management and search',
           Rules: [
             {
               Resource: [`index/${RESOURCE_NAMES.OPENSEARCH_COLLECTION}/*`],
-              Permission: ['aoss:*'],
+              Permission: [
+                'aoss:CreateIndex',
+                'aoss:UpdateIndex',
+                'aoss:DescribeIndex',
+                'aoss:ReadDocument',
+                'aoss:WriteDocument',
+              ],
               ResourceType: 'index',
             },
             {
               Resource: [`collection/${RESOURCE_NAMES.OPENSEARCH_COLLECTION}`],
-              Permission: ['aoss:*'],
+              Permission: [
+                'aoss:CreateCollectionItems',
+                'aoss:DescribeCollectionItems',
+                'aoss:UpdateCollectionItems',
+              ],
               ResourceType: 'collection',
             },
           ],

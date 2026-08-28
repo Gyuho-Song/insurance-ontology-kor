@@ -22,7 +22,7 @@ sys.stdout.reconfigure(line_buffering=True)
 # ── Config ──────────────────────────────────────────────────────────────
 REGION = "us-west-2"
 MODEL_ID = "us.anthropic.claude-opus-4-6-v1"
-S3_BUCKET = os.environ.get("S3_BUCKET", "")
+S3_BUCKET = "ontology-demo-pdf-storage-123456789012"
 S3_PREFIX = "uploads/"
 PDF_CACHE_DIR = Path("/mnt/data/v2-pdf-cache")
 OUTPUT_DIR = Path("/mnt/data/v2-markdown")

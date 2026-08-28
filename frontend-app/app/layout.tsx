@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { AppProvider } from '@/lib/context';
+import { AuthProvider } from '@/lib/auth-context';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import './globals.css';
 
@@ -17,7 +18,9 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <ErrorBoundary>
-          <AppProvider>{children}</AppProvider>
+          <AuthProvider>
+            <AppProvider>{children}</AppProvider>
+          </AuthProvider>
         </ErrorBoundary>
       </body>
     </html>

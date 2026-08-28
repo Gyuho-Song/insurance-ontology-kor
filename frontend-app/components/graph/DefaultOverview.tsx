@@ -2,35 +2,38 @@
 
 import { cn } from '@/lib/utils';
 
+// FC9 재구축 그래프(_resolved) 기준 실제 수치로 갱신.
 const NODE_TYPES = [
-  { type: 'Policy', count: 30, icon: '📋', desc: '보험상품 — 온톨로지의 중심. 모든 관계의 시작점', primary: true },
-  { type: 'Coverage', count: 433, icon: '🛡️', desc: '보장항목 — 사망보험금, 입원급여금 등 지급 사유와 금액' },
-  { type: 'Exclusion', count: 224, icon: '🚫', desc: '면책사유 — 보험금을 지급하지 않는 사유' },
-  { type: 'Exception', count: 178, icon: '✅', desc: '예외조항 — 면책이지만 보장되는 특수 케이스' },
-  { type: 'Calculation', count: 280, icon: '🧮', desc: '계산규칙 — 보험료, 환급금, 이율 산출 방식' },
-  { type: 'Rider', count: 222, icon: '📎', desc: '특약 — 주계약에 추가하는 선택 보장' },
-  { type: 'Surrender_Value', count: 147, icon: '💰', desc: '해약환급금 — 해지 시 돌려받는 금액 테이블' },
-  { type: 'Dividend_Method', count: 82, icon: '📊', desc: '배당방식 — 배당 가능 여부 및 배당금 산출 방식' },
-  { type: 'Eligibility', count: 60, icon: '🎫', desc: '가입조건 — 나이, 건강상태 등 가입 자격 요건' },
-  { type: 'Regulation', count: 219, icon: '⚖️', desc: '규제/법률 — 보험업법, 감독규정, 금지행위' },
-  { type: 'Customer', count: 10, icon: '👤', desc: '고객 — 마이데이터 연동 고객 (보유 계약 연결)' },
+  { type: 'Policy', count: 32, icon: '📋', desc: '보험상품 — 온톨로지의 중심. 모든 관계의 시작점', primary: true },
+  { type: 'Coverage', count: 1553, icon: '🛡️', desc: '보장항목 — 사망보험금, 입원급여금 등 지급 사유와 금액' },
+  { type: 'Rider', count: 975, icon: '📎', desc: '특약 — 주계약에 추가하는 선택 보장' },
+  { type: 'Calculation', count: 633, icon: '🧮', desc: '계산규칙 — 보험료, 환급금, 이율 산출 방식' },
+  { type: 'Regulation', count: 472, icon: '⚖️', desc: '규제/법률 — 보험업법, 감독규정, 금지행위' },
+  { type: 'Eligibility', count: 390, icon: '🎫', desc: '가입조건 — 나이, 건강상태 등 가입 자격 요건' },
+  { type: 'Exclusion', count: 354, icon: '🚫', desc: '면책사유 — 보험금을 지급하지 않는 사유' },
+  { type: 'Exception', count: 200, icon: '✅', desc: '예외조항 — 면책이지만 보장되는 특수 케이스' },
+  { type: 'Surrender_Value', count: 171, icon: '💰', desc: '해약환급금 — 해지 시 돌려받는 금액 테이블' },
+  { type: 'Premium_Discount', count: 70, icon: '🏷️', desc: '보험료 할인 — 비흡연/건강체/단체 등 할인 조건' },
+  { type: 'Product_Category', count: 49, icon: '🗂️', desc: '상품분류 — 종신/정기/암보험 등 카테고리' },
+  { type: 'Dividend_Method', count: 34, icon: '📊', desc: '배당방식 — 배당 가능 여부 및 배당금 산출 방식' },
 ];
 
 const EDGE_TYPES = [
-  { type: 'HAS_COVERAGE', count: 424, desc: '보장항목 보유' },
-  { type: 'CALCULATED_BY', count: 246, desc: '계산규칙 적용' },
-  { type: 'EXCLUDED_IF', count: 227, desc: '면책 조건' },
-  { type: 'GOVERNED_BY', count: 219, desc: '규제 적용' },
-  { type: 'HAS_RIDER', count: 194, desc: '특약 보유' },
-  { type: 'EXCEPTION_ALLOWED', count: 152, desc: '예외 인정' },
-  { type: 'SURRENDER_PAYS', count: 117, desc: '환급금 지급' },
-  { type: 'STRICTLY_PROHIBITED', count: 73, desc: '금지행위' },
-  { type: 'EXCEPTIONALLY_ALLOWED', count: 55, desc: '예외 허용' },
-  { type: 'OWNS', count: 30, desc: '계약 보유' },
+  { type: 'HAS_COVERAGE', count: 1536, desc: '보장항목 보유' },
+  { type: 'HAS_RIDER', count: 975, desc: '특약 보유' },
+  { type: 'CALCULATED_BY', count: 411, desc: '계산규칙 적용' },
+  { type: 'REQUIRES_ELIGIBILITY', count: 309, desc: '가입조건 요구' },
+  { type: 'EXCLUDED_IF', count: 264, desc: '면책 조건' },
+  { type: 'SURRENDER_PAYS', count: 171, desc: '환급금 지급' },
+  { type: 'EXCEPTION_ALLOWED', count: 74, desc: '예외 인정' },
+  { type: 'STRICTLY_PROHIBITED', count: 70, desc: '금지행위' },
+  { type: 'HAS_DISCOUNT', count: 70, desc: '할인 보유' },
+  { type: 'NO_DIVIDEND_STRUCTURE', count: 32, desc: '무배당 구조' },
 ];
 
-const TOTAL_NODES = 1885;
-const TOTAL_EDGES = 1771;
+// 의미 관계(SIMILAR_TO 등 유사도 링크 제외)와 전체 노드 합계.
+const TOTAL_NODES = 4933;
+const TOTAL_EDGES = 3959;
 const MAX_COUNT = Math.max(...NODE_TYPES.map((n) => n.count));
 
 export function DefaultOverview() {
@@ -44,7 +47,7 @@ export function DefaultOverview() {
           <span className="text-border">|</span>
           <span><span className="font-medium text-foreground">{TOTAL_EDGES.toLocaleString()}</span> 관계</span>
           <span className="text-border">|</span>
-          <span><span className="font-medium text-foreground">30</span> 상품</span>
+          <span><span className="font-medium text-foreground">32</span> 상품</span>
         </div>
       </div>
 
@@ -52,10 +55,10 @@ export function DefaultOverview() {
       <div className="rounded-lg border bg-muted/20 p-3 space-y-2">
         <div className="text-[10px] font-medium text-muted-foreground text-center">핵심 관계 구조</div>
         <div className="flex items-center justify-center gap-1 text-[10px] flex-wrap">
-          <span className="rounded bg-blue-100 border border-blue-300 px-1.5 py-0.5 font-medium text-blue-700">👤 Customer</span>
+          <span className="rounded bg-sky-100 border border-sky-300 px-1.5 py-0.5 font-medium text-sky-700">🗂️ Product_Category</span>
           <span className="text-muted-foreground">—OWNS→</span>
           <span className="rounded bg-amber-100 border border-amber-300 px-1.5 py-0.5 font-bold text-amber-800">📋 Policy</span>
-          <span className="text-muted-foreground">—HAS→</span>
+          <span className="text-muted-foreground">—HAS_COVERAGE→</span>
           <span className="rounded bg-emerald-100 border border-emerald-300 px-1.5 py-0.5 font-medium text-emerald-700">🛡️ Coverage</span>
         </div>
         <div className="flex items-center justify-center gap-1 text-[10px] flex-wrap">
@@ -76,7 +79,7 @@ export function DefaultOverview() {
 
       {/* Node types - ordered by importance */}
       <div className="rounded-lg border p-3 space-y-2">
-        <div className="text-xs font-medium text-muted-foreground">노드 타입 (11종)</div>
+        <div className="text-xs font-medium text-muted-foreground">노드 타입 (12종)</div>
         <div className="space-y-1">
           {NODE_TYPES.map((n) => (
             <div

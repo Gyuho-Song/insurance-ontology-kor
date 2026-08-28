@@ -1,0 +1,86 @@
+{
+  "document_id": "syn_P",
+  "markdown": "{{TABLE:table-001}}",
+  "figures": [],
+  "pages": [],
+  "source_pdf": "syn_P.pdf",
+  "parser_version": "docling-2.104",
+  "extraction_run_id": "syn",
+  "tables": [
+    {
+      "table_id": "table-001",
+      "raw_category": "reference",
+      "caption": "",
+      "summary": "가입나이 표: 90세만기/100세만기, 납입기간별 가입나이",
+      "entities": [
+        "만15세",
+        "만80세"
+      ],
+      "notes": [],
+      "units": {},
+      "raw_markdown": "| 구분 | 90세만기 |",
+      "page_no": 5,
+      "bbox": "l=70 t=322 r=539 b=550",
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "text": "납입",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "text": "90세만기",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "text": "5년납",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "납입"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 5,
+            "source_pdf": "syn_P.pdf",
+            "parser_version": "docling-2.104",
+            "run_id": "syn"
+          }
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "만 15 세 ~80 세",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "90세만기"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 5,
+            "source_pdf": "syn_P.pdf",
+            "parser_version": "docling-2.104",
+            "run_id": "syn"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -20,12 +20,12 @@ const INTENT_INFO: Record<string, { desc: string; template: string; targets: str
   },
   surrender_value: {
     desc: '해지 시 환급금 계산 방식 및 금액 조회',
-    template: 'surrender_value_traverse',
+    template: 'surrender_value_lookup',
     targets: ['Surrender_Value', 'Calculation'],
   },
   discount_eligibility: {
     desc: '할인/우대 조건 및 적용 가능 여부 확인',
-    template: 'discount_eligibility_traverse',
+    template: 'discount_eligibility',
     targets: ['Eligibility'],
   },
   regulation_inquiry: {
@@ -35,32 +35,32 @@ const INTENT_INFO: Record<string, { desc: string; template: string; targets: str
   },
   loan_inquiry: {
     desc: '보험계약 대출 조건 및 이율 확인',
-    template: 'loan_traverse',
+    template: 'comprehensive_lookup',
     targets: ['Calculation'],
   },
   premium_waiver: {
     desc: '보험료 납입면제 사유 및 조건 조회',
-    template: 'premium_waiver_traverse',
+    template: 'premium_waiver_lookup',
     targets: ['Coverage', 'Exclusion'],
   },
   policy_comparison: {
     desc: '복수 상품 간 보장항목/조건 비교',
-    template: 'comparison_traverse',
+    template: 'comprehensive_lookup',
     targets: ['Policy', 'Coverage'],
   },
   calculation_inquiry: {
     desc: '보험료, 환급금, 보험가격지수 등 계산 방식 확인',
-    template: 'calculation_traverse',
+    template: 'calculation_lookup',
     targets: ['Calculation'],
   },
   eligibility_inquiry: {
     desc: '가입 나이, 건강 조건 등 가입 자격 확인',
-    template: 'eligibility_traverse',
+    template: 'eligibility_lookup',
     targets: ['Eligibility'],
   },
   rider_inquiry: {
     desc: '특약 종류, 보장 내용 및 가입 조건 조회',
-    template: 'rider_traverse',
+    template: 'rider_lookup',
     targets: ['Rider', 'Coverage'],
   },
   general_inquiry: {

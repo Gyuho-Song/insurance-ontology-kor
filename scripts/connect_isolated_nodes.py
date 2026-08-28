@@ -18,7 +18,7 @@ from botocore.session import Session
 REGION = os.environ.get("AWS_REGION", "us-west-2")
 NEPTUNE_HOST = os.environ.get(
     "NEPTUNE_ENDPOINT",
-    "ontology-demo-neptune.cluster-cr8yamuqw57p.us-west-2.neptune.amazonaws.com",
+    "ontology-demo-neptune.cluster-XXXXXXXXXXXX.us-west-2.neptune.amazonaws.com",
 )
 NEPTUNE_PORT = int(os.environ.get("NEPTUNE_PORT", "8182"))
 NEPTUNE_URL = f"https://{NEPTUNE_HOST}:{NEPTUNE_PORT}/gremlin"

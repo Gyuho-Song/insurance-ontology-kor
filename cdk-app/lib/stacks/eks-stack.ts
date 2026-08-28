@@ -3,18 +3,19 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as ecr from 'aws-cdk-lib/aws-ecr';
 import * as eks from 'aws-cdk-lib/aws-eks';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as neptune from 'aws-cdk-lib/aws-neptune';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import { KubectlV33Layer } from '@aws-cdk/lambda-layer-kubectl-v33';
 import { Construct } from 'constructs';
-import { RESOURCE_NAMES } from '../config/constants';
+import { RESOURCE_NAMES, ADMIN_EC2_CIDR, CF_ORIGIN_VERIFY_HEADER, CF_ORIGIN_VERIFY_SECRET } from '../config/constants';
 
 export interface EksStackProps extends cdk.StackProps {
   readonly vpc: ec2.IVpc;
   readonly eksSecurityGroup: ec2.ISecurityGroup;
-  readonly neptuneSecurityGroup: ec2.ISecurityGroup;
-  readonly opensearchSecurityGroup: ec2.ISecurityGroup;
+  readonly albSecurityGroup: ec2.ISecurityGroup;
 
   // Data Stack resources
+  readonly neptuneCluster: neptune.CfnDBCluster;
   readonly neptuneClusterEndpoint: string;
   readonly neptuneClusterPort: string;
   readonly opensearchCollectionArn: string;
@@ -33,8 +34,8 @@ export class EksStack extends cdk.Stack {
   public readonly cluster: eks.Cluster;
   public readonly fastapiServiceAccount: eks.ServiceAccount;
   public readonly nextjsServiceAccount: eks.ServiceAccount;
-  public readonly backendRepo: ecr.IRepository;
-  public readonly frontendRepo: ecr.IRepository;
+  public readonly backendRepo: ecr.Repository;
+  public readonly frontendRepo: ecr.Repository;
 
   constructor(scope: Construct, id: string, props: EksStackProps) {
     super(scope, id, props);
@@ -43,13 +44,17 @@ export class EksStack extends cdk.Stack {
     // ECR Repositories
     // =========================================
 
-    this.backendRepo = ecr.Repository.fromRepositoryName(
-      this, 'BackendRepo', RESOURCE_NAMES.BACKEND_REPO,
-    );
+    this.backendRepo = new ecr.Repository(this, 'BackendRepo', {
+      repositoryName: RESOURCE_NAMES.BACKEND_REPO,
+      removalPolicy: cdk.RemovalPolicy.RETAIN,
+      lifecycleRules: [{ maxImageCount: 10 }],
+    });
 
-    this.frontendRepo = ecr.Repository.fromRepositoryName(
-      this, 'FrontendRepo', RESOURCE_NAMES.FRONTEND_REPO,
-    );
+    this.frontendRepo = new ecr.Repository(this, 'FrontendRepo', {
+      repositoryName: RESOURCE_NAMES.FRONTEND_REPO,
+      removalPolicy: cdk.RemovalPolicy.RETAIN,
+      lifecycleRules: [{ maxImageCount: 10 }],
+    });
 
     // =========================================
     // EKS Cluster
@@ -63,30 +68,10 @@ export class EksStack extends cdk.Stack {
       vpcSubnets: [{ subnetType: ec2.SubnetType.PRIVATE_WITH_EGRESS }],
       securityGroup: props.eksSecurityGroup,
       defaultCapacity: 0,
-      endpointAccess: eks.EndpointAccess.PUBLIC_AND_PRIVATE,
+      endpointAccess: eks.EndpointAccess.PUBLIC_AND_PRIVATE.onlyFrom(ADMIN_EC2_CIDR),
       albController: {
         version: eks.AlbControllerVersion.V2_8_2,
       },
-    });
-
-    // Allow EKS cluster SG to access Neptune and OpenSearch
-    // Use CfnSecurityGroupIngress to avoid cross-stack circular dependency
-    const clusterSgId = this.cluster.clusterSecurityGroup.securityGroupId;
-    new ec2.CfnSecurityGroupIngress(this, 'NeptuneFromClusterSg', {
-      groupId: props.neptuneSecurityGroup.securityGroupId,
-      ipProtocol: 'tcp',
-      fromPort: 8182,
-      toPort: 8182,
-      sourceSecurityGroupId: clusterSgId,
-      description: 'Allow Neptune access from EKS cluster SG',
-    });
-    new ec2.CfnSecurityGroupIngress(this, 'OpenSearchFromClusterSg', {
-      groupId: props.opensearchSecurityGroup.securityGroupId,
-      ipProtocol: 'tcp',
-      fromPort: 443,
-      toPort: 443,
-      sourceSecurityGroupId: clusterSgId,
-      description: 'Allow OpenSearch access from EKS cluster SG',
     });
 
     // Managed Node Group
@@ -123,25 +108,32 @@ export class EksStack extends cdk.Stack {
     props.parsedBucket.grantReadWrite(this.fastapiServiceAccount);
     props.mockCacheBucket.grantReadWrite(this.fastapiServiceAccount);
 
-    // Neptune — full access (IAM auth uses cluster resource ID, wildcard avoids mismatch)
+    // Neptune access
     this.fastapiServiceAccount.addToPrincipalPolicy(
       new iam.PolicyStatement({
-        actions: ['neptune-db:*'],
+        actions: [
+          'neptune-db:connect',
+          'neptune-db:ReadDataViaQuery',
+          'neptune-db:WriteDataViaQuery',
+          'neptune-db:DeleteDataViaQuery',
+          'neptune-db:GetQueryStatus',
+          'neptune-db:CancelQuery',
+        ],
         resources: [
-          `arn:aws:neptune-db:${this.region}:${this.account}:*`,
+          `arn:aws:neptune-db:${this.region}:${this.account}:${props.neptuneCluster.ref}/*`,
         ],
       }),
     );
 
-    // OpenSearch Serverless — full API access
+    // OpenSearch Serverless access
     this.fastapiServiceAccount.addToPrincipalPolicy(
       new iam.PolicyStatement({
-        actions: ['aoss:*'],
+        actions: ['aoss:APIAccessAll'],
         resources: [props.opensearchCollectionArn],
       }),
     );
 
-    // Bedrock — invoke all models
+    // Bedrock access
     this.fastapiServiceAccount.addToPrincipalPolicy(
       new iam.PolicyStatement({
         actions: [
@@ -183,15 +175,9 @@ export class EksStack extends cdk.Stack {
         PARSED_BUCKET: props.parsedBucket.bucketName,
         MOCK_CACHE_BUCKET: props.mockCacheBucket.bucketName,
         AWS_REGION: this.region,
-        BEDROCK_REGION: this.region,
-        GRAPHRAG_BACKEND_URL: `http://fastapi.${RESOURCE_NAMES.EKS_NAMESPACE}.svc.cluster.local:80`,
       },
     });
     configMap.node.addDependency(namespace);
-    // Ensure ALB Controller webhook is ready before any Service/Ingress
-    if (this.cluster.albController) {
-      configMap.node.addDependency(this.cluster.albController);
-    }
 
     // =========================================
     // K8s Deployments
@@ -228,7 +214,7 @@ export class EksStack extends cdk.Stack {
         },
       },
     });
-    fastApiDeployment.node.addDependency(configMap);
+    fastApiDeployment.node.addDependency(namespace);
 
     // FastAPI Service
     const fastApiService = this.cluster.addManifest('FastApiService', {
@@ -244,7 +230,7 @@ export class EksStack extends cdk.Stack {
         type: 'ClusterIP',
       },
     });
-    fastApiService.node.addDependency(fastApiDeployment);
+    fastApiService.node.addDependency(namespace);
 
     // Next.js Deployment
     const nextjsDeployment = this.cluster.addManifest('NextjsDeployment', {
@@ -277,7 +263,7 @@ export class EksStack extends cdk.Stack {
         },
       },
     });
-    nextjsDeployment.node.addDependency(fastApiService);
+    nextjsDeployment.node.addDependency(namespace);
 
     // Next.js Service
     const nextjsService = this.cluster.addManifest('NextjsService', {
@@ -293,9 +279,10 @@ export class EksStack extends cdk.Stack {
         type: 'ClusterIP',
       },
     });
-    nextjsService.node.addDependency(nextjsDeployment);
+    nextjsService.node.addDependency(namespace);
 
-    // ALB Ingress
+    // ALB Ingress — HTTP only, restricted to CloudFront via SG
+    // HTTPS termination is handled by CloudFront; ALB only accepts HTTP from CF IPs.
     const appIngress = this.cluster.addManifest('AppIngress', {
       apiVersion: 'networking.k8s.io/v1',
       kind: 'Ingress',
@@ -306,6 +293,12 @@ export class EksStack extends cdk.Stack {
           'alb.ingress.kubernetes.io/scheme': 'internet-facing',
           'alb.ingress.kubernetes.io/target-type': 'ip',
           'alb.ingress.kubernetes.io/listen-ports': '[{"HTTP": 80}]',
+          'alb.ingress.kubernetes.io/security-groups': props.albSecurityGroup.securityGroupId,
+          'alb.ingress.kubernetes.io/manage-backend-security-group-rules': 'true',
+          'alb.ingress.kubernetes.io/load-balancer-attributes': 'idle_timeout.timeout_seconds=120,routing.http.drop_invalid_header_fields.enabled=true',
+          // Health check
+          'alb.ingress.kubernetes.io/healthcheck-path': '/v1/health',
+          'alb.ingress.kubernetes.io/healthcheck-interval-seconds': '30',
         },
       },
       spec: {
@@ -334,7 +327,7 @@ export class EksStack extends cdk.Stack {
         ],
       },
     });
-    appIngress.node.addDependency(nextjsService);
+    appIngress.node.addDependency(namespace);
 
     // HPA for FastAPI
     const fastApiHpa = this.cluster.addManifest('FastApiHpa', {
@@ -363,7 +356,7 @@ export class EksStack extends cdk.Stack {
         ],
       },
     });
-    fastApiHpa.node.addDependency(appIngress);
+    fastApiHpa.node.addDependency(namespace);
 
     // =========================================
     // Outputs

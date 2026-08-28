@@ -1,5 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
+import * as cr from 'aws-cdk-lib/custom-resources';
 import { Construct } from 'constructs';
 import { RESOURCE_NAMES } from '../config/constants';
 
@@ -13,6 +14,7 @@ export class VpcStack extends cdk.Stack {
   public readonly eksSecurityGroup: ec2.ISecurityGroup;
   public readonly neptuneSecurityGroup: ec2.ISecurityGroup;
   public readonly opensearchSecurityGroup: ec2.ISecurityGroup;
+  public readonly albSecurityGroup: ec2.ISecurityGroup;
 
   constructor(scope: Construct, id: string, props: VpcStackProps) {
     super(scope, id, props);
@@ -73,6 +75,38 @@ export class VpcStack extends cdk.Stack {
       ec2.Port.tcp(443),
       'Allow HTTPS from EKS Workers',
     );
+
+    // --- ALB Security Group (CloudFront origin traffic only) ---
+
+    const albSg = new ec2.SecurityGroup(this, 'AlbSg', {
+      vpc: this.vpc,
+      description: 'ALB SG - allow inbound only from CloudFront origin-facing IPs',
+      allowAllOutbound: true,
+    });
+
+    // Look up the AWS-managed CloudFront origin-facing prefix list
+    const cfPrefixListLookup = new cr.AwsCustomResource(this, 'CfPrefixListLookup', {
+      onUpdate: {
+        service: 'EC2',
+        action: 'describeManagedPrefixLists',
+        parameters: {
+          Filters: [{ Name: 'prefix-list-name', Values: ['com.amazonaws.global.cloudfront.origin-facing'] }],
+        },
+        physicalResourceId: cr.PhysicalResourceId.of('cf-prefix-list'),
+      },
+      policy: cr.AwsCustomResourcePolicy.fromSdkCalls({
+        resources: cr.AwsCustomResourcePolicy.ANY_RESOURCE,
+      }),
+    });
+    const cfPrefixListId = cfPrefixListLookup.getResponseField('PrefixLists.0.PrefixListId');
+
+    albSg.addIngressRule(
+      ec2.Peer.prefixList(cfPrefixListId),
+      ec2.Port.tcp(80),
+      'Allow HTTP from CloudFront only',
+    );
+
+    this.albSecurityGroup = albSg;
 
     // --- VPC Endpoints ---
 

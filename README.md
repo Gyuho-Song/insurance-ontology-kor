@@ -42,7 +42,8 @@
 │   ├── app/
 │   │   ├── api/          # REST API 엔드포인트 (chat, mydata, personas, scenarios)
 │   │   ├── clients/      # Neptune, OpenSearch, Bedrock, S3 클라이언트
-│   │   ├── core/         # GraphRAG 핵심 로직 (traversal, scoring, hallucination)
+│   │   ├── core/         # GraphRAG 핵심 로직 (traversal, scoring, template routing,
+│   │   │                 #   hallucination 검증, honesty policy)
 │   │   ├── models/       # Pydantic 데이터 모델
 │   │   └── services/     # 비즈니스 로직 서비스
 │   └── tests/            # 단위 테스트
@@ -52,14 +53,24 @@
 │   ├── lib/              # 유틸리티 및 훅
 │   └── __tests__/        # Jest 테스트
 ├── cdk-app/              # AWS CDK 인프라
-│   └── lib/stacks/       # VPC, Data, EKS 스택
-├── scripts/              # 데이터 로딩 스크립트
+│   └── lib/stacks/       # VPC, Data, EKS, CloudFront/WAF 스택
+├── scripts/              # 온톨로지 구축 파이프라인 및 평가
+│   ├── pdf_to_markdown.py        # 약관 PDF → Markdown 변환
 │   ├── extract_entities_v2.py    # 온톨로지 엔티티 추출
+│   ├── build_graph_from_parsed.py # 구조 엣지 결정론적 생성
+│   ├── resolve_entities.py       # 엔티티 해소(중복 수렴)
+│   ├── create_opensearch_index.py # 벡터 인덱스 생성
 │   ├── load_v2_data.py           # Neptune/OpenSearch 데이터 로딩
-│   └── create_opensearch_index.py # 벡터 인덱스 생성
+│   ├── run_evaluation.py         # 시나리오 기반 품질 평가
+│   ├── lib/                      # 파서·TBox·테이블 매퍼·ER 모듈
+│   └── tests/                    # pytest 단위/속성 테스트
+├── gold/                 # 추출 품질 측정용 gold 데이터셋
+├── tbox.yaml             # 온톨로지 TBox(타입·관계 스키마)
 ├── data/                 # 그래프 데이터
-└── docs/                 # 배포 가이드
+└── docs/                 # 배포 가이드, 데모 가이드
 ```
+
+> 인프라 식별자(계정 ID, 엔드포인트, 인증서 ARN, Cognito 풀 등)는 모두 플레이스홀더로 치환되어 있습니다. 배포 전 자신의 환경 값으로 교체하세요.
 
 ## 배포
 

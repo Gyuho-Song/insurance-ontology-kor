@@ -1,0 +1,83 @@
+{
+  "document_id": "syn_G",
+  "markdown": "{{TABLE:t}}",
+  "figures": [],
+  "pages": [],
+  "source_pdf": "syn_G.pdf",
+  "parser_version": "docling",
+  "extraction_run_id": "syn",
+  "tables": [
+    {
+      "table_id": "t1",
+      "raw_category": "pricing",
+      "caption": "",
+      "summary": "해약환급금 계산식",
+      "entities": [],
+      "notes": [],
+      "units": {},
+      "raw_markdown": "|x|",
+      "page_no": 3,
+      "bbox": "l=1 t=2 r=3 b=4",
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "text": "구분",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "text": "계산식",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "text": "해약환급금",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "구분"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 3,
+            "source_pdf": "s.pdf",
+            "parser_version": "docling",
+            "run_id": "syn"
+          }
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "기본해약환급금 + 추가적립액",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "계산식"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 3,
+            "source_pdf": "s.pdf",
+            "parser_version": "docling",
+            "run_id": "syn"
+          }
+        }
+      ]
+    }
+  ]
+}

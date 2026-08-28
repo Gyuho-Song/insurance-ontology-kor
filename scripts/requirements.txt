@@ -1,0 +1,4 @@
+# scripts/ runtime dependencies (extraction + validation batch)
+# U2 Graph Contract validator (FC9)
+pyyaml>=6.0
+pydantic>=2.0    # lib/schemas.py (extraction models, check-schemas가 참조)

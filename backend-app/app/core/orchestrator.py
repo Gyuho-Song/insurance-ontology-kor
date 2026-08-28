@@ -24,6 +24,27 @@ from app.services.mydata_service import MyDataService
 
 logger = logging.getLogger("graphrag.orchestrator")
 
+# P-boundary: 건강체 요건 자유텍스트에서 상한값 파싱(구조화 속성 부재 시 폴백).
+# 예 "수축기혈압 139mmHg 이하·이완기혈압 89mmHg 이하, BMI 18.5kg/㎡ 이상 25kg/㎡ 미만"
+_HR_BP = re.compile(r"수축기\s*혈압\s*(\d+)\s*mmHg\s*이하")
+_HR_BMI_UPPER = re.compile(r"BMI[^0-9]*\d+(?:\.\d+)?[^0-9]*(?:이상)?[^0-9]*(\d+(?:\.\d+)?)\s*(?:kg/㎡|kg/m2|kg)?\s*(?:미만|이하)")
+
+
+def _parse_health_limit(text: str, attr: str) -> float | None:
+    """health_requirements 텍스트에서 bp_systolic_max/bmi_max 상한값 추출."""
+    if not text:
+        return None
+    try:
+        if attr == "bp_systolic_max":
+            m = _HR_BP.search(text)
+            return float(m.group(1)) if m else None
+        if attr == "bmi_max":
+            m = _HR_BMI_UPPER.search(text)
+            return float(m.group(1)) if m else None
+    except (ValueError, AttributeError):
+        return None
+    return None
+
 # ── Security: Input Sanitization Patterns ──────────────────────────────
 _GREMLIN_INJECTION_RE = re.compile(
     r"""
@@ -90,6 +111,16 @@ class Orchestrator:
         self._scorer = HybridScorer()
         self._generator = AnswerGenerator(bedrock=bedrock)
         self._validator = HallucinationValidator(bedrock=bedrock)
+        # FC9 U5: HonestyPolicy (Stage 7.9 게이트). tbox.yaml 캐시 로드. 실패 시 None(no-op).
+        try:
+            import yaml as _yaml
+            from pathlib import Path as _P
+            from app.core.honesty_policy import HonestyPolicy, TBoxSnapshot
+            _tbox_path = _P(__file__).resolve().parent.parent / "tbox.yaml"
+            self._honesty = HonestyPolicy(TBoxSnapshot.from_tbox_dict(
+                _yaml.safe_load(_tbox_path.read_text(encoding="utf-8"))))
+        except Exception:
+            self._honesty = None
 
     async def run(self, request: ChatRequest) -> PipelineResult:
         """Non-streaming pipeline — collects full result. Used by mock endpoint."""
@@ -179,26 +210,12 @@ class Orchestrator:
                     except Exception as ex:
                         logger.warning(f"Product name resolution failed for '{entity.value}': {ex}")
 
-                # Step 2: k-NN with document_id pre-filter
-                if resolved_doc_ids:
-                    entry_nodes = await self._opensearch.search_knn(
-                        query_vector, k=settings.vector_search_top_k,
-                        document_ids=resolved_doc_ids,
-                    )
-                    # Fallback: filtered < 2 → supplement with unfiltered
-                    if len(entry_nodes) < 2:
-                        unfiltered = await self._opensearch.search_knn(
-                            query_vector, k=settings.vector_search_top_k,
-                        )
-                        seen = {n["node_id"] for n in entry_nodes}
-                        for node in unfiltered:
-                            if node["node_id"] not in seen:
-                                entry_nodes.append(node)
-                                seen.add(node["node_id"])
-                else:
-                    entry_nodes = await self._opensearch.search_knn(
-                        query_vector, k=settings.vector_search_top_k,
-                    )
+                # Step 2: k-NN. P0-C RC6(단기): OpenSearch document_id가 전 노드 '_resolved'
+                # 상수라 document_ids 필터가 무효(no-op)이거나 전건통과 → 필터 제거하고
+                # 비필터 k-NN + resolved Policy 직접 주입(Step3)에만 의존. (P1-C 재색인 후 복원)
+                entry_nodes = await self._opensearch.search_knn(
+                    query_vector, k=settings.vector_search_top_k,
+                )
 
                 # Step 3: Ensure resolved Policy is in entry_nodes
                 if resolved_policies:
@@ -562,7 +579,10 @@ class Orchestrator:
 
             if not has_target:
                 t0 = time.monotonic()
-                # Empty result: try comprehensive fallback
+                # 문제A 수정: enrich는 subgraph를 *보강*하되 의도 template_id를 보존한다.
+                # 기존엔 chain=fallback_chain으로 통째 교체 → templatesUsed가 comprehensive로
+                # 바뀌어 Template dimension 파괴(답변은 좋아져도 시나리오 FAIL). 이제 fallback
+                # executions를 원 chain에 *추가*해 원 의도 template 라벨을 유지한다.
                 fallback_chain = self._router.build_comprehensive_fallback(entry_node_ids)
                 if fallback_chain:
                     logger.info(
@@ -572,7 +592,8 @@ class Orchestrator:
                     enriched = await self._traversal.traverse(fallback_chain.executions)
                     if len(enriched.subgraph_nodes) > len(traversal_result.subgraph_nodes):
                         traversal_result = enriched
-                        chain = fallback_chain
+                        # 의도 template 보존 + comprehensive 보강 표기 (라벨 교체 금지)
+                        chain.executions.extend(fallback_chain.executions)
 
                 # Still empty: try neighborhood fallback
                 if len(traversal_result.subgraph_nodes) == 0:
@@ -584,7 +605,7 @@ class Orchestrator:
                         enriched = await self._traversal.traverse(nb_chain.executions)
                         if len(enriched.subgraph_nodes) > len(traversal_result.subgraph_nodes):
                             traversal_result = enriched
-                            chain = nb_chain
+                            chain.executions.extend(nb_chain.executions)
                 timings["fallback_ms"] = int((time.monotonic() - t0) * 1000)
 
         # Stage 6.7: MyData in-memory merge
@@ -609,11 +630,20 @@ class Orchestrator:
                 traversal_result, entry_node_ids
             )
         else:
+            # P2-B RC-A: 질의 의도 template의 target_node_types를 pruner에 전달 → 노드캡에서
+            # 필요타입(Policy/Eligibility/Premium_Discount 등)이 regulation 범람에 밀리지 않게 보호.
+            _primary_tid = chain.executions[0].template_id if chain.executions else None
+            _primary_tmpl = TEMPLATE_POOL.get(_primary_tid)
+            _required = list(_primary_tmpl.target_node_types) if _primary_tmpl else []
+            # Policy는 entry/anchor라 항상 보호 (F09/K05 Missing Policy 방지)
+            if "Policy" not in _required:
+                _required = _required + ["Policy"]
             subgraph_dict = self._prune_subgraph(
                 traversal_result.subgraph_nodes,
                 traversal_result.subgraph_edges,
                 entry_node_ids=entry_node_ids,
                 max_nodes=80 if is_portfolio else None,
+                required_types=_required,
             )
 
         # ── Pipeline Explorer: traverse stage event ──
@@ -652,6 +682,106 @@ class Orchestrator:
             },
         })
 
+        # ── Stage 7.9: HonestyPolicy gate (U5, FC9) ──────────────────
+        # Stage 8 LLM 생성 *전* deterministic 분기. 대상 intent만 개입(그 외 no-op).
+        # boundary 우선 → CONFIRMED_ABSENT/UNCERTAIN이면 LLM 미경유 deterministic 답변.
+        honesty = getattr(self, "_honesty", None)
+        if honesty is not None:
+            from app.core.honesty_policy import (
+                AbsenceEvidence, extract_boundary_query, Stance,
+            )
+            contract = honesty.contract_for(intent.type.value)
+            if contract is not None:
+                edge_present = any(
+                    e.get("type") == contract.target_edge or e.get("label") == contract.target_edge
+                    for e in subgraph_dict.get("edges", [])
+                )
+                # P0-A RC1: 검색/subgraph가 contract.target_node 타입 노드를 찾았는지 집계.
+                # >0이면 "데이터는 있는데 라우팅이 edge를 못 탐" → UNCERTAIN 단락 대신 LLM 위임.
+                _nodes = subgraph_dict.get("nodes", []) or []
+                topic_hits = sum(
+                    1 for n in _nodes
+                    if (n.get("type") or n.get("node_type")) == contract.target_node
+                )
+                if not topic_hits:  # subgraph가 비면 검색 entry_nodes에서도 확인
+                    topic_hits = sum(
+                        1 for n in (entry_nodes or [])
+                        if n.get("node_type") == contract.target_node
+                    )
+                # P0-A RC1: fallback_used 재정의 = "target 노드 0 + 폴백 발동"일 때만 True.
+                # 의미있는 노드가 남았으면 폴백이 돌아도 False(과억제 방지).
+                meaningful = bool(_nodes) or topic_hits > 0
+                evidence = AbsenceEvidence(
+                    target_policy_resolved=bool(entry_node_ids and entry_node_ids != ["Policy#unknown"]),
+                    target_template_executed=bool(chain.executions),
+                    target_edge_checked=True,
+                    fallback_used=("fallback_ms" in timings) and not meaningful,
+                    retrieval_coverage=bool(_nodes),
+                    entry_node_topic_hits=topic_hits,
+                )
+                bq = extract_boundary_query(query, intent.type.value)
+                constraint = honesty.constraint_for(contract.target_node, bq.attribute_name) if bq else None
+                # P0-B RC2: boundary 상한값을 subgraph Eligibility 노드에서 주입.
+                # 상한(max_age/bmi_max/bp_systolic_max)은 "가입 가능 상한" = 여러 행 중 **최댓값**
+                # (가장 관대한 조건)을 채택해야 정확(원래 first는 더 낮은 행을 잡아 오답 위험).
+                # subgraph에 수치 Eligibility가 들어오는 것은 load 정상화(_evidence 제외)로 보장.
+                if bq is not None:
+                    attr = bq.attribute_name
+                    limits = []
+                    for n in _nodes:
+                        if (n.get("type") or n.get("node_type")) == "Eligibility":
+                            props = n.get("properties") or n.get("props") or {}
+                            v = props.get(attr)
+                            if v is not None:
+                                try:
+                                    limits.append(float(v))
+                                except (TypeError, ValueError):
+                                    pass
+                            # bmi_max/bp_systolic_max는 구조화 속성이 없을 때 health_requirements
+                            # 자유텍스트에서 파싱(예 "수축기혈압 139mmHg 이하, BMI 18.5 이상 25 미만").
+                            # 재추출 없이 이미 적재된 텍스트 활용 — boundary 질의에만 동작.
+                            if v is None and attr in ("bmi_max", "bp_systolic_max"):
+                                hr = props.get("health_requirements") or ""
+                                parsed = _parse_health_limit(hr, attr)
+                                if parsed is not None:
+                                    limits.append(parsed)
+                    if limits:
+                        _limit = max(limits)  # 상한 = 가장 관대한 행
+                        from dataclasses import replace as _replace
+                        base = constraint or honesty.constraint_for(contract.target_node, attr)
+                        if base is not None:
+                            constraint = _replace(base, max=_limit)
+                        else:
+                            from app.core.honesty_policy import AttributeConstraint as _AC
+                            # bmi_max는 exclusive, 그 외 inclusive (tbox 정의 반영)
+                            constraint = _AC(attribute_name=attr, max=_limit,
+                                             inclusive=(attr != "bmi_max"))
+                stance_result = honesty.decide(
+                    intent.type.value, subgraph_dict, evidence,
+                    boundary_q=bq, constraint=constraint,
+                )
+                # boundary 판정(가능/불가 모두)은 결정론 답변을 그대로 사용 — 근거 수치 포함하고
+                # 권위적. 그 외(부재/불확실)는 기존대로 stance!=PRESENT일 때만.
+                _use_det = stance_result.deterministic_text and (
+                    stance_result.stance != Stance.PRESENT
+                    or stance_result.boundary_eval is not None
+                )
+                if _use_det:
+                    yield ("data", {"stage": "generate", "status": "done",
+                                    "data": {"model": "deterministic"}})
+                    yield ("text", stance_result.deterministic_text)
+                    yield ("data", {"stage": "verify", "status": "skipped_deterministic"})
+                    yield ("annotation", {
+                        "intent": intent.type.value,
+                        "confidence": intent.confidence,
+                        "honestyStance": stance_result.stance.value,
+                        "validationStatus": "skipped_deterministic",
+                        "sources": self._extract_sources(traversal_result),
+                        "templatesUsed": [e.template_id for e in chain.executions],
+                        "subgraph": subgraph_dict,
+                    })
+                    return
+
         # ── Stage 8: Stream answer generation ────────────────────────
 
         yield ("data", {
@@ -688,15 +818,20 @@ class Orchestrator:
         t0 = time.monotonic()
         topo_faithfulness = None
         validation_status = "completed"
+        # confidence_label은 HallucinationValidator가 산출한 값(0.95/0.85, config의
+        # topo_faithfulness_threshold와 정합)을 그대로 사용 — 단일 기준. 과거 orchestrator가
+        # 별도 임계값(0.8/0.5)으로 재계산해 validator 라벨이 죽은 코드+이중기준이던 것 통일.
+        confidence_label = "low"
         try:
             validation = await asyncio.wait_for(
                 self._validate(answer_text, chain.executions, traversal_result),
                 timeout=settings.validation_timeout,
             )
             topo_faithfulness = validation.topo_faithfulness
+            confidence_label = validation.confidence_label
         except asyncio.TimeoutError:
             logger.warning("Validation timed out, sending annotation without score")
-            validation_status = "timeout"
+            validation_status = "timeout"  # 점수 없음 → confidence_label=low 유지
             asyncio.create_task(
                 self._validate_background(
                     request_id, answer_text, chain.executions, traversal_result
@@ -705,9 +840,6 @@ class Orchestrator:
         timings["validation_ms"] = int((time.monotonic() - t0) * 1000)
 
         # ── Pipeline Explorer: verify stage event ──
-        confidence_label = "high" if (topo_faithfulness or 0) >= 0.8 else (
-            "medium" if (topo_faithfulness or 0) >= 0.5 else "low"
-        )
         yield ("data", {
             "stage": "verify", "status": "done",
             "ms": timings.get("validation_ms", 0),
@@ -1110,12 +1242,15 @@ class Orchestrator:
         edges: list[dict],
         entry_node_ids: list[str] | None = None,
         max_nodes: int | None = None,
+        required_types: list[str] | None = None,
     ) -> dict:
         """Cap the subgraph while protecting constraint-connected nodes.
 
         1. Nodes connected via constraint edges are never pruned.
-        2. Remaining nodes are ranked by BFS distance from entry nodes.
-        3. Regulation slot balance is maintained among unprotected nodes.
+        2. P2-B: Nodes of the query's required/target types are also protected
+           (so regulation flooding can't evict the answer-critical type).
+        3. Remaining nodes are ranked by BFS distance from entry nodes.
+        4. Regulation slot balance is maintained among unprotected nodes.
         """
         budget = max_nodes if max_nodes is not None else self.MAX_SUBGRAPH_NODES
         if len(nodes) <= budget:
@@ -1127,6 +1262,20 @@ class Orchestrator:
             if edge["type"] in self.CONSTRAINT_EDGE_TYPES:
                 protected_ids.add(edge["source"])
                 protected_ids.add(edge["target"])
+
+        # P2-B: 질의 필요타입 노드도 보호하되, 폭증 방지 위해 entry 근접 상위 N개만(타입당).
+        # regulation 범람으로 필요타입(Policy/Premium_Discount 등)이 캡에서 밀리는 것 방지.
+        req = set(required_types or [])
+        if req:
+            _dist = (self._compute_distances(edges, set(entry_node_ids))
+                     if entry_node_ids else {})
+            for rtype in req:
+                cands = [n for n in nodes if n.get("type") == rtype
+                         and n["id"] not in protected_ids]
+                cands.sort(key=lambda n: _dist.get(n["id"], float("inf")))
+                # 타입당 최대 8개 보호 (Coverage 다수 상품서 budget 폭주 방지)
+                for n in cands[:8]:
+                    protected_ids.add(n["id"])
 
         protected = [n for n in nodes if n["id"] in protected_ids]
         unprotected = [n for n in nodes if n["id"] not in protected_ids]

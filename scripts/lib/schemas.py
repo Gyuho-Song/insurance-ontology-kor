@@ -42,12 +42,25 @@ class RelationType(str, Enum):
     WAIVES_PREMIUM = "WAIVES_PREMIUM"
     OWNS = "OWNS"
     CALCULATED_BY = "CALCULATED_BY"
+    # FC9 U6: cross-document ER link edges (same_type invariant)
+    SAME_AS = "SAME_AS"
+    SIMILAR_TO = "SIMILAR_TO"
 
 
 class EntityProvenance(BaseModel):
     source_section_id: str
     source_text: str = Field(max_length=500)
     confidence: float = Field(ge=0.0, le=1.0)
+    # FC9 U1/U3: cell-level provenance (옵셔널 — 기존 추출 코드 무영향).
+    # U3 scorer의 direct input에서 사용. Neptune load 보존은 U4/U5 범위.
+    table_id: str | None = None
+    row_idx: int | None = None
+    col_idx: int | None = None
+    cell_bbox: list[float] | None = None
+    page_no: int | None = None
+    source_pdf: str | None = None
+    parser_version: str | None = None
+    run_id: str | None = None
 
 
 class Entity(BaseModel):

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "tbox_sha256": "b00ab891cdb432948bae535c8b78b09baf904e59db27b84682b9ef6c9a4261fa",
+  "required_props": {
+    "Premium_Discount": ["discount_rate", "discount_type"],
+    "Eligibility": ["min_age", "max_age"],
+    "Calculation": ["formula_text"]
+  },
+  "tolerance": { "numeric_rate": 0.001, "numeric_int_exact": true, "bbox_iou": 0.5 }
+}

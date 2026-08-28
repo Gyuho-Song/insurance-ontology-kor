@@ -32,14 +32,14 @@ from requests_aws4auth import AWS4Auth
 REGION = os.environ.get("AWS_REGION", "us-west-2")
 NEPTUNE_ENDPOINT = os.environ.get(
     "NEPTUNE_ENDPOINT",
-    "ontology-demo-neptune-instance.cr8yamuqw57p.us-west-2.neptune.amazonaws.com",
+    "ontology-demo-neptune-instance.XXXXXXXXXXXX.us-west-2.neptune.amazonaws.com",
 )
 NEPTUNE_PORT = int(os.environ.get("NEPTUNE_PORT", "8182"))
 NEPTUNE_URL = f"https://{NEPTUNE_ENDPOINT}:{NEPTUNE_PORT}/gremlin"
 
 OPENSEARCH_ENDPOINT = os.environ.get(
     "OPENSEARCH_ENDPOINT",
-    "https://svwxdwdbvvoryvl1l1k5.us-west-2.aoss.amazonaws.com",
+    "https://xxxxxxxxxxxxxxxxxxxx.us-west-2.aoss.amazonaws.com",
 )
 OPENSEARCH_INDEX = os.environ.get("OPENSEARCH_INDEX", "ontology-vectors")
 
@@ -134,10 +134,20 @@ def build_vertex_query(entity: dict, document_id: str) -> str:
     for key, value in (entity.get("properties") or {}).items():
         if value is None:
             continue
+        # P-boundary 버그수정: _evidence(거대 list[dict] 메타데이터)는 Neptune 적재 제외.
+        # json.dumps→_truncate가 중간을 잘라 Gremlin 쿼리가 깨지고 노드 자체가 적재 실패했음
+        # (max_age 보유 Eligibility 60개 전량 누락 → boundary 판정 불가). 검색/판정에 불필요.
+        if key == "_evidence":
+            continue
         if isinstance(value, (list, dict)):
             value = json.dumps(value, ensure_ascii=False)
         if isinstance(value, str):
             q += f".property(single, '{_esc(key)}', '{_truncate(_esc(value))}')"
+        # bool은 int의 subclass → int/float보다 먼저 체크. 파이썬 True/False(대문자)를
+        # Gremlin true/false(소문자)로 변환. 미처리 시 'True'가 쿼리에 들어가 400(노드 적재 실패).
+        # ← P 카테고리 1/8의 진짜 원인: max_age_inclusive 등 bool 속성 가진 Eligibility 60개 전량 누락.
+        elif isinstance(value, bool):
+            q += f".property(single, '{_esc(key)}', {str(value).lower()})"
         elif isinstance(value, (int, float)):
             q += f".property(single, '{_esc(key)}', {value})"
 

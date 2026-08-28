@@ -82,8 +82,9 @@ describe('DefaultOverview', () => {
 
   test('shows vertex and edge counts', () => {
     render(<DefaultOverview />);
-    expect(screen.getAllByText(/1,885/).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/1,771/).length).toBeGreaterThan(0);
+    // FC9 재구축 그래프 실제값 (resolved 기준)
+    expect(screen.getAllByText(/4,933/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/3,959/).length).toBeGreaterThan(0);
   });
 
   test('shows node type list with descriptions', () => {

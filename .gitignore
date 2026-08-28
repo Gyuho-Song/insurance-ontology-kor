@@ -22,8 +22,9 @@ venv/
 .vscode/
 .idea/
 
-# Claude Code
+# Agent local settings (may contain credentials)
 .claude/
+.aidlc/
 
 # OS
 .DS_Store

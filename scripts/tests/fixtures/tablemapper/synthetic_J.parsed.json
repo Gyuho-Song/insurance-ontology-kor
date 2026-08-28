@@ -1,0 +1,83 @@
+{
+  "document_id": "syn_J",
+  "markdown": "{{TABLE:t}}",
+  "figures": [],
+  "pages": [],
+  "source_pdf": "syn_J.pdf",
+  "parser_version": "docling",
+  "extraction_run_id": "syn",
+  "tables": [
+    {
+      "table_id": "t1",
+      "raw_category": "pricing",
+      "caption": "",
+      "summary": "보험료 납입면제 사유: 장해 50% 이상",
+      "entities": [],
+      "notes": [],
+      "units": {},
+      "raw_markdown": "|x|",
+      "page_no": 3,
+      "bbox": "l=1 t=2 r=3 b=4",
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "text": "면제사유",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "text": "기준",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "text": "장해상태",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "면제사유"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 3,
+            "source_pdf": "s.pdf",
+            "parser_version": "docling",
+            "run_id": "syn"
+          }
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "50% 이상",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "기준"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 3,
+            "source_pdf": "s.pdf",
+            "parser_version": "docling",
+            "run_id": "syn"
+          }
+        }
+      ]
+    }
+  ]
+}

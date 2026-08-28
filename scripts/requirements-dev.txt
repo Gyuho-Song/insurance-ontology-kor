@@ -1,0 +1,4 @@
+# scripts/ test-only dependencies (not required at runtime)
+-r requirements.txt
+pytest>=8.0
+hypothesis>=6.100   # PBT-09: property-based testing framework (FC9)

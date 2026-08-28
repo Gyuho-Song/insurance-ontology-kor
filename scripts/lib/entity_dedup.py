@@ -17,19 +17,28 @@ class EntityRegistry:
     3. No match: register as new
     """
 
+    # FC9 U6: product type은 fuzzy merge 비활성화(잘못된 병합 방지). cross-doc 병합은 EntityResolver가 scope-aware로.
+    _PRODUCT_TYPES = {"Policy", "Coverage", "Exclusion", "Exception", "Premium_Discount",
+                      "Surrender_Value", "Eligibility", "Rider", "Calculation", "Dividend_Method"}
+
     def __init__(self, threshold: float = 0.85):
         self._registry: dict[str, Entity] = {}
         self._threshold = threshold
 
     def register(self, candidate: Entity) -> Entity:
-        # 1. Exact match
+        # 1. Exact match (동일 라벨은 type 무관 유지)
         for eid, existing in self._registry.items():
             if existing.type == candidate.type and existing.label == candidate.label:
                 merged = self._merge(existing, candidate)
                 self._registry[eid] = merged
                 return merged
 
-        # 2. Fuzzy match
+        # FC9 U6 hard guard: product type은 fuzzy merge 안 함 (exact만)
+        if candidate.type in self._PRODUCT_TYPES:
+            self._registry[candidate.id] = candidate
+            return candidate
+
+        # 2. Fuzzy match (legal/global type만)
         for eid, existing in self._registry.items():
             if existing.type == candidate.type:
                 sim = jaro_winkler(existing.label, candidate.label)

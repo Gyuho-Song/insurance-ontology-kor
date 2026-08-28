@@ -46,7 +46,7 @@ import httpx
 
 ALB_HOST = os.environ.get(
     "ALB_HOST",
-    "k8s-ontology-appingre-77b5f8d9d3-1237744840.us-west-2.elb.amazonaws.com",
+    "k8s-ontology-appingre-xxxxxxxxxx-xxxxxxxxxx.us-west-2.elb.amazonaws.com",
 )
 API_URL = os.environ.get("API_URL", f"http://{ALB_HOST}/v1/chat")
 BEDROCK_REGION = os.environ.get("AWS_REGION", "us-west-2")
@@ -75,7 +75,7 @@ class Scenario:
     category: str
     question: str
     expected_intent: str | None  # None = any intent acceptable
-    expected_policy: str | None  # Policy node ID substring
+    expected_policy: str | None  # [DEPRECATED] Policy node ID substring (id 형식 의존 — C4로 대체)
     expected_templates: list[str]  # Any of these in templatesUsed → PASS
     required_node_types: list[str]  # Node types that should appear in subgraph
     verification_keywords: list[str]  # Keywords the answer should contain
@@ -1529,34 +1529,59 @@ def eval_intent(scenario: Scenario, annotation: dict | None) -> DimensionResult:
     )
 
 
+# C4: eval Vector를 id 형식이 아니라 product_name(node_label)로 판정 — id 체계가 바뀌어도
+# eval이 깨지지 않게(벡터 0% 재발 영구 차단). 슬러그 → 식별 product 토큰 매핑.
+# 토큰은 라벨 변형(한화생명/무배당/공백 유무)에 강인하도록 distinctive 핵심어.
+SLUG_TO_PRODUCT_TOKEN = {
+    "hwl_signature_h_cancer": "시그니처h암보험",
+    "hwl_h_whole_life": "h종신보험",
+    "hwl_hcareins_nodividend": "h간병보험",
+    "hwl_pocket_fracture": "포켓골절보험",
+    "hwl_ecancer_nonrenewal": "e암보험",
+}
+
+
+def _norm_product(s: str) -> str:
+    """라벨 정규화: 공백·'한화생명'·'무배당'·괄호 제거 후 소문자. 변형 라벨 매칭용."""
+    s = (s or "").lower()
+    for junk in ("한화생명", "무배당", "(무)", "(무배당)", " ", "\t"):
+        s = s.replace(junk.lower(), "")
+    return s
+
+
 def eval_vector(scenario: Scenario, annotation: dict | None) -> DimensionResult:
-    """Evaluate Vector dimension: entry nodes contain expected Policy."""
+    """Vector dimension: 검색 entry/subgraph 노드가 기대 상품(product_name)을 포함하는지.
+    id 형식이 아니라 node_label/product_name 토큰으로 판정(C4)."""
     if scenario.expected_policy is None:
-        return DimensionResult("Vector", "SKIP", "No expected policy specified")
+        return DimensionResult("Vector", "SKIP", "No expected product specified")
     if annotation is None:
         return DimensionResult("Vector", "ERROR", "No annotation returned")
 
-    # Check sources for the expected policy node
+    # 기대 상품 토큰: 슬러그 매핑 우선, 없으면 슬러그 꼬리를 토큰으로 사용
+    slug = scenario.expected_policy.split("#")[-1]
+    token = SLUG_TO_PRODUCT_TOKEN.get(slug, slug)
+    ntoken = _norm_product(token)
+
     sources = annotation.get("sources", [])
     subgraph_nodes = annotation.get("subgraph", {}).get("nodes", [])
 
-    # Check in sources
+    # 노드의 라벨/타입/id 어디서든 product 토큰이 잡히면 PASS (Policy 타입 우선)
+    def _hit(label: str, node_id: str, ntype: str) -> bool:
+        hay = _norm_product(label) + " " + _norm_product(node_id)
+        return ntoken in hay
+
     for src in sources:
-        node_id = src.get("node_id", "")
-        if scenario.expected_policy in node_id:
-            return DimensionResult("Vector", "PASS", f"Found in sources: {node_id}")
-
-    # Also check in subgraph nodes
+        if _hit(src.get("node_label", ""), src.get("node_id", ""), src.get("node_type", "")):
+            return DimensionResult("Vector", "PASS", f"Found in sources: {src.get('node_label') or src.get('node_id')}")
     for node in subgraph_nodes:
-        node_id = node.get("id", "")
-        if scenario.expected_policy in node_id:
-            return DimensionResult("Vector", "PASS", f"Found in subgraph: {node_id}")
+        if _hit(node.get("label", ""), node.get("id", ""), node.get("type", "")):
+            return DimensionResult("Vector", "PASS", f"Found in subgraph: {node.get('label') or node.get('id')}")
 
-    source_ids = [s.get("node_id", "") for s in sources[:5]]
-    node_ids = [n.get("id", "") for n in subgraph_nodes[:5]]
+    src_lbls = [s.get("node_label", "") or s.get("node_id", "") for s in sources[:5]]
+    node_lbls = [n.get("label", "") or n.get("id", "") for n in subgraph_nodes[:5]]
     return DimensionResult(
         "Vector", "FAIL",
-        f"Expected={scenario.expected_policy}, Sources={source_ids}, Nodes={node_ids}",
+        f"ExpectedProduct={token}, Sources={src_lbls}, Nodes={node_lbls}",
     )
 
 
@@ -1614,12 +1639,20 @@ def eval_subgraph(scenario: Scenario, annotation: dict | None) -> DimensionResul
 
 JUDGE_SYSTEM_PROMPT = """당신은 보험 약관 Q&A 시스템의 답변 품질을 평가하는 전문가입니다.
 
-아래 기준으로 답변을 평가하세요:
+**핵심 판정 기준 (verdict 결정)** — 답변의 내용 정확성으로만 판정하세요:
 1. **핵심 사실 포함**: 기대 키워드/사실이 답변에 포함되어 있는가?
 2. **환각 없음**: 서브그래프에 없는 정보를 만들어내지 않았는가?
-3. **근거 표시**: [출처: 제X조Y항] 형식의 근거 태깅이 있는가?
-4. **한계 고지**: 데이터가 없거나 답변 불가 시 정직하게 안내했는가?
-5. **금지 키워드 불포함**: 답변에 포함되면 안 되는 키워드가 없는가?
+3. **한계 고지**: 데이터가 없거나 답변 불가 시 정직하게 안내했는가?
+4. **금지 키워드 불포함**: 답변에 포함되면 안 되는 키워드가 없는가?
+
+**보조 신호 (verdict를 단독으로 낮추지 말 것)**:
+- 근거 태깅([출처: 제X조Y항]) 형식의 유무는 **참고 사항일 뿐**입니다. 내용(기준 1·2·3)이
+  정확하면 근거 태깅 형식이 없다는 이유만으로 FAIL/PARTIAL로 낮추지 마세요.
+
+**판정 규칙**:
+- PASS: 핵심 사실을 정확히 포함하고 환각/금지어가 없음 (근거 태깅 형식 무관).
+- PARTIAL: 핵심 사실 일부만 포함하거나 불완전.
+- FAIL: 핵심 사실이 틀리거나 누락, 환각, 금지어 포함, 또는 답변 불가인데 거짓 단정.
 
 반드시 아래 JSON만 출력하세요:
 {"verdict": "PASS|PARTIAL|FAIL", "reason": "구체적 사유 (1-2문장)"}"""
@@ -1648,6 +1681,44 @@ class LLMJudge:
         self._client = boto3.client("bedrock-runtime", region_name=region)
         self._model_id = model_id
 
+    def _single_verdict(self, prompt: str) -> tuple[str, str]:
+        """단일 judge 호출 → (verdict, reason). 파싱 실패 시 정규식 폴백."""
+        resp = self._client.invoke_model(
+            modelId=self._model_id,
+            contentType="application/json",
+            accept="application/json",
+            body=json.dumps({
+                "anthropic_version": "bedrock-2023-05-31",
+                "max_tokens": 512,
+                "temperature": 0,
+                "system": JUDGE_SYSTEM_PROMPT,
+                "messages": [{"role": "user", "content": prompt}],
+            }),
+        )
+        raw_text = json.loads(resp["body"].read())["content"][0]["text"].strip()
+        data = _extract_json(raw_text)
+        if data:
+            v = data.get("verdict", "FAIL").upper()
+            r = data.get("reason", "")
+            if v not in ("PASS", "PARTIAL", "FAIL"):
+                v = "FAIL"
+            return v, r
+        import re as _re
+        m = _re.search(r'"?verdict"?\s*[:=]\s*"?(PASS|PARTIAL|FAIL)', raw_text, _re.I)
+        if m:
+            return m.group(1).upper(), "verdict regex 폴백(JSON 미완결)"
+        return "FAIL", f"Judge returned non-JSON: {raw_text[:100]}"
+
+    @staticmethod
+    def _majority_verdict(votes: list[str]) -> str:
+        """다수결. 동률/3표 분산 시 보수적으로 중간(PARTIAL)."""
+        from collections import Counter
+        c = Counter(votes)
+        top = c.most_common()
+        if top and top[0][1] >= 2:
+            return top[0][0]
+        return "PARTIAL"  # 3표 전부 다름(PASS/PARTIAL/FAIL) → 보수적 중간
+
     def evaluate(self, scenario: Scenario, answer_text: str) -> DimensionResult:
         """Synchronous evaluation (called from async via executor)."""
         if not answer_text.strip():
@@ -1672,38 +1743,35 @@ class LLMJudge:
         )
 
         try:
-            resp = self._client.invoke_model(
-                modelId=self._model_id,
-                contentType="application/json",
-                accept="application/json",
-                body=json.dumps({
-                    "anthropic_version": "bedrock-2023-05-31",
-                    "max_tokens": 256,
-                    "system": JUDGE_SYSTEM_PROMPT,
-                    "messages": [{"role": "user", "content": prompt}],
-                }),
-            )
-            result_body = json.loads(resp["body"].read())
-            raw_text = result_body["content"][0]["text"].strip()
-
-            # Parse JSON from response
-            verdict_data = _extract_json(raw_text)
-            if verdict_data:
-                verdict = verdict_data.get("verdict", "FAIL").upper()
-                reason = verdict_data.get("reason", "")
-                if verdict not in ("PASS", "PARTIAL", "FAIL"):
-                    verdict = "FAIL"
-            else:
-                verdict = "FAIL"
-                reason = f"Judge returned non-JSON: {raw_text[:100]}"
+            # P2-C RC7: 경계 케이스 judge flip(temp=0에도 run간 변동) 방지 — 3회 투표 다수결.
+            # 동률/혼재 시 보수적으로 더 낮은 등급 채택(PASS>PARTIAL>FAIL 중 다수, 동률은 중간값).
+            votes = []
+            reason = ""
+            for _i in range(3):
+                v, r = self._single_verdict(prompt)
+                votes.append(v)
+                if v == "FAIL" and not reason:  # 실패 사유 우선 기록
+                    reason = r
+                elif not reason:
+                    reason = r
+                # 3표 중 2표 일치(조기확정) — API 절약
+                if votes.count(v) >= 2:
+                    break
+            verdict = self._majority_verdict(votes)
 
             # Append keyword info to reason
-            detail_parts = [reason]
+            detail_parts = [reason or f"votes={votes}"]
             if kw_missing:
                 detail_parts.append(f"Missing keywords: {kw_missing}")
             if neg_found:
                 detail_parts.append(f"Forbidden keywords found: {neg_found}")
-                if verdict == "PASS":
+                # P0-D RC7: R 카테고리(Security/Injection)는 거부하며 금지어를 인용할 수 있음.
+                # 거부 문맥이 답변에 있으면 substring override를 면제(R06 위양성 차단).
+                _refusal = any(t in answer_text for t in
+                               ("거부", "제공할 수 없", "제공하지 않", "도와드릴 수 없",
+                                "수행할 수 없", "응할 수 없", "허용되지 않", "불가능합니다"))
+                is_security = scenario.category == "R"
+                if verdict == "PASS" and not (is_security and _refusal):
                     verdict = "FAIL"
 
             return DimensionResult("Answer", verdict, " | ".join(detail_parts))

@@ -2,6 +2,7 @@
 
 import { useCallback } from 'react';
 import { useAppContext } from '@/lib/context';
+import { useAuth } from '@/lib/auth-context';
 import { DualPanelLayout } from '@/components/layout/DualPanelLayout';
 import { ChatPanel } from '@/components/chat/ChatPanel';
 import { CustomerSwitcher } from '@/components/controls/CustomerSwitcher';
@@ -13,6 +14,7 @@ import type { Scenario } from '@/lib/types';
 import type { DemoCustomer } from '@/lib/customers';
 
 export default function Home() {
+  const { user, signOut } = useAuth();
   const {
     selectedCustomer,
     scenarioId,
@@ -46,6 +48,19 @@ export default function Home() {
             selectedCustomerId={selectedCustomer?.id ?? null}
             onCustomerChange={handleCustomerChange}
           />
+          <div className="flex items-center gap-2 ml-auto">
+            {user && (
+              <span className="text-xs text-muted-foreground hidden sm:inline">
+                {user.email}
+              </span>
+            )}
+            <button
+              onClick={signOut}
+              className="rounded-md border px-3 py-1.5 text-xs font-medium text-muted-foreground hover:bg-secondary hover:text-foreground transition-colors"
+            >
+              Logout
+            </button>
+          </div>
         </div>
       }
       leftPanel={

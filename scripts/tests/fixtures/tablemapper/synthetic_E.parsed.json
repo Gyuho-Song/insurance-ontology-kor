@@ -1,0 +1,83 @@
+{
+  "document_id": "syn_E",
+  "markdown": "{{TABLE:t}}",
+  "figures": [],
+  "pages": [],
+  "source_pdf": "syn_E.pdf",
+  "parser_version": "docling",
+  "extraction_run_id": "syn",
+  "tables": [
+    {
+      "table_id": "t1",
+      "raw_category": "pricing",
+      "caption": "",
+      "summary": "보험료 할인: 단체취급 할인율",
+      "entities": [],
+      "notes": [],
+      "units": {},
+      "raw_markdown": "|x|",
+      "page_no": 3,
+      "bbox": "l=1 t=2 r=3 b=4",
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "text": "할인종류",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "text": "할인율",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [],
+          "is_header": true,
+          "provenance": null
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "text": "단체취급",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "할인종류"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 3,
+            "source_pdf": "s.pdf",
+            "parser_version": "docling",
+            "run_id": "syn"
+          }
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "2%",
+          "rowspan": 1,
+          "colspan": 1,
+          "bbox": null,
+          "header_path": [
+            "할인율"
+          ],
+          "is_header": false,
+          "provenance": {
+            "page_no": 3,
+            "source_pdf": "s.pdf",
+            "parser_version": "docling",
+            "run_id": "syn"
+          }
+        }
+      ]
+    }
+  ]
+}

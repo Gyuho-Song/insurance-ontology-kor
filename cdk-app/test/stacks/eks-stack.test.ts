@@ -23,6 +23,7 @@ describe('EksStack', () => {
       ],
     });
     const eksSg = new ec2.SecurityGroup(mockStack, 'EksSg', { vpc });
+    const albSg = new ec2.SecurityGroup(mockStack, 'AlbSg', { vpc });
     const neptuneCluster = new neptune.CfnDBCluster(mockStack, 'NeptuneCluster', {
       iamAuthEnabled: true,
     });
@@ -33,6 +34,7 @@ describe('EksStack', () => {
       env: { account: '123456789012', region: 'ap-northeast-2' },
       vpc,
       eksSecurityGroup: eksSg,
+      albSecurityGroup: albSg,
       neptuneCluster,
       neptuneClusterEndpoint: 'test-neptune.cluster-xxx.ap-northeast-2.neptune.amazonaws.com',
       neptuneClusterPort: '8182',

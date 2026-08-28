@@ -4,7 +4,8 @@ import * as cdk from 'aws-cdk-lib';
 import { VpcStack } from '../lib/stacks/vpc-stack';
 import { DataStack } from '../lib/stacks/data-stack';
 import { EksStack } from '../lib/stacks/eks-stack';
-import { STACK_NAMES, DEFAULT_TAGS } from '../lib/config/constants';
+import { CloudFrontWafStack } from '../lib/stacks/cloudfront-waf-stack';
+import { STACK_NAMES, DEFAULT_TAGS, CF_ORIGIN_VERIFY_HEADER, CF_ORIGIN_VERIFY_SECRET } from '../lib/config/constants';
 import { DEMO_ENV } from '../lib/config/environments';
 
 const app = new cdk.App();
@@ -34,7 +35,6 @@ const dataStack = new DataStack(app, STACK_NAMES.DATA, {
   opensearchSecurityGroup: vpcStack.opensearchSecurityGroup,
   neptuneMinCapacity: DEMO_ENV.neptune.minCapacity,
   neptuneMaxCapacity: DEMO_ENV.neptune.maxCapacity,
-  ossVpcEndpointId: app.node.tryGetContext('ossVpcEndpointId'),
 });
 dataStack.addDependency(vpcStack);
 
@@ -46,10 +46,12 @@ const eksStack = new EksStack(app, STACK_NAMES.EKS, {
   env: DEMO_ENV.env,
   vpc: vpcStack.vpc,
   eksSecurityGroup: vpcStack.eksSecurityGroup,
-  neptuneSecurityGroup: vpcStack.neptuneSecurityGroup,
-  opensearchSecurityGroup: vpcStack.opensearchSecurityGroup,
+
+  // VPC Stack
+  albSecurityGroup: vpcStack.albSecurityGroup,
 
   // Data Stack
+  neptuneCluster: dataStack.neptuneCluster,
   neptuneClusterEndpoint: dataStack.neptuneClusterEndpoint,
   neptuneClusterPort: dataStack.neptuneClusterPort,
   opensearchCollectionArn: dataStack.opensearchCollectionArn,
@@ -65,5 +67,21 @@ const eksStack = new EksStack(app, STACK_NAMES.EKS, {
 });
 eksStack.addDependency(vpcStack);
 eksStack.addDependency(dataStack);
+
+// =========================================
+// Stack 4: CloudFront + WAF
+// Deployed in us-east-1 (WAF CLOUDFRONT scope requires us-east-1)
+// Requires ALB DNS — pass via: -c albDnsName=<ALB_DNS>
+// =========================================
+const albDnsName = app.node.tryGetContext('albDnsName');
+if (albDnsName) {
+  const cfStack = new CloudFrontWafStack(app, STACK_NAMES.CLOUDFRONT, {
+    env: { region: 'us-east-1' },
+    crossRegionReferences: true,
+    albDnsName,
+    originVerifyHeader: CF_ORIGIN_VERIFY_HEADER,
+    originVerifySecret: CF_ORIGIN_VERIFY_SECRET,
+  });
+}
 
 app.synth();

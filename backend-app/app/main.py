@@ -2,10 +2,12 @@ import logging
 from contextlib import asynccontextmanager
 
 import boto3
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
 from app.api import chat, health, mock, mydata, personas, scenarios
+from app.middleware.auth import verify_token
 from app.clients.bedrock_client import BedrockClient
 from app.clients.embedding_client import EmbeddingClient
 from app.clients.neptune_client import NeptuneClient
@@ -61,6 +63,31 @@ app.add_middleware(
 async def root():
     """ALB health check endpoint (root path)."""
     return {"status": "ok"}
+
+
+# Cognito JWT auth middleware — skip health checks
+# FC9: AUTH_DISABLED=true (env) → 전체 우회. eval v11을 v10과 동일(무인증) 조건서 측정용. 기본은 인증 유지.
+import os as _os
+_AUTH_DISABLED = _os.environ.get("AUTH_DISABLED", "").lower() in ("1", "true", "yes")
+_PUBLIC_PATHS = {"/", "/v1/health"}
+
+@app.middleware("http")
+async def cognito_auth_middleware(request: Request, call_next):
+    if _AUTH_DISABLED or request.method == "OPTIONS" or request.url.path in _PUBLIC_PATHS:
+        return await call_next(request)
+
+    auth_header = request.headers.get("authorization", "")
+    if not auth_header.startswith("Bearer "):
+        return JSONResponse(status_code=401, content={"detail": "Missing authorization token"})
+
+    token = auth_header[7:]
+    try:
+        claims = await verify_token(token)
+        request.state.user_email = claims.get("email", "unknown")
+    except Exception:
+        return JSONResponse(status_code=401, content={"detail": "Invalid or expired token"})
+
+    return await call_next(request)
 
 
 app.include_router(chat.router)

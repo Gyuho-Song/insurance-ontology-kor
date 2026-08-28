@@ -5,6 +5,7 @@ import { useChat } from '@ai-sdk/react';
 import { ChatMessage } from './ChatMessage';
 import { ChatInput } from './ChatInput';
 import { useAppContext } from '@/lib/context';
+import { useAuth } from '@/lib/auth-context';
 import type { ExtendedMessage, MessageAnnotation, StageEvent } from '@/lib/types';
 import { getScenarioById } from '@/lib/scenarios';
 
@@ -18,6 +19,7 @@ export function ChatPanel({
   onScenarioConsumed,
 }: ChatPanelProps) {
   const { setActiveSubgraph, setActiveTraversalEvents, setPipelineStages, setRightPanelTab, mydataConsent, ragMode, selectedCustomer } = useAppContext();
+  const { user } = useAuth();
 
   const chatBody = useMemo(
     () => ({
@@ -28,9 +30,16 @@ export function ChatPanel({
     [ragMode, mydataConsent]
   );
 
+  const chatHeaders = useMemo(() => {
+    const h: Record<string, string> = {};
+    if (user?.idToken) h['Authorization'] = `Bearer ${user.idToken}`;
+    return h;
+  }, [user?.idToken]);
+
   const { messages, append, setMessages, isLoading, error, data } = useChat({
     api: '/api/chat',
     body: chatBody,
+    headers: chatHeaders,
     onError: (err) => {
       console.error('[useChat] onError:', err);
     },

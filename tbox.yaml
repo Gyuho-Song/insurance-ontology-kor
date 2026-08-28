@@ -1,0 +1,107 @@
+# tbox.yaml — LPG Graph Contract (SSOT) for FC9
+# graph-ready JSON <-> Neptune load 계약. OWL 온톨로지 아님.
+# schemas.py(EntityType/RelationType)와 1:1 일치해야 함 (check-schemas로 검증).
+version: 1
+
+# ────────────────────────────────────────────────────────────
+# definitions (안정적, 드물게 변경)
+# ────────────────────────────────────────────────────────────
+node_types:
+  - Policy
+  - Coverage
+  - Exclusion
+  - Exception
+  - Dividend_Method
+  - Regulation
+  - Premium_Discount
+  - Surrender_Value
+  - Eligibility
+  - Rider
+  - Product_Category
+  - Calculation
+
+# edge_types: domain -> range (template_router 역도출)
+edge_types:
+  HAS_COVERAGE:          { domain: [Policy],            range: [Coverage] }
+  EXCLUDED_IF:           { domain: [Coverage],          range: [Exclusion] }
+  EXCEPTION_ALLOWED:     { domain: [Exclusion],         range: [Exception] }
+  GOVERNED_BY:           { domain: [Policy],            range: [Regulation] }
+  STRICTLY_PROHIBITED:   { domain: [Regulation],        range: [Exclusion] }
+  EXCEPTIONALLY_ALLOWED: { domain: [Regulation],        range: [Exception] }
+  NO_DIVIDEND_STRUCTURE: { domain: [Policy],            range: [Dividend_Method] }
+  HAS_DISCOUNT:          { domain: [Policy],            range: [Premium_Discount] }
+  SURRENDER_PAYS:        { domain: [Policy],            range: [Surrender_Value] }
+  REQUIRES_ELIGIBILITY:  { domain: [Policy],            range: [Eligibility] }
+  HAS_RIDER:             { domain: [Policy],            range: [Rider] }
+  HAS_LOAN:              { domain: [Policy],            range: [Coverage] }
+  WAIVES_PREMIUM:        { domain: [Policy],            range: [Coverage] }
+  OWNS:                  { domain: [Product_Category],  range: [Policy] }
+  CALCULATED_BY:         { domain: [Coverage, Surrender_Value, Premium_Discount, Rider], range: [Calculation] }
+  # FC9 U6: cross-document ER link edges. same_type=true → source.type == target.type 검증 (domain/range 대신)
+  SAME_AS:               { same_type: true }
+  SIMILAR_TO:            { same_type: true }
+
+# ────────────────────────────────────────────────────────────
+# constraints (자주 진화, severity 부착)
+# ────────────────────────────────────────────────────────────
+# property_schemas: 클래스별 typed 속성. dtype/unit/required/inclusive 메타.
+# required: eval(E/G/J/P) 역산 핵심 속성만 (escalation: 초기 WARNING).
+property_schemas:
+  Premium_Discount:
+    discount_rate:   { dtype: float,  unit: "ratio",  required: true,  inclusive_min: true,  inclusive_max: true }
+    discount_type:   { dtype: str,                    required: true }
+    condition:       { dtype: str,                    required: false }
+    scope:           { dtype: str,                    required: false }
+  Eligibility:
+    min_age:           { dtype: int,   unit: "세",      required: true,  inclusive: true }
+    max_age:           { dtype: int,   unit: "세",      required: true,  inclusive: true }
+    bmi_min:           { dtype: float, unit: "kg/m2",  required: false, inclusive: true }
+    bmi_max:           { dtype: float, unit: "kg/m2",  required: false, inclusive: false }  # "25 미만" → 25 배타
+    bp_systolic_max:   { dtype: int,   unit: "mmHg",   required: false, inclusive: true }
+  Calculation:
+    formula_text:    { dtype: str,                    required: true }
+    formula_type:    { dtype: str,                    required: false }   # surrender_value|benefit|premium|discount|loan
+    variables:       { dtype: str_or_list,            required: false }   # 수식 변수명: LLM이 str/list 혼용 (RC3)
+  Surrender_Value:
+    refund_rate:     { dtype: float, unit: "ratio",   required: false, inclusive_min: true, inclusive_max: true }
+    elapsed_period:  { dtype: str,                    required: false }
+
+# cardinality: 최소/최대 관계 수
+cardinality:
+  - { node: Policy, edge: OWNS, direction: in, min: 1, severity: WARNING }   # 모든 Policy는 ≥1 Product_Category(OWNS in)
+
+# severity 기본값
+severity_defaults:
+  domain_range_violation: ERROR     # R1
+  required_missing: WARNING         # R2 (escalation 후 ERROR)
+  type_mismatch: ERROR              # R3
+  cardinality_violation: WARNING    # R4
+  provenance_missing: WARNING       # R5
+
+# ────────────────────────────────────────────────────────────
+# known_exceptions: rule/scope/reason/expiry 포함. "데이터 부재"는 여기 넣지 않음.
+# ────────────────────────────────────────────────────────────
+known_exceptions:
+  - rule: cardinality
+    entity_type: Policy
+    missing: GOVERNED_BY
+    scope: "19개 상품(규제 참조 없는 약관)"
+    reason: "해당 약관 본문에 규제 조항 참조가 없음(검토 완료, 정상)"
+    expiry: null
+  - rule: cardinality
+    entity_type: Policy
+    edge: NO_DIVIDEND_STRUCTURE
+    scope: "전 상품"
+    reason: "전 상품 무배당 구조 확정"
+    expiry: null
+# NOTE: HAS_LOAN(전역 0건)은 known_exception이 아님 — 데이터 부재 상태.
+#       gap report로 다루고 U5 HonestyPolicy가 CONFIRMED_ABSENT 판정에 사용.
+
+# ────────────────────────────────────────────────────────────
+# validation_profiles: 시점별 게이트 강도
+# ────────────────────────────────────────────────────────────
+validation_profiles:
+  report:        { fail_on: [] }                       # 비차단, 리포트만
+  phase1_gate:   { fail_on: [errors_excluding_known] } # soft: known 제외 ERROR=0
+  load_gate:     { fail_on: [errors_excluding_known] }  # hard: 로드 전 차단
+  strict_future: { fail_on: [errors_excluding_known, warnings] }  # required escalation 완료본

@@ -13,7 +13,8 @@ const NODE_TYPE_LABELS: Record<string, string> = {
   Dividend_Method: '배당방식',
   Eligibility: '가입조건',
   Regulation: '규제/법률',
-  Customer: '고객',
+  Premium_Discount: '보험료 할인',
+  Product_Category: '상품분류',
 };
 
 const TEMPLATE_EXPLANATIONS: Record<string, string[]> = {
@@ -41,16 +42,15 @@ const TEMPLATE_EXPLANATIONS: Record<string, string[]> = {
     '면책사유(EXCLUDED_IF) 전체 탐색',
     '예외조항(EXCEPTION_ALLOWED) 확인',
   ],
-  surrender_value_traverse: [
+  surrender_value_lookup: [
     'Policy 노드에서 시작',
     '해약환급금(SURRENDER_PAYS) 노드 조회',
-    '계산 규칙(CALCULATED_BY) 확인',
-    '경과기간별 환급금 데이터 수집',
+    'label 순으로 정렬해 경과기간별 환급금 데이터 수집',
   ],
-  calculation_traverse: [
+  calculation_lookup: [
     'Policy 노드에서 시작',
+    '보장/환급금/특약(HAS_COVERAGE·SURRENDER_PAYS·HAS_RIDER) 경유',
     '계산 규칙(CALCULATED_BY) 노드 조회',
-    '관련 보장항목 또는 환급금과의 관계 확인',
   ],
   regulation_lookup: [
     'Policy 노드에서 시작',
@@ -63,40 +63,35 @@ const TEMPLATE_EXPLANATIONS: Record<string, string[]> = {
     '해당 규제가 적용되는 Policy 역추적',
     '금지행위 및 예외 허용 범위 확인',
   ],
-  rider_traverse: [
+  rider_lookup: [
     'Policy 노드에서 시작',
     '특약(HAS_RIDER) 노드 조회',
-    '각 특약의 보장항목(HAS_COVERAGE) 확인',
+    '각 특약의 보장 내용 확인',
   ],
-  eligibility_traverse: [
+  eligibility_lookup: [
     'Policy 노드에서 시작',
-    '가입조건(HAS_ELIGIBILITY) 노드 조회',
+    '가입조건(REQUIRES_ELIGIBILITY) 노드 조회',
     '나이/건강 조건 등 가입 자격 데이터 수집',
   ],
-  discount_eligibility_traverse: [
+  discount_eligibility: [
     'Policy 노드에서 시작',
-    '할인/우대 조건(HAS_ELIGIBILITY) 조회',
-    '적용 가능 여부 확인',
+    '할인 조건(HAS_DISCOUNT) 노드 조회',
+    '할인율 및 적용 조건 확인',
   ],
-  premium_waiver_traverse: [
+  premium_waiver_lookup: [
     'Policy 노드에서 시작',
-    '납입면제 관련 보장항목 조회',
-    '면책사유와 예외조항 확인',
+    '납입면제(WAIVES_PREMIUM) 보장 조회',
+    '면책사유(EXCLUDED_IF)와 예외조항(EXCEPTION_ALLOWED) 확인',
+  ],
+  dividend_portfolio_check: [
+    '여러 Policy 노드를 함께 조회',
+    '각 상품의 배당 구조(NO_DIVIDEND_STRUCTURE) 확인',
+    '포트폴리오 단위 배당 가능 여부 종합',
   ],
   comprehensive_lookup: [
     'Policy 노드에서 시작',
     '보장/면책/예외/계산/환급금 등 전체 관계 탐색',
     '복합 질문에 대한 종합 데이터 수집',
-  ],
-  comparison_traverse: [
-    '복수 Policy 노드에서 병렬 시작',
-    '각 상품의 보장항목을 독립적으로 조회',
-    '비교 가능한 형태로 데이터 구조화',
-  ],
-  loan_traverse: [
-    'Policy 노드에서 시작',
-    '대출 관련 계산 규칙(CALCULATED_BY) 조회',
-    '대출 이율 및 조건 데이터 수집',
   ],
 };
 

@@ -72,8 +72,9 @@ export function VerifyDetail({ stage }: VerifyDetailProps) {
           <span>Graph Topology Faithfulness — {pct}%</span>
         </div>
         <div className="flex items-center gap-2 text-xs">
-          <span className={topo_faithfulness >= 0.5 ? 'text-emerald-600' : 'text-red-600'}>
-            {topo_faithfulness >= 0.5 ? '✅' : '❌'}
+          {/* 통과 기준 = confidence_label(검증 임계값 0.85와 정합). low면 미통과. */}
+          <span className={confidence_label !== 'low' ? 'text-emerald-600' : 'text-red-600'}>
+            {confidence_label !== 'low' ? '✅' : '❌'}
           </span>
           <span>Confidence Threshold — {confidence_label.toUpperCase()}</span>
         </div>

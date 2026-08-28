@@ -51,42 +51,26 @@ aws sts get-caller-identity
 
 ## Phase 1: 인프라 배포 (CDK)
 
-### 1-1. 환경 변수 설정 (필수)
-
-> **주의**: `CDK_DEFAULT_REGION`과 `AWS_REGION`을 **모두** 설정해야 합니다.
-> CDK는 `CDK_DEFAULT_REGION`을, boto3/AWS SDK는 `AWS_REGION`을 참조합니다.
-> 둘 중 하나만 설정하면 다른 리전에 배포될 수 있습니다.
+### 1-1. CDK Bootstrap (대상 리전에 최초 1회)
 
 ```bash
 export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
 export CDK_DEFAULT_REGION=us-east-1  # ← 배포 대상 리전
-export AWS_REGION=$CDK_DEFAULT_REGION  # ← 반드시 동일하게 설정
+
+cdk bootstrap aws://$CDK_DEFAULT_ACCOUNT/$CDK_DEFAULT_REGION
 ```
 
-### 1-2. 의존성 설치
+### 1-2. 의존성 설치 + 환경 변수
 
 ```bash
 cd cdk-app
 npm install
+
+export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
+export CDK_DEFAULT_REGION=us-east-1  # ← 배포 대상 리전
 ```
 
-### 1-3. cdk.context.json 삭제
-
-> **주의**: 다른 리전에서 사용한 `cdk.context.json`이 있으면 삭제하세요.
-> CDK가 AZ(Availability Zone) 조회 결과를 캐싱하므로, 이전 리전의 AZ가 남아있으면
-> 새 리전에서 배포가 실패합니다.
-
-```bash
-rm -f cdk.context.json
-```
-
-### 1-4. CDK Bootstrap (대상 리전에 최초 1회)
-
-```bash
-cdk bootstrap aws://$CDK_DEFAULT_ACCOUNT/$CDK_DEFAULT_REGION
-```
-
-### 1-5. 환경 설정 (선택)
+### 1-3. 환경 설정 (선택)
 
 `lib/config/environments.ts`에서 조정 가능:
 
@@ -99,7 +83,7 @@ cdk bootstrap aws://$CDK_DEFAULT_ACCOUNT/$CDK_DEFAULT_REGION
 | `neptune.minCapacity` | 2.5 | Neptune 최소 NCU |
 | `neptune.maxCapacity` | 128 | Neptune 최대 NCU |
 
-### 1-6. CDK Synth (검증)
+### 1-4. CDK Synth (검증)
 
 ```bash
 npx cdk synth --all
@@ -107,7 +91,7 @@ npx cdk synth --all
 
 3개 스택 확인: `ontology-demo-vpc`, `ontology-demo-data`, `ontology-demo-eks`
 
-### 1-7. 배포
+### 1-5. 배포
 
 ```bash
 npx cdk deploy --all --require-approval never
@@ -117,44 +101,14 @@ npx cdk deploy --all --require-approval never
 
 **총 소요: ~30-40분**
 
-### 1-8. EKS 접근 설정
+### 1-6. 인프라 검증
 
 ```bash
-# kubeconfig 설정
+# EKS kubeconfig 설정
 aws eks update-kubeconfig \
   --name ontology-demo-cluster \
   --region $CDK_DEFAULT_REGION
-```
 
-> **EKS 접근 권한**: CDK가 클러스터를 생성하면 CDK 실행 역할이 자동으로 관리자 권한을 갖습니다.
-> 다른 IAM 역할에서 kubectl을 사용하려면 **EKS 접근 항목**을 추가해야 합니다:
->
-> ```bash
-> # 1. 인증 모드를 API_AND_CONFIG_MAP으로 변경
-> aws eks update-cluster-config \
->   --name ontology-demo-cluster \
->   --region $CDK_DEFAULT_REGION \
->   --access-config authenticationMode=API_AND_CONFIG_MAP
->
-> # 2. 현재 역할의 접근 항목 생성
-> CURRENT_ROLE_ARN=$(aws sts get-caller-identity --query Arn --output text | sed 's|:sts::|:iam::|;s|assumed-role/\(.*\)/.*|role/\1|')
->
-> aws eks create-access-entry \
->   --cluster-name ontology-demo-cluster \
->   --region $CDK_DEFAULT_REGION \
->   --principal-arn $CURRENT_ROLE_ARN
->
-> aws eks associate-access-policy \
->   --cluster-name ontology-demo-cluster \
->   --region $CDK_DEFAULT_REGION \
->   --principal-arn $CURRENT_ROLE_ARN \
->   --policy-arn arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy \
->   --access-scope type=cluster
-> ```
-
-### 1-9. 인프라 검증
-
-```bash
 # EKS 클러스터
 aws eks describe-cluster --name ontology-demo-cluster \
   --region $CDK_DEFAULT_REGION \
@@ -183,33 +137,11 @@ aws ecr describe-repositories \
 # S3
 aws s3 ls | grep ontology-demo
 
-# ConfigMap (엔드포인트 + 필수 환경변수 확인)
+# ConfigMap (엔드포인트 확인)
 kubectl get configmap app-config -n ontology-demo -o yaml
 ```
 
-**ConfigMap 필수 항목 확인:**
-
-CDK가 자동으로 생성하는 ConfigMap(`app-config`)에 아래 항목이 모두 있어야 합니다:
-
-| 키 | 용도 | 예시 |
-|----|------|------|
-| `NEPTUNE_ENDPOINT` | Neptune 클러스터 엔드포인트 | `ontology-demo-neptune.cluster-xxx.us-east-1.neptune.amazonaws.com` |
-| `NEPTUNE_PORT` | Neptune 포트 | `8182` |
-| `OPENSEARCH_ENDPOINT` | OpenSearch Serverless 엔드포인트 | `https://xxx.us-east-1.aoss.amazonaws.com` |
-| `PARSED_BUCKET` | 그래프 데이터 JSON 버킷 | `ontology-demo-parsed-data-{account}-{region}` |
-| `MOCK_CACHE_BUCKET` | 프론트엔드 캐시 버킷 | `ontology-demo-mock-cache-{account}-{region}` |
-| `AWS_REGION` | AWS 리전 | `us-east-1` |
-| `BEDROCK_REGION` | SigV4 서명 리전 (Neptune/OpenSearch/Bedrock) | `us-east-1` |
-| `GRAPHRAG_BACKEND_URL` | Next.js → FastAPI 내부 연결 URL | `http://fastapi.ontology-demo.svc.cluster.local:80` |
-
-> **주의 — `BEDROCK_REGION`**: 백엔드 앱의 `config.py`에서 `bedrock_region` 기본값이 `us-west-2`입니다.
-> Neptune/OpenSearch 클라이언트가 이 값으로 SigV4 서명을 하므로, 배포 리전과 다르면
-> **Neptune 403, OpenSearch 403** 에러가 발생합니다. 반드시 배포 리전과 동일하게 설정하세요.
->
-> **주의 — `GRAPHRAG_BACKEND_URL`**: Next.js 프론트엔드가 이 URL로 FastAPI 백엔드에 연결합니다.
-> 설정하지 않으면 `http://localhost:8000`으로 fallback하여 **"백엔드 서비스에 연결할 수 없습니다"** 에러가 발생합니다.
-
-### 1-10. 엔드포인트 수집 (Phase 2에 필요)
+### 1-7. 엔드포인트 수집 (Phase 2에 필요)
 
 ```bash
 # Neptune 엔드포인트
@@ -260,17 +192,17 @@ JSON 파일 구조 (문서 1개 = 파일 1개):
   "entities": [
     {
       "id": "Policy#hwl_h보장보험1",
-      "type": "Policy",
-      "label": "한화생명 H보장보험Ⅰ",
+      "type": "Policy",              → Neptune vertex label
+      "label": "한화생명 H보장보험Ⅰ",  → Neptune property
       "properties": { "provider": "한화생명", ... },
       "provenance": { "source_text": "...", "confidence": 0.95 }
     }
   ],
   "relations": [
     {
-      "source_id": "Policy#...",
-      "target_id": "Coverage#...",
-      "type": "HAS_COVERAGE",
+      "source_id": "Policy#...",     → Neptune edge OUT
+      "target_id": "Coverage#...",   → Neptune edge IN
+      "type": "HAS_COVERAGE",        → Neptune edge label
       "provenance": { ... }
     }
   ]
@@ -288,58 +220,61 @@ JSON 파일 구조 (문서 1개 = 파일 1개):
 
 Neptune과 OpenSearch Serverless는 **private subnet에 있으며 VPC 엔드포인트를 통해서만 접근 가능**합니다. 데이터 로딩 스크립트는 반드시 VPC 내부에서 실행해야 합니다.
 
-**권장 방법: FastAPI 파드에서 실행 (kubectl exec)**
-
-가장 간단하고 추가 인프라가 필요 없는 방법입니다. IRSA로 Neptune/OpenSearch/Bedrock 접근 권한이 이미 설정되어 있습니다.
-
+**방법 A: EKS 워커 노드에 SSM으로 접속**
 ```bash
-# 1. 스크립트와 데이터를 tar로 묶기
-tar czf /tmp/deploy-data.tar.gz scripts/ data/v2-graph-ready/
+INSTANCE_ID=$(aws ec2 describe-instances \
+  --filters "Name=tag:eks:cluster-name,Values=ontology-demo-cluster" \
+            "Name=instance-state-name,Values=running" \
+  --query 'Reservations[0].Instances[0].InstanceId' --output text \
+  --region $CDK_DEFAULT_REGION)
 
-# 2. 파드로 복사
-FASTAPI_POD=$(kubectl get pods -n ontology-demo -l app=fastapi -o jsonpath='{.items[0].metadata.name}')
-kubectl cp /tmp/deploy-data.tar.gz ontology-demo/$FASTAPI_POD:/tmp/deploy-data.tar.gz
-
-# 3. 파드에서 풀기
-kubectl exec -n ontology-demo $FASTAPI_POD -- tar xzf /tmp/deploy-data.tar.gz -C /tmp/
-
-# 4. 의존성 설치
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  pip install boto3 gremlinpython requests-aws4auth opensearch-py
+aws ssm start-session --target $INSTANCE_ID --region $CDK_DEFAULT_REGION
 ```
 
-기타 방법:
-- **SSM으로 EKS 워커 노드 접속**: `aws ssm start-session --target <instance-id>`
-- **임시 EC2 인스턴스**: AppPrivate 서브넷에 생성
-- **Cloud9/Bastion**: VPC 내부에서 직접 실행
+**방법 B: 임시 EC2 인스턴스를 AppPrivate 서브넷에 생성**
 
-### 2-1. Neptune IAM 인증 정책 확인
+**방법 C: 현재 환경이 이미 VPC 내부라면 (Cloud9, Bastion 등) 그대로 실행**
 
-> **중요**: Neptune IAM 인증은 **클러스터 리소스 ID** (`cluster-XXXXX...`)를 사용합니다.
-> CDK의 `CfnDBCluster.ref`는 클러스터 식별자 (`ontology-demo-neptune`)를 반환하므로 다릅니다.
-> 현재 CDK 코드는 와일드카드(`arn:aws:neptune-db:{region}:{account}:*`)를 사용합니다.
->
-> 더 제한적인 리소스 ARN을 원하면 Neptune 에러 메시지에서 클러스터 리소스 ID를 추출하여
-> IAM 정책을 수동으로 업데이트할 수 있습니다.
+### 2-1. 스크립트 의존성 설치
 
 ```bash
-# 방법 1: describe-db-clusters로 리소스 ID 확인
-aws neptune describe-db-clusters \
-  --db-cluster-identifier ontology-demo-neptune \
-  --region $CDK_DEFAULT_REGION \
-  --query 'DBClusters[0].DbClusterResourceId' --output text
-# 출력 예: cluster-EDMJL3EN3KFVXUQG67IOKFUECI
-
-# 방법 2: 앱 로그에서 AccessDeniedException의 resource ARN 확인
+pip3 install boto3 requests requests-aws4auth
 ```
 
-### 2-2. OpenSearch 인덱스 생성
+### 2-2. 소스 JSON 데이터 다운로드 (S3)
+
+v2 graph-ready JSON 39개 파일이 S3에 보관되어 있습니다:
 
 ```bash
-# 파드 내부에서 실행
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  env OPENSEARCH_ENDPOINT=$OPENSEARCH_ENDPOINT AWS_REGION=$CDK_DEFAULT_REGION \
-  python3 /tmp/scripts/create_opensearch_index.py
+mkdir -p /tmp/v2-graph-ready
+
+# 원본 S3에서 다운로드 (us-west-2)
+aws s3 sync \
+  s3://ontology-demo-parsed-data-123456789012/v2-graph-ready/ \
+  /tmp/v2-graph-ready/ \
+  --region us-west-2
+
+# 확인: 39개 JSON (+ 메타데이터 3개)
+ls /tmp/v2-graph-ready/*.json | wc -l   # 42 (39 데이터 + 3 manifest)
+```
+
+새 환경의 parsed-data 버킷에도 복사 (보관용):
+```bash
+aws s3 sync /tmp/v2-graph-ready/ \
+  s3://ontology-demo-parsed-data-${CDK_DEFAULT_ACCOUNT}/v2-graph-ready/ \
+  --region $CDK_DEFAULT_REGION
+```
+
+### 2-3. OpenSearch 인덱스 생성
+
+```bash
+cd /path/to/ontology-demo
+
+# 환경 변수 설정
+export AWS_REGION=$CDK_DEFAULT_REGION
+export OPENSEARCH_ENDPOINT=$OPENSEARCH_ENDPOINT  # Phase 1-7에서 수집
+
+python3 scripts/create_opensearch_index.py
 ```
 
 예상 출력:
@@ -353,49 +288,48 @@ Creating index 'ontology-vectors' with k-NN + Nori mappings...
 
 Index settings:
   - k-NN: enabled (HNSW, nmslib, cosinesimil)
-  - Embedding dimension: 1024 (Bedrock Titan Embed V2)
+  - Embedding dimension: 1536 (Bedrock Titan v2)
   - Text analyzer: Nori (Korean morphological)
   - node_label.raw: keyword (exact match/wildcard)
 ```
 
-### 2-3. Neptune + OpenSearch 데이터 로딩
+### 2-4. Neptune + OpenSearch 데이터 로딩
 
 ```bash
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  env INPUT_DIR=/tmp/data/v2-graph-ready \
-  python3 /tmp/scripts/load_v2_data.py --force
+# 환경 변수 설정
+export AWS_REGION=$CDK_DEFAULT_REGION
+export NEPTUNE_ENDPOINT=$NEPTUNE_ENDPOINT     # Phase 1-7에서 수집
+export NEPTUNE_PORT=$NEPTUNE_PORT
+export OPENSEARCH_ENDPOINT=$OPENSEARCH_ENDPOINT
+export INPUT_DIR=/tmp/v2-graph-ready           # 2-2에서 다운로드한 경로
+
+# 전체 로딩 (Neptune + OpenSearch, ~20-30분)
+python3 scripts/load_v2_data.py --force
 ```
 
 옵션:
 ```bash
-# Neptune만
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  env INPUT_DIR=/tmp/data/v2-graph-ready \
-  python3 /tmp/scripts/load_v2_data.py --neptune-only
-
-# OpenSearch만
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  env INPUT_DIR=/tmp/data/v2-graph-ready \
-  python3 /tmp/scripts/load_v2_data.py --opensearch-only
-
-# 특정 파일만
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  env INPUT_DIR=/tmp/data/v2-graph-ready \
-  python3 /tmp/scripts/load_v2_data.py --file "한화생명*"
+python3 scripts/load_v2_data.py --neptune-only     # Neptune만
+python3 scripts/load_v2_data.py --opensearch-only   # OpenSearch만
+python3 scripts/load_v2_data.py --file "한화생명*"  # 특정 파일만
+python3 scripts/load_v2_data.py --drop-v1           # 기존 데이터 전부 삭제 후 로딩
 ```
 
-예상 결과 (~10분):
+예상 결과:
 ```
 Complete: 39 files, Errors: 0
-Neptune: 1,955 vertices, 1,720 edges
-OpenSearch: 1,955 vectors indexed
+Neptune: ~1,889 vertices, ~1,771 edges
+OpenSearch: ~1,952 vectors indexed
 ```
 
-### 2-4. 고립 노드 연결
+### 2-5. 고립 노드 연결
 
 ```bash
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  python3 /tmp/scripts/connect_isolated_nodes.py
+export AWS_REGION=$CDK_DEFAULT_REGION
+export NEPTUNE_ENDPOINT=$NEPTUNE_ENDPOINT
+export NEPTUNE_PORT=$NEPTUNE_PORT
+
+python3 scripts/connect_isolated_nodes.py
 ```
 
 예상 결과:
@@ -405,35 +339,25 @@ Total failures: 0
 Remaining isolated nodes: 0
 ```
 
-### 2-5. 데이터 로딩 검증
+### 2-6. 데이터 로딩 검증
 
 ```bash
-# Neptune: 노드/엣지 수 확인
-kubectl exec -n ontology-demo $FASTAPI_POD -- python3 -c "
-import os, boto3, requests
-from botocore.auth import SigV4Auth
-from botocore.awsrequest import AWSRequest
+# Neptune: 노드 수 확인 (VPC 내부에서)
+# Gremlin HTTP API로 직접 확인
+curl -s -X POST "https://${NEPTUNE_ENDPOINT}:${NEPTUNE_PORT}/gremlin" \
+  -H "Content-Type: application/json" \
+  -d '{"gremlin": "g.V().count()"}' \
+  --aws-sigv4 "aws:amz:${AWS_REGION}:neptune-db" \
+  --insecure \
+  | python3 -m json.tool
 
-endpoint = os.environ['NEPTUNE_ENDPOINT']
-port = os.environ['NEPTUNE_PORT']
-session = boto3.Session()
-creds = session.get_credentials().get_frozen_credentials()
-
-url = f'https://{endpoint}:{port}/gremlin'
-for label, query in [('vertices', 'g.V().count()'), ('edges', 'g.E().count()')]:
-    data = '{\"gremlin\": \"' + query + '\"}'
-    req = AWSRequest(method='POST', url=url, data=data, headers={'Content-Type': 'application/json'})
-    SigV4Auth(creds, 'neptune-db', os.environ.get('AWS_REGION', 'us-east-1')).add_auth(req)
-    resp = requests.post(url, data=data, headers=dict(req.headers), verify=False, timeout=30)
-    print(f'{label}: {resp.json()[\"result\"][\"data\"][\"@value\"]}')
-"
+# OpenSearch: 문서 수 확인
+# (opensearch-py 또는 curl + SigV4 필요)
 ```
 
 ---
 
 ## Phase 3: 애플리케이션 배포 (Docker → ECR → EKS)
-
-> Phase 3은 VPC 내부일 필요 없습니다. Docker 빌드와 ECR 푸시는 어디서든 가능합니다.
 
 ### 3-1. ECR 로그인
 
@@ -492,28 +416,15 @@ kubectl get ingress -n ontology-demo
 # ALB DNS 가져오기
 ALB_DNS=$(kubectl get ingress app-ingress -n ontology-demo \
   -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
-echo "Frontend: http://$ALB_DNS/"
-echo "API:      http://$ALB_DNS/v1/docs"
+echo "Frontend: https://$ALB_DNS/"
+echo "API:      https://$ALB_DNS/v1/docs"
 
-# API 헬스체크 — 반드시 "healthy"여야 함
-curl -s http://$ALB_DNS/v1/health | python3 -m json.tool
-# 기대값: {"status": "healthy", "checks": {"neptune": "ok", "opensearch": "ok"}}
+# API 헬스체크 (-k: self-signed cert 허용)
+curl -sk https://$ALB_DNS/v1/health | python3 -m json.tool
 
 # HPA
 kubectl get hpa -n ontology-demo
 ```
-
-> **헬스체크 결과가 `degraded`인 경우:**
-> `neptune: error` 또는 `opensearch: error`가 나오면 `BEDROCK_REGION`이 배포 리전과 일치하는지 확인하세요.
-> ```bash
-> kubectl exec -n ontology-demo deployment/fastapi -- env | grep BEDROCK_REGION
-> ```
-> 값이 없거나 다른 리전이면 ConfigMap을 패치하고 Pod를 재시작합니다:
-> ```bash
-> kubectl patch configmap app-config -n ontology-demo \
->   --type merge -p '{"data":{"BEDROCK_REGION":"us-east-1"}}'
-> kubectl rollout restart deployment/fastapi -n ontology-demo
-> ```
 
 ### 3-6. E2E 평가: 128 시나리오 테스트
 
@@ -553,6 +464,19 @@ python3 scripts/run_evaluation.py --concurrency 1
 python3 scripts/run_evaluation.py --output eval_results.json
 ```
 
+**시나리오 카테고리 (128개):**
+
+| 카테고리 | 설명 | 시나리오 수 |
+|----------|------|-----------|
+| A | 보장 내용 조회 | ~15 |
+| B | 면책/부담보 확인 | ~15 |
+| C | 가입 자격 조건 | ~10 |
+| D | 보험료 할인/환급 | ~10 |
+| E | 특약 관련 | ~10 |
+| F-L | 배당, 해약환급금, 계산, 비교 등 | ~40 |
+| R | 법규 관련 질의 | ~15 |
+| S | 보안/엣지 케이스 | ~13 |
+
 **기준선 (us-west-2 환경):**
 ```
 128 시나리오 중 92개 PASS (71.9%)
@@ -572,133 +496,89 @@ print(f'Rate:  {data[\"summary\"][\"pass_rate\"]:.1%}')
 
 ---
 
+## HTTPS / TLS 인증서 관리
+
+ALB는 HTTPS:443만 리스닝하며, HTTP:80은 리스너가 없습니다 (응답 없음).
+
+### 현재 구성
+- **인증서**: Self-signed (ACM imported), 유효기간 1년
+- **ACM ARN**: `arn:aws:acm:us-west-2:123456789012:certificate/00000000-0000-0000-0000-000000000000`
+- **CDK 상수**: `cdk-app/lib/config/constants.ts` → `ACM_CERTIFICATE_ARN`
+
+### 인증서 갱신 (만료 전)
+
+```bash
+# 1. 새 self-signed 인증서 생성
+mkdir -p /tmp/ontology-certs
+cat > /tmp/ontology-certs/openssl.cnf << 'CONF'
+[req]
+default_bits = 2048
+prompt = no
+distinguished_name = dn
+req_extensions = v3_req
+x509_extensions = v3_req
+
+[dn]
+CN = ontology-demo-alb
+
+[v3_req]
+subjectAltName = @alt_names
+basicConstraints = CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
+
+[alt_names]
+DNS.1 = <ALB_HOSTNAME>
+DNS.2 = *.us-west-2.elb.amazonaws.com
+CONF
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+  -keyout /tmp/ontology-certs/tls.key \
+  -out /tmp/ontology-certs/tls.crt \
+  -config /tmp/ontology-certs/openssl.cnf
+
+# 2. ACM에 재import (기존 ARN에 덮어쓰기)
+aws acm import-certificate \
+  --region us-west-2 \
+  --certificate-arn arn:aws:acm:us-west-2:123456789012:certificate/00000000-0000-0000-0000-000000000000 \
+  --certificate fileb:///tmp/ontology-certs/tls.crt \
+  --private-key fileb:///tmp/ontology-certs/tls.key
+```
+
+### 커스텀 도메인으로 전환 시
+
+커스텀 도메인이 있으면 ACM 퍼블릭 인증서를 사용하여 브라우저 경고 없이 운영 가능합니다:
+```bash
+# 1. ACM 퍼블릭 인증서 요청
+aws acm request-certificate --domain-name demo.example.com \
+  --validation-method DNS --region us-west-2
+
+# 2. Route53 DNS 검증 후 constants.ts의 ACM_CERTIFICATE_ARN 업데이트
+# 3. Ingress 재적용
+```
+
+---
+
 ## 전체 체크리스트
 
 | # | 단계 | 확인 항목 | 상태 |
 |---|------|----------|------|
-| 1 | 환경 변수 | `AWS_REGION` + `CDK_DEFAULT_REGION` 모두 설정 | [ ] |
-| 2 | cdk.context.json | 기존 캐시 삭제 | [ ] |
-| 3 | CDK Bootstrap | `cdk bootstrap` 완료 | [ ] |
-| 4 | CDK Deploy | 3 스택 배포 완료 | [ ] |
-| 5 | EKS 접근 | kubeconfig + 접근 항목 설정 | [ ] |
-| 6 | EKS Nodes | `kubectl get nodes` — 2 Ready | [ ] |
-| 7 | Neptune | Status: available | [ ] |
-| 8 | OpenSearch | Collection: ACTIVE | [ ] |
-| 9 | ECR | 2 repos 생성 확인 | [ ] |
-| 10 | S3 | 2 버킷 확인 | [ ] |
-| 11 | ConfigMap | `BEDROCK_REGION` + `GRAPHRAG_BACKEND_URL` 포함 확인 | [ ] |
-| 12 | OS Index | `ontology-vectors` 인덱스 생성 (1024 dim) | [ ] |
-| 13 | Neptune Load | ~1,955 vertices, ~1,720 edges | [ ] |
-| 14 | OS Load | ~1,955 vectors | [ ] |
-| 15 | Isolated Nodes | 0 remaining | [ ] |
-| 16 | Backend ECR | 이미지 푸시 완료 | [ ] |
-| 17 | Frontend ECR | 이미지 푸시 완료 | [ ] |
-| 18 | Pods | fastapi 2/2, nextjs 2/2 Running | [ ] |
-| 19 | ALB | Ingress ADDRESS 할당 + 리스너 존재 | [ ] |
-| 20 | Health | `/v1/health` → `healthy` (neptune: ok, opensearch: ok) | [ ] |
-| 21 | 프론트엔드 | 브라우저에서 질의 → 서브그래프 포함된 답변 확인 | [ ] |
-| 22 | E2E 평가 | 128 시나리오 ~92/128 (71.9%+) | [ ] |
-
----
-
-## 트러블슈팅
-
-### CDK가 잘못된 리전에 배포됨
-**원인**: `AWS_REGION` 환경변수가 시스템 기본값으로 설정되어 있거나 `cdk.context.json`에 이전 리전 캐시가 남아있음.
-**해결**: `AWS_REGION`과 `CDK_DEFAULT_REGION`을 동일하게 설정하고, `cdk.context.json`을 삭제.
-
-### kubectl 접근 거부 (`Unauthorized`)
-**원인**: CDK 실행 역할이 아닌 다른 IAM 역할에서 접근 시도.
-**해결**: 1-8 단계의 EKS 접근 항목 추가 절차 수행.
-
-### Neptune `AccessDeniedException`
-**원인**: IRSA 정책의 리소스 ARN에 클러스터 식별자(`ontology-demo-neptune`)가 사용됨. Neptune IAM 인증은 클러스터 리소스 ID(`cluster-XXXXX`)를 요구.
-**해결**: CDK는 와일드카드(`*`)를 사용하므로 정상 동작. 수동 정책이라면 `neptune describe-db-clusters`로 리소스 ID 확인 후 수정.
-
-### OpenSearch 인덱싱 실패 (`mapper_parsing_exception`)
-**원인**: 인덱스 임베딩 차원이 데이터와 불일치. Titan Embed V2 기본 출력은 **1024차원**.
-**해결**: `create_opensearch_index.py`의 `dimension`이 1024인지 확인. 잘못 생성했으면 `--recreate` 옵션으로 재생성.
-
-### Pod에서 Neptune/OpenSearch 연결 타임아웃
-**원인**: EKS는 노드에 클러스터 전용 보안 그룹(auto-created)을 할당하며, VPC 스택의 `EksWorkersSg`와 다름.
-CDK가 `CfnSecurityGroupIngress`로 클러스터 SG를 Neptune/OpenSearch SG에 추가합니다.
-**확인**: `aws eks describe-cluster --query 'cluster.resourcesVpcConfig.clusterSecurityGroupId'`로 클러스터 SG ID 확인 후, Neptune/OpenSearch SG의 인바운드 규칙에 포함되어 있는지 확인.
-
-### ALB에 리스너 없음 (Connection refused)
-**원인**: CDK 롤백 또는 ingress 리소스 손상으로 ALB Controller가 리스너를 삭제.
-**해결**: ingress 삭제 → ALB Controller 재시작 → ingress 재생성.
-> **참고**: `spec.ingressClassName: alb`를 사용합니다. 구 방식인 `kubernetes.io/ingress.class` 어노테이션은
-> ALB Controller v2.8+에서 리스너가 사라지는 문제가 있습니다.
-```bash
-# 1. 기존 ingress 삭제 (ALB도 자동 삭제됨)
-kubectl delete ingress app-ingress -n ontology-demo
-
-# 2. ALB Controller 재시작 (stale 상태 초기화)
-kubectl rollout restart deployment/aws-load-balancer-controller -n kube-system
-kubectl rollout status deployment/aws-load-balancer-controller -n kube-system
-
-# 3. ingress 재생성
-kubectl apply -f - <<'EOF'
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: app-ingress
-  namespace: ontology-demo
-  annotations:
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
-spec:
-  ingressClassName: alb
-  rules:
-    - http:
-        paths:
-          - path: /v1
-            pathType: Prefix
-            backend:
-              service:
-                name: fastapi
-                port:
-                  number: 80
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: nextjs
-                port:
-                  number: 80
-EOF
-
-# 4. ALB 생성 확인 (1-2분 대기)
-kubectl get ingress app-ingress -n ontology-demo -w
-```
-
-### 프론트엔드에서 "백엔드 서비스에 연결할 수 없습니다" 에러
-**원인**: Next.js의 server-side API route가 `GRAPHRAG_BACKEND_URL` 환경변수로 FastAPI 백엔드 주소를 결정.
-설정하지 않으면 `http://localhost:8000`으로 fallback → Pod 내부에 FastAPI가 없으므로 연결 실패.
-**해결**: ConfigMap에 `GRAPHRAG_BACKEND_URL` 추가 후 nextjs Pod 재시작.
-```bash
-kubectl patch configmap app-config -n ontology-demo \
-  --type merge -p '{"data":{"GRAPHRAG_BACKEND_URL":"http://fastapi.ontology-demo.svc.cluster.local:80"}}'
-kubectl rollout restart deployment/nextjs -n ontology-demo
-```
-
-### Neptune/OpenSearch 403 Forbidden (SigV4 리전 불일치)
-**원인**: 백엔드 앱(`config.py`)의 `bedrock_region` 기본값이 `us-west-2`. Neptune/OpenSearch 클라이언트가
-이 리전으로 SigV4 서명하므로, 실제 서비스가 다른 리전(예: `us-east-1`)에 있으면 403 발생.
-`kubectl exec`로 직접 SigV4 테스트하면 정상이지만 앱에서만 403이 나는 경우 이것이 원인.
-**증상**: `/v1/health`가 `{"status":"degraded","checks":{"neptune":"error","opensearch":"error"}}` 반환.
-질의 시 서브그래프 데이터 없이 저품질 답변만 생성됨.
-**해결**: ConfigMap에 `BEDROCK_REGION`을 배포 리전으로 설정 후 fastapi Pod 재시작.
-```bash
-kubectl patch configmap app-config -n ontology-demo \
-  --type merge -p '{"data":{"BEDROCK_REGION":"us-east-1"}}'
-kubectl rollout restart deployment/fastapi -n ontology-demo
-
-# 확인
-curl -s http://$ALB_DNS/v1/health
-# 기대값: {"status":"healthy","checks":{"neptune":"ok","opensearch":"ok"}}
-```
+| 1 | CDK Bootstrap | `cdk bootstrap` 완료 | [ ] |
+| 2 | CDK Deploy | 3 스택 배포 완료 | [ ] |
+| 3 | EKS Nodes | `kubectl get nodes` — 2 Ready | [ ] |
+| 4 | Neptune | Status: available | [ ] |
+| 5 | OpenSearch | Collection: ACTIVE | [ ] |
+| 6 | ECR | 2 repos 생성 확인 | [ ] |
+| 7 | S3 | 2 버킷 확인 | [ ] |
+| 8 | OS Index | `ontology-vectors` 인덱스 생성 | [ ] |
+| 9 | Neptune Load | ~1,889 vertices, ~1,771 edges | [ ] |
+| 10 | OS Load | ~1,952 vectors | [ ] |
+| 11 | Isolated Nodes | 0 remaining | [ ] |
+| 12 | Backend ECR | 이미지 푸시 완료 | [ ] |
+| 13 | Frontend ECR | 이미지 푸시 완료 | [ ] |
+| 14 | Pods | fastapi 2/2, nextjs 2/2 Running | [ ] |
+| 15 | ALB | Ingress ADDRESS 할당 | [ ] |
+| 16 | Health | `/v1/health` 200 OK | [ ] |
+| 17 | E2E 평가 | 128 시나리오 ~92/128 (71.9%+) | [ ] |
 
 ---
 
@@ -706,7 +586,6 @@ curl -s http://$ALB_DNS/v1/health
 
 ```bash
 export CDK_DEFAULT_REGION=us-east-1  # 삭제할 리전
-export AWS_REGION=$CDK_DEFAULT_REGION
 
 # CDK 스택 삭제 (역순: EKS → Data → VPC)
 cd cdk-app
@@ -730,122 +609,32 @@ aws ecr delete-repository --repository-name ontology-demo/frontend-app \
 | VPC Endpoints | STS, ECR, ECR Docker, CW Logs, SSM, EC2, SQS, S3 | |
 | Neptune Serverless | ontology-demo-neptune | 2.5-128 NCU, IAM auth |
 | OpenSearch Serverless | ontology-embeddings | VECTORSEARCH, VPC endpoint |
-| S3: parsed-data | ontology-demo-parsed-data-{account}-{region} | 그래프 데이터 JSON |
-| S3: mock-cache | ontology-demo-mock-cache-{account}-{region} | 프론트엔드 캐시 |
-| EKS Cluster | ontology-demo-cluster | v1.33, Public+Private endpoint |
+| S3: parsed-data | ontology-demo-parsed-data-{account} | 그래프 데이터 JSON |
+| S3: mock-cache | ontology-demo-mock-cache-{account} | 프론트엔드 캐시 |
+| EKS Cluster | ontology-demo-cluster | v1.33, Private endpoint |
 | Node Group | WorkerNodes | m5.xlarge × 2, AL2023 |
 | ALB Controller | v2.8.2 | 자동 설치 |
 | ECR: backend | ontology-demo/backend-app | RETAIN |
 | ECR: frontend | ontology-demo/frontend-app | RETAIN |
 | K8s Namespace | ontology-demo | |
 | K8s Deployments | fastapi (×2), nextjs (×2) | |
-| K8s Ingress | app-ingress | ALB internet-facing |
+| K8s Ingress | app-ingress | ALB internet-facing, HTTPS:443 only |
+| ACM Certificate | self-signed (imported) | ALB TLS termination, 365일 유효 |
 | K8s HPA | fastapi-hpa | CPU 70%, 2-6 replicas |
 | IRSA: fastapi-sa | Neptune, OpenSearch, Bedrock, S3 | |
 | IRSA: nextjs-sa | S3 mock-cache read | |
-
-## IAM 역할 및 권한
-
-CDK가 IRSA(IAM Roles for Service Accounts)를 통해 2개의 역할을 자동 생성합니다.
-데모 환경이므로 서비스별 와일드카드를 사용하여 권한 부족으로 인한 배포 오류를 방지합니다.
-
-### fastapi-sa (백엔드 파드)
-
-| 서비스 | Actions | Resource | 비고 |
-|--------|---------|----------|------|
-| Neptune | `neptune-db:*` | `arn:aws:neptune-db:{region}:{account}:*` | 클러스터 리소스 ID가 배포마다 다르므로 와일드카드 필수 |
-| OpenSearch Serverless | `aoss:*` | `arn:aws:aoss:{region}:{account}:collection/{id}` | 컬렉션 ARN 자동 참조 |
-| Bedrock | `bedrock:InvokeModel`, `bedrock:InvokeModelWithResponseStream` | `*` | 모든 모델 호출 |
-| S3 (parsed-data) | Read/Write (CDK `grantReadWrite`) | `ontology-demo-parsed-data-*` | 그래프 데이터 JSON |
-| S3 (mock-cache) | Read/Write (CDK `grantReadWrite`) | `ontology-demo-mock-cache-*` | 프론트엔드 캐시 |
-
-**Neptune 권한 참고:**
-- Neptune IAM 인증은 **클러스터 리소스 ID** (`cluster-XXXXX...`)를 사용합니다.
-- 이 ID는 `CfnDBCluster.ref`(클러스터 식별자 `ontology-demo-neptune`)와 다르고, CDK에서 직접 참조할 수 없습니다.
-- 따라서 리소스를 `arn:aws:neptune-db:{region}:{account}:*` 와일드카드로 설정합니다.
-- 리소스 ID 확인: `aws neptune describe-db-clusters --db-cluster-identifier ontology-demo-neptune --query 'DBClusters[0].DbClusterResourceId'`
-
-### nextjs-sa (프론트엔드 파드)
-
-| 서비스 | Actions | Resource | 비고 |
-|--------|---------|----------|------|
-| S3 (mock-cache) | Read (CDK `grantRead`) | `ontology-demo-mock-cache-*` | 프론트엔드 캐시 읽기만 |
-
-### OpenSearch Serverless Data Access Policy
-
-IRSA의 IAM 정책과 별도로, OpenSearch Serverless는 자체 **Data Access Policy**가 필요합니다.
-CDK가 `arn:aws:iam::{account}:root`를 Principal로 설정하여 계정 내 모든 IAM 역할에 접근을 허용합니다.
-
-| 리소스 타입 | Resource | Permission |
-|------------|----------|------------|
-| index | `index/ontology-embeddings/*` | `aoss:*` |
-| collection | `collection/ontology-embeddings` | `aoss:*` |
-
-> **참고**: OpenSearch Serverless 접근에는 **두 가지** 권한이 모두 필요합니다:
-> 1. **IAM 정책** (IRSA 역할): `aoss:*` — AWS API 수준 인가
-> 2. **Data Access Policy** (컬렉션): `aoss:*` — 데이터 수준 인가
-> 둘 중 하나라도 없으면 403 Forbidden이 발생합니다.
-
-### 보안 그룹 (네트워크 수준)
-
-| SG | 인바운드 규칙 | 비고 |
-|----|-------------|------|
-| Neptune SG | TCP 8182 ← EKS Workers SG | VPC 스택에서 생성 |
-| Neptune SG | TCP 8182 ← EKS Cluster SG | EKS 스택에서 `CfnSecurityGroupIngress`로 추가 |
-| OpenSearch SG | TCP 443 ← EKS Workers SG | VPC 스택에서 생성 |
-| OpenSearch SG | TCP 443 ← EKS Cluster SG | EKS 스택에서 `CfnSecurityGroupIngress`로 추가 |
-
-> **중요**: EKS는 노드에 **클러스터 전용 보안 그룹**(auto-created)을 할당합니다.
-> VPC 스택의 `EksWorkersSg`만으로는 부족하며, EKS 클러스터 SG도 Neptune/OpenSearch SG에 추가해야 합니다.
-> CDK가 `CfnSecurityGroupIngress`로 자동 처리합니다. (`addIngressRule`은 cross-stack 순환 참조를 유발하므로 사용 불가)
-
-### 권한 검증 명령어
-
-```bash
-# 1. IRSA 역할 확인
-kubectl get sa fastapi-sa -n ontology-demo -o jsonpath='{.metadata.annotations.eks\.amazonaws\.com/role-arn}'
-
-# 2. Pod에서 실제 사용 중인 역할 확인
-FASTAPI_POD=$(kubectl get pods -n ontology-demo -l app=fastapi -o jsonpath='{.items[0].metadata.name}')
-kubectl exec -n ontology-demo $FASTAPI_POD -- \
-  python3 -c "import boto3; print(boto3.client('sts').get_caller_identity()['Arn'])"
-
-# 3. IRSA 역할의 IAM 정책 확인
-ROLE_NAME=$(kubectl get sa fastapi-sa -n ontology-demo \
-  -o jsonpath='{.metadata.annotations.eks\.amazonaws\.com/role-arn}' | awk -F/ '{print $NF}')
-aws iam list-role-policies --role-name $ROLE_NAME
-aws iam get-role-policy --role-name $ROLE_NAME --policy-name $(aws iam list-role-policies --role-name $ROLE_NAME --query 'PolicyNames[0]' --output text)
-
-# 4. OpenSearch Data Access Policy 확인
-aws opensearchserverless get-access-policy \
-  --name ontology-embeddings-access --type data \
-  --region $CDK_DEFAULT_REGION
-
-# 5. Neptune 클러스터 리소스 ID 확인
-aws neptune describe-db-clusters \
-  --db-cluster-identifier ontology-demo-neptune \
-  --region $CDK_DEFAULT_REGION \
-  --query 'DBClusters[0].DbClusterResourceId' --output text
-
-# 6. 보안 그룹 인바운드 규칙 확인
-EKS_CLUSTER_SG=$(aws eks describe-cluster --name ontology-demo-cluster \
-  --region $CDK_DEFAULT_REGION \
-  --query 'cluster.resourcesVpcConfig.clusterSecurityGroupId' --output text)
-echo "EKS Cluster SG: $EKS_CLUSTER_SG"
-# Neptune SG에 이 SG가 인바운드로 포함되어 있는지 확인
-```
 
 ## 데이터 사양
 
 | 항목 | 수치 |
 |------|------|
 | 소스 문서 | 39개 (보험 상품 요약서 + 법규) |
-| Neptune 노드 수 | ~1,955 vertices |
-| Neptune 엣지 수 | ~1,764 edges (1,720 + 44 isolated fix) |
+| Neptune 노드 수 | ~1,889 vertices |
+| Neptune 엣지 수 | ~1,815 edges (1,771 + 44 isolated fix) |
 | 엔티티 타입 | 12종 (Policy, Coverage, Exclusion 등) |
 | 관계 타입 | 14종 (HAS_COVERAGE, EXCLUDED_IF 등) |
-| OpenSearch 벡터 수 | ~1,955 documents |
-| 벡터 차원 | 1024 (Bedrock Titan Embed V2) |
+| OpenSearch 벡터 수 | ~1,952 documents |
+| 벡터 차원 | 1536 (Bedrock Titan v2) |
 | 인덱스 알고리즘 | HNSW (nmslib, cosinesimil) |
 | 텍스트 분석기 | Nori (한국어 형태소) |
 
@@ -867,20 +656,19 @@ echo "EKS Cluster SG: $EKS_CLUSTER_SG"
 
 | 스크립트 | 용도 | Phase |
 |----------|------|-------|
-| `scripts/create_opensearch_index.py` | OpenSearch k-NN + Nori 인덱스 생성 (1024d) | 2-2 |
-| `scripts/load_v2_data.py` | Neptune 그래프 + OpenSearch 벡터 일괄 로딩 | 2-3 |
-| `scripts/connect_isolated_nodes.py` | 고립 노드 → Regulation 노드 연결 | 2-4 |
+| `scripts/create_opensearch_index.py` | OpenSearch k-NN + Nori 인덱스 생성 | 2-3 |
+| `scripts/load_v2_data.py` | Neptune 그래프 + OpenSearch 벡터 일괄 로딩 | 2-4 |
+| `scripts/connect_isolated_nodes.py` | 고립 노드 → Regulation 노드 연결 | 2-5 |
 | `scripts/run_evaluation.py` | 128 시나리오 E2E 평가 (5차원) | 3-6 |
 
 환경 변수:
 ```bash
-# Phase 1: CDK 배포 (모두 필수)
-export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
-export CDK_DEFAULT_REGION=us-east-1
-export AWS_REGION=$CDK_DEFAULT_REGION
-
-# Phase 2: 데이터 로딩 (kubectl exec 사용 시 ConfigMap에서 자동 설정)
-export INPUT_DIR=/tmp/data/v2-graph-ready
+# Phase 2: 데이터 로딩
+export AWS_REGION=us-east-1
+export NEPTUNE_ENDPOINT=<neptune-endpoint>
+export NEPTUNE_PORT=8182
+export OPENSEARCH_ENDPOINT=https://<collection-id>.us-east-1.aoss.amazonaws.com
+export INPUT_DIR=/tmp/v2-graph-ready
 
 # Phase 3-6: E2E 평가
 export ALB_HOST=<alb-dns-name>

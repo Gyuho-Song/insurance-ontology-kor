@@ -182,8 +182,20 @@ PRODUCT_PATTERNS = [
     r"\S+정기보험\S*",
     r"\S+암보험\S*",
     r"\S+건강보험\S*",
+    # P0-C RC3: 한화생명 상품 라인업 보강 (골절/간병/통합건강/상해/당뇨/보장)
+    r"\S*골절보험\S*",
+    r"\S*간병보험\S*",
+    r"\S*통합건강\S*",
+    r"\S*상해보험\S*",
+    r"\S*당뇨보험\S*",
+    r"\S*보장보험\S*",
     r"[eEHh]\S+보험\S*",
+    # 광역 폴백: '...보험' (단, 일반어 stopword는 추출 후 제외)
+    r"\S+보험\S*",
 ]
+
+# P0-C RC3: 광역 '\S+보험' 패턴이 일반어를 상품으로 오분류하지 않도록 제외할 stopword.
+PRODUCT_STOPWORDS = {"보험", "보험상품", "이보험", "그보험", "보험료", "보험금", "보험사", "생명보험", "손해보험"}
 
 COMPLEX_KEYWORDS = ["규제", "상계", "법", "조항", "예외", "단서", "위반", "면책", "계산식", "산출", "가입 조건", "특약"]
 
@@ -199,7 +211,9 @@ _KOREAN_PARTICLES = sorted(
 
 
 def _strip_particle(name: str) -> str:
-    """Remove a trailing Korean particle from a product name."""
+    """Remove a trailing Korean particle + 구두점 from a product name."""
+    # P3-A 보강: 후행 구두점(쉼표/마침표/괄호 등) 제거 — "e암보험," → "e암보험"
+    name = name.strip().rstrip(",.;)·…")
     for particle in _KOREAN_PARTICLES:
         if name.endswith(particle) and len(name) > len(particle):
             return name[: -len(particle)]
@@ -580,21 +594,39 @@ class IntentClassifier:
         if len(products) >= 3 and primary_intent != IntentType.POLICY_COMPARISON:
             return IntentType.POLICY_COMPARISON
 
+        # P3-A 가드: sub-match 제거로 product 수가 줄어 비교질의가 단일조회로 오분류되는 것 방지.
+        # "A, B, C 중 ...", "A vs B" 처럼 쉼표/중/vs로 복수 상품을 나열하면 비교로 승격.
+        # (제품명 2개 이상 + 나열 마커가 함께 있을 때만 — 단일상품 오승격 방지)
+        if (len(products) >= 2
+                and primary_intent != IntentType.POLICY_COMPARISON
+                and (query.count(",") >= 1 or " 중 " in query or " vs " in query.lower()
+                     or "가운데" in query)):
+            return IntentType.POLICY_COMPARISON
+
         return primary_intent
 
     def _extract_entities(self, query: str) -> list[Entity]:
         entities = []
         seen: set[str] = set()
+        raw_names: list[str] = []
         for pattern in PRODUCT_PATTERNS:
             matches = re.findall(pattern, query)
             for match in matches:
                 cleaned = _strip_particle(match.strip())
+                # P0-C RC3: 광역 '\S+보험' 패턴의 일반어 오추출 제외(stopword) + 최소 길이.
+                if cleaned in PRODUCT_STOPWORDS or len(cleaned) < 3:
+                    continue
                 if cleaned not in seen:
                     seen.add(cleaned)
-                    entities.append(
-                        Entity(name=cleaned, type="product_name", value=cleaned)
-                    )
-        return entities
+                    raw_names.append(cleaned)
+
+        # P3-A RC: sub-match 오염 제거 — 다른 추출의 substring인 이름은 드롭(가장 구체 상품만).
+        # 예 "제로백H종신보험" 추출 시 그 substring "H종신보험"은 제거 → 엉뚱 상품 해소 방지.
+        specific = [
+            n for n in raw_names
+            if not any(n != other and n in other for other in raw_names)
+        ]
+        return [Entity(name=n, type="product_name", value=n) for n in specific]
 
     def _assess_complexity(self, query: str, intent_type: IntentType) -> str:
         if intent_type in (

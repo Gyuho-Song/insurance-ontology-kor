@@ -1,5 +1,6 @@
 import json
 import logging
+import re
 from pathlib import Path
 
 from app.models.query import ExpandedQuery
@@ -20,10 +21,12 @@ class GlossaryExpander:
         expanded = query
         synonyms_applied = []
 
-        # Abbreviation expansion
+        # Abbreviation expansion (P3-C: 단어경계 매칭 — '정보'가 '해약환급금 정보'의 일반어를
+        # '정기보험'으로 오확장하던 버그 방지. 약어 앞뒤가 한글/영문/숫자가 아닐 때만 치환).
         for abbr, full in self._abbreviations.items():
-            if abbr in expanded:
-                expanded = expanded.replace(abbr, full)
+            pat = r"(?<![가-힣A-Za-z0-9])" + re.escape(abbr) + r"(?![가-힣A-Za-z0-9])"
+            if re.search(pat, expanded):
+                expanded = re.sub(pat, full, expanded)
                 synonyms_applied.append({"original": abbr, "expanded": full})
 
         # Synonym expansion

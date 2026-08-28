@@ -50,7 +50,7 @@ INDEX_BODY = {
             "document_id": {"type": "keyword"},
             "embedding": {
                 "type": "knn_vector",
-                "dimension": 1024,
+                "dimension": 1024,  # Titan v2(amazon.titan-embed-text-v2:0) 기본 출력 차원. (이전 1536은 오류)
                 "method": {
                     "name": "hnsw",
                     "space_type": "cosinesimil",
@@ -70,7 +70,7 @@ def main():
     parser = argparse.ArgumentParser(description="Create OpenSearch ontology-vectors index")
     parser.add_argument("--endpoint", type=str,
                         default=os.environ.get("OPENSEARCH_ENDPOINT",
-                                               "https://svwxdwdbvvoryvl1l1k5.us-west-2.aoss.amazonaws.com"),
+                                               "https://xxxxxxxxxxxxxxxxxxxx.us-west-2.aoss.amazonaws.com"),
                         help="OpenSearch Serverless endpoint URL")
     parser.add_argument("--region", type=str,
                         default=os.environ.get("AWS_REGION", "us-west-2"),
@@ -130,7 +130,7 @@ def main():
     print(f"  Created successfully!")
     print(f"\nIndex settings:")
     print(f"  - k-NN: enabled (HNSW, nmslib, cosinesimil)")
-    print(f"  - Embedding dimension: 1536 (Bedrock Titan v2)")
+    print(f"  - Embedding dimension: 1024 (Bedrock Titan v2)")
     print(f"  - Text analyzer: Nori (Korean morphological)")
     print(f"  - node_label.raw: keyword (exact match/wildcard)")
     print(f"  - ef_construction: 512, m: 16")

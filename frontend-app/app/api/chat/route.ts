@@ -5,8 +5,9 @@ const BACKEND_URL = process.env.GRAPHRAG_BACKEND_URL || 'http://localhost:8000';
 export async function POST(request: NextRequest) {
   const body = await request.json();
   const { messages, persona, mydataConsent, ragMode } = body;
+  const authHeader = request.headers.get('authorization') || '';
 
-  return handleLiveMode(messages, persona, mydataConsent, ragMode);
+  return handleLiveMode(messages, persona, mydataConsent, ragMode, authHeader);
 }
 
 async function handleLiveMode(
@@ -14,6 +15,7 @@ async function handleLiveMode(
   persona: string,
   mydataConsent?: { customer_id: string; consented: boolean } | null,
   ragMode?: string,
+  authHeader?: string,
 ): Promise<Response> {
   try {
     // Strip annotations/parts from messages — backend only needs role + content
@@ -28,9 +30,13 @@ async function handleLiveMode(
     if (ragMode) {
       requestBody.rag_mode = ragMode;
     }
+    const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+    if (authHeader) {
+      headers['Authorization'] = authHeader;
+    }
     const backendResponse = await fetch(`${BACKEND_URL}/v1/chat`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify(requestBody),
     });
 

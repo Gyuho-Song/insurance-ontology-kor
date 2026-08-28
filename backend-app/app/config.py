@@ -17,8 +17,8 @@ class Settings(BaseSettings):
     bedrock_embedding_model_id: str = "amazon.titan-embed-text-v2:0"
 
     # S3
-    mock_cache_bucket: str = ""
-    parsed_bucket: str = ""
+    mock_cache_bucket: str = "ontology-demo-mock-cache-123456789012"
+    parsed_bucket: str = "ontology-demo-parsed-data-123456789012"
 
     # Performance tuning
     vector_search_top_k: int = 5
@@ -29,6 +29,10 @@ class Settings(BaseSettings):
     embedding_cache_size: int = 256
     neptune_pool_size: int = 16
     neptune_max_workers: int = 16
+
+    # Cognito
+    cognito_user_pool_id: str = "us-west-2_XXXXXXXXX"
+    cognito_region: str = "us-west-2"
 
     # Logging
     log_level: str = "INFO"

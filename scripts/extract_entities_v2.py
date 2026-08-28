@@ -15,6 +15,7 @@ import argparse
 import boto3
 import botocore.config
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -39,7 +40,7 @@ sys.stdout.reconfigure(line_buffering=True)
 # ── Config ──────────────────────────────────────────────────────────────
 
 REGION = "us-west-2"
-MODEL_ID = "us.anthropic.claude-sonnet-4-20250514-v1:0"
+MODEL_ID = os.environ.get("EXTRACT_MODEL_ID", "us.anthropic.claude-sonnet-4-20250514-v1:0")
 INPUT_DIR = Path("/mnt/data/v2-markdown")
 OUTPUT_DIR = Path("/mnt/data/v2-graph-ready")
 MANIFEST_PATH = OUTPUT_DIR / "_manifest.json"
@@ -98,24 +99,35 @@ def invoke_with_tool_use(
     max_retries = 5
     for attempt in range(max_retries):
         try:
-            response = client.invoke_model(
+            # 스트리밍: 긴 출력(Opus4.8, max_tokens 큼)에서 read_timeout 회피. tool_use input을 조립.
+            response = client.invoke_model_with_response_stream(
                 modelId=MODEL_ID,
                 contentType="application/json",
                 accept="application/json",
                 body=json.dumps(body),
             )
-
-            result = json.loads(response["body"].read())
-            input_tokens = result.get("usage", {}).get("input_tokens", 0)
-            output_tokens = result.get("usage", {}).get("output_tokens", 0)
-
-            # Extract tool_use content block
-            for block in result.get("content", []):
-                if block.get("type") == "tool_use" and block.get("name") == tool["name"]:
-                    return block["input"], input_tokens, output_tokens
-
-            # No tool_use block found — return empty
-            log(f"    ⚠ No tool_use block in response (stop_reason={result.get('stop_reason')})")
+            tool_json_parts: list[str] = []
+            input_tokens = output_tokens = 0
+            stop_reason = None
+            for event in response["body"]:
+                chunk = json.loads(event["chunk"]["bytes"])
+                t = chunk.get("type")
+                if t == "content_block_delta":
+                    d = chunk.get("delta", {})
+                    if d.get("type") == "input_json_delta":
+                        tool_json_parts.append(d.get("partial_json", ""))
+                elif t == "message_start":
+                    input_tokens = chunk.get("message", {}).get("usage", {}).get("input_tokens", 0)
+                elif t == "message_delta":
+                    output_tokens = chunk.get("usage", {}).get("output_tokens", 0)
+                    stop_reason = chunk.get("delta", {}).get("stop_reason")
+            if tool_json_parts:
+                try:
+                    return json.loads("".join(tool_json_parts)), input_tokens, output_tokens
+                except json.JSONDecodeError:
+                    log(f"    ⚠ tool_use JSON 파싱 실패 (stop_reason={stop_reason})")
+            else:
+                log(f"    ⚠ No tool_use delta (stop_reason={stop_reason})")
             return {tool["name"].replace("extract_", ""): []}, input_tokens, output_tokens
 
         except Exception as e:
@@ -205,17 +217,24 @@ def parse_raw_entities(raw_entities: list[dict], document_id: str) -> list[Entit
     parsed = []
     for raw in raw_entities:
         try:
+            if not isinstance(raw, dict):  # LLM이 가끔 문자열/리스트 반환 — 스킵 대신 방어
+                continue
             etype = raw.get("type", "")
             if etype not in ENTITY_TYPE_VALUES:
                 log(f"    ⚠ Unknown entity type '{etype}', skipping")
                 continue
 
             prov = raw.get("provenance", {})
+            if not isinstance(prov, dict):  # provenance가 문자열로 오는 경우 → source_text로 흡수
+                prov = {"source_text": str(prov)}
+            props = raw.get("properties", {})
+            if not isinstance(props, dict):
+                props = {}
             entity = Entity(
                 id=raw.get("id", "unknown"),
                 type=EntityType(etype),
                 label=raw.get("label", ""),
-                properties=raw.get("properties", {}),
+                properties=props,
                 provenance=EntityProvenance(
                     source_section_id=prov.get("source_section_id", "unknown"),
                     source_text=str(prov.get("source_text", ""))[:500],

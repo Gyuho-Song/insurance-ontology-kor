@@ -34,9 +34,18 @@ class ExtractionUnit:
     section_title: str
     content: str
     char_count: int = 0
+    table_refs: list[str] = field(default_factory=list)  # U1: {{TABLE:id}} 참조 (기존 흐름 무영향)
 
     def __post_init__(self):
         self.char_count = len(self.content)
+
+
+@dataclass
+class SplitResult:
+    """U1: split_parsed_doc 결과. units + tables + 섹션↔표 연결."""
+    units: list["ExtractionUnit"]
+    tables: list  # list[parsed_doc.Table]
+    unit_table_refs: dict  # {section_id: [table_id, ...]}
 
 
 def is_law_document(filename: str) -> bool:
@@ -228,3 +237,25 @@ def _subsplit(unit: ExtractionUnit) -> list[ExtractionUnit]:
             ))
 
     return parts if parts else [unit]
+
+
+# ── U1: ParsedDoc 기반 분할 (비파괴 — 기존 split_document 유지) ──
+_TABLE_REF_RE = re.compile(r"\{\{TABLE:([^}]+)\}\}")
+
+
+def split_parsed_doc(parsed_doc, filename: str = "") -> "SplitResult":
+    """ParsedDoc(U1) → SplitResult{units, tables, unit_table_refs}.
+
+    기존 split_document을 본문(markdown, {{TABLE:id}} placeholder 포함)에 적용하고,
+    각 unit이 참조하는 table_id를 placeholder에서 추출해 연결한다.
+    """
+    fname = filename or f"{parsed_doc.document_id}.md"
+    units = split_document(parsed_doc.markdown, fname)
+    unit_table_refs: dict = {}
+    for u in units:
+        refs = _TABLE_REF_RE.findall(u.content)
+        u.table_refs = refs
+        if refs:
+            unit_table_refs[u.section_id] = refs
+    return SplitResult(units=units, tables=list(parsed_doc.tables),
+                       unit_table_refs=unit_table_refs)
